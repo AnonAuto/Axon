@@ -1,4 +1,4 @@
-<img src="Software/file_00000000e39c6243bdbea60b0bc8bf00.png" height="25%" width="25%" align="right" />
+<img width="840" height="1026" alt="492007496-74a93a2e-99a9-4f23-bdb6-800c67ca3f9f" src="https://github.com/user-attachments/assets/3cb28fa0-5ea3-4846-9b9c-93f46c1e199b" /><img src="Software/file_00000000e39c6243bdbea60b0bc8bf00.png" height="25%" width="25%" align="right" />
 
 
 
@@ -11,7 +11,7 @@ This information is currently stored here privately, and is not publicly accessi
 
 
 
-<img width="15%" height="15%" alt="" align="right" src="https://github.com/user-attachments/assets/a04bddc7-0fd3-4b7c-8814-803b77694b52" />
+<img width="15%" height="15%" alt="" align="right" src="https://github.com/user-attachments/assets/4f9e54bd-3e80-479a-9c04-b4a9aefb3017" />
 
 ## Background
 Axon Enterprise devices are used globally around the world by police forces. Axon Enterprise manufactures and supplies **law enforcement technologies**, including:
@@ -22,7 +22,7 @@ Axon Enterprise devices are used globally around the world by police forces. Axo
 
 These devices are deployed **globally across police and security agencies**, from municipal police forces to federal and international law enforcement bodies. Their widespread adoption creates a **large and distributed attack surface**.
 
-<img width="20%" height="20%" align="right" alt="image" src="https://github.com/user-attachments/assets/b9ec74cd-0b6b-44e7-943d-413936cd563d" />
+<img width="20%" height="20%" align="right" alt="image" src="https://github.com/user-attachments/assets/c079fe4d-daae-4f78-86f7-69ddf278bcbe" />
   
 
 ## Axon MAC Address Structure and Cybersecurity Implications
@@ -68,7 +68,7 @@ These devices are deployed **globally across police and security agencies**, fro
 The OUI (`00:25:DF`) is Axon’s digital surname, and the serial-based suffix is its given name. Together, they form a permanent, globally unique identifier. This makes Axon devices easily discoverable and trackable unless mitigations (like **MAC randomization**) are implemented.
 
 
-<img width="55%" height="55%" align="right" alt="image" src="https://github.com/user-attachments/assets/bcbcada8-c285-4e74-8d2c-98e189cb1345" />
+<img width="55%" height="55%" align="right" alt="image" src="https://github.com/user-attachments/assets/62842704-f2cb-46e3-9529-ef3226ab0774" />
   
 
 ## Software
@@ -89,12 +89,14 @@ A LoRaWAN mesh network that covers a large area, and passively scans for a detec
 
 ### `Proximity Detection`
 The devices are constantly broadcasting advertising packets containing the MAC address and are detectable from a distance. There is a proof of concept python script in the software folder.  
+
  
-<img width="30%" height="30%" alt="signal-2024-03-15-154525_002" src="https://github.com/user-attachments/assets/b6ebd05a-1fe7-435d-b314-29ab86678544" />
+<img width="30%" height="30%" alt="signal-2024-03-15-154525_002" src="https://github.com/user-attachments/assets/a750a47a-ad8c-46fc-90e3-d47acedee35f" />
 
 <br /> <br /> 
 
-<img width="13%" height="13%" alt="image" src="https://github.com/user-attachments/assets/326fff0c-3e64-49fb-82d6-b642078a6a51" align="right"/>
+
+<img width="13%" height="13%" alt="image" src="https://github.com/user-attachments/assets/5029c7a2-2d60-4663-b358-2cf309ba7227" align="right"/>
 
 ## Firmware
 Obtained raw firmware binary files from `https://my.axon.com/` an account was required to download. You are not able to register an account via the Axon website, however one email to technical support claiming to work in the security industry was all it took to gain access and download firmware files. 
@@ -162,8 +164,7 @@ Delving into the firmware has begun...
  ```
 
 
-
-<img width="10%" height="10%" alt="image" src="https://github.com/user-attachments/assets/74a93a2e-99a9-4f23-bdb6-800c67ca3f9f" align="right"/>
+<img width="10%" height="10%" alt="image" src="https://github.com/user-attachments/assets/95de0f1e-1c29-44e5-87dc-7530faba6915" align="right"/>
 
   
 ## Android Applications
@@ -208,7 +209,8 @@ These apps are primarily used by law enforcement and public safety agencies for 
   - **Shift Ops & Support** → Device Checkout, MyAxon  
 - Ratings vary widely. **Axon View** is criticized (~2.9★) due to device compatibility issues, while **Axon** itself is highly rated (~4.8★).
 
-<img width="12%" height="12%" alt="image" src="https://github.com/user-attachments/assets/7afdf42a-bcba-45bd-9696-dc7ec4443e8a" align="right" />
+
+<img width="12%" height="12%" alt="image" src="https://github.com/user-attachments/assets/c0385572-c1f7-49c4-ab77-61c3054f5c4a" align="right" />
 
 ## Bluetooth Protocol Stack
 The Bluetooth stack has been found in the Axon Device Manager APK source code and is a pretty typical bluetooth low energy implementation. 
