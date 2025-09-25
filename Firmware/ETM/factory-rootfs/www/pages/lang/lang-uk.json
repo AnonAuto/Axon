@@ -1,0 +1,558 @@
+{
+   "ETM" : {
+      "admin" : {
+         "admin_title" : "Адміністрування панелі Dock",
+         "configuring_msg" : "Триває налаштування. Це займе приблизно 40 секунд…",
+         "headers" : {
+            "administration" : "Адміністрування панелі Dock"
+         },
+         "page_title" : "Налаштування адміністрування",
+         "rebooting_msg" : "Перезавантаження. Це займе приблизно 60 секунд…",
+         "saving_settings" : "Збереження налаштувань…",
+         "sections" : {
+            "admin_maint" : {
+               "legend" : "Обслуговування",
+               "reboot" : "Перезавантажити панель Dock"
+            },
+            "admin_ssl" : {
+               "accept_only_https" : "Приймати лише запити SSL",
+               "legend" : "Конфігурація SSL",
+               "regen_ssl" : "Повторно створити сертифікат SSL",
+               "require_https_time" : "Вимагати SSL для початкової перевірки часу"
+            },
+            "device_id" : {
+               "etm_name" : "Ім’я панелі Dock",
+               "home" : "Місце зберігання пристрою",
+               "legend" : "Ідентифікація пристрою",
+               "location" : "Розташування",
+               "msg" : "Наведена нижче інформація допоможе вам визначити, з яким пристроєм панелі Dock установлено зв’язок. Цю інформацію також використовує сайт Evidence.com для надання інформації про статус пристрою.",
+               "your_agency" : "Ваше агентство"
+            },
+            "password_change" : {
+               "confirm_new_password" : "Повторно введіть новий пароль",
+               "current_password" : "Поточний пароль",
+               "error_no_password" : "Для зміни облікових даних адміністратора потрібно ввести поточний пароль.",
+               "legend" : "Змінити облікові дані",
+               "msg" : "Керуйте іменем користувача та паролем адміністратора, які використовуються для доступу до цієї панелі Dock.",
+               "new_password" : "Новий пароль",
+               "username" : "Ім’я користувача"
+            },
+            "snmp" : {
+               "authentication" : "Автентифікація",
+               "disable" : "Вимкнути",
+               "enable_snmp" : "Увімкнути SNMP",
+               "enc_password" : "Пароль шифрування",
+               "encrypt_msg" : "Залиште поле «Пароль шифрування» порожнім, якщо хочете використовувати той самий «Пароль SNMP» для шифрування.",
+               "encryption" : "Шифрування",
+               "error_no_password" : "Для зміни імені користувача SNMP потрібен відповідний пароль.",
+               "error_title" : "Налаштувати помилку SNMP",
+               "legend" : "Сервер SNMP",
+               "legend_config" : "Конфігурація SNMP",
+               "msg" : "SNMP вимкнено за замовчуванням. Щоб увімкнути, поставте прапорець і налаштуйте конфігурацію.",
+               "password" : "Пароль SNMP",
+               "username" : "Ім’я користувача SNMP"
+            }
+         },
+         "set_configuration_error_title" : "Налаштувати конфігурацію",
+         "settings_changed" : {
+            "p1" : "Налаштування вашого агентства змінено.",
+            "p2" : "Натисніть кнопку [Оновити], щоб застосувати зміни з вашого агентства до панелі Dock.",
+            "p3" : "Інакше натисніть кнопку [Скасувати], а потім уручну оновіть налаштування. Зміни буде синхронізовано з вашим агентством.",
+            "p4" : "Список змін:",
+            "title" : "Налаштування змінено"
+         }
+      },
+      "axonsup" : {
+         "headers" : {
+            "data" : "Дані служби підтримки"
+         },
+         "page_title" : "Axon Support",
+         "sections" : {
+            "data" : {
+               "legend" : "Дані Axon Support ",
+               "msg" : "Наведені нижче великі блоки даних можуть знадобитися під час роботи з представником служби підтримки клієнтів Axon.",
+               "result1" : "Результат 1:",
+               "result2" : "Результат 2:"
+            }
+         }
+      },
+	  "cgi" : {
+          "csrf_fail" : "Cookie error",
+          "invalid_auth" : "Недійсне ім’я користувача або пароль",
+          "invalid_cmd" : "Invalid command",
+          "invalid_domain" : "No domain specified",
+          "invalid_proxy_config" : "Invalid proxy configuration",
+          "invalid_proxy_user_pass" : "Username or password is missing",
+          "invalid_snmp_user" : "Unable to apply SNMP configuration. Invalid SNMP user name.",
+          "no_content" : "No content",
+          "no_snmp_pw" : "Unable to apply SNMP configuration. No Password provided.",
+          "not_released" : "Not released",
+          "ok" : "OK",
+          "unable_disable_snmp" : "Unable to disable SNMP configuration.",
+          "unable_set_snmp" : "Unable to apply SNMP configuration.",
+          "unable_set_snmp_auth" : "Unable to apply SNMP configuration Authentication.",
+          "unable_set_snmp_enable" : "Unable to enable SNMP configuration.",
+          "unable_set_snmp_enc" : "Unable to apply SNMP configuration encryption.",
+          "unable_set_snmp_pass" : "Unable to apply SNMP configuration password.",
+          "unable_set_snmp_user" : "Unable to apply SNMP configuration username.",
+          "unable_set_sslonly" : "Unable to change 'Accept Only SSL Requests' setting",
+          "unknown_err" : "Невідома помилка",
+          "web_creds_err" : "Failed to update Administrator credentials.",
+          "web_creds_invalid_username" : "Failed to update Administrator credentials: username is invalid.",
+          "web_creds_invalid_cur_pass" : "Failed to update Administrator credentials: current password is invalid.",
+          "web_creds_invalid_new_pass" : "Failed to update Administrator credentials: new password is invalid."
+      },
+      "common" : {
+        "admin_name_allowed_characters" : "Invalid username. Allowed characters: alphanumeric space # ! @ ( ) [ ] - . _",
+        "at_least" : "must be at least ",
+        "cannot_contain_duplicate" : "cannot contain duplicate characters",
+        "cannot_contain_more_than" : "cannot contain more than ",
+        "cannot_contain_username" : "cannot contain your username or other common words",
+        "character" : " character",
+        "characters" : " characters",
+        "characters_in_seq" : " characters in sequence",
+        "input_valid_IP" : "Please input a valid IP address",
+        "less_than" : "must be less than ",
+        "mandatory_field" : "This field must be provided.",
+        "must_contain" : "must contain ",
+        "no" : "Ні",
+        "not_secure" : "is not secure enough ",
+        "please_provide" : "Please provide at least ",
+        "select_valid_entry" : "Please select a valid entry from the list",
+        "snmp_name_allowed_characters" : "Invalid username. Allowed characters: alphanumeric # ! @ ( ) [ ] - . _",
+        "value_not_equal" : "Value not equal with the New Password field",
+        "yes" : "Так"
+      },
+      "configassist" : {
+         "dlg_assign" : {
+            "msg1" : "Ця форма змінює власника пристрою на вказаного нижче користувача. Ім’я користувача та пароль не зберігаються на панелі Dock.",
+            "msg2" : "Введіть дані автентифікації нижче та натисніть ОК, щоб призначити цей пристрій СОБІ. Інакше натисніть «Скасувати», щоб повернутися.",
+            "password" : "Пароль",
+            "username" : "Ім’я користувача"
+         },
+         "dlg_format" : {
+            "msg" : "Ця дія призведе до оновлення конфігурації та мікропрограми пристрою. Дані не будуть втрачені."
+         },
+         "dlg_format_auth" : {
+            "admin_password" : "Пароль адміністратора",
+            "admin_username" : "Ім’я користувача адміністратора",
+            "msg" : "Щоб виконати цю дію, у вас мають бути права адміністратора вебсайту Evidence.com. Ваше ім’я користувача та пароль не зберігаються на панелі Dock. Введіть дані автентифікації нижче та натисніть ОК, щоб відформатувати цей пристрій. Інакше натисніть «Скасувати», щоб повернутися."
+         },
+         "err_cannot_get_log" : {
+            "msg" : "Сталася помилка під час зчитування журналу подій із цього пристрою.",
+            "title" : "Не вдалося прочитати файл журналу із цього пристрою"
+         },
+         "err_cannot_read_file" : {
+            "msg" : "Сталася помилка під час зчитування медіафайлу й інформації про докази із цього пристрою. Якщо помилка не зникне, зверніться до служби підтримки Axon.",
+            "title" : "Не вдалося прочитати файл доказів із цього пристрою."
+         },
+         "err_cannot_rm_log" : {
+            "msg" : "Сталася помилка під час очищення журналу подій на цьому пристрої після його завантаження на evidence.com.",
+            "title" : "Не вдалось очистити файл журналу на цьому пристрої"
+         },
+         "err_device_lost_communication" : {
+            "msg" : "Підключення для цього пристрою розірвано. Відключіть пристрій і знову підключіть. Якщо проблема не зникає, зверніться до адміністратора агентства, щоб отримати допомогу з цим пристроєм.",
+            "title" : "Панель Dock втратила зв’язок із цим пристроєм."
+         },
+         "err_device_maintenance" : {
+            "msg" : "Ця панель Dock виконує автоматичне обслуговування на цьому пристрої. Належну роботу пристрою буде відновлено автоматично. Вам нічого робити не потрібно.",
+            "title" : "Ця панель Dock виконує автоматичне обслуговування на цьому пристрої."
+         },
+         "err_devtype_cfg_failure" : {
+             "msg" : "Не вдалося налаштувати режим натільної камери на пристрої. Перегляньте інструкції з усунення несправностей.",
+             "title" : "Цей пристрій не налаштовано як натільну камеру"
+         },
+         "err_format_failure" : {
+            "msg" : "Помилка форматування диска пристрою. Перегляньте інструкції з усунення несправностей.",
+            "title" : "Помилка форматування диска цього пристрою."
+         },
+         "err_fwup_cfg_failure" : {
+             "msg": "Не вдалося налаштувати поле «Мікропрограма з можливістю оновлення». Перегляньте інструкції з усунення несправностей.",
+             "title" : "Цей пристрій не налаштовано як мікропрограму з можливістю оновлення"
+         },
+         "err_inactive_device" : {
+            "msg" : "Наразі пристрій неактивний у цьому агентстві. Підключіть його до Evidence Sync і призначте його відповідному користувачу.",
+            "title" : "Пристрій наразі неактивний у вашому агентстві"
+         },
+         "err_invalid_device_type" : {
+            "msg" : "Не вдалося налаштувати пристрій до вказаного типу. Перегляньте інструкції з усунення несправностей.",
+            "title" : "Пристрій недійсний"
+         },
+         "err_invalid_model" : {
+            "msg" : "Пристрій, підключений до панелі Dock, не розпізнається як дійсний пристрій Axon. Видаліть його з панелі Dock.",
+            "title" : "Панель Dock не розпізнає цей тип пристрою"
+         },
+         "err_invalid_serial" : {
+            "msg" : "Пристрій, підключений до панелі Dock, не має дійсного серійного номера. Можливо, ця проблема тимчасова. Вилучіть пристрій і повторно підключіть його на панелі Dock. Якщо ця помилка не зникне, створіть запит RMA для цього пристрою.",
+            "title" : "Цей пристрій має недійсний серійний номер"
+         },
+         "err_inventory_failure" : {
+            "msg" : "Сталася помилка під час зчитування медіафайлу й інформації про докази для цього пристрою. Якщо помилка не зникне, зверніться до служби підтримки Axon.",
+            "title" : "Не вдалося прочитати список доказів із цього пристрою."
+         },
+         "err_mount_failed" : {
+            "msg" : "Перейдіть на сторінку адміністрування та перезавантажте панель Dock.",
+            "title" : "Сталася помилка під час підключення до пристрою."
+         },
+         "err_network_failed" : {
+            "msg" : "This is most likely caused by a bad Internet connection, a bad connection to Evidence.com, Evidence.com is under heavy load or Evidence.com is down for maintenance. This is not a critical error, the Dock will retry the operation.",
+            "title" : "Виникла проблема під час обробки цього пристрою на панелі Dock"
+         },
+         "err_no_usb" : {
+            "msg" : "Панель Dock не може з’єднатися із цим пристроєм. Можливо, це тимчасова проблема. Вилучіть пристрій і повторно підключіть його на панелі Dock. Якщо ця помилка не зникне, створіть запит RMA для цього пристрою.",
+            "title" : "Не вдалося зв’язатися з пристроєм"
+         },
+         "err_not_offline" : {
+            "msg" : "Ця панель Dock налаштована для роботи в автономному режимі. Вона не оброблятиме пристрої, налаштовані на роботу в онлайн-режимі. Щоб перевести цей пристрій в автономний режим, підключіть його до Evidence Sync і дотримуйтесь інструкцій.",
+            "title" : "Цей пристрій не налаштовано на роботу в автономному режимі"
+         },
+         "err_not_online" : {
+            "msg" : "Ця панель Dock налаштована для роботи в онлайн-режимі. Вона не оброблятиме пристрої, налаштовані на роботу в автономному режимі. Щоб перевести цей пристрій в онлайн-режим, підключіть його до Evidence Sync і дотримуйтесь інструкцій.",
+            "title" : "Цей пристрій не налаштовано для роботи в онлайн-режимі"
+         },
+         "err_system_maintenance" : {
+            "msg" : "Ця панель Dock виконує автоматичне обслуговування. Належну роботу пристрою буде автоматично відновлено. Вам нічого робити не потрібно.",
+            "title" : "Панель Dock виконує внутрішнє обслуговування."
+         },
+         "err_transfer_failed" : {
+            "msg" : "This is most likely caused by a bad Internet connection, a bad connection to Evidence.com, Evidence.com is under heavy load or Evidence.com is down for maintenance. This is not a critical error, the Dock will continue to retry the file upload.",
+            "title" : "Панелі Dock не вдалося передати відео із цього пристрою"
+         },
+         "err_transfer_failed_noretry" : {
+            "msg" : "Найімовірніше, це спричинено проблемою з пристроєм. Зверніться до служби підтримки Axon.",
+            "title" : "Під час передавання відео із цього пристрою на панелі Dock сталася помилка"
+         },
+         "err_unknown_port_type" : {
+            "msg" : "Тип порту, до якого підключено пристрій, не підтримується або невідомий. Перегляньте інструкції з усунення несправностей.",
+            "title" : "Невідомий тип порту"
+         },
+         "err_wrong_agency" : {
+            "msg" : "Наразі цей пристрій не призначено вашому агентству. Зверніться до адміністратора агентства, щоб отримати допомогу із цим пристроєм.",
+            "title" : "Наразі цей пристрій не призначено вашому агентству."
+         },
+         "if_problem_continues" : "Якщо проблема не зникає, зверніться до служби підтримки Axon за адресою:",
+         "more_help" : "Щоб отримати допомогу із цією проблемою, зверніться до служби підтримки Axon за адресою:",
+         "no_dns" : {
+            "msg" : "Не вдалося знайти DNS-сервер. Найімовірніше, це спричинено недійсною IP-адресою, яку вказано для вашого DNS-сервера. Перевірте налаштування DNS на сторінці «Мережа».",
+            "return_msg" : "Натисніть ОК нижче, щоб перейти на сторінку «Мережа» та перевірити інформацію про DNS, або натисніть клавішу ESC, щоб закрити це діалогове вікно.",
+            "title" : "Не вдалося знайти DNS-сервер"
+         },
+         "no_ecom" : {
+            "msg" : "Не вдалось автентифікувати цю панель Dock за допомогою Evidence.com. Найімовірніше, це спричинено недійсними або відсутніми реєстраційними ключами для вашого агентства та цієї панелі Dock. Зареєструйте цю панель Dock на сторінці «Операції».",
+            "return_msg" : "Натисніть ОК нижче, щоб перейти на сторінку «Операції» та зареєструвати панель Dock, або натисніть клавішу ESC, щоб закрити це діалогове вікно.",
+            "title" : "Без автентифікації Evidence.com"
+         },
+         "no_gateway" : {
+            "msg" : "Не вдалося зв’язатися зі шлюзом вашої мережі за замовчуванням. Найімовірніше, це спричинено недійсною IP-адресою. Однак зверніть увагу, що деякі шлюзи не відповідають на мережеві команди перевірки зв’язку.",
+            "return_msg" : "Натисніть ОК нижче, щоб перейти на сторінку «Мережа» та змінити шлюз за замовчуванням, або натисніть клавішу ESC, щоб закрити це діалогове вікно.",
+            "title" : "Шлюз не знайдено"
+         },
+         "no_https" : {
+            "msg" : "Не вдалося зв’язатися через захищений (HTTPS) канал. Найімовірніше, це сталося через блокування брандмауером порту HTTPS (443). Переконайтеся, що порт HTTPS не заблоковано у вашому брандмауері.",
+            "return_msg" : "Натисніть ОК нижче, щоб повернутися на сторінку статусу.",
+            "title" : "HTTPS недоступний."
+         },
+         "no_ip_dynamic" : {
+            "msg" : "Не вдалось отримати IP-адресу з вашого DHCP-сервера. Найімовірніше, це сталося через те, що у вашій мережі немає активного DHCP-сервера. Можливо, вам знадобиться ввести конфігурацію статичної IP-адреси для цієї панелі Dock.",
+            "return_msg" : "Натисніть ОК нижче, щоб перейти на сторінку «Мережа» та ввести інформацію про статичну IP-адресу, або натисніть клавішу ESC, щоб закрити це діалогове вікно.",
+            "title" : "Немає IP-адреси."
+         },
+         "no_ip_static" : {
+            "msg" : "Не вдалось отримати IP-адресу, указану під час налаштування статичної IP-адреси для цієї панелі Dock. Найімовірніше, це спричинено тим, що одна статична IP-адреса використовується на кількох комп’ютерах. Перевірте IP-адресу, указану на сторінці мережі.",
+            "return_msg" : "Натисніть ОК нижче, щоб перейти на сторінку «Мережа» та перевірити налаштування, або натисніть клавішу ESC, щоб закрити це діалогове вікно.",
+            "title" : "Немає IP-адреси."
+         },
+         "no_ntp" : {
+            "msg" : "Не вдалося зв’язатися з мережевим сервером часу. Найімовірніше, це спричинено блокуванням портів 80 і 123 у брандмауері. Переконайтеся, що у вашому брандмауері не заблоковано хоча б один з указаних портів.",
+            "return_msg" : "Натисніть ОК нижче, щоб перейти на сторінку «Мережа» та змінити сервер часу, або натисніть клавішу ESC, щоб закрити це діалогове вікно.",
+            "title" : "Сервер NTP не відповідає"
+         },
+         "no_status" : {
+            "msg" : "Не вдалося визначити тип вашої мережі. Можливо, це сталося через те, що наша система все ще в стані розробки. Зачекайте 2–3 хвилини й оновіть цю сторінку. Сторінка статусу також оновиться, якщо надійде нова інформація.",
+            "return_msg" : "Натисніть ОК нижче, щоб повернутися на сторінку статусу.",
+            "title" : "Немає статусу."
+         },
+         "title" : "Помічник із налаштування конфігурації",
+         "we_found" : "Під час перевірки вашої мережі виявлено таку проблему:",
+         "welcome" : "Вітаємо в помічнику з налаштування конфігурації."
+      },
+      "device_status_codes" : {
+         "capchk" : "Перевірка ємності",
+         "cfg" : "Налаштування конфігурації",
+         "chg" : "Заряджання",
+         "del" : "Видалення",
+         "device_maint" : "Обслуговування пристрою",
+         "devid" : "Ідентифікація",
+         "err" : "Помилка (повторна спроба в очікуванні)",
+         "fail" : "Помилка",
+         "fwdone" : "Мікропрограму оновлено",
+         "fwupdate" : "Оновлення мікропрограми",
+         "inact" : "Неактивний",
+         "init" : "Ініціалізація",
+         "inventory" : "Інвентаризація",
+         "logerase" : "Стирання журналу",
+         "logsend" : "Завантаження журналу",
+         "lost" : "Зв’язок розірвано",
+         "net_retry" : "Повторно підключіться до мережі",
+         "new" : "Новий пристрій",
+         "nonet" : "Мережа неактивна",
+         "plugin" : "Підключення",
+         "proc" : "Передавання файлу",
+         "rdy" : "Готово",
+         "register" : "Реєстрація",
+         "summary" : "Отримати підсумок",
+         "sys_maint" : "Обслуговування системи",
+         "unk" : "Невідомо",
+         "unsupported" : "Не підтримується",
+         "wait" : "Очікування"
+      },
+      "diag" : {
+         "headers" : {
+            "diag" : "Діагностика"
+         },
+         "page_title" : "Статус",
+         "sections" : {
+            "netdiag" : {
+               "command" : "Команда:",
+               "commands" : {
+                  "date" : "DATE за звітом панелі Dock",
+                  "ifconfig" : "Статистика мережі IFCONFIG",
+                  "nslookup_goog" : "NSLOOKUP google.com",
+                  "nslookup_taser" : "NSLOOKUP taser.evidence.com",
+                  "ping_8888" : "PING 8.8.8.8",
+                  "ping_gateway" : "PING шлюз за замовчуванням",
+                  "ping_goog" : "PING google.com",
+                  "tail_etmlog" : "TAIL 100 рядків журналу панелі Dock",
+                  "tail_syslog" : "TAIL 100 рядків системного журналу",
+                  "tr_goog" : "TRACEROUTE google.com",
+                  "tr_taser" : "TRACEROUTE taser.evidence.com"
+               },
+               "execute" : "Виконати",
+               "legend" : "Діагностика мережі",
+               "menu" : "Виберіть діагностичний тест із розкривного меню та натисніть кнопку для виконання…",
+               "msg1" : "Наведені тут команди використовуються для діагностики проблем підключення до мережі.",
+               "msg2" : "Не виконуйте наведені нижче команди, якщо цього не просить представник служби підтримки клієнтів Axon.",
+               "result" : "Результат:"
+            }
+         }
+      },
+      "firmware" : {
+         "current_version" : "Поточна версія мікропрограми",
+         "dvr_update_starting" : "Підключення до сервера Axon із метою пошуку оновлень… Оновлення мікропрограми буде розпочато після того, як DVR завершить завантаження файлів",
+         "etm_update_starting" : "Оновлення мікропрограми розпочато. Перевірте за кілька хвилин, чи оновилася версія…",
+         "headers" : {
+            "firmware_mgmt" : "Керування мікропрограмою"
+         },
+         "not_released" : "Not released",
+         "page_title" : "Оновлення мікропрограми",
+         "sections" : {
+            "device_firmware_update" : {
+               "legend" : "Оновлення мікропрограми пристрою",
+               "msg" : "Щоб оновити мікропрограму наразі підключених пристроїв, натисніть кнопку нижче. За доступності оновлення воно автоматично встановиться на всіх пристроях.",
+               "device_name" : "Ім’я пристрою",
+               "released_firmware" : "Випущена мікропрограма",
+               "early_access_firmware" : "Ранній доступ до мікропрограми",
+               "perform_fw_update" : "Оновити пристрої Axon"
+            },
+            "etm_firmware_update" : {
+               "check_update" : "Оновити мікропрограму",
+               "legend" : "Оновлення мікропрограми панелі Dock",
+               "msg" : "Щоб оновити мікропрограму панелі Dock, натисніть «ОНОВИТИ МІКРОПРОГРАМУ». Панель Dock підключиться до серверів Axon і перевірить останню версію мікропрограми. За наявності нова версія мікропрограми встановиться автоматично.",
+               "show_version_details" : "Деталі",
+               "version_details" : "Деталі"
+            }
+         },
+         "update_failed" : "Не вдалося запустити оновлення мікропрограми",
+         "update_title" : "Оновлення мікропрограми"
+      },
+      "general" : {
+         "closeparen" : ")",
+         "copyright" : "&copy; Axon Enterprise, Inc., 2023. Усі права захищено",
+         "error_code" : "код помилки",
+         "firmware" : "Мікропрограма",
+         "footnote" : "*TASER Batteries carry firmware for TASER 7 (T7) and TASER 10 (T10) Handles as well as for TASER BLE.",
+         "openparen" : "(",
+         "refresh" : "Оновити",
+         "sections" : {
+            "button_bar" : {
+               "discard_changes" : "Скасувати зміни",
+               "loading_wait" : "Завантаження конфігурації… Зачекайте…",
+               "reset_registration" : "Скинути реєстрацію",
+               "save_changes" : "Зберегти зміни",
+               "continue" : "Continue"
+            },
+            "snmp" : {
+               "showhide_password" : "Показати/приховати пароль SNMP"
+            }
+         }
+      },
+      "index" : {
+         "footer" : {
+            "help_center" : "Центр допомоги"
+         },
+         "headers" : {
+            "system_status" : "Статус системи"
+         },
+         "page_title" : "Статус",
+         "sections" : {
+            "devices" : {
+               "device" : "Пристрій",
+               "firmware" : "Firmware*",
+               "hidden_info" : "Натисніть, щоб переглянути дані",
+               "legend" : "Пристрої",
+               "owner" : "Власник",
+               "serial" : "Серійний номер",
+               "status" : "Статус"
+            },
+            "networking" : {
+               "active" : "Активно",
+               "dns_server" : "DNS-сервер",
+               "ecom_registration" : "Реєстрація Evidence.com",
+               "gateway" : "Інтернет-шлюз",
+               "https_port" : "HTTPS (порт 443)",
+               "ipaddress" : "IP-адреса",
+               "legend" : "Мережа",
+               "mac_address" : "MAC-адреса",
+               "not_registered" : "Not registered",
+               "serial_number" : "Серійний номер",
+               "time_server" : "Сервер часу"
+            }
+         }
+      },
+      "links" : {
+         "administration" : "Адміністрування",
+         "firmware" : "Мікропрограма",
+         "networking" : "Мережа",
+         "operations" : "Операції",
+         "status" : "Статус"
+      },
+      "lookups" : {
+         "netmode" : {
+            "dynamic" : "динамічна",
+            "static" : "статична"
+         }
+      },
+      "networking" : {
+         "headers" : {
+            "net_setup" : "Налаштування мережі"
+         },
+         "page_title" : "Параметри мережі",
+         "restart_title" : "Перезапуск мережі",
+         "saved_restarting" : "Налаштування збережено. Мережа перезавантажується…",
+         "sections" : {
+            "conn_type" : {
+               "label_dynamic" : "Динамічна IP-адреса (DHCP)",
+               "label_static" : "Статична IP-адреса",
+               "legend" : "Тип підключення",
+               "msg" : "Панель Dock має два режими роботи з наявною мережею для надання доступу до Інтернету пристроям AXON. Режим роботи з динамічною IP-адресою (DHCP) або режим роботи зі статичною IP-адресою. Виберіть режим нижче."
+            },
+            "static_ip" : {
+               "dns_servers" : "DNS-сервери",
+               "gateway" : "Шлюз за замовчуванням",
+               "ip_address" : "IP-адреса",
+               "legend" : "Конфігурація статичної IP-адреси",
+               "msg" : "Якщо ваша мережа не використовує DHCP або доступ до Інтернету можливий лише за статичною IP-адресою, вам потрібно надати інформацію про конфігурацію панелі Dock. Якщо у вас немає цієї інформації, зверніться до адміністратора мережі",
+               "subnet_mask" : "Маска підмережі"
+            },
+            "throttle" : {
+               "label_mbps" : "Мбіт/с",
+               "legend" : "Регулювання вихідного потоку",
+               "max_speed" : "Максимальна швидкість завантаження",
+               "msg" : "Зазвичай панель Dock використовує всю доступну пропускну здатність для якнайшвидшого завантаження відео з пристроїв AXON. Якщо така поведінка не бажана, обмежте швидкість передавання нижче (у мегабітах на секунду). За нульового значення панель Dock використовуватиме всю доступну пропускну здатність."
+            }
+         }
+      },
+      "ops" : {
+         "an_error_occurred" : "Виявлено помилку",
+         "generating_tokens" : "Створення токенів безпеки…",
+         "headers" : {
+            "operations" : "Операції"
+         },
+         "page_title" : "Загальні операції",
+         "regenerate_keys_query" : "Ви вже автентифіковані на Evidence.com. Створити ключі безпеки повторно?",
+         "regenerate_keys_title" : "Повторно створити ключі",
+         "register_with_ecom" : "Реєстрація на Evidence.com",
+         "registering_etm" : "Реєстрація панелі Dock…",
+         "processing" : "Processing...",
+         "poll_uri_code" : "Retrieving activation link and code...",
+         "reset_reg" : "Скинути налаштування реєстрації",
+         "reset_reg_failed" : "Не вдалося скинути параметри реєстрації",
+         "resetting_reg_dock" : "Скидання параметрів реєстрації панелі Dock до стандартних. Перезавантаження сторінки за 30 секунд.",
+         "restarting_etm" : "Перезавантаження панелі Dock. Це займе приблизно 30 секунд…",
+         "sections" : {
+            "e_com_reg" : {
+               "admin_password" : "Пароль адміністратора",
+               "admin_username" : "Ім’я користувача адміністратора",
+               "agency_name" : "Агентство Evidence.com",
+               "already_registered" : "Цю панель Dock уже зареєстровано на Evidence.com",
+               "domain_name" : "Доменне ім’я",
+               "legend" : "Реєстрація на Evidence.com",
+               "msg" : "Щоб зареєструвати цю панель Dock у вашому агентстві Evidence.com, уведіть назву агентства Evidence.com, ім’я користувача та пароль. Щойно панель Dock буде зареєстровано на Evidence.com, усі медіафайли буде перенесено у ваш обліковий запис Evidence.com. Ваше ім’я користувача та пароль не зберігаються на панелі Dock.",
+               "msg_shorten" : "To register this Dock to your Evidence.com Agency enter your Evidence.com agency name. Once the Dock is registered to Evidence.com, it will transfer all media files to your Evidence.com account.",
+               "msg_login_uri_code" : "Please open the link and provide the code to complete registration:"
+            }
+         }
+      },
+      "proxy": {
+         "headers": {
+            "proxy_setup": "Proxy Setup"
+         },
+         "page_title": "Proxy Settings",
+         "proxy_test_title": "Proxy Test",
+         "proxy_test_in_progress": "Proxy test is in progress...",
+         "proxy_test_success_msg": "Proxy test succeeded",
+         "proxy_test_fail_msg": "Proxy test failed",
+         "configuration_saved_title": "Proxy Configuration Saved",
+         "configuration_saved_msg": "Proxy configuration is saved and will take effect shortly",
+         "sections": {
+            "http_proxy": {
+               "legend": "HTTP Proxy",
+               "msg": "Setting HTTP proxy will redirect all HTTP requests to designated proxy server.",
+               "enable": "Увімкнути",
+               "legend_config": "Конфігурація",
+               "legend_advanced_config": "Advanced Configuration",
+               "disable_dns_check": "Disable DNS Check",
+               "msg_config": "Username and password are optional.",
+               "host": "Proxy Host",
+               "port": "Proxy Port",
+               "username": "Ім’я користувача",
+               "password": "Пароль",
+               "test_connection": "Test Connection"
+            }
+         }
+      },
+      "strings" : {
+         "an_error_occurred" : "Сталася помилка",
+         "axon_flex" : "Axon Flex",
+         "calculating_rate" : "Обчислення…",
+         "cancel" : "Скасувати",
+         "cannot_get_data_too_many_failed_login_attempts" : "Cannot get data due to too many failed login attempts",
+         "click_for_details" : "Натисніть, щоб переглянути деталі",
+         "device_error" : "Помилка пристрою",
+         "error" : "Помилка",
+         "error_download" : "Error downloading https",
+         "error_internal" : "Internal Error",
+         "failed_auth": "Too many failed authentication attempts. Account temporarily suspended.",
+         "finished" : "Готово",
+         "invalid_hostname" : " is not a valid hostname",
+         "kbps" : "кбіт/с",
+         "login_failed" : "Не вдалось увійти",
+         "no_server_response" : "No Response from server",
+         "ok" : "OK",
+         "operation_complete_success" : "Операцію звершено.",
+         "please_complete_mandatory" : "Заповніть це обов’язкове поле.",
+         "please_enter_numeric" : "Please enter a numeric value.",
+         "please_enter_valid_email" : "Введіть дійсну адресу електронної пошти.",
+         "please_enter_valid_URL" : "Please enter a valid URL.",
+         "please_enter_value_larger" : "Please enter a value larger than ",
+         "please_enter_value_smaller" : "Please enter a value smaller than ",
+         "reloading_status" : "Перезавантаження статусу…",
+         "reloading_status_title" : "Оновлення",
+         "unassigned" : "Не призначено",
+         "unspecified_error" : "An unspecified error has occurred: ",
+         "waiting_for_response" : "Очкування відповіді…",
+         "authentication_failed" : "Authentication failed",
+         "invalid_request" : "Request is null or invalid"
+      }
+   }
+}

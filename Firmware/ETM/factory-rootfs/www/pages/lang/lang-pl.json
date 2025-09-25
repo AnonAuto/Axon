@@ -1,0 +1,473 @@
+{
+    "ETM": {
+        "admin": {
+            "admin_title": "Administrowanie stacj\u0105 dokuj\u0105c\u0105",
+            "headers": {
+                "administration": "Administrowanie stacj\u0105 dokuj\u0105c\u0105"
+            },
+            "page_title": "Ustawienia administratora",
+            "rebooting_msg": "Restartowanie, kt\u00f3re potrwa oko\u0142o 60 sekund...",
+            "configuring_msg": "Konfigurowanie, kt\u00f3re potrwa oko\u0142o 40 sekund...",
+            "saving_settings": "Zapisz ustawienia...",
+            "sections": {
+                "device_id": {
+                    "etm_name": "Nazwa stacji dokuj\u0105cej",
+                    "legend": "Identyfikacja urz\u0105dzenia",
+                    "location": "Lokalizacja",
+                    "msg": "Poni\u017csza informacja pozwala stwierdzi\u0107, z kt\u00f3rym urz\u0105dzeniem dokuj\u0105cym si\u0119 komunikujesz. Evidence.com wykorzystuje r\u00f3wnie\u017c t\u0119 informacj\u0119 do informowania o statusie urz\u0105dzenia.",
+                    "your_agency": "Twoja agencja"
+                },
+                "password_change": {
+                    "legend": "Zmie\u0144 has\u0142o",
+                    "msg": "Tutaj mo\u017cesz zmieni\u0107 has\u0142o, aby uzyska\u0107 dost\u0119p do tej stacji dokuj\u0105cej. Zmiana nazwy u\u017cytkownika nie jest mo\u017cliwa.",
+                    "username": "Nazwa u\u017cytkownika"
+                },
+                "admin_maint": {
+                    "legend": "Serwis",
+                    "reboot": "Restart stacji dokuj\u0105cej"
+                },
+                "status_diag": {
+                    "allow_status_requests": "Pozw\u00f3l, aby urz\u0105dzenie wysy\u0142a\u0142o zapytania dotycz\u0105ce statusu z komputer\u00f3w w Twojej sieci",
+                    "allow_status_select": {
+                        "no": "Nie",
+                        "yes": "Tak"
+                    },
+                    "legend": "Status i diagnoza",
+                    "msg": "Te ustawienia pozwol\u0105, aby TASER, Evidence.com lub Twoje w\u0142asne systemy monitorowania mia\u0142y dost\u0119p do statusu stacji dokuj\u0105cej bez has\u0142a administratora. W\u0142\u0105czenie tych w\u0142a\u015bciwo\u015bci NIE umo\u017cliwia zmiany konfiguracji danych.",
+                    "reboot": "Restart stacji dokuj\u0105cej",
+                    "send_status_select": {
+                        "_0min": "Nigdy",
+                        "_10min": "Co 10 minut",
+                        "_15min": "Co 15 minut",
+                        "_1min": "Co minut\u0119",
+                        "_20min": "Co 20 minut",
+                        "_30min": "Co 30 minut",
+                        "_5min": "Co 5 minut"
+                    },
+                    "send_taser_status": "Prze\u015blij status TASERA"
+                },
+                "admin_ssl": {
+                    "legend": "Konfiguracja SSL",
+                    "regen_ssl": "Odn\u00f3w certyfikat SSL"
+                }
+            },
+            "set_configuration_error_title": "Skonfiguruj"
+        },
+        "configassist": {
+            "dlg_assign": {
+                "msg1": "To jest formularz zmiany w\u0142a\u015bciciela urz\u0105dzenia na poni\u017cszego u\u017cytkownika.Nazwa u\u017cytkownika i has\u0142o nie s\u0105 przechowywane w stacji dokuj\u0105cej.",
+                "msg2": "Wpisz dane autoryzacyjne poni\u017cej i kliknij OK, aby to urz\u0105dzenie  zosta\u0142o przypisane TOBIE, w przeciwnym razie kliknij Anuluj, aby wyj\u015b\u0107.",
+                "password": "Has\u0142o",
+                "username": "Nazwa u\u017cytkownika"
+            },
+            "dlg_format": {
+                "msg": "Spowoduje to aktualizacj\u0119 konfiguracji urz\u0105dzenia i oprogramowania firmowego. \u017badne dane nie zostan\u0105 utracone."
+            },
+            "dlg_format_auth": {
+                "admin_password": "Has\u0142o administratora",
+                "admin_username": "Nazwa u\u017cytkownika administratora",
+                "msg": "Musisz mie\u0107 uprawnienia administratora Evidence.com, aby to zrobi\u0107. Twoja nazwa u\u017cytkownika i has\u0142o nie s\u0105 przechowywane w stacji dokuj\u0105cej. Wpisz dane autoryzacyjne poni\u017cej i kliknij OK, aby sformatowa\u0107 urz\u0105dzenie lub kliknij Anuluj, aby cofn\u0105\u0107."
+            },
+            "err_invalid_model": {
+                "err_code": "kod b\u0142\u0119du: invalid_model",
+                "msg": "Urz\u0105dzenie pod\u0142\u0105czone do stacji dokuj\u0105cej nie zosta\u0142o zidentyfikowane jako TASER. Prosz\u0119 je usun\u0105\u0107 ze stacji dokuj\u0105cej.",
+                "title": "Stacja dokuj\u0105ca nie rozpoznaje tego rodzaju urz\u0105dzenia"
+            },
+            "err_invalid_serial": {
+                "err_code": "kod b\u0142\u0119du: invalid_serial",
+                "msg": "Urz\u0105dzenie pod\u0142\u0105czone do stacji dokuj\u0105cej nie ma wa\u017cnego numeru seryjnego. M\u00f3g\u0142 to spowodowa\u0107 rzadki b\u0142\u0105d - prosz\u0119 usun\u0105\u0107 urz\u0105dzenie ze stacji dokuj\u0105cej i pod\u0142\u0105czy\u0107 ponownie. Je\u017celi b\u0142\u0105d si\u0119 b\u0119dzie powtarza\u0142, prosz\u0119 dokona\u0107 autoryzacji zwrotu urz\u0105dzenia.",
+                "title": "To urz\u0105dzenie ma niewa\u017cny numer seryjny"
+            },
+            "err_no_usb": {
+                "err_code": "kod b\u0142\u0119du: no_usb",
+                "msg": "Stacja dokuj\u0105ca nie mo\u017ce nawi\u0105za\u0107 po\u0142\u0105czenia z urz\u0105dzeniem. M\u00f3g\u0142 to spowodowa\u0107 rzadki b\u0142\u0105d - prosz\u0119 usun\u0105\u0107 urz\u0105dzenie ze stacji dokuj\u0105cej i pod\u0142\u0105czy\u0107 ponownie. Je\u017celi b\u0142\u0105d si\u0119 b\u0119dzie powtarza\u0142, prosz\u0119 dokona\u0107 autoryzacji zwrotu urz\u0105dzenia.",
+                "title": "Brak \u0142\u0105czno\u015bci z urz\u0105dzeniem"
+            },
+            "err_not_offline": {
+                "err_code": "kod b\u0142\u0119du: not_offline",
+                "msg": "T\u0119 stacj\u0119 dokuj\u0105c\u0105 skonfigurowano do dzia\u0142ania w trybie offline, dlatego nie obs\u0142uguje ona urz\u0105dze\u0144 w trybie online. Je\u017celi chcesz zmieni\u0107 tryb urz\u0105dzenia na offline, prosz\u0119 pod\u0142\u0105czy\u0107 urz\u0105dzenie do Evidence Sync i post\u0119powa\u0107 zgodnie z instrukcj\u0105.",
+                "title": "To urz\u0105dzenie nie jest ustawione do dzia\u0142ania w trybie offline"
+            },
+            "err_not_online": {
+                "err_code": "kod b\u0142\u0119du: not_online",
+                "msg": "T\u0119 stacj\u0119 dokuj\u0105c\u0105 skonfigurowano do dzia\u0142ania w trybie online, dlatego nie obs\u0142uguje ona urz\u0105dze\u0144 w trybie offline. Je\u017celi chcesz zmieni\u0107 tryb urz\u0105dzenia na online, prosz\u0119 pod\u0142\u0105czy\u0107 urz\u0105dzenie do Evidence Sync i post\u0119powa\u0107 zgodnie z instrukcj\u0105.",
+                "title": "To urz\u0105dzenie nie jest ustawione do dzia\u0142ania w trybie online"
+            },
+            "err_transfer_failed": {
+                "err_code": "kod b\u0142\u0119du: transfer_failed",
+                "msg": "Powodem jest prawdopodobnie brak po\u0142\u0105czenia z Internetem, brak po\u0142\u0105czenia z Evidence.com lub strona Evidence.com nie jest dost\u0119pna z przyczyn technicznych. To nie jest b\u0142\u0105d krytyczny, stacja dokuj\u0105ca b\u0119dzie ponawia\u0107 pr\u00f3by przes\u0142ania pliku.",
+                "title": "Stacja dokuj\u0105ca uniemo\u017cliwi\u0142a przegranie filmu na to urz\u0105dzenie"
+            },
+            "err_inactive_device": {
+                "err_code": "kod b\u0142\u0119du: inactive_device",
+                "msg": "Urz\u0105dzenie nie jest obecnie aktywne dla tej agencji. Prosz\u0119 pod\u0142\u0105czy\u0107 urz\u0105dzenie do Evidence Sync i przypisa\u0107 je do odpowiedniego u\u017cytkownika.",
+                "title": "Twoje urz\u0105dzenie nie jest obecnie aktywne dla Twojej agencji"
+            },
+            "err_mount_failed": {
+                "err_code": "kod b\u0142\u0119du: mount_failed",
+                "msg": "Prosz\u0119 przej\u015b\u0107 na stron\u0119 administracji i zrestartowa\u0107 stacj\u0119 dokuj\u0105c\u0105.",
+                "title": "Wyst\u0105pi\u0142 b\u0142\u0105d po\u0142\u0105czenia z urz\u0105dzeniem."
+            },
+            "err_wrong_agency": {
+                "err_code": "kod b\u0142\u0119du: wrong_agency",
+                "msg1": "Aby zarejestrowa\u0107 urz\u0105dzenie w swojej agencji:",
+                "msg2": "Pobierz Evidence Sync na komputer",
+                "msg3": "Pod\u0142\u0105cz urz\u0105dzenie do swojego komputera",
+                "msg4": "Uruchom Evidence Sync",
+                "msg5": "post\u0119puj zgodnie z instrukcj\u0105 na ekranie.",
+                "title": "Twoje urz\u0105dzenie nie zosta\u0142o zarejestrowane dla Twojej agencji"
+            },
+            "if_problem_continues": "Je\u017celi problem si\u0119 utrzymuje, prosimy o skontaktowanie si\u0119 z wsparciem technicznym Axon:",
+            "more_help": "W celu uzyskania dalszej pomocy w tej kwestii, prosimy o skontaktowanie si\u0119 z wsparciem technicznym Axon:",
+            "no_dns": {
+                "msg": "Nie mo\u017cemy zlokalizowa\u0107 serwera DNS. Zazwyczaj jest to spowodowane przez niewa\u017cny adres IP skonfigurowany dla serwera DNS. Zalecamy zweryfikowanie ustawie\u0144 DNS na stronie Sieci.",
+                "return_msg": "Naci\u015bnij OK, aby przej\u015b\u0107 do strony Sieci i zweryfikowa\u0107 informacje na temat DNS lub naci\u015bnij ESC, aby zamkn\u0105\u0107 to okno dialogowe.",
+                "title": "Nie mo\u017cna odnale\u017a\u0107 serwera DNS"
+            },
+            "no_ecom": {
+                "msg": "Autoryzacja tej stacji dokuj\u0105cej przez Evidence.com nie powiod\u0142a si\u0119. Zazwyczaj jest to spowodowane przez brak klucza rejestracyjnego lub jego brak wa\u017cno\u015bci dla Twojej agencji i danej stacji dokuj\u0105cej. Zalecamy zarejestrowanie stacji dokuj\u0105cej na stronie Operacje.",
+                "return_msg": "Naci\u015bnij OK poni\u017cej, aby przej\u015b\u0107 na stron\u0119 Operacje i zarejestrowa\u0107 swoj\u0105 stacj\u0119 dokuj\u0105c\u0105 lub naci\u015bnij ESC, aby zamkn\u0105\u0107 to okno dialogowe.",
+                "title": "Brak autoryzacji Evidence.com"
+            },
+            "no_gateway": {
+                "msg": "Nawi\u0105zanie kontaktu z domy\u015bln\u0105 bram\u0105 sieciow\u0105 nie powiod\u0142o si\u0119. Zazwyczaj jest to spowodowane przez niewa\u017cny adres IP, jednak niekt\u00f3re bramy nie reaguj\u0105 na polecenie ping.",
+                "return_msg": "Naci\u015bnij OK poni\u017cej, aby przej\u015b\u0107 na stron\u0119 Sieci i zmieni\u0107 domy\u015bln\u0105 bram\u0119 sieciow\u0105 lub naci\u015bnij ESC, aby zamkn\u0105\u0107 to okno dialogowe.",
+                "title": "Nie znaleziono bramy"
+            },
+            "no_https": {
+                "msg": "Nie uda\u0142o si\u0119 nawi\u0105za\u0107 bezpiecznego po\u0142\u0105czenia (HTTPS). Zazwyczaj jest to spowodowane zablokowaniem portu HTTPS (443) przez zapor\u0119 sieciow\u0105. Zalecamy upewni\u0107 si\u0119, czy port HTTPS jest otwarty w zaporze.",
+                "return_msg": "Kliknij OK poni\u017cej, aby powr\u00f3ci\u0107 na stron\u0119 statusu.",
+                "title": "Brak dost\u0119pnych HTTPS."
+            },
+            "no_ip_dynamic": {
+                "msg": "Nie uda\u0142o si\u0119 uzyska\u0107 Twojego adresu IP z serwera DHCP. Zazwyczaj jest to spowodowane brakiem aktywnych serwer\u00f3w DHCP w Twojej sieci. Mo\u017ce by\u0107 potrzebne skonfigurowanie statycznego adresu IP dla tej stacji dokuj\u0105cej.",
+                "return_msg": "Naci\u015bnij OK poni\u017cej, aby przej\u015b\u0107 na stron\u0119 Sieci i wpisa\u0107 informacje dotycz\u0105ce statycznego adresu IP lub naci\u015bnij ESC, aby zamkn\u0105\u0107 to okno dialogowe.",
+                "title": "Brak adresu IP."
+            },
+            "no_ip_static": {
+                "msg": "Nie uda\u0142o si\u0119 uzyska\u0107 adresu IP podanego w ustawieniach statycznego IP dla tej stacji dokuj\u0105cej. Zazwyczaj jest to spowodowane przez korzystanie z tego samego statycznego adresu IP na wi\u0119cej ni\u017c jednym komputerze. Zalecamy sprawdzenie adresu IP wpisanego na stronie Sieci.",
+                "return_msg": "Kliknij OK poni\u017cej, aby przej\u015b\u0107 na stron\u0119 Sieci i sprawdzi\u0107 swoje ustawienia lub naci\u015bnij ESC, aby zamkn\u0105\u0107 to okno dialogowe.",
+                "title": "Brak adresu IP."
+            },
+            "no_ntp": {
+                "msg": "Nie uda\u0142o si\u0119 nawi\u0105za\u0107 po\u0142\u0105czenia z sieciowym serwerem czasu. Zazwyczaj przyczyn\u0105 jest zablokowanie portu 80 i portu 123 przez zapor\u0119 sieciow\u0105. Zalecamy sprawdzenie czy port 80 LUB port 123 jest otwarty w zaporze.",
+                "return_msg": "Naci\u015bnij OK poni\u017cej, aby przej\u015b\u0107 na stron\u0119 Sieci i zmieni\u0107 sw\u00f3j serwer czasu lub naci\u015bnij ESC, aby zamkn\u0105\u0107 to okno dialogowe.",
+                "title": "Serwer NTP nie odpowiada"
+            },
+            "no_status": {
+                "msg": "Nie uda\u0142o si\u0119 okre\u015bli\u0107 rodzaju sieci. By\u0107 mo\u017ce nasz system jeszcze si\u0119 nie za\u0142adowa\u0142. Sugerujemy, aby odczeka\u0107 2-3 minuty i od\u015bwie\u017cy\u0107 t\u0119 stron\u0119. Strona statusu od\u015bwie\u017ca si\u0119 r\u00f3wnie\u017c, gdy dodane zostaj\u0105 nowe informacje.",
+                "return_msg": "Naci\u015bnij OK poni\u017cej, aby wr\u00f3ci\u0107 na stron\u0119 statusu.",
+                "title": "Nie znaleziono statusu."
+            },
+            "title": "Asystent konfiguracji",
+            "turn_off_query": "Czy chcesz wy\u0142\u0105czy\u0107 asystenta konfiguracji?",
+            "we_found": "Po zbadaniu Twojej sieci, stwierdzili\u015bmy nast\u0119puj\u0105c\u0105 kwesti\u0119:",
+            "welcome": "Asystent konfiguracji gotowy."
+        },
+        "device": {
+            "headers": {
+                "device_settings": "Ustawienia urz\u0105dzenia"
+            },
+            "sections": {
+                "device_settings": {
+                    "msg": "Tutaj mo\u017cesz zmieni\u0107 ustawienia urz\u0105dzenia. Po zako\u0144czeniu kliknij \"Zapisz zmiany\".",
+                    "offline_allowed": "Twoja agencja zezwala na korzystanie z urz\u0105dze\u0144 w trybie offline. W tym celu zmie\u0144 poni\u017csze ustawienie i zaakceptuj zmiany.",
+                    "online_warning": "Urz\u0105dzenie jest obecnie skonfigurowane do dzia\u0142ania w trybie online, kontrol\u0119 nad ustawieniami urz\u0105dzenia ma Evidence.com."
+                }
+            }
+        },
+        "device_context_menu": {
+            "assign": "Przypisz ponownie",
+            "assign_title": "Przypisz ponownie urz\u0105dzenie",
+            "device_control_title": "Kontrola nad urz\u0105dzeniem",
+            "offline_cannot_be_assigned": "Urz\u0105dzenia w trybie offline nie mo\u017cna przypisa\u0107",
+            "refresh": "Od\u015bwie\u017c",
+            "refresh_title": "Od\u015bwie\u017c urz\u0105dzenie",
+            "register_etm_to_modify_device": "Musisz zarejestrowa\u0107 stacj\u0119 dokuj\u0105c\u0105, aby zmodyfikowa\u0107 to urz\u0105dzenie.",
+            "repair": "Napraw",
+            "repair_not_needed": "To urz\u0105dzenie nie potrzebuje naprawy.",
+            "repair_title": "Naprawa urz\u0105dzenia",
+            "settings": "Ustawienia"
+        },
+        "device_status_codes": {
+            "new": "Nowe urz\u0105dzenie",
+            "plugin": "\u0141\u0105czenie",
+            "init": "Rozpoczynanie",
+            "devid": "Identyfikacja",
+            "register": "Rejestracja",
+            "getowner": "Pobierz w\u0142a\u015bciciela",
+            "cfg": "Konfigurowanie",
+            "inventory": "Magazyn",
+            "logsend": "Dziennik przesy\u0142ania na serwer",
+            "wait": "Oczekiwanie",
+            "proc": "Transferowanie",
+            "fwupdate": "Aktualizacja oprogramowania sprz\u0119towego",
+            "fwdown": "Zaktualizowano oprogramowanie sprz\u0119towe",
+            "chg": "\u0141adowanie",
+            "capchk": "Sprawd\u017A pojemno\u015B\u0107",
+            "rdy": "Gotowe",
+            "del": "Usuwanie",
+            "unsupported": "Brak obs\u0142ugi",
+            "unk": "Nieznane",
+            "err": "B\u0142\u0105d (Spr\u00f3buj ponownie)",
+            "fail": "B\u0142\u0105d",
+            "bork": "B\u0142\u0105d sieci",
+            "nonet": "Pad\u0142a sie\u0107",
+            "inact": "Nieaktywne"
+        },
+        "diag": {
+            "headers": {
+                "diag": "Diagnozowanie"
+            },
+            "page_title": "Status",
+            "sections": {
+                "netdiag": {
+                    "command": "Polecenie:",
+                    "menu": "Wybierz test diagnozuj\u0105cy z rozwijanego menu i naci\u015bnij wykonaj...",
+                    "commands": {
+                        "date": "DATA podana przez stacj\u0119 dokuj\u0105c\u0105",
+                        "ifconfig": "IFCONFIG statystyki sieci",
+                        "nslookup_goog": "NSLOOGUP google.com",
+                        "nslookup_taser": "NSLOOKUP taser.evidence.com",
+                        "ping_8888": "PING 8.8.8.8",
+                        "ping_gateway": "PING domy\u015blnej bramy",
+                        "ping_goog": "PING google.com",
+                        "tail_etmlog": "TAIL 100 linii logu stacji dokuj\u0105cej",
+                        "tail_syslog": "TAIL 100 linii syslogu",
+                        "tr_goog": "TRACEROUTE google.com",
+                        "tr_taser": "TRACEROUTE taser.evidence.com",
+                        "uci_export": "Konfiguracja UCI EXPORT"
+                    },
+                    "execute": "Wykonaj",
+                    "legend": "Diagnoza sieci",
+                    "msg1": "Polecenia te s\u0142u\u017c\u0105 do diagnozowania kwestii zwi\u0105zanych z po\u0142\u0105czeniem sieciowym.",
+                    "msg2": "Nie korzystaj z poni\u017cszych polece\u0144, o ile nie zaleci tego przedstawiciel dzia\u0142u obs\u0142ugi klienta TASER.",
+                    "result": "Wynik:"
+                }
+            }
+        },
+        "firmware": {
+            "headers": {
+                "firmware_mgmt": "Zarz\u0105dzanie oprogramowaniem firmowym"
+            },
+            "page_title": "Aktualizacja oprogramowania firmowego",
+            "sections": {
+                "etm_firmware_update": {
+                    "check_update": "Sprawd\u017a aktualizacje",
+                    "legend": "Aktualizacja stacji dokuj\u0105cej dla oprogramowania firmowego",
+                    "msg": "W celu zaktualizowania oprogramowania firmowego stacji dokuj\u0105cej kliknij przycisk \"Sprawd\u017a aktualizacje\". Stacja dokuj\u0105ca skontaktuje si\u0119 z serwerami aktualizuj\u0105cymi TASER i sprawdzi, czy dost\u0119pne s\u0105 aktualizacje. Je\u017celi dost\u0119pna jest aktualizacja, zostanie ona automatycznie zainstalowana.",
+                    "show_version_details": "Szczeg\u00f3\u0142owe informacje",
+                    "version_details": "Szczeg\u00f3\u0142owe informacje"
+                },
+                "dvr_firmware_update": {
+                    "legend": "Aktualizacja oprogramowania firmowego DVR",
+                    "msg": "Aby zaktualizowa\u0107 oprogramowanie firmowe wszystkich DVR znajduj\u0105cych si\u0119 w stacjach dokuj\u0105cych, kliknij poni\u017cszy przycisk. Je\u017celi aktualizacja jest dost\u0119pna, zostanie automatycznie zainstalowana na wszystkich urz\u0105dzeniach.",
+                    "perform_fw_update": "Aktualizuj urz\u0105dzenia Axon"
+                }
+            },
+            "current_version": "Aktualna wersja oprogramowania firmowego",
+            "update_title": "Aktualizacja oprogramowania firmowego",
+            "etm_update_starting": "Rozpocz\u0119\u0142a si\u0119 aktualizacja oprogramowania firmowego. Sprawd\u017a za kilka minut, czy wersja zosta\u0142a zaktualizowana...",
+            "dvr_update_starting": "Trwa \u0142\u0105czenie z serwerem TASER i sprawdzanie aktualizacji... Aktualizacja oprogramowania firmowego nie rozpocznie si\u0119, je\u017celi DVR pobiera obecnie pliki lub oczekuje na pobranie",
+            "update_failed": "Nie uda\u0142o si\u0119 rozpocz\u0105\u0107 aktualizacji oprogramowania firmowego"
+        },
+        "general": {
+            "admin_password": "Has\u0142o administratora",
+            "admin_username": "Nazwa u\u017cytkownika administratora",
+            "closeparen": ")",
+            "copyright": "&copy; 2018 Axon Wszelkie prawa zastrze\u017cone",
+            "firmware": "Oprogramowanie firmowe",
+            "openparen": "(",
+            "refresh": "Od\u015bwie\u017c",
+            "sections": {
+                "button_bar": {
+                    "discard_changes": "Anuluj zmiany",
+                    "loading_wait": "\u0141adowanie konfiguracji... Prosz\u0119 czeka\u0107...",
+                    "save_changes": "Zapisz zmiany"
+                }
+            },
+            "title": "Evidence.com Stacja dokuj\u0105ca",
+            "warning": "OSTRZE\u017bENIE!"
+        },
+        "index": {
+            "footer": {
+                "call_us": "Bezp\u0142atna infolinia: 1-877-270-0553 lub numer bezpo\u015bredni: 1-480-463-2170",
+                "for_assistance_email": "Aby uzyska\u0107 wsparcie, napisz na adres email:",
+                "help_center": "Centrum wsparcia"
+            },
+            "headers": {
+                "system_status": "Status systemu"
+            },
+            "page_title": "Status",
+            "sections": {
+                "data_transfer": {
+                    "allow_status": "Zezw\u00f3l na zapytania o status",
+                    "legend": "Transfer danych",
+                    "send_status": "Wy\u015blij status Evidence.com"
+                },
+                "devices": {
+                    "device": "Urz\u0105dzenie",
+                    "legend": "Urz\u0105dzenia",
+                    "owner": "W\u0142a\u015bciciel",
+                    "hidden_info": "Kliknij, aby wy\u015bwietli\u0107 dane",
+                    "serial": "Numer seryjny",
+                    "status": "Status"
+                },
+                "networking": {
+                    "dns_server": "Serwer DNS",
+                    "ecom_registration": "Rejestracja na Evidence.com",
+                    "ftp_server": "Serwer FTP",
+                    "gateway": "Bramka internetowa",
+                    "https_port": "HTTPS (Port 443)",
+                    "ipaddress": "Adres IP",
+                    "legend": "Sieci",
+                    "mac_address": "Adres MAC",
+                    "serial_number": "Numer seryjny",
+                    "time_server": "Serwer czasu"
+                }
+            }
+        },
+        "links": {
+            "administration": "Administracja",
+            "firmware": "Oprogramowanie firmowe",
+            "networking": "Sieci",
+            "operations": "Operacje",
+            "status": "Status"
+        },
+        "lookups": {
+            "netmode": {
+                "dynamic": "dynamiczny",
+                "static": "statyczny"
+            }
+        },
+        "networking": {
+            "headers": {
+                "net_setup": "Konfiguracja sieci"
+            },
+            "page_title": "Ustawienia sieciowe",
+            "restart_title": "Restart sieci",
+            "saved_restarting": "Ustawienia zosta\u0142y zapisane, trwa restart sieci...",
+            "sections": {
+                "conn_type": {
+                    "label_dynamic": "Dynamiczny adres IP (DHCP)",
+                    "label_static": "Statyczny adres IP",
+                    "legend": "Rodzaj po\u0142\u0105czenia",
+                    "msg": "Aby umo\u017cliwi\u0107  urz\u0105dzeniom Axon dost\u0119p do Internetu, stacja dokuj\u0105ca mo\u017ce wsp\u00f3\u0142pracowa\u0107 z istniej\u0105cymi sieciami na dwa sposoby. Albo przy pomocy dynamicznego adresu IP (zwanego r\u00f3wnie\u017c DHCP), albo statycznego adresu IP. Wybierz odpowiedni\u0105 metod\u0119 poni\u017cej:"
+                },
+                "static_ip": {
+                    "dns_servers": "Serwery DNS",
+                    "gateway": "Domy\u015blna bramka",
+                    "ip_address": "Adres IP",
+                    "legend": "Statyczna konfiguracja IP",
+                    "msg": "Je\u017celi Twoja sie\u0107 nie korzysta z DHCP lub dost\u0119p internetowy jest mo\u017cliwy wy\u0142\u0105cznie dla statycznego adresu IP, to konieczne b\u0119dzie podanie informacji konfiguracyjnych do stacji dokuj\u0105cej. Je\u017celi nie posiadasz takich informacji, skontaktuj si\u0119 z administratorem sieci.",
+                    "subnet_mask": "Maska podsieci"
+                },
+                "throttle": {
+                    "label_mbps": "Mbps",
+                    "legend": "Ograniczenie upstream",
+                    "max_speed": "Maksymalna szybko\u015b\u0107 przesy\u0142ania",
+                    "msg": "Stacja dokuj\u0105ca wykorzystuje normalnie ca\u0142\u0105 dost\u0119pn\u0105 przepustowo\u015b\u0107, aby jak najszybciej przes\u0142a\u0107 filmy video z modu\u0142u Axon. Je\u017celi nie jest to po\u017c\u0105dane, szybko\u015b\u0107 przesy\u0142ania danych (mierzon\u0105 w megabitach na sekund\u0119) mo\u017cna ograniczy\u0107 poni\u017cej. Brak warto\u015bci lub zero oznacza, \u017ce stacja dokuj\u0105ca wykorzystuje ca\u0142\u0105 dost\u0119pn\u0105 przepustowo\u015b\u0107."
+                }
+            }
+        },
+        "ops": {
+            "an_error_occurred": "Wyst\u0105pi\u0142 b\u0142\u0105d",
+            "generating_tokens": "Generowanie token\u00f3w bezpiecze\u0144stwa...",
+            "headers": {
+                "operations": "Operacje"
+            },
+            "page_title": "Operacje og\u00f3lne",
+            "regenerate_keys_query": "Dokonano ju\u017c autoryzacji na Evidence.com, czy chcesz ponownie wygenerowa\u0107 klucze bezpiecze\u0144stwa?",
+            "regenerate_keys_title": "Ponowne generowanie kluczy",
+            "register_with_ecom": "Rejestracja na Evidence.com",
+            "registering_etm": "Rejestrowanie stacji dokuj\u0105cej...",
+            "restarting_etm": "Restartowanie stacji dokuj\u0105cej, to potrwa oko\u0142o 30 sekund...",
+            "reset_reg": "Reset rejestracji",
+            "reset_reg_msg": "Reset rejestracji zako\u0144czony powodzeniem. Trwa od\u015bwie\u017canie strony, prosz\u0119 czeka\u0107...",
+            "resetting_reg_dock": "Trwa przywracanie domy\u015blnej rejestracji stacji dokuj\u0105cej. Zajmie to oko\u0142o 20 sekund, o ile nie wyst\u0105pi b\u0142\u0105d...",
+            "reset_reg_failed": "Reset rejestracji nie by\u0142 mo\u017cliwy",
+            "sections": {
+                "e_com_reg": {
+                    "admin_password": "Has\u0142o administratora",
+                    "admin_username": "Nazwa u\u017cytkownika administratora",
+                    "agency_name": "Agencja Evidence.com",
+                    "already_registered": "Ta stacja dokuj\u0105ca zosta\u0142a ju\u017c zarejestrowana na Evidence.com",
+                    "domain_name": "Nazwa domeny",
+                    "legend": "Rejestrowanie na Evidence.com",
+                    "msg": "Aby zarejestrowa\u0107 t\u0119 stacj\u0119 dokuj\u0105c\u0105 dla swojej agencji na Evidence.com, wpisz sw\u00f3j numer agencji Evidence.com, nazw\u0119 u\u017cytkownika i has\u0142o. Po zarejestrowaniu stacji dokuj\u0105cej na Evidence.com, wszystkie Twoje pliki medialne zostan\u0105 przeniesione na konto Evidence.com. Twoja nazwa u\u017cytkownika i has\u0142o nie s\u0105 przechowywane w stacji dokuj\u0105cej."
+                }
+            }
+        },
+        "repair": {
+            "button_bar": {
+                "delete_files": "Usu\u0144 pliki",
+                "good_files": "Oznacz jako dobre"
+            },
+            "headers": {
+                "repair_device": "Napraw urz\u0105dzenie"
+            },
+            "making_changes": "Wprowadzanie zleconych zmian, to mo\u017ce chwil\u0119 potrwa\u0107...",
+            "no_files_selected": "Nie wybrano \u017cadnych plik\u00f3w do przetwarzania.",
+            "nothing_to_do": "Nic do zrobienia",
+            "page_title": "Naprawa urz\u0105dzenia",
+            "repairing_filesystem": "Naprawa systemu plik\u00f3w",
+            "sections": {
+                "auth": {
+                    "legend": "Autoryzacja",
+                    "msg": "W celu wykonania dowolnej operacji na tej stronie musisz by\u0107 zarejestrowanym administratorem Evidence.com. Prosz\u0119 wpisa\u0107 swoj\u0105 nazw\u0119 u\u017cytkownika i has\u0142o do Evidence.com. Twoja nazwa u\u017cytkownika i has\u0142o nie s\u0105 przechowywane w stacji dokuj\u0105cej."
+                },
+                "repair": {
+                    "msg_its_permanent": "U\u017cycie tego narz\u0119dzia spowoduje trwa\u0142e wykasowanie danych z urz\u0105dzenia. TASER NIE b\u0119dzie w stanie PRZYWR\u00d3CI\u0106 tych danych. Zanim trwale usuniesz dane, rozwa\u017c przes\u0142anie urz\u0105dzenia do przeanalizowania przez TASERA.",
+                    "msg_possible_corruption": "Mo\u017cliwe, \u017ce urz\u0105dzenie jest uszkodzone. Ten ekran pozwala wybra\u0107 pliki do usuni\u0119cia z urz\u0105dzenia."
+                }
+            },
+            "video_file": "Plik video"
+        },
+        "settings": {
+            "buffering": "Buforowanie",
+            "bundle_id": "Zestaw oprogramowania firmowego E.com",
+            "enable_audio": "W\u0142\u0105cz audio",
+            "loading": "\u0141adowanie",
+            "making_changes": "Wprowadzanie zleconych zmian...",
+            "model_id": "Adres IP modelu",
+            "offline_mode": "Tryb offline",
+            "orientation": "Orientacja",
+            "orientation_left": "Lewo",
+            "orientation_right": "Prawo",
+            "page_title": "Ustawienia urz\u0105dzenia",
+            "reading_settings": "Odczytywanie ustawie\u0144 urz\u0105dzenia...",
+            "serial_number": "Numer seryjny",
+            "updating_settings": "Aktualizacja ustawie\u0144",
+            "video_bitrate": "Szybko\u015b\u0107 bitowa video",
+            "video_bitrate_high": "Wysoka",
+            "video_bitrate_low": "Niska",
+            "video_bitrate_med": "\u015arednia",
+            "video_framerate": "Klatki video na sekund\u0119",
+            "video_framerate_15": "15 klatek na sekund\u0119",
+            "video_framerate_30": "30 klatek na sekund\u0119"
+        },
+        "strings": {
+            "an_error_occurred": "Wyst\u0105pi\u0142 b\u0142\u0105d",
+            "axon_flex": "Axon Flex",
+            "calculating_rate": "Obliczanie...",
+            "cancel": "Anuluj",
+            "click_for_details": "Kliknij, aby pozna\u0107 szczeg\u00f3\u0142owe informacje",
+            "device_error": "B\u0142\u0105d urz\u0105dzenia",
+            "error": "B\u0142\u0105d",
+            "finished": "Zako\u0144czono",
+            "formatting_device": "Formatowanie urz\u0105dzenia",
+            "formatting_device_wait": "Formatowanie urz\u0105dzenia, prosz\u0119 czeka\u0107...",
+            "kbps": "kbps",
+            "no": "Nie",
+            "off": "Wy\u0142\u0105cz",
+            "ok": "OK",
+            "on": "W\u0142\u0105cz",
+            "operation_complete_success": "Operacja zako\u0144czona powodzeniem.",
+            "please_complete_manditory": "Prosz\u0119 wype\u0142ni\u0107 to obowi\u0105zkowe pole.",
+            "reloading_status": "Status od\u015bwie\u017cania...",
+            "reloading_status_title": "Od\u015bwie\u017canie",
+            "waiting_for_response": "Oczekiwanie na odpowied\u017a...",
+            "yes": "Tak"
+        }
+    }
+}

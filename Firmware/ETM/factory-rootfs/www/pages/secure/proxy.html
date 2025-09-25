@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- begin_include meta -->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="csrf-token" content="__CSRF_TOKEN_PLACEHOLDER__">
+
+  <title>Axon Dock</title>
+  <!-- end_include meta -->
+
+  <!-- begin_include script -->
+  <script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-migrate-3.3.0.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-ui-1.12.1.js"></script>
+  <script type="text/javascript" src="/js/jquery-tools.min.js"></script>
+  <script type="text/javascript" src="/js/purl.js"></script>
+  <script type="text/javascript" src="/js/menu.js"></script>
+  <script type="text/javascript" src="/js/common.js"></script>
+  <script type="text/javascript" src="/js/jquery.localize.js"></script>
+  <script type="text/javascript" src="/js/etm-main.js"></script>
+  <link rel="stylesheet" href="/css/styles.css"/>
+  <link rel="stylesheet" href="/css/custom-theme/jquery-ui-1.12.1.css"/>
+  <link rel="stylesheet" href="/css/menu.css"/>
+  <link rel="stylesheet" href="/css/styles-ext.css"/>
+  <!-- end_include script -->
+
+  <script type="text/javascript" src="/js/etm-proxy.js"></script>
+
+</head>
+
+<body>
+  <div id="container">
+    <!-- begin_include header -->
+    <div id="header" class="header">
+      <div id="nav" class="primary-navigation">
+        <ul class="navigation-block">
+          <!-- languageLink marks links that need a lang attribute added -->
+          <li class="sitenavigation-item"><a class="languageLink" href="/index.html"><img class="sitenavigation-fulllogo" src="/images/axon-dock.png" alt="Axon Dock"/></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/index.html"><span data-localize="ETM.links.status">Status</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/network.html"><span data-localize="ETM.links.networking">Networking</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/ops.html" ><span data-localize="ETM.links.operations">Operations</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/admin.html" ><span data-localize="ETM.links.administration">Administration</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/firmware.html" ><span data-localize="ETM.links.firmware">Firmware</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="agency-info">
+      <p><span id="title-agency"></span> &mdash; <span id="agency-name"></span></p>
+      <p><span id="device-home"></span><span id="agency-loc"></span></p>
+      <p><span id="ddate"></span> &mdash; <span id="dtime"></span></p>
+    </div>
+    <!-- end_include header -->
+    <div id="content" class="content clearfix">
+      <h2 data-localize="ETM.proxy.headers.proxy_setup">Proxy Setup</h2>
+
+      <div class="content-box-wrap">
+        <div class="content-box">
+          <div class="content-box-inner">
+            <form action="">
+              <fieldset>
+                <legend data-localize="ETM.proxy.sections.http_proxy.legend">HTTP Proxy</legend>
+                <p data-localize="ETM.proxy.sections.http_proxy.msg">Setting HTTP proxy will redirect all HTTP requests to designated proxy server.</p>
+                <table class="content-table">
+                  <tr>
+                    <td data-localize="ETM.proxy.sections.http_proxy.enable">Enable</td>
+                    <td><input id="enable_proxy" type="checkbox" name="etm.proxy.enabled" /></td>
+                  </tr>
+                </table>
+              </fieldset>
+            </form>
+            <form id="frmHttpProxy" class="sub-form" action="">
+              <fieldset>
+                <legend data-localize="ETM.proxy.sections.http_proxy.legend_config">Configuration</legend>
+                <p data-localize="ETM.proxy.sections.http_proxy.msg_config">Username and password are optional.</p>
+                <table class="content-table">
+                  <tr>
+                    <td data-localize="ETM.proxy.sections.http_proxy.host">Proxy Host</td>
+                    <td><input type="text" name="etm.proxy.host" required="1" /></td>
+                  </tr>
+                  <tr>
+                    <td data-localize="ETM.proxy.sections.http_proxy.port">Proxy Port</td>
+                    <td><input type="number" name="etm.proxy.port" min="1" max="65535" required="1" /></td>
+                  </tr>
+                  <tr>
+                    <td data-localize="ETM.proxy.sections.http_proxy.username">Username</td>
+                    <td><input type="text" value="" name="etm.proxy.username" optminlength="2" maxlength="64" data-coexist="etm.proxy.password" data-name="Password" /></td>
+                  </tr>
+                  <tr>
+                    <td data-localize="ETM.proxy.sections.http_proxy.password">Password</td>
+                    <td><input type="password" value="" name="etm.proxy.password" optminlength="4" maxlength="64" data-coexist="etm.proxy.username" data-name="Username" /></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <button class="btn" id="btnTestProxy" data-localize="ETM.proxy.sections.http_proxy.test_connection">Test Connection</button>
+                    </td>
+                  </tr>
+                </table>
+                <br />
+              </fieldset>
+
+              <fieldset>
+                <legend data-localize="ETM.proxy.sections.http_proxy.legend_advanced_config">Advanced Configuration</legend>
+                <table class="content-table">
+                  <tr>
+                    <td data-localize="ETM.proxy.sections.http_proxy.disable_dns_check">Disable DNS Check</td>
+                    <td><input type="checkbox" name="etm.proxy.disable_dns_check" /></td>
+                  </tr>
+                </table>
+                <br />
+              </fieldset>
+            </form>
+
+            <div class="btnRow">
+              <button class="btn" id="btnSave" data-localize="ETM.general.sections.button_bar.save_changes">Save Changes</button>
+              <button class="btn" id="btnDiscard" data-localize="ETM.general.sections.button_bar.discard_changes">Discard Changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- begin_include footer -->
+  <div id="footer">
+    <div class="footer-lang-select">
+      <select id="langchoice">
+         <option value="ms">Bahasa Melayu</option>
+         <option value="cs">Čeština</option>
+         <option value="da">Dansk</option>
+         <option value="de">Deutsch</option>
+         <option value="en-us">English</option>
+         <option value="es">Español</option>
+         <option value="fr">Français</option>
+         <option value="it">Italiano</option>
+         <option value="hu">Magyar</option>
+         <option value="nl">Nederlands</option>
+         <option value="no">Norsk</option>
+         <option value="pt-br">Português</option>
+         <option value="ro">Român</option>
+         <option value="fi">Suomi</option>
+         <option value="sv">Svenska</option>
+         <option value="ru">Pусский язык</option>
+         <option value="uk">украї́нська мо́ва</option>
+         <option value="th">ไทย</option>
+         <option value="ko">한국어</option>
+         <option value="ja">日本語</option>
+         <option value="zh-tw">漢語中文</option>
+         <option value="ar">اَلْعَرَبِيَّةُ</option>
+      </select>
+      <span id="footer-copyright" data-localize="ETM.general.copyright">&copy; 2020 Axon Enterprise, Inc. All rights reserved</span>
+    </div>
+    <div class="footer-contact-info">
+      <span id="footer-contactInfo"><a href="mailto:support@axon.com">support@axon.com</a></span>
+      <span id="footer-supportLink">
+        <a href="https://help.axon.com"><span data-localize="ETM.index.footer.help_center">Help Center</span></a>
+      </span>
+    </div>
+  </div>
+  <!-- end_include footer -->
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+root:x:0:
+daemon:x:1:
+bin:x:2:
+messagebus:x:998:
+ntp:x:999:
+axonssh:x:1000:
+wwwrun:x:1001:
+snmp:x:1002:
+services:x:2000:wwwrun,snmp
+nogroup:x:65534:

@@ -1,0 +1,558 @@
+{
+   "ETM" : {
+      "admin" : {
+         "admin_title" : "擴充座管理",
+         "configuring_msg" : "正在設定。這需要大約 40 秒...",
+         "headers" : {
+            "administration" : "擴充座管理"
+         },
+         "page_title" : "管理員設定",
+         "rebooting_msg" : "正在重新開機。這需要大約 60 秒...",
+         "saving_settings" : "正在儲存設定...",
+         "sections" : {
+            "admin_maint" : {
+               "legend" : "維護",
+               "reboot" : "重啟擴充座"
+            },
+            "admin_ssl" : {
+               "accept_only_https" : "僅接受 SSL 要求",
+               "legend" : "SSL 組態",
+               "regen_ssl" : "重新產生 SSL 憑證",
+               "require_https_time" : "需要 SSL 用於初次檢查"
+            },
+            "device_id" : {
+               "etm_name" : "擴充座名稱",
+               "home" : "裝置首頁",
+               "legend" : "裝置識別",
+               "location" : "位置",
+               "msg" : "下面的資訊將協助您識別正在通訊的擴充座裝置。此資訊亦供 Evidence.com 用來提供裝置狀態資訊。",
+               "your_agency" : "您的機構"
+            },
+            "password_change" : {
+               "confirm_new_password" : "重新輸入新密碼",
+               "current_password" : "目前密碼",
+               "error_no_password" : "變更管理員認證需要目前密碼。",
+               "legend" : "變更認證",
+               "msg" : "管理用於存取此擴充座的管理使用者名稱和密碼。",
+               "new_password" : "新密碼",
+               "username" : "使用者名稱"
+            },
+            "snmp" : {
+               "authentication" : "驗證",
+               "disable" : "停用",
+               "enable_snmp" : "啟用 SNMP",
+               "enc_password" : "加密密碼",
+               "encrypt_msg" : "如果要使用同一「SNMP 密碼」進行加密，請將「加密密碼」留空。",
+               "encryption" : "加密",
+               "error_no_password" : "變更 SNMP 使用者名稱需要相應的密碼。",
+               "error_title" : "設定 SNMP 錯誤",
+               "legend" : "SNMP 伺服器",
+               "legend_config" : "SNMP 組態",
+               "msg" : "SNMP 預設停用。要啟用，請使用核取方塊並輸入組態。",
+               "password" : "SNMP 密碼",
+               "username" : "SNMP 使用者名稱"
+            }
+         },
+         "set_configuration_error_title" : "設定組態",
+         "settings_changed" : {
+            "p1" : "來自機構的設定已變更！",
+            "p2" : "按 [更新] 按鈕以將變更從您的機構套用至擴充座。",
+            "p3" : "或者按下 [取消]，然後手動更新設定，變更將同步至您的機構。",
+            "p4" : "變更清單：",
+            "title" : "設定已變更"
+         }
+      },
+      "axonsup" : {
+         "headers" : {
+            "data" : "支援資料"
+         },
+         "page_title" : "Axon 客服",
+         "sections" : {
+            "data" : {
+               "legend" : "Axon 客服資料",
+               "msg" : "下面的資料在 Blob 在聯絡 Axon 客戶服務代表時可能有用。",
+               "result1" : "結果 1：",
+               "result2" : "結果 2："
+            }
+         }
+      },
+	  "cgi" : {
+          "csrf_fail" : "Cookie 錯誤",
+          "invalid_auth" : "無效的使用者名稱或密碼",
+          "invalid_cmd" : "無效的命令",
+          "invalid_domain" : "未指定網域",
+          "invalid_proxy_config" : "無效的 proxy 組態",
+          "invalid_proxy_user_pass" : "缺少使用者名稱或密碼",
+          "invalid_snmp_user" : "無法套用 SNMP 組態。無效的 SNMP 使用者名稱。",
+          "no_content" : "無內容",
+          "no_snmp_pw" : "無法套用 SNMP 組態。未提供密碼。",
+          "not_released" : "尚未發佈",
+          "ok" : "確定",
+          "unable_disable_snmp" : "無法停用 SNMP 組態。",
+          "unable_set_snmp" : "無法套用 SNMP 組態。",
+          "unable_set_snmp_auth" : "無法套用 SNMP 組態驗證。",
+          "unable_set_snmp_enable" : "無法啟用 SNMP 組態。",
+          "unable_set_snmp_enc" : "無法套用 SNMP 組態加密。",
+          "unable_set_snmp_pass" : "無法套用 SNMP 組態密碼。",
+          "unable_set_snmp_user" : "無法套用 SNMP 組態使用者名稱。",
+          "unable_set_sslonly" : "無法變更「僅接受 SSL 要求」設定",
+          "unknown_err" : "未知錯誤",
+          "web_creds_err" : "更新管理員認證失敗。",
+          "web_creds_invalid_username" : "更新管理員認證失敗：使用者名稱無效。",
+          "web_creds_invalid_cur_pass" : "更新管理員認證失敗：目前的密碼無效。",
+          "web_creds_invalid_new_pass" : "更新管理員認證失敗：新密碼無效。"
+      },
+      "common" : {
+        "admin_name_allowed_characters" : "無效的使用者名稱。允許的字元：英數字元空格 # ! @ ( ) [ ] - . _",
+        "at_least" : "必須至少",
+        "cannot_contain_duplicate" : "不可包含重複字元",
+        "cannot_contain_more_than" : "不可包含多於",
+        "cannot_contain_username" : "不可包含您的使用者名稱或其他常見單字",
+        "character" : "字元",
+        "characters" : "字元",
+        "characters_in_seq" : "字元順序",
+        "input_valid_IP" : "請輸入有效的 IP 位址",
+        "less_than" : "必須少於",
+        "mandatory_field" : "必須提供此欄位。",
+        "must_contain" : "必須包含",
+        "no" : "否",
+        "not_secure" : "不夠安全",
+        "please_provide" : "請提供至少",
+        "select_valid_entry" : "請從清單中選擇一個有效的項目",
+        "snmp_name_allowed_characters" : "無效的使用者名稱。允許的字元：英數字元空格 # ! @ ( ) [ ] - . _",
+        "value_not_equal" : "值不等於新密碼欄位",
+        "yes" : "是"
+      },
+      "configassist" : {
+         "dlg_assign" : {
+            "msg1" : "此表單會將裝置擁有者變更為下面指定的使用者。使用者名稱與密碼不會儲存在擴充座上。",
+            "msg2" : "在下面輸入您的驗證，然後按一下「確定」以將此裝置指派至您，或者按一下「取消」返回。",
+            "password" : "密碼",
+            "username" : "使用者名稱"
+         },
+         "dlg_format" : {
+            "msg" : "這將重新整理裝置的組態和韌體。不會遺失資料。"
+         },
+         "dlg_format_auth" : {
+            "admin_password" : "管理員密碼",
+            "admin_username" : "管理員使用者名稱",
+            "msg" : "您必須具有 Evidence.com 管理員權限才可執行此動作。您的使用者名稱與密碼不會儲存在擴充座中。請在下面輸入您的驗證，然後按一下「確定」格式化此裝置，或者按一下「取消」返回。"
+         },
+         "err_cannot_get_log" : {
+            "msg" : "嘗試從此裝置讀取活動記錄時發生錯誤。",
+            "title" : "無法從此裝置讀取記錄檔"
+         },
+         "err_cannot_read_file" : {
+            "msg" : "從此裝置讀取媒體和證據資訊時發生錯誤。如果此錯誤持續存在，請聯絡 Axon 技術支援。",
+            "title" : "無法從此裝置讀取證據檔案。"
+         },
+         "err_cannot_rm_log" : {
+            "msg" : "當活動記錄上傳至 evidence.com 後嘗試從此裝置清除活動記錄時發生錯誤。",
+            "title" : "無法清除此裝置上的記錄檔"
+         },
+         "err_device_lost_communication" : {
+            "msg" : "此裝置的此連線已停止運作。請斷開擴充座，然後將裝置重新連接至擴充座。如果問題持續存在，請聯絡機構管理員以尋求裝置協助。",
+            "title" : "擴充座已失去與此裝置的通訊。"
+         },
+         "err_device_maintenance" : {
+            "msg" : "此擴充座正在此裝置上執行自動維護。裝置將自動恢復正常操作。無需執行動作。",
+            "title" : "此擴充座正在此裝置上執行自動維護。"
+         },
+         "err_devtype_cfg_failure" : {
+             "msg" : "無法將裝置設定為 Bodycam 模式。請參閱疑難排解說明。",
+             "title" : "此裝置未設定成 Bodycam"
+         },
+         "err_format_failure" : {
+            "msg" : "裝置驅動格式失敗。請參閱疑難排解說明。",
+            "title" : "此裝置的驅動格式失敗"
+         },
+         "err_fwup_cfg_failure" : {
+             "msg": "韌體可更新欄位無法設定。請參閱疑難排解說明。",
+             "title" : "此裝置未設定成韌體可更新"
+         },
+         "err_inactive_device" : {
+            "msg" : "裝置目前未在此機構上啟用。請將裝置連接至 Evidence Sync，並將裝置指派至適當的使用者。",
+            "title" : "您的裝置目前未在您的機構中啟用"
+         },
+         "err_invalid_device_type" : {
+            "msg" : "無法將裝置設定為指定的類型。請參閱疑難排解說明。",
+            "title" : "裝置無效"
+         },
+         "err_invalid_model" : {
+            "msg" : "連線至擴充座的裝置未識別為有效的 Axon 裝置。請將其從擴充座移除。",
+            "title" : "擴充座無法識別此類型的裝置"
+         },
+         "err_invalid_serial" : {
+            "msg" : "連接到擴充座的裝置沒有有效的序號。這可能是間歇性錯誤，請在擴充座中移除並重新連接裝置。如果錯誤持續存在，請 RMA 裝置。",
+            "title" : "此裝置的序號無效"
+         },
+         "err_inventory_failure" : {
+            "msg" : "讀取此裝置的媒體和證據資訊時發生錯誤。如果此錯誤持續存在，請聯絡 Axon 技術支援。",
+            "title" : "無法從此裝置讀取證據清單"
+         },
+         "err_mount_failed" : {
+            "msg" : "請進入「管理」頁面並重啟擴充座。",
+            "title" : "連接裝置時發生錯誤。"
+         },
+         "err_network_failed" : {
+            "msg" : "這很可能是網際網路連線差、Evidence.com 連線差、Evidence.com 流量過大或 Evidence.com 關閉以進行維護造成的。這不是嚴重錯誤，擴充座將重試該操作。",
+            "title" : "擴充座在處理此裝置時發生了網路錯誤"
+         },
+         "err_no_usb" : {
+            "msg" : "擴充座無法與此裝置通訊。這可能是間歇性錯誤，請在擴充座中移除並重新連接裝置。如果錯誤持續存在，請 RMA 裝置。",
+            "title" : "無法與裝置通訊"
+         },
+         "err_not_offline" : {
+            "msg" : "此擴充座針對離線操作設定，不會處理設定為線上模式的裝置。如果您要將此裝置設定為離線模式，請將裝置連線到 Evidence Sync 並遵循說明操作。",
+            "title" : "此裝置未設定為離線操作"
+         },
+         "err_not_online" : {
+            "msg" : "此擴充座針對線上操作設定，不會處理設定為離線模式的裝置。如果您要將此裝置設定為線上模式，請將裝置連線到 Evidence Sync 並遵循說明操作。",
+            "title" : "此裝置未設定用於線上操作"
+         },
+         "err_system_maintenance" : {
+            "msg" : "此擴充座正在執行自動維護。裝置將自動恢復正常操作。無需執行動作。",
+            "title" : "擴充座正在執行內部維護。"
+         },
+         "err_transfer_failed" : {
+            "msg" : "這很可能是網際網路連線差、Evidence.com 連線差、Evidence.com 流量過大或 Evidence.com 關閉以進行維護造成的。這不是嚴重錯誤，擴充座將繼續重試檔案上傳。",
+            "title" : "擴充座未能成功地從此裝置傳輸影片"
+         },
+         "err_transfer_failed_noretry" : {
+            "msg" : "這很可能是裝置問題造成的。請聯絡 Axon 技術支援。",
+            "title" : "擴充座在從此裝置傳輸影片時發生了永久錯誤"
+         },
+         "err_unknown_port_type" : {
+            "msg" : "裝置連接的連接埠類型不受支援或不明。請參閱疑難排解說明。",
+            "title" : "連接埠類型不明"
+         },
+         "err_wrong_agency" : {
+            "msg" : "此裝置當前沒有指派到您的機構。請聯絡您的機構管理員來協助處理此裝置。",
+            "title" : "此裝置目前未指派至您的機構。"
+         },
+         "if_problem_continues" : "如果此問題持續發生，請聯絡 Axon 技術支援：",
+         "more_help" : "如需此問題的更多協助，請聯絡 Axon 技術支援：",
+         "no_dns" : {
+            "msg" : "我們找不到 DNS 伺服器。這通常是為 DNS 伺服器設定的 IP 位址無效造成的。我們建議使用「網路」頁面驗證 DNS 設定。",
+            "return_msg" : "按下面的「確定」以進入「網路」頁面並驗證 DNS 資訊，或者按 ESC 關閉此對話方塊。",
+            "title" : "找不到 DNS 伺服器"
+         },
+         "no_ecom" : {
+            "msg" : "我們無法向 Evidence.com 驗證此擴充座。這通常是機構及此擴充座的註冊金鑰無效或缺失引起的。我們建議使用「操作」頁面註冊此擴充座。",
+            "return_msg" : "按下面的「確定」進入「操作」頁面以註冊擴充座，或者按 ESC 關閉此對話方塊。",
+            "title" : "無 Evidence.com 驗證"
+         },
+         "no_gateway" : {
+            "msg" : "我們無法連接您的網路預設閘道。這通常是無效的 IP 位址造成的，但有些閘道不回應網路「ping」。",
+            "return_msg" : "按下面的「確定」進入「網路」頁面以變更預設閘道，或者按 ESC 關閉此對話方塊。",
+            "title" : "找不到閘道"
+         },
+         "no_https" : {
+            "msg" : "我們無法透過安全 (HTTPS) 通道通訊。這通常是 HTTPS 連接埠 (443) 被防火牆封鎖而造成的。我們建議在防火墻中確認 HTTPS 連接埠已開啟。",
+            "return_msg" : "按下面的「確定」返回狀態頁面。",
+            "title" : "無 HTTPS 可用。"
+         },
+         "no_ip_dynamic" : {
+            "msg" : "我們無法從 DHCP 伺服器獲取 IP 位址。這通常是網路上未啟用 DHCP 伺服器所造成的。您可能需要為此擴充座輸入靜態 IP 組態。",
+            "return_msg" : "按下面的「確定」進入「網路」頁面以輸入靜態 IP 資訊，或者按 ESC 關閉此對話方塊。",
+            "title" : "無 IP 位址。"
+         },
+         "no_ip_static" : {
+            "msg" : "我們無法獲取您在靜態 IP 設定中為此擴充座指定的 IP 位址。這通常是在多部電腦上使用相同靜態 IP 造成的。我們建議驗證在網路頁面上輸入的 IP 位址。",
+            "return_msg" : "按下面的「確定」進入「網路」頁面以驗證設定，或者按 ESC 關閉此對話方塊。",
+            "title" : "無 IP 位址。"
+         },
+         "no_ntp" : {
+            "msg" : "我們無法與網路時間伺服器通訊。這通常是防火牆上同時封鎖連接埠 80 和連接埠 123 所造成的。我們建議在防火牆中開啟連接埠 80 或 123。",
+            "return_msg" : "按下面的「確定」進入「網路」頁面以變更時間伺服器，或者按 ESC 關閉此對話方塊。",
+            "title" : "NTP 伺服器未回應"
+         },
+         "no_status" : {
+            "msg" : "我們尚無法確定您的網路類型。這可能是因為我們的系統仍在推出中。我們建議等待 2 或 3 分鐘，然後重新整理此頁面。如有任何新資訊加入，狀態頁面亦會重新整理。",
+            "return_msg" : "按下面的「確定」返回狀態頁面。",
+            "title" : "找不到狀態。"
+         },
+         "title" : "Configuration Assistant",
+         "we_found" : "在檢查您的網路後，我們發現下列問題：",
+         "welcome" : "歡迎使用 Configuration Assistant。"
+      },
+      "device_status_codes" : {
+         "capchk" : "容量檢查",
+         "cfg" : "設定中",
+         "chg" : "充電中",
+         "del" : "移除中",
+         "device_maint" : "裝置維護",
+         "devid" : "識別中",
+         "err" : "錯誤（重試擱置中）",
+         "fail" : "錯誤",
+         "fwdone" : "韌體已更新",
+         "fwupdate" : "正在更新韌體",
+         "inact" : "未作用",
+         "init" : "正在初始化",
+         "inventory" : "庫存",
+         "logerase" : "正在清除記錄",
+         "logsend" : "正在上傳記錄",
+         "lost" : "通訊中斷",
+         "net_retry" : "重試網路連線",
+         "new" : "新裝置",
+         "nonet" : "網路關閉",
+         "plugin" : "正在連線",
+         "proc" : "正在傳送檔案",
+         "rdy" : "就緒",
+         "register" : "註冊中",
+         "summary" : "獲取摘要",
+         "sys_maint" : "系統維護",
+         "unk" : "未知",
+         "unsupported" : "不受支援",
+         "wait" : "等待中"
+      },
+      "diag" : {
+         "headers" : {
+            "diag" : "診斷"
+         },
+         "page_title" : "狀態",
+         "sections" : {
+            "netdiag" : {
+               "command" : "命令：",
+               "commands" : {
+                  "date" : "擴充座報告的日期",
+                  "ifconfig" : "IFCONFIG 網路統計",
+                  "nslookup_goog" : "NSLOOKUP google.com",
+                  "nslookup_taser" : "NSLOOKUP taser.evidence.com",
+                  "ping_8888" : "PING 8.8.8.8",
+                  "ping_gateway" : "PING 預設閘道",
+                  "ping_goog" : "PING google.com",
+                  "tail_etmlog" : "擴充座記錄的尾部 100 行",
+                  "tail_syslog" : "syslog 的尾部 100 行",
+                  "tr_goog" : "TRACEROUTE google.com",
+                  "tr_taser" : "TRACEROUTE taser.evidence.com"
+               },
+               "execute" : "執行",
+               "legend" : "網路診斷",
+               "menu" : "從下拉功能表中選擇診斷測試，然後點擊執行...",
+               "msg1" : "此處提供的命令用於診斷網路連線問題。",
+               "msg2" : "請勿執行下面的命令，除非 Axon 客戶服務代表指示您執行。",
+               "result" : "結果："
+            }
+         }
+      },
+      "firmware" : {
+         "current_version" : "目前韌體版本",
+         "dvr_update_starting" : "連接 Axon 伺服器以查找更新...韌體更新將在 DVR 完成檔案上傳後開始",
+         "etm_update_starting" : "韌體更新已開始。請在幾分鐘後返回檢查，以查看版本是否更新...",
+         "headers" : {
+            "firmware_mgmt" : "韌體管理"
+         },
+         "not_released" : "尚未發佈",
+         "page_title" : "韌體更新",
+         "sections" : {
+            "device_firmware_update" : {
+               "legend" : "裝置韌體更新",
+               "msg" : "要升級目前插入擴充座的所有裝置之韌體，請按下面的按鈕。如果更新可用，將會在所有裝置上自動安裝。",
+               "device_name" : "裝置名稱",
+               "released_firmware" : "發行的韌體",
+               "early_access_firmware" : "及早存取韌體",
+               "perform_fw_update" : "更新 Axon 裝置"
+            },
+            "etm_firmware_update" : {
+               "check_update" : "更新韌體",
+               "legend" : "擴充座韌體更新",
+               "msg" : "要更新擴充座的韌體，請按一下「更新韌體」。擴充座將聯絡 Axon 的伺服器，並檢查最新的韌體版本。如有新韌體版本可用，將會自動安裝。",
+               "show_version_details" : "詳細資料",
+               "version_details" : "詳細資料"
+            }
+         },
+         "update_failed" : "無法開始韌體更新",
+         "update_title" : "韌體更新"
+      },
+      "general" : {
+         "closeparen" : ")",
+         "copyright" : "&copy; 2023 Axon Enterprise, Inc. 版權所有",
+         "error_code" : "錯誤代碼",
+         "firmware" : "韌體",
+         "footnote" : "*TASER 電池具有適用於 TASER 7 (T7) 和 TASER 10 (T10) 手把以及適用於 TASER BLE 的韌體。",
+         "openparen" : "(",
+         "refresh" : "重新整理",
+         "sections" : {
+            "button_bar" : {
+               "discard_changes" : "捨棄變更",
+               "loading_wait" : "正在載入組態... 請稍候...",
+               "reset_registration" : "重設註冊",
+               "save_changes" : "儲存變更",
+               "continue" : "繼續"
+            },
+            "snmp" : {
+               "showhide_password" : "顯示/隱藏 SNMP 密碼"
+            }
+         }
+      },
+      "index" : {
+         "footer" : {
+            "help_center" : "說明中心"
+         },
+         "headers" : {
+            "system_status" : "系統狀態"
+         },
+         "page_title" : "狀態",
+         "sections" : {
+            "devices" : {
+               "device" : "裝置",
+               "firmware" : "韌體*",
+               "hidden_info" : "按一下以查看資料",
+               "legend" : "裝置",
+               "owner" : "擁有者",
+               "serial" : "序號",
+               "status" : "狀態"
+            },
+            "networking" : {
+               "active" : "使用中",
+               "dns_server" : "DNS 伺服器",
+               "ecom_registration" : "Evidence.com 註冊",
+               "gateway" : "網際網路閘道",
+               "https_port" : "HTTPS（連接埠 443）",
+               "ipaddress" : "IP 位址",
+               "legend" : "網路",
+               "mac_address" : "MAC 位址",
+               "not_registered" : "未註冊",
+               "serial_number" : "序號",
+               "time_server" : "時間伺服器"
+            }
+         }
+      },
+      "links" : {
+         "administration" : "管理",
+         "firmware" : "韌體",
+         "networking" : "網路",
+         "operations" : "操作",
+         "status" : "狀態"
+      },
+      "lookups" : {
+         "netmode" : {
+            "dynamic" : "動態",
+            "static" : "靜態"
+         }
+      },
+      "networking" : {
+         "headers" : {
+            "net_setup" : "網路設定"
+         },
+         "page_title" : "網路設定",
+         "restart_title" : "網路重啟",
+         "saved_restarting" : "設定已儲存，網路正在重啟...",
+         "sections" : {
+            "conn_type" : {
+               "label_dynamic" : "動態 IP (DHCP)",
+               "label_static" : "靜態 IP",
+               "legend" : "連接類型",
+               "msg" : "擴充座可透過兩種方式支援現有網路以允許對 AXON 裝置進行網際網路存取，透過動態 IP（亦稱為 DHCP）或靜態 IP 位址。請從下面選擇適當的方法："
+            },
+            "static_ip" : {
+               "dns_servers" : "DNS 伺服器",
+               "gateway" : "預設閘道",
+               "ip_address" : "IP 位址",
+               "legend" : "靜態 IP 組態",
+               "msg" : "如果您的網路不使用 DHCP，或者網際網路存取僅可供靜態 IP 指派使用，則您需要為擴充座提供組態資訊。如果您沒有此資訊，請聯絡您的網路管理員",
+               "subnet_mask" : "子網路遮罩"
+            },
+            "throttle" : {
+               "label_mbps" : "Mbps",
+               "legend" : "上游節流閥",
+               "max_speed" : "最大上傳速度",
+               "msg" : "通常，擴充座將使用所有可用的頻寬盡快從 AXON 單元上傳影片。如果這不是想要的行為，您可以限制下面的傳輸速度（以每秒 MB 數衡量）。零值將指示擴充座使用所有可用的頻寬。"
+            }
+         }
+      },
+      "ops" : {
+         "an_error_occurred" : "發生了錯誤",
+         "generating_tokens" : "正在產生安全權杖...",
+         "headers" : {
+            "operations" : "操作"
+         },
+         "page_title" : "一般操作",
+         "regenerate_keys_query" : "您已向 Evidence.com 驗證，要重新產生安全金鑰嗎？",
+         "regenerate_keys_title" : "重新產生金鑰",
+         "register_with_ecom" : "向 Evidence.com 註冊",
+         "registering_etm" : "正在註冊擴充座...",
+         "processing" : "處理中...…",
+         "poll_uri_code" : "正在擷取啟用連結和代碼……",
+         "reset_reg" : "重設註冊",
+         "reset_reg_failed" : "無法重設註冊",
+         "resetting_reg_dock" : "將擴充座的註冊重設為預設值。將在 30 秒內重新載入頁面。",
+         "restarting_etm" : "正在重新啟動擴充座，這需要大約 30 秒...",
+         "sections" : {
+            "e_com_reg" : {
+               "admin_password" : "管理員密碼",
+               "admin_username" : "管理員使用者名稱",
+               "agency_name" : "Evidence.com 機構",
+               "already_registered" : "此擴充座已向 Evidence.com 註冊",
+               "domain_name" : "網域名稱",
+               "legend" : "Evidence.com 註冊",
+               "msg" : "要向您的 Evidence.com 機構註冊此擴充座，請輸入您的 Evidence.com 機構名稱、使用者名稱和密碼。在擴充座註冊到 Evidence.com 後，會將所有媒體檔案傳輸到您的 Evidence.com 帳戶。您的使用者名稱和密碼不會儲存在擴充座中。",
+               "msg_shorten" : "要向您的 Evidence.com 機構註冊此擴充座，請輸入您的 Evidence.com 機構名稱。在擴充座註冊到 Evidence.com 後，會將所有媒體檔案傳輸到您的 Evidence.com 帳戶。",
+               "msg_login_uri_code" : "請打開連結並提供代碼以完成註冊："
+            }
+         }
+      },
+      "proxy": {
+         "headers": {
+            "proxy_setup": "Proxy 設定"
+         },
+         "page_title": "Proxy 設定",
+         "proxy_test_title": "Proxy 測試",
+         "proxy_test_in_progress": "Proxy 測試正在進行中…",
+         "proxy_test_success_msg": "Proxy 測試成功",
+         "proxy_test_fail_msg": "Proxy 測試失敗",
+         "configuration_saved_title": "Proxy 組態已儲存",
+         "configuration_saved_msg": "Proxy 組態已儲存並即將生效",
+         "sections": {
+            "http_proxy": {
+               "legend": "HTTP Proxy",
+               "msg": "設定 HTTP proxy 會將所有 HTTP 請求重新導向到指定的 proxy 伺服器。",
+               "enable": "啟用",
+               "legend_config": "組態",
+               "legend_advanced_config": "進階組態",
+               "disable_dns_check": "停用 DNS 檢查",
+               "msg_config": "使用者名稱和密碼為選用。",
+               "host": "Proxy 主機",
+               "port": "Proxy 連接埠",
+               "username": "使用者名稱",
+               "password": "密碼",
+               "test_connection": "測試連線"
+            }
+         }
+      },
+      "strings" : {
+         "an_error_occurred" : "發生了錯誤",
+         "axon_flex" : "Axon Flex",
+         "calculating_rate" : "計算中...",
+         "cancel" : "取消",
+         "cannot_get_data_too_many_failed_login_attempts" : "因登入嘗試失敗次數過多而無法取得資料",
+         "click_for_details" : "按一下獲取詳細資料",
+         "device_error" : "裝置錯誤",
+         "error" : "錯誤",
+         "error_download" : "下載 https 時出現錯誤",
+         "error_internal" : "內部錯誤",
+         "failed_auth": "驗證失敗嘗試次數太多。帳戶已暫時停用。",
+         "finished" : "已完成",
+         "invalid_hostname" : "不是有效的主機名稱",
+         "kbps" : "kbps",
+         "login_failed" : "登入失敗",
+         "no_server_response" : "沒有來自伺服器的回應",
+         "ok" : "確定",
+         "operation_complete_success" : "操作已成功完成。",
+         "please_complete_mandatory" : "請完成此必要欄位。",
+         "please_enter_numeric" : "請輸入一個數值。",
+         "please_enter_valid_email" : "請輸入有效的電子郵件地址。",
+         "please_enter_valid_URL" : "請輸入一個有效的 URL。",
+         "please_enter_value_larger" : "請輸入一個數值大於",
+         "please_enter_value_smaller" : "請輸入一個數值小於",
+         "reloading_status" : "正在重新載入狀態...",
+         "reloading_status_title" : "重新整理中",
+         "unassigned" : "已取消指派",
+         "unspecified_error" : "發生了未指定的錯誤：",
+         "waiting_for_response" : "正在等待回應...",
+         "authentication_failed" : "Authentication failed",
+         "invalid_request" : "Request is null or invalid"
+      }
+   }
+}

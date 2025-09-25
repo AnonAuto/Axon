@@ -1,0 +1,69 @@
+#!/bin/sh
+#-------------------------------------------------
+#
+# Copyright (c) 2013 TASER International, Inc.
+# Licensed under GPL2+
+# TASER Data Classification: PUBLIC
+#
+. /etm/bin/etm-net-common.sh
+
+DAEMON=/usr/bin/ifplugd
+NAME=ifplugd
+DESC="Busybox Network interface plug detection daemon"
+
+# Options:
+#         -n              Do not daemonize
+#         -s              Do not log to syslog
+#         -i IFACE        Interface
+#         -f/-F           Treat link detection error as link down/link up
+#                         (otherwise exit on error)
+#         -a              Do not up interface automatically
+#         -M              Monitor creation/destruction of interface
+#                         (otherwise it must exist)
+#         -r PROG         Script to run
+#         -x ARG          Extra argument for script
+#         -I              Don't exit on nonzero exit code from script
+#         -p              Don't run script on daemon startup
+#         -q              Don't run script on daemon quit
+#         -l              Run script on startup even if no cable is detected
+#         -t SECS         Poll time in seconds
+#         -u SECS         Delay before running script after link up
+#         -d SECS         Delay after link down
+#         -m MODE         API mode (mii, priv, ethtool, wlan, auto)
+#         -k              Kill running daemon
+
+ARGS="-fMI -t 1 -u0 -d2 -i $WAN_IFACE"
+
+test -f $DAEMON || exit 0
+
+set -e
+
+case "$1" in
+    start)
+        echo -n "starting $DESC: $NAME... "
+	start-stop-daemon -S -b -n $NAME -a $DAEMON -- $ARGS
+	echo "done."
+	;;
+    stop)
+        echo -n "stopping $DESC: $NAME... "
+	start-stop-daemon -K -n $NAME
+	echo "done."
+	;;
+    restart)
+        echo -n "restarting $DESC: $NAME... "
+ 	$0 stop
+	$0 start
+	echo "done."
+	;;
+    reload)
+    	echo -n "reloading $DESC: $NAME... "
+    	killall -HUP $(basename ${DAEMON})
+	echo "done."
+	;;
+    *)
+	echo "Usage: $0 {start|stop|restart|reload}"
+	exit 1
+	;;
+esac
+
+exit 0

@@ -1,0 +1,255 @@
+user:adc83b19e793491b1c6ea0fd8b46cd9f32e592fc
+superproject
+branch:HEAD (no branch)@832aa7f0420b434b8c36374b2f1f22b36247e1f3
+status:
+## HEAD (no branch)
+ m build
+ ? downloads
+ m etm-1.0
+=============
+submodule adm_usb_client
+branch:HEAD (no branch)@9f1ec71178d7d9f21be814c2db4729919bd1f6e3
+status:
+## HEAD (no branch)
+=============
+submodule apache
+branch:HEAD (no branch)@b35392ad4a04d549a8ef42b9abf94b38f6b7afd1
+status:
+## HEAD (no branch)
+=============
+submodule binarypackages
+branch:HEAD (no branch)@b513f9eb1ffc9109d0f70a74eb03b0392654ab63
+status:
+## HEAD (no branch)
+=============
+submodule build
+branch:HEAD (no branch)@ab43907511d063498857cdb8be0b24a1e094469a
+status:
+## HEAD (no branch)
+ M conf/local.conf
+?? bitbake-cookerdaemon.log
+?? buildhistory/
+?? cache/
+=============
+submodule contrib/googletest
+branch:HEAD (no branch)@d225acc90bc3a8c420a9bcd1f033033c1ccd7fe0
+status:
+## HEAD (no branch)
+=============
+submodule downloads
+branch:HEAD (no branch)@9a1f14ea98df64cf8dd5e94466445e0f19643736
+status:
+## HEAD (no branch)
+?? Python-3.8.13.tar.xz
+?? acl-2.2.53.tar.gz
+?? at_3.1.23.orig.tar.gz
+?? attr-2.4.48.tar.gz
+?? autoconf-archive-2019.01.06.tar.xz
+?? automake-1.16.1.tar.gz
+?? base-passwd_3.5.29.tar.gz
+?? bash-5.0.tar.gz
+?? bash-completion-2.10.tar.xz
+?? bash50-001
+?? bash50-002
+?? bash50-003
+?? bash50-004
+?? bash50-005
+?? bash50-006
+?? bash50-007
+?? bash50-008
+?? bash50-009
+?? bash50-010
+?? bash50-011
+?? bash50-012
+?? bash50-013
+?? bash50-014
+?? bash50-015
+?? bash50-016
+?? bash50-017
+?? bash50-018
+?? bc-1.07.1.tar.gz
+?? bind-9.11.37.tar.gz
+?? bison-3.5.4.tar.xz
+?? boost_1_72_0.tar.bz2
+?? busybox-1.31.1.tar.bz2
+?? bzip2-1.0.8.tar.gz
+?? cmake-3.16.5.tar.gz
+?? db-5.3.28.tar.gz
+?? dbus-1.12.20.tar.gz
+?? dbus-glib-0.110.tar.gz
+?? debianutils_4.9.1.tar.xz
+?? devmem2-new.c
+?? dosfstools-4.1.tar.xz
+?? dropbear-2019.78.tar.bz2
+?? elfutils-0.178.tar.bz2
+?? eudev-3.2.9.tar.gz
+?? flex-2.6.4.tar.gz
+?? freetype-2.10.1.tar.xz
+?? gcc-9.3.0.tar.xz
+?? gdb-9.1.tar.xz
+?? gdbm-1.18.1.tar.gz
+?? gettext-0.20.1.tar.gz
+?? gitshallow_git.kernel.org.pub.scm.fs.ext2.e2fsprogs.git_5403970-1_master.tar.gz
+?? gitshallow_git.kernel.org.pub.scm.utils.kernel.kmod.kmod.git_58133a9-1_master.tar.gz
+?? gitshallow_git.openwrt.org.project.libubox.git_9e52171-1_master.tar.gz
+?? gitshallow_git.openwrt.org.project.uci.git_52bbc99-1_master.tar.gz
+?? gitshallow_git.savannah.gnu.org.git.config.git_5256817-1_master.tar.gz
+?? gitshallow_git.ti.com.processor-firmware.ti-amx3-cm3-pm-firmware.git_fb484c5-1_ti-v4.1.y.tar.gz
+?? gitshallow_git.ti.com.ti-linux-kernel.ti-linux-kernel.git_73aa709-1_ti-linux-5.10.y.tar.gz
+?? gitshallow_git.yoctoproject.org.prelink-cross.git_f997553-1_cross_prelink_staging.tar.gz
+?? gitshallow_git.yoctoproject.org.pseudo_2b4b88e-1_oe-core.tar.gz
+?? gitshallow_git.yoctoproject.org.update-rc.d_8636cf4-1_master.tar.gz
+?? gitshallow_git.yoctoproject.org.yocto-kernel-tools.git_c66833e-1_master.tar.gz
+?? gitshallow_github.com.ago.pps-tools.git_cb48b7e-1_master.tar.gz
+?? gitshallow_github.com.alban.dbus-daemon-proxy_1226a0a-1_master.tar.gz
+?? gitshallow_github.com.besser82.libxcrypt.git_823437d-1_develop.tar.gz
+?? gitshallow_github.com.file.file.git_ec41083-1_master.tar.gz
+?? gitshallow_github.com.freesmartphone.cornucopia.git_07c6fde-1_master.tar.gz
+?? gitshallow_github.com.iputils.iputils_13e0084-1_master.tar.gz
+?? gitshallow_github.com.kraj.localedef_cd9f958-1_master.tar.gz
+?? gitshallow_github.com.libexpat.libexpat.git_a7bc26b-1_master.tar.gz
+?? gitshallow_github.com.nhorman.rng-tools.git_4a86579-1_master.tar.gz
+?? gitshallow_github.com.ninja-build.ninja.git_ed7f670-1_release.tar.gz
+?? gitshallow_github.com.openSUSE.libsolv.git_605dd26-1_master.tar.gz
+?? gitshallow_github.com.openwrt.openwrt.git_dd34640-1_master.tar.gz
+?? gitshallow_github.com.rpm-software-management.rpm_4a94400-1_rpm-4.14.x.tar.gz
+?? gitshallow_github.com.smuellerDD.jitterentropy-library.git_933a44f-1_master.tar.gz
+?? gitshallow_github.com.sparkleholic.ltrace.git_c22d359-1_master.tar.gz
+?? gitshallow_github.com.thkukuk.libnsl_4a062cf-1_master.tar.gz
+?? gitshallow_github.com.traviscross.mtr_304349b-1_master.tar.gz
+?? gitshallow_github.com.varigit.u-boot-VAR-SOM-AM33-SDK7.git_adf9a14-1_master.tar.gz
+?? gitshallow_gitlab.com.procps-ng.procps.git_59c88e1-1_master.tar.gz
+?? gitshallow_gitlab.freedesktop.org.libevdev.evtest.git_16e5104-1_master.tar.gz
+?? gitshallow_gitlab.freedesktop.org.pkg-config.pkg-config.git_edf8e6f-1_master.tar.gz
+?? gitshallow_gitlab.freedesktop.org.xdg.shared-mime-info.git_829b26d-1_master.tar.gz
+?? gitshallow_salsa.debian.org.debian.ca-certificates.git_07de54f-1_master.tar.gz
+?? gitshallow_salsa.debian.org.debian.ncurses.git_a669013-1_master.tar.gz
+?? gitshallow_source.denx.de.u-boot.u-boot.git_303f8fe-1_master.tar.gz
+?? gitshallow_sourceware.org.git.binutils-gdb.git_d4b5099-1_binutils-2_34-branch.tar.gz
+?? gitshallow_sourceware.org.git.glibc.git_3ef8be9-1_release.2.31.master.tar.gz
+?? glib-2.62.6.tar.xz
+?? gmp-6.2.0.tar.bz2
+?? gnutls-3.6.14.tar.xz
+?? gperf-3.1.tar.gz
+?? gtk-doc-1.32.tar.xz
+?? htop-2.2.0.tar.gz
+?? i2c-tools-4.1.tar.gz
+?? iproute2-5.10.0.tar.xz
+?? iptables-1.8.4.tar.bz2
+?? itstool-2.0.6.tar.bz2
+?? json-c-0.13.1.tar.gz
+?? libarchive-3.4.2.tar.gz
+?? libcap-2.32.tar.xz
+?? libcap-ng-0.7.10.tar.gz
+?? libevent-2.1.11-stable.tar.gz
+?? libffi-3.3.tar.gz
+?? libgcrypt-1.8.5.tar.bz2
+?? libgpg-error-1.37.tar.bz2
+?? libidn2-2.3.0.tar.gz
+?? libjpeg-turbo-2.0.4.tar.gz
+?? libnl-3.5.0.tar.gz
+?? libpcap-1.9.1.tar.gz
+?? libpng-1.6.37.tar.xz
+?? libtirpc-1.2.6.tar.bz2
+?? libtool-2.4.6.tar.gz
+?? libunistring-0.9.10.tar.gz
+?? libusb-compat-0.1.5.tar.bz2
+?? libxml2-2.9.10.tar.xz
+?? libxslt-1.1.34.tar.gz
+?? lighttpd-1.4.55.tar.xz
+?? lmon16g.c
+?? lsof_4.91.tar.bz2
+?? lttng-ust-2.11.2.tar.bz2
+?? lua-5.1.5.tar.gz
+?? lzo-2.10.tar.gz
+?? lzop-1.04.tar.gz
+?? m4-1.4.18.tar.gz
+?? make-4.3.tar.gz
+?? mbuffer-20140310.tgz
+?? meson-0.53.2.tar.gz
+?? mklibs_0.1.44.tar.xz
+?? mpc-1.1.0.tar.gz
+?? mpfr-4.0.2.tar.xz
+?? net-snmp-5.8.tar.gz
+?? netbase_6.1~bpo10+1.tar.xz
+?? nettle-3.5.1.tar.gz
+?? ntp-4.2.8p15.tar.gz
+?? openssh-8.2p1.tar.gz
+?? openssl-1.1.1q.tar.gz
+?? opkg-0.4.2.tar.gz
+?? opkg-utils-0.4.2.tar.gz
+?? patch-2.7.6.tar.gz
+?? pciutils-3.6.4.tar.xz
+?? pcre-8.44.tar.bz2
+?? pcre2-10.34.tar.bz2
+?? perl-5.30.1.tar.gz
+?? perl-cross-1.3.1.tar.gz
+?? pigz-2.4.tar.gz
+?? pseudo-prebuilt-2.33.tar.xz
+?? qemu-4.2.0.tar.xz
+?? qt-everywhere-opensource-src-4.8.7.tar.gz
+?? quilt-0.66.tar.gz
+?? re2c-1.0.1.tar.gz
+?? readline-8.0.tar.gz
+?? rsync-3.1.3.tar.gz
+?? screen-4.8.0.tar.gz
+?? setuptools-45.2.0.zip
+?? shadow-4.8.1.tar.gz
+?? socat-1.7.3.4.tar.bz2
+?? sqlite-autoconf-3310100.tar.gz
+?? strace-5.10.tar.xz
+?? sudo-1.8.32.tar.gz
+?? sysvinit-2.96.tar.xz
+?? tcp_wrappers_7.6.tar.gz
+?? tcpdump-4.9.3.tar.gz
+?? thrift-0.13.0.tar.gz
+?? tiff-4.1.0.tar.gz
+?? unifdef-2.12.tar.xz
+?? unzip60.tar.gz
+?? usbutils-012.tar.gz
+?? userspace-rcu-0.11.1.tar.bz2
+?? util-linux-2.35.1.tar.xz
+?? watchdog-5.15.tar.gz
+?? xmlts20080827.tar.gz
+?? xz-5.2.4.tar.gz
+?? zlib-1.2.11.tar.xz
+=============
+submodule ecomapi
+branch:HEAD (no branch)@0a0c09770403252231626955f8b381e2dc381680
+status:
+## HEAD (no branch)
+=============
+submodule etm-1.0
+branch:HEAD (no branch)@90f5faea57f64acb9beb7f8f1ca9b6619433da78
+status:
+## HEAD (no branch)
+ M files/www/secure/proxy.html
+?? files/active-perms.txt
+?? files/oe-logs
+?? files/oe-workdir
+=============
+submodule sources
+branch:HEAD (no branch)@43ea0ee3720ab4a531fc91a78bd2ee4fa7741139
+status:
+## HEAD (no branch)
+=============
+submodule tdma
+branch:HEAD (no branch)@a0a7598603195e179e48e0491ece98672d3fc105
+status:
+## HEAD (no branch)
+=============
+submodule test-data
+branch:HEAD (no branch)@b9bbf78c30e271cfd65621e099e73a4ca13f87cd
+status:
+## HEAD (no branch)
+=============
+submodule tests
+branch:HEAD (no branch)@5b3d0eb36fe2785f605b5c7af5fd206e733d5929
+status:
+## HEAD (no branch)
+=============
+submodule tools
+branch:HEAD (no branch)@780c3873783273520bb9ef9c8388817a2808b687
+status:
+## HEAD (no branch)
+=============

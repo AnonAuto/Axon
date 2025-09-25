@@ -1,0 +1,558 @@
+{
+   "ETM" : {
+      "admin" : {
+         "admin_title" : "Gweinyddiaeth Doc",
+         "configuring_msg" : "Wrthi'n Ffurfweddu. Bydd hyn yn cymryd tua 40 eiliad...",
+         "headers" : {
+            "administration" : "Gweinyddiaeth Doc"
+         },
+         "page_title" : "Gosodiadau Gweinyddiaeth",
+         "rebooting_msg" : "Wrthi'n Ailfwtio. Bydd hyn yn cymryd tua 60 eiliad...",
+         "saving_settings" : "Wrthi'n cadw gosodiadau...",
+         "sections" : {
+            "admin_maint" : {
+               "legend" : "Cynnal a Chadw",
+               "reboot" : "Ailfwtio Doc"
+            },
+            "admin_ssl" : {
+               "accept_only_https" : "Derbyn Ceisiadau SSL yn unig",
+               "legend" : "Ffurfweddiad SSL",
+               "regen_ssl" : "Ailgynhyrchu Tystysgrif SSL",
+               "require_https_time" : "Mae angen SSL ar gyfer y gwiriad amser cychwynnol"
+            },
+            "device_id" : {
+               "etm_name" : "Enw Doc",
+               "home" : "Cartref y Ddyfais",
+               "legend" : "Manylion Adnabod y Ddyfais",
+               "location" : "Lleoliad",
+               "msg" : "Bydd yr wybodaeth isod yn eich helpu i wybod pa ddyfais Doc rydych yn cyfathrebu ag ef. Caiff yr wybodaeth hon hefyd ei defnyddio gan Evidence.com i ddarparu gwybodaeth am statws dyfeisiau.",
+               "your_agency" : "Eich Asiantaeth"
+            },
+            "password_change" : {
+               "confirm_new_password" : "Teipiwch y Cyfrinair Newydd Eto",
+               "current_password" : "Cyfrinair Presennol",
+               "error_no_password" : "Mae angen y cyfrinair presennol er mwyn newid manylion adnabod y Gweinyddwr.",
+               "legend" : "Newid Manylion Adnabod",
+               "msg" : "Rheoli'r enw defnyddiwr a'r cyfrinair gweinyddwr a ddefnyddir i gael mynediad at y Doc hwn.",
+               "new_password" : "Cyfrinair Newydd",
+               "username" : "Enw defnyddiwr"
+            },
+            "snmp" : {
+               "authentication" : "Dilysu",
+               "disable" : "Analluogi",
+               "enable_snmp" : "Galluogi SNMP",
+               "enc_password" : "Cyfrinair Amgryptio",
+               "encrypt_msg" : "Gadewch \"Cyfrinair Amgryptio\" yn wag os ydych am ddefnyddio'r un \"Cyfrinair SNMP\" ar gyfer amgryptio.",
+               "encryption" : "Amgryptio",
+               "error_no_password" : "Mae angen cyfrinair cyfatebol i newid yr enw defnyddiwr SNMP.",
+               "error_title" : "Gosod Gwall SNMP",
+               "legend" : "Gweinydd SNMP",
+               "legend_config" : "Ffurfweddiad SNMP",
+               "msg" : "Mae SNMP wedi'i analluogi yn ddiofyn. I'w alluogi, defnyddiwch y blwch ticio a mewnbynnu'r ffurfweddiad.",
+               "password" : "Cyfrinair SNMP",
+               "username" : "Enw Defnyddiwr SNMP"
+            }
+         },
+         "set_configuration_error_title" : "Gosod Ffurfweddiad",
+         "settings_changed" : {
+            "p1" : "Mae'r gosodiadau ar gyfer eich Asiantaeth wedi newid!",
+            "p2" : "Pwyswch y botwm [Diweddaru] i gymhwyso'r newidiadau o'ch Asiantaeth i'ch Doc.",
+            "p3" : "Fel arall, pwyswch [Canslo] wedyn diweddaru eich gosodiadau eich hun; bydd y newidiadau yn cael eu cysoni â'ch Asiantaeth.",
+            "p4" : "Rhestr newidiadau:",
+            "title" : "Gosodiadau wedi newid"
+         }
+      },
+      "axonsup" : {
+         "headers" : {
+            "data" : "Data Cymorth"
+         },
+         "page_title" : "Axon Support",
+         "sections" : {
+            "data" : {
+               "legend" : "Data Axon Support",
+               "msg" : "Gallai'r blobiau data isod fod yn ddefnyddiol wrth weithio gyda chynrychiolydd gwasanaeth i gwsmeriaid Axon.",
+               "result1" : "Canlyniad 1:",
+               "result2" : "Canlyniad 2:"
+            }
+         }
+      },
+	  "cgi" : {
+          "csrf_fail" : "Gwall cwcis",
+          "invalid_auth" : "Enw defnyddiwr neu gyfrinair annilys",
+          "invalid_cmd" : "Gorchymyn annilys",
+          "invalid_domain" : "Heb bennu parth",
+          "invalid_proxy_config" : "Dirprwy ffurfweddiad annilys",
+          "invalid_proxy_user_pass" : "Enw defnyddiwr neu gyfrinair ar goll",
+          "invalid_snmp_user" : "Dim modd cymhwyso ffurfweddiad SNMP. Enw defnyddiwr SNMP annilys.",
+          "no_content" : "Dim cynnwys",
+          "no_snmp_pw" : "Dim modd cymhwyso ffurfweddiad SNMP. Heb roi cyfrinair.",
+          "not_released" : "Heb ryddhau",
+          "ok" : "Iawn",
+          "unable_disable_snmp" : "Dim modd analluogi ffurfweddiad SNMP.",
+          "unable_set_snmp" : "Dim modd cymhwyso ffurfweddiad SNMP.",
+          "unable_set_snmp_auth" : "Dim modd cymhwyso dilysiad ffurfweddiad SNMP.",
+          "unable_set_snmp_enable" : "Dim modd galluogi ffurfweddiad SNMP.",
+          "unable_set_snmp_enc" : "Dim modd cymhwyso amgryptiad ffurfweddiad SNMP.",
+          "unable_set_snmp_pass" : "Dim modd cymhwyso cyfrinair ffurfweddiad SNMP.",
+          "unable_set_snmp_user" : "Dim modd cymhwyso enw defnyddiwr ffurfweddiad SNMP.",
+          "unable_set_sslonly" : "Dim modd newid y gosodiad 'Derbyn Ceisiadau SSL yn Unig'",
+          "unknown_err" : "Gwall anhysbys",
+          "web_creds_err" : "Wedi methu diweddaru manylion adnabod y Gweinyddwr.",
+          "web_creds_invalid_username" : "Wedi methu diweddaru manylion adnabod y Gweinyddwr: mae'r enw defnyddiwr yn annilys.",
+          "web_creds_invalid_cur_pass" : "Wedi methu diweddaru manylion adnabod y Gweinyddwr: mae'r cyfrinair cyfredol yn annilys.",
+          "web_creds_invalid_new_pass" : "Wedi methu diweddaru manylion adnabod y Gweinyddwr: mae'r cyfrinair newydd yn annilys."
+      },
+      "common" : {
+        "admin_name_allowed_characters" : "Enw defnyddiwr annilys. Nodau a ganiateir: bwlch alffaniwmerig # ! @ ( ) [ ] - . _",
+        "at_least" : "rhaid iddo gynnwys o leiaf",
+        "cannot_contain_duplicate" : "ddim yn gallu cynnwys nodau dyblyg",
+        "cannot_contain_more_than" : "ddim yn gallu cynnwys mwy na",
+        "cannot_contain_username" : "ddim yn gallu cynnwys eich enw defnyddiwr na geiriau cyffredin eraill",
+        "character" : "nod",
+        "characters" : "nod",
+        "characters_in_seq" : "nodau mewn dilyniant",
+        "input_valid_IP" : "Rhowch gyfeiriad IP dilys",
+        "less_than" : "rhaid iddo fod yn llai na",
+        "mandatory_field" : "Rhaid llenwi'r maes hwn.",
+        "must_contain" : "rhaid iddo gynnwys",
+        "no" : "Na",
+        "not_secure" : "ddim yn ddigon diogel",
+        "please_provide" : "Rhowch o leiaf",
+        "select_valid_entry" : "Dewiswch gofnod dilys o'r rhestr",
+        "snmp_name_allowed_characters" : "Enw defnyddiwr annilys. Nodau a ganiateir: # ! @ ( ) [ ] - . _ alffaniwmerig",
+        "value_not_equal" : "Dydy'r gwerth ddim yn hafal i'r maes Cyfrinair Newydd",
+        "yes" : "Iawn"
+      },
+      "configassist" : {
+         "dlg_assign" : {
+            "msg1" : "Mae'r ffurflen hon yn newid perchennog dyfais i'r defnyddiwr a nodir isod. Dydy'r enw defnyddiwr a'r cyfrinair ddim wedi'u storio ar y Doc.",
+            "msg2" : "Rhowch eich dilysiad isod a chlicio \"Iawn\" i neilltuo'r ddyfais hon i CHI. Fel arall, cliciwch \"Canslo\" i ddychwelyd.",
+            "password" : "Cyfrinair",
+            "username" : "Enw defnyddiwr"
+         },
+         "dlg_format" : {
+            "msg" : "Bydd hyn yn adnewyddu ffurfweddiad a chadarnwedd y ddyfais. Ni fydd dim data yn cael ei golli."
+         },
+         "dlg_format_auth" : {
+            "admin_password" : "Cyfrinair Gweinyddwr",
+            "admin_username" : "Enw Defnyddiwr Gweinyddwr",
+            "msg" : "Rhaid i chi fod â hawliau Gweinyddwr Evidence.com i gyflawni'r weithred hon. Dydy'ch enw defnyddiwr a'ch cyfrinair ddim wedi'u storio ar y Doc. Rhowch eich dilysiad isod a chlicio \"Iawn\" i fformatio'r ddyfais hon, fel arall cliciwch \"Canslo\" i ddychwelyd."
+         },
+         "err_cannot_get_log" : {
+            "msg" : "Aeth rhywbeth o'i le wrth geisio darllen y log gweithgarwch oddi ar y ddyfais hon.",
+            "title" : "Dim modd darllen y ffeil log oddi ar y ddyfais hon"
+         },
+         "err_cannot_read_file" : {
+            "msg" : "Aeth rhywbeth o'i le wrth ddarllen y manylion y dystiolaeth a'r cyfryngau oddi ar y ddyfais hon. Os bydd y gwall hwn yn parhau, cysylltwch â thîm cymorth technegol Axon.",
+            "title" : "Dim modd darllen ffeil dystiolaeth oddi ar y ddyfais hon."
+         },
+         "err_cannot_rm_log" : {
+            "msg" : "Aeth rhywbeth o'i le wrth geisio clirio'r log gweithgarwch ar y ddyfais hon ar ôl iddo gael ei lwytho i fyny i evidence.com.",
+            "title" : "Dim modd clirio'r ffeil log ar y ddyfais hon"
+         },
+         "err_device_lost_communication" : {
+            "msg" : "Mae'r cysylltiad ar gyfer y ddyfais hon wedi stopio gweithio. Tynnwch y ddyfais o'r doc a'i rhoi yn ôl yn y doc. Os bydd y broblem yn parhau, cysylltwch â gweinyddwr eich asiantaeth am gymorth gyda'r ddyfais hon.",
+            "title" : "Mae'r Doc wedi colli cysylltiad â'r ddyfais hon."
+         },
+         "err_device_maintenance" : {
+            "msg" : "Mae'r doc yn gwneud gwaith cynnal a chadw awtomatig ar y ddyfais hon. Bydd y ddyfais yn ailddechrau gweithredu'n arferol yn awtomatig. Does dim angen gwneud dim.",
+            "title" : "Mae'r Doc yn gwneud gwaith cynnal a chadw awtomatig ar y ddyfais hon."
+         },
+         "err_devtype_cfg_failure" : {
+             "msg" : "Dim modd gosod y ddyfais i'r Modd Camera Corff. Tarwch olwg ar y cyfarwyddiadau datrys problemau.",
+             "title" : "Dydy'r ddyfais hon ddim wedi'i gosod fel Camera Corff"
+         },
+         "err_format_failure" : {
+            "msg" : "Mae fformat gyriant y ddyfais wedi methu. Tarwch olwg ar y cyfarwyddiadau datrys problemau.",
+            "title" : "Mae fformat gyriant y ddyfais hon wedi methu"
+         },
+         "err_fwup_cfg_failure" : {
+             "msg": "Doedd dim modd gosod y maes Modd Diweddaru Cadarnwedd. Tarwch olwg ar y cyfarwyddiadau datrys problemau.",
+             "title" : "Dydy'r ddyfais hon ddim wedi'i gosod fel un y mae modd diweddaru ei chadarnwedd"
+         },
+         "err_inactive_device" : {
+            "msg" : "Dydy'r ddyfais ddim yn weithredol yn yr asiantaeth hon ar hyn o bryd. Cysylltwch y ddyfais ag Evidence Sync a neilltuo'r ddyfais i'r defnyddiwr priodol.",
+            "title" : "Dydy'ch dyfais ddim yn weithredol yn eich asiantaeth ar hyn o bryd."
+         },
+         "err_invalid_device_type" : {
+            "msg" : "Dim modd ffurfweddu'r ddyfais i'r math a roddir. Tarwch olwg ar y cyfarwyddiadau datrys problemau.",
+            "title" : "Mae'r ddyfais yn annilys"
+         },
+         "err_invalid_model" : {
+            "msg" : "Dydy'r ddyfais sydd wedi cysylltu â'r Doc ddim wedi'i hadnabod fel dyfais Axon ddilys. Tynnwch hi o'r Doc.",
+            "title" : "Dydy'r Doc ddim yn adnabod y math hwn o ddyfais"
+         },
+         "err_invalid_serial" : {
+            "msg" : "Does gan y ddyfais sydd wedi'i chysylltu â'r Doc ddim rhif cyfresol dilys. Gall hwn fod yn wall ysbeidiol, tynnwch y ddyfais o'r Doc a'i hailgysylltu. Os bydd y gwall hwn yn parhau, rhowch y ddyfais drwy broses RMA.",
+            "title" : "Mae rhif cyfresol y ddyfais hon yn annilys"
+         },
+         "err_inventory_failure" : {
+            "msg" : "Aeth rhywbeth o'i le wrth ddarllen manylion y dystiolaeth a'r cyfryngau oddi ar y ddyfais hon. Os bydd y gwall hwn yn parhau, cysylltwch â thîm cymorth technegol Axon.",
+            "title" : "Dim modd darllen y rhestr dystiolaeth oddi ar y ddyfais hon."
+         },
+         "err_mount_failed" : {
+            "msg" : "Ewch ymlaen i'r dudalen Gweinyddu ac ailfwtio'r Doc.",
+            "title" : "Gwall wrth gysylltu â'r ddyfais."
+         },
+         "err_network_failed" : {
+            "msg" : "Mae'n debyg bod hyn wedi digwydd oherwydd bod y cysylltiad â'r rhyngrwyd yn wael, bod y cysylltiad ag Evidence.com yn wael, bod Evidence.com dan bwysau mawr, neu fod gwaith cynnal a chadw yn cael ei wneud ar Evidence.com. Dydy hwn ddim yn wall critigol, bydd y Doc yn rhoi cynnig arall ar y weithred.",
+            "title" : "Cafodd y Doc broblem â'r rhwydwaith wrth brosesu'r ddyfais hon"
+         },
+         "err_no_usb" : {
+            "msg" : "Dydy'r Doc ddim yn gallu cyfathrebu â'r ddyfais hon. Gall hwn fod yn wall ysbeidiol, tynnwch y ddyfais o'r doc a'i hailgysylltu. Os bydd y gwall hwn yn parhau, rhowch y ddyfais drwy broses RMA.",
+            "title" : "Dim modd cysylltu â'r ddyfais"
+         },
+         "err_not_offline" : {
+            "msg" : "Mae'r Doc wedi'i ffurfweddu i weithredu all-lein, ni fydd yn prosesu dyfeisiau sydd wedi'u gosod i'r modd ar-lein. Os hoffech osod y ddyfais hon i'r modd all-lein, cysylltwch y ddyfais ag Evidence Sync a dilyn y cyfarwyddiadau.",
+            "title" : "Dydy'r ddyfais hon ddim wedi'i gosod i weithredu all-lein"
+         },
+         "err_not_online" : {
+            "msg" : "Mae'r Doc wedi'i ffurfweddu i weithredu ar-lein, ni fydd yn prosesu dyfeisiau sydd wedi'u gosod i'r modd all-lein. Os hoffech osod y ddyfais hon i'r modd ar-lein, cysylltwch y ddyfais ag Evidence Sync a dilyn y cyfarwyddiadau.",
+            "title" : "Dydy'r ddyfais hon ddim wedi'i gosod ar gyfer gweithredu ar-lein"
+         },
+         "err_system_maintenance" : {
+            "msg" : "Mae'r doc yn gwneud gwaith cynnal a chadw awtomatig. Bydd y ddyfais yn ailddechrau gweithredu'n arferol yn awtomatig. Does dim angen gwneud dim.",
+            "title" : "Mae'r Doc yn gwneud gwaith cynnal a chadw mewnol."
+         },
+         "err_transfer_failed" : {
+            "msg" : "Mae'n debyg bod hyn wedi digwydd oherwydd bod y cysylltiad â'r rhyngrwyd yn wael, bod y cysylltiad ag Evidence.com yn wael, bod Evidence.com dan bwysau mawr, neu fod gwaith cynnal a chadw yn cael ei wneud ar Evidence.com. Dydy hwn ddim yn wall critigol, bydd y Doc yn parhau i geisio llwytho'r ffeil i fyny.",
+            "title" : "Mae'r Doc wedi methu trosglwyddo fideo o'r ddyfais hon"
+         },
+         "err_transfer_failed_noretry" : {
+            "msg" : "Mae'n debyg mai problem â'r ddyfais sydd wedi achosi hyn. Cysylltwch a thîm cymorth technegol Axon.",
+            "title" : "Cafwyd gwall parhaol gyda'r Doc wrth drosglwyddo fideo o'r ddyfais hon"
+         },
+         "err_unknown_port_type" : {
+            "msg" : "Does dim modd delio â'r math o borth y mae'r ddyfais wedi'i chysylltu ag ef neu mae'n anhysbys. Tarwch olwg ar y cyfarwyddiadau datrys problemau.",
+            "title" : "Mae'r math o borth yn annilys"
+         },
+         "err_wrong_agency" : {
+            "msg" : "Dydy'r ddyfais hon ddim wedi'i neilltuo i'ch asiantaeth ar hyn o bryd. Cysylltwch â gweinyddwr eich asiantaeth am gymorth gyda'r ddyfais hon.",
+            "title" : "Dydy'r ddyfais hon ddim wedi'i neilltuo i'ch asiantaeth ar hyn o bryd."
+         },
+         "if_problem_continues" : "Os bydd y broblem hon yn parhau, cysylltwch â thîm cymorth technegol Axon yn:",
+         "more_help" : "I gael mwy o help gyda'r mater hwn, cysylltwch â thîm cymorth technegol Axon yn:",
+         "no_dns" : {
+            "msg" : "Doedd dim modd dod o hyd i weinydd DNS. Fel arfer, mae hyn yn cael ei achosi gan gyfeiriad IP annilys wedi'i ffurfweddu ar gyfer eich gweinydd DNS. Rydym yn argymell gwirio'r gosodiadau DNS ar eich tudalen Rhwydweithio.",
+            "return_msg" : "Cliciwch \"Iawn\" isod i fynd i'r dudalen Rhwydweithio a gwirio'r wybodaeth DNS, neu pwyswch Esc i gau'r ddeialog yma.",
+            "title" : "Dim modd dod o hyd i Weinydd DNS"
+         },
+         "no_ecom" : {
+            "msg" : "Doedd dim modd dilysu'r Doc hwn gydag Evidence.com. Mae hyn fel arfer yn cael ei achosi gan allweddi cofrestru coll neu annilys ar gyfer eich asiantaeth a'r Doc hwn. Rydym yn argymell cofrestru'r Doc hwn gan ddefnyddio'r dudalen Gweithrediadau.",
+            "return_msg" : "Cliciwch \"Iawn\" isod i fynd i'r dudalen Gweithrediadau i gofrestru eich Doc, neu pwyswch Esc i gau'r ddeialog yma.",
+            "title" : "Dim Dilysiad Evidence.com"
+         },
+         "no_gateway" : {
+            "msg" : "Doedd dim modd cysylltu ag adwy ddiofyn eich rhwydwaith. Cyfeiriad IP annilys sydd fel arfer yn achosi hyn, ond dydy rhai adwyon ddim yn ymateb i \"ping\" rhwydwaith.",
+            "return_msg" : "Cliciwch \"Iawn\" i fynd i'r dudalen Rhwydweithio i newid eich adwy ddiofyn, neu pwyswch ESC i gau'r ddeialog yma.",
+            "title" : "Heb ddod o hyd i adwy"
+         },
+         "no_https" : {
+            "msg" : "Doedd dim modd cyfathrebu dros sianel ddiogel (HTTPS). Mae hyn fel arfer yn cael ei achosi gan eich mur cadarn yn rhwystro eich porth HTTPS (443). Rydym yn argymell eich bod yn gwirio bod y porth HTTPS ar agor yn eich mur cadarn.",
+            "return_msg" : "Cliciwch \"Iawn\" isod i ddychwelyd i'r dudalen statws.",
+            "title" : "Dim HTTPS ar gael."
+         },
+         "no_ip_dynamic" : {
+            "msg" : "Doedd dim modd cael cyfeiriad IP o'ch gweinydd DHCP. Mae hyn fel arfer yn cael ei achosi pan nad oes gweinydd DHCP gweithredol ar eich rhwydwaith. Efallai y bydd angen i chi roi ffurfweddiad IP statig ar gyfer y Doc hwn.",
+            "return_msg" : "Cliciwch \"Iawn\" isod i fynd i'r dudalen Rhwydweithio i roi manylion IP statig, neu pwyswch Esc i gau'r ddeialog yma.",
+            "title" : "Dim Cyfeiriad IP."
+         },
+         "no_ip_static" : {
+            "msg" : "Doedd dim modd cael y cyfeiriad IP a nodwyd gennych wrth osod yr IP statig ar gyfer y Doc hwn. Defnyddio'r un IP statig ar gyfer mwy nag un cyfrifiadur sydd fel arfer yn achosi hyn. Rydym yn argymell eich bod yn gwirio'r cyfeiriad IP a roddwyd ar y dudalen rhwydweithio.",
+            "return_msg" : "Cliciwch \"Iawn\" isod i fynd i'r dudalen Rhwydweithio i wirio eich gosodiadau, neu pwyswch Esc i gau'r ddeialog yma.",
+            "title" : "Dim Cyfeiriad IP."
+         },
+         "no_ntp" : {
+            "msg" : "Doedd dim modd cyfathrebu â gweinydd amser y rhwydwaith. Mae hyn fel arfer yn cael ei achosi gan fur cadarn yn rhwystro porth 80 a phorth 123. Rydym yn argymell eich bod yn gwirio bod NAILL AI porth 80 neu 123 ar agor yn eich mur cadarn.",
+            "return_msg" : "Cliciwch \"Iawn\" i fynd i'r dudalen Rhwydweithio i newid eich gweinydd amser, neu pwyswch ESC i gau'r ddeialog yma.",
+            "title" : "Gweinydd NTP ddim yn ymateb"
+         },
+         "no_status" : {
+            "msg" : "Doedd dim modd pennu eich math o rwydwaith eto. Efallai fod hyn oherwydd bod ein system yn dal yn codi. Rydym yn awgrymu aros 2 neu 3 munud ac adnewyddu'r dudalen hon. Bydd y dudalen statws hefyd yn adnewyddu os daw unrhyw wybodaeth newydd i law.",
+            "return_msg" : "Cliciwch \"Iawn\" isod i ddychwelyd i'r dudalen statws.",
+            "title" : "Heb ddod o hyd i statws."
+         },
+         "title" : "Cynorthwyydd Ffurfweddu",
+         "we_found" : "Ar ôl archwilio eich rhwydwaith, daethom o hyd i'r broblem ganlynol:",
+         "welcome" : "Croeso i'r cynorthwyydd ffurfweddu."
+      },
+      "device_status_codes" : {
+         "capchk" : "Gwiriad Capasiti",
+         "cfg" : "Ffurfweddu",
+         "chg" : "Gwefru",
+         "del" : "Wrthi'n tynnu",
+         "device_maint" : "Cynnal a Chadw Dyfeisiau",
+         "devid" : "Adnabod",
+         "err" : "Gwall (yn aros i ailgynnig)",
+         "fail" : "Gwall",
+         "fwdone" : "Wedi Diweddaru Cadarnwedd",
+         "fwupdate" : "Wrthi'n diweddaru cadarnwedd",
+         "inact" : "Segur",
+         "init" : "Wrthi'n Ymgychwyn",
+         "inventory" : "Stocrestr",
+         "logerase" : "Dileu Log",
+         "logsend" : "Llwytho Log i Fyny",
+         "lost" : "Cyfathrebiad wedi'i Golli",
+         "net_retry" : "Rhoi Cynnig Arall ar y Cysylltiad Rhwydwaith",
+         "new" : "Dyfais Newydd",
+         "nonet" : "Rhwydwaith i Lawr",
+         "plugin" : "Wrthi'n cysylltu",
+         "proc" : "Trosglwyddo Ffeil",
+         "rdy" : "Barod",
+         "register" : "Wrthi'n cofrestru",
+         "summary" : "Cael Crynodeb",
+         "sys_maint" : "Cynnal a Chadw'r System",
+         "unk" : "Anhysbys",
+         "unsupported" : "Dim modd delio â hyn",
+         "wait" : "Yn aros"
+      },
+      "diag" : {
+         "headers" : {
+            "diag" : "Diagnosteg"
+         },
+         "page_title" : "Statws",
+         "sections" : {
+            "netdiag" : {
+               "command" : "Gorchymyn:",
+               "commands" : {
+                  "date" : "DYDDIAD yn ôl y Doc",
+                  "ifconfig" : "IFCONFIG – ystadegau rhwydwaith",
+                  "nslookup_goog" : "NSLOOKUP google.com",
+                  "nslookup_taser" : "NSLOOKUP taser.evidence.com",
+                  "ping_8888" : "PING 8.8.8.8",
+                  "ping_gateway" : "PING – adwy ddiofyn",
+                  "ping_goog" : "PING google.com",
+                  "tail_etmlog" : "TAIL – 100 llinell o log Doc",
+                  "tail_syslog" : "TAIL – 100 llinell o syslog",
+                  "tr_goog" : "TRACEROUTE google.com",
+                  "tr_taser" : "TRACEROUTE taser.evidence.com"
+               },
+               "execute" : "Gweithredu",
+               "legend" : "Diagnosteg y Rhwydwaith",
+               "menu" : "Dewiswch y prawf diagnostig o'r gwymplen a phwyso gweithredu...",
+               "msg1" : "Mae'r gorchmynion a roddir yma yn cael eu defnyddio i ddadansoddi problemau cysylltedd y rhwydwaith.",
+               "msg2" : "Peidiwch â gweithredu'r gorchmynion isod oni ofynnir i chi wneud hynny gan gynrychiolydd gwasanaeth i gwsmeriaid Axon.",
+               "result" : "Canlyniad:"
+            }
+         }
+      },
+      "firmware" : {
+         "current_version" : "Fersiwn gyfredol y cadarnwedd",
+         "dvr_update_starting" : "Wrthi'n cysylltu â gweinydd Axon i chwilio am ddiweddariadau... Bydd y broses diweddaru cadarnwedd yn dechrau ar ôl i'r DVR orffen llwytho ffeiliau i fyny",
+         "etm_update_starting" : "Mae'r broses diweddaru cadarnwedd wedi dechrau. Dewch yn ôl mewn ychydig funudau i weld a yw'r fersiwn wedi diweddaru...",
+         "headers" : {
+            "firmware_mgmt" : "Rheoli Cadarnwedd"
+         },
+         "not_released" : "Heb ryddhau",
+         "page_title" : "Diweddariad cadarnwedd",
+         "sections" : {
+            "device_firmware_update" : {
+               "legend" : "Diweddariad cadarnwedd y ddyfais",
+               "msg" : "I uwchraddio cadarnwedd yr holl ddyfeisiau sydd yn y doc ar hyn o bryd, cliciwch y botwm isod. Os oes diweddariad ar gael, bydd yn cael ei osod ar y dyfeisiau hyn yn awtomatig.",
+               "device_name" : "Enw'r ddyfais",
+               "released_firmware" : "Cadarnwedd wedi'i rhyddhau",
+               "early_access_firmware" : "Cadarnwedd Mynediad Cynnar",
+               "perform_fw_update" : "Diweddaru dyfeisiau Axon"
+            },
+            "etm_firmware_update" : {
+               "check_update" : "Diweddaru Cadarnwedd",
+               "legend" : "Diweddariad cadarnwedd y Doc",
+               "msg" : "I ddiweddaru cadarnwedd eich Doc, cliciwch DIWEDDARU CADARNWEDD. Bydd y Doc yn cysylltu â gweinyddion Axon ac yn gwirio fersiwn ddiweddaraf y gadarnwedd. Os oes fersiwn newydd o'r gadarnwedd ar gael, bydd yn cael ei gosod yn awtomatig.",
+               "show_version_details" : "Manylion",
+               "version_details" : "Manylion"
+            }
+         },
+         "update_failed" : "Dim modd dechrau diweddaru'r gadarnwedd",
+         "update_title" : "Diweddariad cadarnwedd"
+      },
+      "general" : {
+         "closeparen" : ")",
+         "copyright" : "&copy; 2023 Axon Enterprise, Inc. Cedwir pob hawl",
+         "error_code" : "cod gwall",
+         "firmware" : "Cadarnwedd",
+         "footnote" : "*Mae batris TASER yn cynnwys cadarnwedd ar gyfer Handlenni TASER 7 (T7) a TASER 10 (T10), yn ogystal â rhai ar gyfer TASER BLE.",
+         "openparen" : "(",
+         "refresh" : "Adnewyddu",
+         "sections" : {
+            "button_bar" : {
+               "discard_changes" : "Dileu newidiadau",
+               "loading_wait" : "Wrthi'n llwytho'r ffurfweddiad... arhoswch...",
+               "reset_registration" : "Ailosod Cofrestriad",
+               "save_changes" : "Cadw Newidiadau",
+               "continue" : "Parhau"
+            },
+            "snmp" : {
+               "showhide_password" : "Dangos/Cuddio cyfrinair SNMP"
+            }
+         }
+      },
+      "index" : {
+         "footer" : {
+            "help_center" : "Canolfan Gymorth"
+         },
+         "headers" : {
+            "system_status" : "Statws y System"
+         },
+         "page_title" : "Statws",
+         "sections" : {
+            "devices" : {
+               "device" : "Dyfais",
+               "firmware" : "Caledwedd*",
+               "hidden_info" : "Cliciwch i weld y data",
+               "legend" : "Dyfeisiau",
+               "owner" : "Perchennog",
+               "serial" : "Rhif cyfresol #",
+               "status" : "Statws"
+            },
+            "networking" : {
+               "active" : "Gweithredol",
+               "dns_server" : "Gweinydd DNS",
+               "ecom_registration" : "Cofrestriad Evidence.com",
+               "gateway" : "Adwy Rhyngrwyd",
+               "https_port" : "HTTPS (Porth 443)",
+               "ipaddress" : "Cyfeiriad IP",
+               "legend" : "Rhwydweithio",
+               "mac_address" : "Cyfeiriad MAC",
+               "not_registered" : "Heb gofrestru",
+               "serial_number" : "Rhif cyfresol #",
+               "time_server" : "Gweinydd Amser"
+            }
+         }
+      },
+      "links" : {
+         "administration" : "Gweinyddu",
+         "firmware" : "Cadarnwedd",
+         "networking" : "Rhwydweithio",
+         "operations" : "Gweithrediadau",
+         "status" : "Statws"
+      },
+      "lookups" : {
+         "netmode" : {
+            "dynamic" : "deinamig",
+            "static" : "statig"
+         }
+      },
+      "networking" : {
+         "headers" : {
+            "net_setup" : "Gosod y Rhwydwaith"
+         },
+         "page_title" : "Gosodiadau Rhwydweithio",
+         "restart_title" : "Ailgychwyn y Rhwydwaith",
+         "saved_restarting" : "Mae'r gosodiadau wedi'u cadw, wrthi'n ailgychwyn y rhwydwaith...",
+         "sections" : {
+            "conn_type" : {
+               "label_dynamic" : "IP Deinamig (DHCP)",
+               "label_static" : "IP Statig",
+               "legend" : "Math o Gysylltiad",
+               "msg" : "Mae dwy ffordd y gall y Doc weithio gyda'ch amodau rhwydweithio presennol i ganiatáu mynediad i'r Rhyngrwyd ar gyfer y dyfeisiau AXON. Naill ai drwy IP Deinamig (a elwir hefyd yn DHCP) neu gyfeiriad IP statig. Dewiswch y dull priodol isod:"
+            },
+            "static_ip" : {
+               "dns_servers" : "Gweinyddion DNS",
+               "gateway" : "Adwy Ddiofyn",
+               "ip_address" : "Cyfeiriad IP",
+               "legend" : "Ffurfweddiad IP Statig",
+               "msg" : "Os nad yw'ch rhwydwaith yn defnyddio DHCP, neu fod mynediad i'r rhyngrwyd ar gael drwy neilltuo IP statig yn unig, bydd angen i chi ddarparu manylion ffurfweddu ar gyfer y Doc. Os nad yw'r wybodaeth hon ar gael i chi, cysylltwch â gweinyddwr eich rhwydwaith",
+               "subnet_mask" : "Masg Is-rwyd"
+            },
+            "throttle" : {
+               "label_mbps" : "Mbps",
+               "legend" : "Sbardun Uwch i Fyny",
+               "max_speed" : "Cyflymder llwytho i fyny cyflymaf",
+               "msg" : "Fel arfer, bydd y Doc yn defnyddio'r holl led band sydd ar gael i lwytho fideos i fyny o'r unedau AXON mor gyflym â phosib. Os nad hwn yw'r ymddygiad a ddymunir, gallwch gyfyngu ar y cyflymder trosglwyddo isod (a fesurir mewn Megadidau yr eilad). Bydd gwerth o sero yn dweud wrth y Doc am ddefnyddio'r holl led band sydd ar gael."
+            }
+         }
+      },
+      "ops" : {
+         "an_error_occurred" : "Aeth rhywbeth o'i le",
+         "generating_tokens" : "Wrthi'n Creu Tocynnau Diogelwch...",
+         "headers" : {
+            "operations" : "Gweithrediadau"
+         },
+         "page_title" : "Gweithrediadau Cyffredinol",
+         "regenerate_keys_query" : "Rydych chi eisoes wedi'ch dilysu gydag Evidence.com, hoffech chi ailgynhyrchu'r allweddi diogelwch?",
+         "regenerate_keys_title" : "Ailgynhyrchu Allweddi",
+         "register_with_ecom" : "Cofrestru gydag Evidence.com",
+         "registering_etm" : "Wrthi'n cofrestru'r Doc...",
+         "processing" : "Wrthi'n prosesu...",
+         "poll_uri_code" : "Wrthi'n adalw dolen actifadu a chod...",
+         "reset_reg" : "Ailosod Cofrestriad",
+         "reset_reg_failed" : "Dim modd ailosod cofrestriad",
+         "resetting_reg_dock" : "Wrthi'n ailosod cofrestriad y Doc i'r un diofyn. Bydd y dudalen yn ail-lwytho mewn 30 eiliad.",
+         "restarting_etm" : "Wrthi'n ailgychwyn y Doc, bydd hyn yn cymryd tua 30 eiliad...",
+         "sections" : {
+            "e_com_reg" : {
+               "admin_password" : "Cyfrinair Gweinyddwr",
+               "admin_username" : "Enw Defnyddiwr Gweinyddwr",
+               "agency_name" : "Asiantaeth Evidence.com",
+               "already_registered" : "Mae'r Doc eisoes wedi'i gofrestru ag Evidence.com",
+               "domain_name" : "Enw'r parth",
+               "legend" : "Cofrestriad Evidence.com",
+               "msg" : "I gofrestru'r Doc hwn â'ch Asiantaeth Evidence.com, rhowch eich enw asiantaeth Evidence.com, eich enw defnyddiwr a'ch cyfrinair. Pan fydd y Doc wedi'i gofrestru ag Evidence.com, bydd yn trosglwyddo'r holl ffeiliau cyfryngau i'ch cyfrif Evidence.com. Ni fydd eich enw defnyddiwr a'ch cyfrinair yn cael eu storio ar y Doc.",
+               "msg_shorten" : "I gofrestru'r Doc hwn i'ch Asiantaeth Evidence.com rhowch enw eich asiantaeth Evidence.com. Unwaith y bydd y Doc wedi'i gofrestru i Evidence.com, bydd yn trosglwyddo'r holl ffeiliau cyfryngau i'ch cyfrif Evidence.com.",
+               "msg_login_uri_code" : "Agorwch y ddolen a rhowch y cod i gwblhau'r cofrestriad:"
+            }
+         }
+      },
+      "proxy": {
+         "headers": {
+            "proxy_setup": "Dirprwy Osodiad"
+         },
+         "page_title": "Dirprwy Osodiadau",
+         "proxy_test_title": "Dirprwy Brawf",
+         "proxy_test_in_progress": "Dirprwy brawf ar waith...",
+         "proxy_test_success_msg": "Dirprwy brawf wedi llwyddo",
+         "proxy_test_fail_msg": "Dirprwy brawf wedi methu",
+         "configuration_saved_title": "Wedi Cadw Dirprwy Ffurfweddiad",
+         "configuration_saved_msg": "Mae'r dirprwy ffurfweddiad wedi'i gadw a bydd yn dod i rym yn fuan",
+         "sections": {
+            "http_proxy": {
+               "legend": "Dirprwy HTTP",
+               "msg": "Bydd gosod dirprwy HTTP yn ailgyfeirio'r holl geisiadau HTTP i ddirprwy weinydd penodedig.",
+               "enable": "Galluogi",
+               "legend_config": "Ffurfweddiad",
+               "legend_advanced_config": "Ffurfweddiad Uwch",
+               "disable_dns_check": "Analluogi Gwiriad DNS",
+               "msg_config": "Mae enw defnyddiwr a chyfrinair yn ddewisol.",
+               "host": "Dirprwy Letywr",
+               "port": "Dirprwy Borth",
+               "username": "Enw defnyddiwr",
+               "password": "Cyfrinair",
+               "test_connection": "Cysylltiad Prawf"
+            }
+         }
+      },
+      "strings" : {
+         "an_error_occurred" : "Aeth rhywbeth o'i le",
+         "axon_flex" : "Axon Flex",
+         "calculating_rate" : "Wrthi'n cyfrifo...",
+         "cancel" : "Canslo",
+         "cannot_get_data_too_many_failed_login_attempts" : "Dim modd cael data oherwydd cafwyd gormod o ymgeisiau aflwyddiannus i fewngofnodi",
+         "click_for_details" : "Cliciwch i gael manylion",
+         "device_error" : "Gwall gyda'r ddyfais",
+         "error" : "Gwall",
+         "error_download" : "Gwall wrth lwytho https i lawr",
+         "error_internal" : "Gwall Mewnol",
+         "failed_auth": "Gormod o ymgeisiau aflwyddiannus i ddilysu. Mae'r cyfrif wedi'i atal dros dro.",
+         "finished" : "Wedi gorffen",
+         "invalid_hostname" : "ddim yn enw lletywr dilys",
+         "kbps" : "kbps",
+         "login_failed" : "Wedi methu mewngofnodi",
+         "no_server_response" : "Dim ymateb gan y gweinydd",
+         "ok" : "IAWN",
+         "operation_complete_success" : "Wedi cwblhau'r weithred yn llwyddiannus.",
+         "please_complete_mandatory" : "Llenwch y maes gorfodol hwn.",
+         "please_enter_numeric" : "Rhowch werth rhifol.",
+         "please_enter_valid_email" : "Rhowch gyfeiriad e-bost dilys.",
+         "please_enter_valid_URL" : "Rhowch URL dilys.",
+         "please_enter_value_larger" : "Rhowch werth sy'n fwy na",
+         "please_enter_value_smaller" : "Rhowch werth sy'n llai na",
+         "reloading_status" : "Wrthi'n ail-lwytho'r statws...",
+         "reloading_status_title" : "Adnewyddu",
+         "unassigned" : "Heb neilltuo",
+         "unspecified_error" : "Cafwyd gwall annisgwyl:",
+         "waiting_for_response" : "Yn aros am ymateb...",
+         "authentication_failed" : "Wedi methu dilysu",
+         "invalid_request" : "Mae'r cais yn nwl neu'n annilys"
+      }
+   }
+}

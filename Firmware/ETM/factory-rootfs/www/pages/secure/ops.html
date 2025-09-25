@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- begin_include meta -->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="csrf-token" content="__CSRF_TOKEN_PLACEHOLDER__">
+
+  <title>Axon Dock</title>
+  <!-- end_include meta -->
+
+  <!-- begin_include script -->
+  <script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-migrate-3.3.0.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-ui-1.12.1.js"></script>
+  <script type="text/javascript" src="/js/jquery-tools.min.js"></script>
+  <script type="text/javascript" src="/js/purl.js"></script>
+  <script type="text/javascript" src="/js/menu.js"></script>
+  <script type="text/javascript" src="/js/common.js"></script>
+  <script type="text/javascript" src="/js/jquery.localize.js"></script>
+  <script type="text/javascript" src="/js/etm-main.js"></script>
+  <link rel="stylesheet" href="/css/styles.css"/>
+  <link rel="stylesheet" href="/css/custom-theme/jquery-ui-1.12.1.css"/>
+  <link rel="stylesheet" href="/css/menu.css"/>
+  <link rel="stylesheet" href="/css/styles-ext.css"/>
+  <!-- end_include script -->
+
+  <script type="text/javascript" src="/js/etm-ops.js"></script>
+
+</head>
+<body>
+  <div id="container">
+    <!-- begin_include header -->
+    <div id="header" class="header">
+      <div id="nav" class="primary-navigation">
+        <ul class="navigation-block">
+          <!-- languageLink marks links that need a lang attribute added -->
+          <li class="sitenavigation-item"><a class="languageLink" href="/index.html"><img class="sitenavigation-fulllogo" src="/images/axon-dock.png" alt="Axon Dock"/></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/index.html"><span data-localize="ETM.links.status">Status</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/network.html"><span data-localize="ETM.links.networking">Networking</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/ops.html" ><span data-localize="ETM.links.operations">Operations</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/admin.html" ><span data-localize="ETM.links.administration">Administration</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/firmware.html" ><span data-localize="ETM.links.firmware">Firmware</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="agency-info">
+      <p><span id="title-agency"></span> &mdash; <span id="agency-name"></span></p>
+      <p><span id="device-home"></span><span id="agency-loc"></span></p>
+      <p><span id="ddate"></span> &mdash; <span id="dtime"></span></p>
+    </div>
+    <!-- end_include header -->
+    <div id="content" class="content clearfix">
+      <h2 data-localize="ETM.ops.headers.operations">Operations</h2>
+
+      <div class="content-box-wrap">
+        <div class="content-box" >
+          <div class="content-box-inner">
+          <form id="frmECOM" action="" class="no-display">
+            <fieldset>
+              <legend data-localize="ETM.ops.sections.e_com_reg.legend">Evidence.com Registration</legend>
+              <p id="msgEcomReg" data-localize="ETM.ops.sections.e_com_reg.msg_shorten">
+                To register this Dock to your Evidence.com Agency enter your Evidence.com agency name. 
+                Once the Dock is registered to Evidence.com, it will transfer all media files to your Evidence.com account.
+              </p>
+              <table class="content-table">
+                <tr>
+                  <td data-localize="ETM.ops.sections.e_com_reg.agency_name">Evidence.com Agency</td>
+                  <td id="ecom_agency"> </td>
+                </tr>
+                <tr>
+                  <td data-localize="ETM.ops.sections.e_com_reg.domain_name">Domain name</td>
+                  <td ><input id="ecom_domain" name="etm.operation.agency_domain" type="text" value="" required="1" class="processKeyStrokes"/>
+                  </td>
+                </tr>
+                <tr id="ecom_username_row">
+                  <td data-localize="ETM.ops.sections.e_com_reg.admin_username">Admin. Username</td>
+                  <td><input name="etm.admin.username" type="text" value="" required="1" class="processKeyStrokes"/></td>
+                </tr>
+                <tr id="ecom_password_row">
+                  <td data-localize="ETM.ops.sections.e_com_reg.admin_password">Admin. Password</td>
+                  <td><input name="etm.admin.password" type="password" value="" required="1" class="processKeyStrokes"/></td>
+                </tr>
+                <tr id="ecom_reg_done" class="no-display">
+                  <td colspan="2"><p class="warn" data-localize="ETM.ops.sections.e_com_reg.already_registered">This Dock has already been registered with Evidence.com</p></td>
+                </tr>
+              </table>
+              <p id="msgLoginInstruction" data-localize="ETM.ops.sections.e_com_reg.msg_login_uri_code">Please open the link and provide the code to complete registration:</p>
+            </fieldset>
+          </form>
+        <div class="btnRow">
+          <div id="msgLoading" class="warn" data-localize="ETM.general.sections.button_bar.loading_wait">Loading Configuration... please wait...</div>
+          <button id="btnResetReg" class="btn no-display" data-localize="ETM.general.sections.button_bar.reset_registration">Reset Registration</button>
+          <button id="btnSave" class="btn no-display" data-localize="ETM.general.sections.button_bar.save_changes">Save Changes</button>
+          <button id="btnContinue" class="btn no-display" data-localize="ETM.general.sections.button_bar.continue">Continue</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+  <!-- begin_include footer -->
+  <div id="footer">
+    <div class="footer-lang-select">
+      <select id="langchoice">
+         <option value="ms">Bahasa Melayu</option>
+         <option value="cs">Čeština</option>
+         <option value="da">Dansk</option>
+         <option value="de">Deutsch</option>
+         <option value="en-us">English</option>
+         <option value="es">Español</option>
+         <option value="fr">Français</option>
+         <option value="it">Italiano</option>
+         <option value="hu">Magyar</option>
+         <option value="nl">Nederlands</option>
+         <option value="no">Norsk</option>
+         <option value="pt-br">Português</option>
+         <option value="ro">Român</option>
+         <option value="fi">Suomi</option>
+         <option value="sv">Svenska</option>
+         <option value="ru">Pусский язык</option>
+         <option value="uk">украї́нська мо́ва</option>
+         <option value="th">ไทย</option>
+         <option value="ko">한국어</option>
+         <option value="ja">日本語</option>
+         <option value="zh-tw">漢語中文</option>
+         <option value="ar">اَلْعَرَبِيَّةُ</option>
+      </select>
+      <span id="footer-copyright" data-localize="ETM.general.copyright">&copy; 2020 Axon Enterprise, Inc. All rights reserved</span>
+    </div>
+    <div class="footer-contact-info">
+      <span id="footer-contactInfo"><a href="mailto:support@axon.com">support@axon.com</a></span>
+      <span id="footer-supportLink">
+        <a href="https://help.axon.com"><span data-localize="ETM.index.footer.help_center">Help Center</span></a>
+      </span>
+    </div>
+  </div>
+  <!-- end_include footer -->
+</body>
+</html>

@@ -1,0 +1,27 @@
+#!/bin/sh
+#-------------------------------------------------
+#
+# Copyright (C) 2015 TASER International, Inc.
+# All Rights Reserved
+# TASER Data Classification: CONFIDENTIAL
+#
+# WARNING: do not add .sh extension to the name of the script,
+#          otherwise ifup will not run it.
+#
+# This script checks if WAN interface is configured as static and reports its IP
+# address to syslog when WAN interface is up.
+
+. /etm/bin/etm-net-common.sh
+
+# IFACE is an environment variable set by ifup with the name of current network interface.
+if [[ "${IFACE}" == "${WAN_IFACE}" ]] ; then
+    # read configuration of WAN interface
+    WAN_IFACE_CFG="$(awk -f /etm/bin/queryInterfaces.awk /etc/network/interfaces device="${IFACE}")"
+    if [[ ! -z "${WAN_IFACE_CFG}" ]] ; then
+        # detect if WAN interface has static configuration
+        if echo "${WAN_IFACE_CFG}" | grep -e "proto static" >/dev/null ; then
+            # WAN interface is configured as static, report the IP address to syslog
+            get_ip_address "${WAN_IFACE}" "ifup-report-ip-addr"
+        fi
+    fi
+fi

@@ -1,0 +1,31 @@
+#!/bin/sh
+#-------------------------------------------------
+#
+# Copyright (C) 2015 TASER International, Inc.
+# All Rights Reserved
+# TASER Data Classification: CONFIDENTIAL
+#
+# WARNING: do not add .sh extension to the name of the script,
+#          otherwise ifup will not run it.
+#
+# This script enables tcp_mtu_probing.
+# More details about this option:
+# https://www.kernel.org/doc/Documentation/networking/ip-sysctl.txt
+
+# shellcheck disable=SC1091
+. /etm/bin/etm-net-common.sh
+
+readonly SCRIPT_NAME="ifup-wan-mtu"
+
+# IFACE is an environment variable set by ifup with the name of current network interface.
+if [[ "${IFACE}" == "${WAN_IFACE}" ]] ; then
+    if [[ -f /proc/sys/net/ipv4/tcp_mtu_probing ]]; then
+        if echo "2" > /proc/sys/net/ipv4/tcp_mtu_probing ; then
+            log_info_msg "${SCRIPT_NAME}" "Event=TcpMtuProbingSet"
+        else
+            log_err_msg "${SCRIPT_NAME}" "Event=TcpMtuProbingNotSet Reason=EchoFailed"
+        fi
+    else
+        log_err_msg "${SCRIPT_NAME}" "Event=TcpMtuProbingNotSet Reason=NoFile"
+    fi
+fi

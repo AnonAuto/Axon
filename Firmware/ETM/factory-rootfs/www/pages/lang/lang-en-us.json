@@ -1,0 +1,558 @@
+{
+   "ETM" : {
+      "admin" : {
+         "admin_title" : "Dock Administration",
+         "configuring_msg" : "Configuring, This will take approximately 40 seconds...",
+         "headers" : {
+            "administration" : "Dock Administration"
+         },
+         "page_title" : "Admin. Settings",
+         "rebooting_msg" : "Rebooting, This will take approximately 60 seconds...",
+         "saving_settings" : "Saving settings...",
+         "sections" : {
+            "admin_maint" : {
+               "legend" : "Maintenance",
+               "reboot" : "Reboot Dock"
+            },
+            "admin_ssl" : {
+               "accept_only_https" : "Accept only SSL Requests",
+               "legend" : "SSL Configuration",
+               "regen_ssl" : "Regenerate SSL Certificate",
+               "require_https_time" : "Require SSL For Initial Time Check"
+            },
+            "device_id" : {
+               "etm_name" : "Dock Name",
+               "home" : "Device Home",
+               "legend" : "Device Identification",
+               "location" : "Location",
+               "msg" : "The information below will help you identify which Dock device you are communicating with. This information is also used by Evidence.com to provide device status information.",
+               "your_agency" : "Your Agency"
+            },
+            "password_change" : {
+               "confirm_new_password" : "Re-type New Password",
+               "current_password" : "Current Password",
+               "error_no_password" : "Changing Administrator credentials requires current password.",
+               "legend" : "Change Credentials",
+               "msg" : "Manage the administration username and password used to access this Dock.",
+               "new_password" : "New Password",
+               "username" : "Username"
+            },
+            "snmp" : {
+               "authentication" : "Authentication",
+               "disable" : "Disable",
+               "enable_snmp" : "Enable SNMP",
+               "enc_password" : "Encryption Password",
+               "encrypt_msg" : "Leave \"Encryption Password\" blank if you want to use the same \"SNMP Password\" for encryption.",
+               "encryption" : "Encryption",
+               "error_no_password" : "Changing the SNMP username requires a corresponding password.",
+               "error_title" : "Set SNMP Error",
+               "legend" : "SNMP server",
+               "legend_config" : "SNMP Configuration",
+               "msg" : "SNMP is disabled by default. To enable it, use checkbox and input configuration.",
+               "password" : "SNMP Password",
+               "username" : "SNMP Username"
+            }
+         },
+         "set_configuration_error_title" : "Set Configuration",
+         "settings_changed" : {
+            "p1" : "Settings from your Agency has changed!",
+            "p2" : "Press [Update] button to apply the changes from your Agency to the Dock.",
+            "p3" : "Otherwise press [Cancel] then manually update your settings, the changes will be sync to your Agency.",
+            "p4" : "List of changes:",
+            "title" : "Settings changed"
+         }
+      },
+      "axonsup" : {
+         "headers" : {
+            "data" : "Support Data"
+         },
+         "page_title" : "Axon Support",
+         "sections" : {
+            "data" : {
+               "legend" : "Axon Support Data",
+               "msg" : "The data blobs below may be useful when working with an Axon customer service representative.",
+               "result1" : "Result 1:",
+               "result2" : "Result 2:"
+            }
+         }
+      },
+	  "cgi" : {
+          "csrf_fail" : "Cookie error",
+          "invalid_auth" : "Invalid username or password",
+          "invalid_cmd" : "Invalid command",
+          "invalid_domain" : "No domain specified",
+          "invalid_proxy_config" : "Invalid proxy configuration",
+          "invalid_proxy_user_pass" : "Username or password is missing",
+          "invalid_snmp_user" : "Unable to apply SNMP configuration. Invalid SNMP user name.",
+          "no_content" : "No content",
+          "no_snmp_pw" : "Unable to apply SNMP configuration. No Password provided.",
+          "not_released" : "Not released",
+          "ok" : "OK",
+          "unable_disable_snmp" : "Unable to disable SNMP configuration.",
+          "unable_set_snmp" : "Unable to apply SNMP configuration.",
+          "unable_set_snmp_auth" : "Unable to apply SNMP configuration Authentication.",
+          "unable_set_snmp_enable" : "Unable to enable SNMP configuration.",
+          "unable_set_snmp_enc" : "Unable to apply SNMP configuration encryption.",
+          "unable_set_snmp_pass" : "Unable to apply SNMP configuration password.",
+          "unable_set_snmp_user" : "Unable to apply SNMP configuration username.",
+          "unable_set_sslonly" : "Unable to change 'Accept Only SSL Requests' setting",
+          "unknown_err" : "Unknown error",
+          "web_creds_err" : "Failed to update Administrator credentials.",
+          "web_creds_invalid_username" : "Failed to update Administrator credentials: username is invalid.",
+          "web_creds_invalid_cur_pass" : "Failed to update Administrator credentials: current password is invalid.",
+          "web_creds_invalid_new_pass" : "Failed to update Administrator credentials: new password is invalid."
+      },
+      "common" : {
+        "admin_name_allowed_characters" : "Invalid username. Allowed characters: alphanumeric space # ! @ ( ) [ ] - . _",
+        "at_least" : "must be at least ",
+        "cannot_contain_duplicate" : "cannot contain duplicate characters",
+        "cannot_contain_more_than" : "cannot contain more than ",
+        "cannot_contain_username" : "cannot contain your username or other common words",
+        "character" : " character",
+        "characters" : " characters",
+        "characters_in_seq" : " characters in sequence",
+        "input_valid_IP" : "Please input a valid IP address",
+        "less_than" : "must be less than ",
+        "mandatory_field" : "This field must be provided.",
+        "must_contain" : "must contain ",
+        "no" : "No",
+        "not_secure" : "is not secure enough ",
+        "please_provide" : "Please provide at least ",
+        "select_valid_entry" : "Please select a valid entry from the list",
+        "snmp_name_allowed_characters" : "Invalid username. Allowed characters: alphanumeric # ! @ ( ) [ ] - . _",
+        "value_not_equal" : "Value not equal with the New Password field",
+        "yes" : "Yes"
+      },
+      "configassist" : {
+         "dlg_assign" : {
+            "msg1" : "This form changes the owner of a device to the user specified below. The username and password are not stored on the Dock.",
+            "msg2" : "Enter your authentication below and click \"OK\" to assign this device to YOU, otherwise click \"Cancel\" to return.",
+            "password" : "Password",
+            "username" : "Username"
+         },
+         "dlg_format" : {
+            "msg" : "This will refresh the device's configuration and firmware. No data will be lost."
+         },
+         "dlg_format_auth" : {
+            "admin_password" : "Admin. Password",
+            "admin_username" : "Admin. Username",
+            "msg" : "You must have Evidence.com Administrator rights to perform this action. Your username and password are not stored on the Dock. Enter your authentication below and click \"OK\" to format this device, otherwise click \"Cancel\" to return."
+         },
+         "err_cannot_get_log" : {
+            "msg" : "An error occurred trying to read the activity log from this device.",
+            "title" : "Unable to read the log file from this device"
+         },
+         "err_cannot_read_file" : {
+            "msg" : "An error occurred reading the media and evidence information from this device. If this error persists please contact Axon technical support.",
+            "title" : "Unable to read an evidence file from this device."
+         },
+         "err_cannot_rm_log" : {
+            "msg" : "An error occurred trying to clear the activity log on this device after it was uploaded to evidence.com.",
+            "title" : "Unable to clear the log file on this device"
+         },
+         "err_device_lost_communication" : {
+            "msg" : "This connection for this device has stopped functioning. Please undock and re-dock the device. If the problem continues, please contact your agency admin for assistance with this device.",
+            "title" : "The Dock has lost communication with this device."
+         },
+         "err_device_maintenance" : {
+            "msg" : "This Dock is performing automatic maintenance on this device. The device will resume normal operation automatically. No action is required.",
+            "title" : "This Dock is performing automatic maintenance on this device."
+         },
+         "err_devtype_cfg_failure" : {
+             "msg" : "Unable to set the device to Bodycam Mode. Please refer to the troubleshooting instructions.",
+             "title" : "This device is not set as Bodycam"
+         },
+         "err_format_failure" : {
+            "msg" : "The device drive format failed. Please refer to the troubleshooting instructions.",
+            "title" : "The drive format of this device failed"
+         },
+         "err_fwup_cfg_failure" : {
+             "msg": "The Firmware Updatable field could not be set. Please refer to the troubleshooting instructions.",
+             "title" : "This device is not set as firmware updatable"
+         },
+         "err_inactive_device" : {
+            "msg" : "Device is currently not active on this agency. Please connect the device to Evidence Sync and assign device to an appropriate user.",
+            "title" : "Your device is currently not active on your agency"
+         },
+         "err_invalid_device_type" : {
+            "msg" : "Unable to configure the device to the given type. Please refer to the troubleshooting instructions.",
+            "title" : "Device is invalid"
+         },
+         "err_invalid_model" : {
+            "msg" : "The device connected to the Dock is not recognized as a valid Axon device. Please remove it from the Dock.",
+            "title" : "The Dock does not recognize this type of device"
+         },
+         "err_invalid_serial" : {
+            "msg" : "The device connected to the Dock does not have a valid serial number. This may be an intermittent error, please remove and reconnect the device in the Dock. If this error persists, please RMA the device.",
+            "title" : "This device has an invalid serial number"
+         },
+         "err_inventory_failure" : {
+            "msg" : "An error occurred reading the media and evidence information for this device. If this error persists please contact Axon technical support.",
+            "title" : "Unable to read the evidence list from this device."
+         },
+         "err_mount_failed" : {
+            "msg" : "Please proceed to the Administration page and reboot the Dock.",
+            "title" : "There was an error connecting to the device."
+         },
+         "err_network_failed" : {
+            "msg" : "This is most likely caused by a bad Internet connection, a bad connection to Evidence.com, Evidence.com is under heavy load or Evidence.com is down for maintenance. This is not a critical error, the Dock will retry the operation.",
+            "title" : "The Dock encountered a network issue while processing this device"
+         },
+         "err_no_usb" : {
+            "msg" : "The Dock is not able to communicate with this device. This may be an intermittent error, please remove and reconnect the device in the Dock. If this error persists, please RMA the device.",
+            "title" : "Unable to communicate with device"
+         },
+         "err_not_offline" : {
+            "msg" : "This Dock is configured for off-line operation, it will not process devices that are set to on-line mode. If you wish to set this device to off-line mode, please connect the device to Evidence Sync and follow the instructions.",
+            "title" : "This device is not set of off-line operation"
+         },
+         "err_not_online" : {
+            "msg" : "This Dock is configured for on-line operation, it will not process devices that are set to off-line mode. If you wish to set this device to on-line mode, please connect the device to Evidence Sync and follow the instructions.",
+            "title" : "This device is not set for on-line operation"
+         },
+         "err_system_maintenance" : {
+            "msg" : "This Dock is performing automatic maintenance. The device will resume normal operation automatically. No action is required.",
+            "title" : "The Dock is performing internal maintenance."
+         },
+         "err_transfer_failed" : {
+            "msg" : "This is most likely caused by a bad Internet connection, a bad connection to Evidence.com, Evidence.com is under heavy load or Evidence.com is down for maintenance. This is not a critical error, the Dock will continue to retry the file upload.",
+            "title" : "The Dock failed to successfully transfer a video from this device"
+         },
+         "err_transfer_failed_noretry" : {
+            "msg" : "This is most likely caused by a problem with the device. Please contact Axon technical support.",
+            "title" : "The Dock experienced a permanent error transferring a video from this device"
+         },
+         "err_unknown_port_type" : {
+            "msg" : "Port type in which the device connected is not supported or unknown. Please refer to the troubleshooting instructions.",
+            "title" : "Port type is unknown"
+         },
+         "err_wrong_agency" : {
+            "msg" : "This device is not currently assigned to your agency. Please contact your agency admin for assistance with this device.",
+            "title" : "This device is not currently assigned to your agency."
+         },
+         "if_problem_continues" : "If this problem continues please contact Axon technical support at:",
+         "more_help" : "For more help with this issue, please contact Axon technical support at:",
+         "no_dns" : {
+            "msg" : "We were unable to locate a DNS server. This is usually caused by an invalid IP address configured for your DNS server. We recommend verifying the DNS settings on the Networking page.",
+            "return_msg" : "Click \"OK\" below to go to the Networking page and verify DNS information, or press ESC to close this dialog.",
+            "title" : "Could not find a DNS Server"
+         },
+         "no_ecom" : {
+            "msg" : "We were unable to authenticate this Dock with Evidence.com. This is usually caused by invalid or missing registration keys for your agency and this Dock. We recommend registering this Dock using the Operations page.",
+            "return_msg" : "Click \"OK\" below to go to the Operations page to register your Dock, or press ESC to close this dialog.",
+            "title" : "No Evidence.com Authentication"
+         },
+         "no_gateway" : {
+            "msg" : "We were unable to contact your network's default gateway. This is usually caused by an invalid IP address, however some gateways do not response to network \"pings\".",
+            "return_msg" : "Click \"OK\" below to go to the Networking page to change your default gateway, or press ESC to close this dialog.",
+            "title" : "No Gateway found"
+         },
+         "no_https" : {
+            "msg" : "We were unable to communicate over a secure (HTTPS) channel. This is usually caused by the HTTPS port (443) being blocked by your firewall. We recommend verifying that the HTTPS port is open in your firewall.",
+            "return_msg" : "Click \"OK\" below to return to the status page.",
+            "title" : "No HTTPS available."
+         },
+         "no_ip_dynamic" : {
+            "msg" : "We were unable to obtain an IP address from your DHCP server. This is usually caused by no DHCP server active on your network. You may need to enter static IP configuration for this Dock.",
+            "return_msg" : "Click \"OK\" below to go to the Networking page to enter static IP information, or press ESC to close this dialog.",
+            "title" : "No IP Address."
+         },
+         "no_ip_static" : {
+            "msg" : "We were unable to obtain the IP address you specified in the static IP setup for this Dock. This is usually caused by using the same static IP for more than one computer. We recommend verifying the IP address entered on the networking page.",
+            "return_msg" : "Click \"OK\" below to go to the Networking page to verify your settings, or press ESC to close this dialog.",
+            "title" : "No IP Address."
+         },
+         "no_ntp" : {
+            "msg" : "We were unable to communicate with a network time server. This is usually caused by both port 80 and port 123 blocked on a firewall. We recommend verifying that EITHER port 80 or 123 is open in your firewall.",
+            "return_msg" : "Click \"OK\" below to go to the Networking page to change your timeserver, or press ESC to close this dialog.",
+            "title" : "NTP Server not responding"
+         },
+         "no_status" : {
+            "msg" : "We have not been able to determine your network type yet. This may be because our system is still coming up. We suggest waiting 2 or 3 minutes and refreshing this page. The status page will also refresh if any new information comes in.",
+            "return_msg" : "Click \"OK\" below to return to the status page.",
+            "title" : "No status found."
+         },
+         "title" : "Configuration Assistant",
+         "we_found" : "After examining your network we found the following issue:",
+         "welcome" : "Welcome to the configuration assistant."
+      },
+      "device_status_codes" : {
+         "capchk" : "Capacity Check",
+         "cfg" : "Configuring",
+         "chg" : "Charging",
+         "del" : "Removing",
+         "device_maint" : "Device Maintenance",
+         "devid" : "Identifying",
+         "err" : "Error (Retry pending)",
+         "fail" : "Error",
+         "fwdone" : "Firmware Updated",
+         "fwupdate" : "Updating Firmware",
+         "inact" : "Inactive",
+         "init" : "Initializing",
+         "inventory" : "Inventory",
+         "logerase" : "Erasing Log",
+         "logsend" : "Uploading Log",
+         "lost" : "Lost Communication",
+         "net_retry" : "Retry Network Connection",
+         "new" : "New Device",
+         "nonet" : "Network Down",
+         "plugin" : "Connecting",
+         "proc" : "Transferring File",
+         "rdy" : "Ready",
+         "register" : "Registering",
+         "summary" : "Get Summary",
+         "sys_maint" : "System Maintenance",
+         "unk" : "Unknown",
+         "unsupported" : "Unsupported",
+         "wait" : "Waiting"
+      },
+      "diag" : {
+         "headers" : {
+            "diag" : "Diagnostics"
+         },
+         "page_title" : "Status",
+         "sections" : {
+            "netdiag" : {
+               "command" : "Command:",
+               "commands" : {
+                  "date" : "DATE as reported by Dock",
+                  "ifconfig" : "IFCONFIG network statistics",
+                  "nslookup_goog" : "NSLOOKUP google.com",
+                  "nslookup_taser" : "NSLOOKUP taser.evidence.com",
+                  "ping_8888" : "PING 8.8.8.8",
+                  "ping_gateway" : "PING default gateway",
+                  "ping_goog" : "PING google.com",
+                  "tail_etmlog" : "TAIL 100 lines of Dock log",
+                  "tail_syslog" : "TAIL 100 lines of syslog",
+                  "tr_goog" : "TRACEROUTE google.com",
+                  "tr_taser" : "TRACEROUTE taser.evidence.com"
+               },
+               "execute" : "Execute",
+               "legend" : "Network Diagnostics",
+               "menu" : "Select the diagnostic test from the drop down menu and hit execute...",
+               "msg1" : "The commands provided here are used to diagnose network connectivity issues.",
+               "msg2" : "Do not execute the commands below unless directed to do so by a Axon customer service representative.",
+               "result" : "Result:"
+            }
+         }
+      },
+      "firmware" : {
+         "current_version" : "Current Firmware version",
+         "dvr_update_starting" : "Contacting Axon server to look for updates...Firmware update will be commenced after the DVR is done uploading files",
+         "etm_update_starting" : "Firmware Update has commenced. Check back in a few minutes to see if the version has updated...",
+         "headers" : {
+            "firmware_mgmt" : "Firmware Management"
+         },
+         "not_released" : "Not released",
+         "page_title" : "Firmware Update",
+         "sections" : {
+            "device_firmware_update" : {
+               "legend" : "Device Firmware Update",
+               "msg" : "To upgrade firmware of all devices that are currently docked, click the button below. If an update is available, it will automatically be installed on all devices.",
+               "device_name" : "Device Name",
+               "released_firmware" : "Released Firmware",
+               "early_access_firmware" : "Early Access Firmware",
+               "perform_fw_update" : "Update Axon devices"
+            },
+            "etm_firmware_update" : {
+               "check_update" : "Update Firmware",
+               "legend" : "Dock Firmware Update",
+               "msg" : "To update your Dock's firmware, click UPDATE FIRMWARE. The Dock will contact Axon's servers and check the latest firmware version. If a new firmware version is available, it will automatically be installed.",
+               "show_version_details" : "Details",
+               "version_details" : "Details"
+            }
+         },
+         "update_failed" : "Unable to start Firmware Update",
+         "update_title" : "Firmware Update"
+      },
+      "general" : {
+         "closeparen" : ")",
+         "copyright" : "&copy; 2023 Axon Enterprise, Inc. All rights reserved",
+         "error_code" : "error code",
+         "firmware" : "Firmware",
+         "footnote" : "*TASER Batteries carry firmware for TASER 7 (T7) and TASER 10 (T10) Handles as well as for TASER BLE.",
+         "openparen" : "(",
+         "refresh" : "Refresh",
+         "sections" : {
+            "button_bar" : {
+               "discard_changes" : "Discard Changes",
+               "loading_wait" : "Loading Configuration... please wait...",
+               "reset_registration" : "Reset Registration",
+               "save_changes" : "Save Changes",
+               "continue" : "Continue"
+            },
+            "snmp" : {
+               "showhide_password" : "Show/Hide SNMP password"
+            }
+         }
+      },
+      "index" : {
+         "footer" : {
+            "help_center" : "Help Center"
+         },
+         "headers" : {
+            "system_status" : "System Status"
+         },
+         "page_title" : "Status",
+         "sections" : {
+            "devices" : {
+               "device" : "Device",
+               "firmware" : "Firmware*",
+               "hidden_info" : "Click to see data",
+               "legend" : "Devices",
+               "owner" : "Owner",
+               "serial" : "Serial #",
+               "status" : "Status"
+            },
+            "networking" : {
+               "active" : "Active",
+               "dns_server" : "DNS Server",
+               "ecom_registration" : "Evidence.com Registration",
+               "gateway" : "Internet Gateway",
+               "https_port" : "HTTPS (Port 443)",
+               "ipaddress" : "IP Address",
+               "legend" : "Networking",
+               "mac_address" : "MAC Address",
+               "not_registered" : "Not registered",
+               "serial_number" : "Serial #",
+               "time_server" : "Time Server"
+            }
+         }
+      },
+      "links" : {
+         "administration" : "Administration",
+         "firmware" : "Firmware",
+         "networking" : "Networking",
+         "operations" : "Operations",
+         "status" : "Status"
+      },
+      "lookups" : {
+         "netmode" : {
+            "dynamic" : "dynamic",
+            "static" : "static"
+         }
+      },
+      "networking" : {
+         "headers" : {
+            "net_setup" : "Network Setup"
+         },
+         "page_title" : "Networking Settings",
+         "restart_title" : "Network Restart",
+         "saved_restarting" : "Settings are saved, network is restarting...",
+         "sections" : {
+            "conn_type" : {
+               "label_dynamic" : "Dynamic IP (DHCP)",
+               "label_static" : "Static IP",
+               "legend" : "Connection Type",
+               "msg" : "There are two ways the Dock can work with your existing networking in order to allow Internet access for the AXON devices. Either by Dynamic IP (also called DHCP) or static IP address. Select the appropriate method below:"
+            },
+            "static_ip" : {
+               "dns_servers" : "DNS Servers",
+               "gateway" : "Default Gateway",
+               "ip_address" : "IP Address",
+               "legend" : "Static IP Configuration",
+               "msg" : "If your network does not use DHCP, or Internet access is available by static IP assignment only, then you will need to provide configuration information for the Dock. If you do not have this information available, please contact your network administrator",
+               "subnet_mask" : "Subnet Mask"
+            },
+            "throttle" : {
+               "label_mbps" : "Mbps",
+               "legend" : "Upstream Throttle",
+               "max_speed" : "Max. Upload Speed",
+               "msg" : "Normally the Dock will use all available bandwidth to upload videos from the AXON units as quickly as possible. If this is not desired behavior, you may limit the transfer speed below (measured in Megabits per second). A zero value will tell the Dock to use all available bandwidth."
+            }
+         }
+      },
+      "ops" : {
+         "an_error_occurred" : "An error occurred",
+         "generating_tokens" : "Generating Security Tokens...",
+         "headers" : {
+            "operations" : "Operations"
+         },
+         "page_title" : "General Operations",
+         "regenerate_keys_query" : "You are already authenticated with Evidence.com, would you like to re-generate security keys?",
+         "regenerate_keys_title" : "Regenerate Keys",
+         "register_with_ecom" : "Register with Evidence.com",
+         "registering_etm" : "Registering the Dock...",
+         "processing" : "Processing...",
+         "poll_uri_code" : "Retrieving activation link and code...",
+         "reset_reg" : "Reset Registration",
+         "reset_reg_failed" : "Unable to Reset Registration",
+         "resetting_reg_dock" : "Resetting registration of Dock to default. Reloading the page in 30 seconds.",
+         "restarting_etm" : "Restarting Dock, this will take approximately 30 seconds...",
+         "sections" : {
+            "e_com_reg" : {
+               "admin_password" : "Admin. Password",
+               "admin_username" : "Admin. Username",
+               "agency_name" : "Evidence.com Agency",
+               "already_registered" : "This Dock has already been registered with Evidence.com",
+               "domain_name" : "Domain name",
+               "legend" : "Evidence.com Registration",
+               "msg" : "To register this Dock to your Evidence.com Agency enter your Evidence.com agency name, username and password. Once the Dock is registered to Evidence.com, it will transfer all media files to your Evidence.com account. Your username and password are not stored on the Dock.",
+               "msg_shorten" : "To register this Dock to your Evidence.com Agency enter your Evidence.com agency name. Once the Dock is registered to Evidence.com, it will transfer all media files to your Evidence.com account.",
+               "msg_login_uri_code" : "Please open the link and provide the code to complete registration:"
+            }
+         }
+      },
+      "proxy": {
+         "headers": {
+            "proxy_setup": "Proxy Setup"
+         },
+         "page_title": "Proxy Settings",
+         "proxy_test_title": "Proxy Test",
+         "proxy_test_in_progress": "Proxy test is in progress...",
+         "proxy_test_success_msg": "Proxy test succeeded",
+         "proxy_test_fail_msg": "Proxy test failed",
+         "configuration_saved_title": "Proxy Configuration Saved",
+         "configuration_saved_msg": "Proxy configuration is saved and will take effect shortly",
+         "sections": {
+            "http_proxy": {
+               "legend": "HTTP Proxy",
+               "msg": "Setting HTTP proxy will redirect all HTTP requests to designated proxy server.",
+               "enable": "Enable",
+               "legend_config": "Configuration",
+               "legend_advanced_config": "Advanced Configuration",
+               "disable_dns_check": "Disable DNS Check",
+               "msg_config": "Username and password are optional.",
+               "host": "Proxy Host",
+               "port": "Proxy Port",
+               "username": "Username",
+               "password": "Password",
+               "test_connection": "Test Connection"
+            }
+         }
+      },
+      "strings" : {
+         "an_error_occurred" : "An error occurred",
+         "axon_flex" : "Axon Flex",
+         "calculating_rate" : "Calculating...",
+         "cancel" : "Cancel",
+         "cannot_get_data_too_many_failed_login_attempts" : "Cannot get data due to too many failed login attempts",
+         "click_for_details" : "Click for details",
+         "device_error" : "Device Error",
+         "error" : "Error",
+         "error_download" : "Error downloading https",
+         "error_internal" : "Internal Error",
+         "failed_auth": "Too many failed authentication attempts. Account temporarily suspended.",
+         "finished" : "Finished",
+         "invalid_hostname" : " is not a valid hostname",
+         "kbps" : "kbps",
+         "login_failed" : "Login failed",
+         "no_server_response" : "No Response from server",
+         "ok" : "OK",
+         "operation_complete_success" : "The operation completed successfully.",
+         "please_complete_mandatory" : "Please complete this mandatory field.",
+         "please_enter_numeric" : "Please enter a numeric value.",
+         "please_enter_valid_email" : "Please enter a valid email address.",
+         "please_enter_valid_URL" : "Please enter a valid URL.",
+         "please_enter_value_larger" : "Please enter a value larger than ",
+         "please_enter_value_smaller" : "Please enter a value smaller than ",
+         "reloading_status" : "Reloading status...",
+         "reloading_status_title" : "Refreshing",
+         "unassigned" : "Unassigned",
+         "unspecified_error" : "An unspecified error has occurred: ",
+         "waiting_for_response" : "Waiting for response...",
+         "authentication_failed" : "Authentication failed",
+         "invalid_request" : "Request is null or invalid"
+      }
+   }
+}

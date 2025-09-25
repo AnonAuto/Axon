@@ -1,0 +1,558 @@
+{
+   "ETM" : {
+      "admin" : {
+         "admin_title" : "Dockadministration",
+         "configuring_msg" : "Konfigurerar, detta tar ungefär 40 sekunder ...",
+         "headers" : {
+            "administration" : "Dockadministration"
+         },
+         "page_title" : "Admin. inställningar",
+         "rebooting_msg" : "Startar om, detta tar ungefär 60 sekunder ...",
+         "saving_settings" : "Spara inställningar ...",
+         "sections" : {
+            "admin_maint" : {
+               "legend" : "Underhåll",
+               "reboot" : "Starta om dockningsenhet"
+            },
+            "admin_ssl" : {
+               "accept_only_https" : "Acceptera endast SSL-förfrågningar",
+               "legend" : "SSL-konfiguration",
+               "regen_ssl" : "Generera SSL-certifikat igen",
+               "require_https_time" : "Kräv SSL för inledande tidkontroll"
+            },
+            "device_id" : {
+               "etm_name" : "Dockningsenhetens namn",
+               "home" : "Enhetshem",
+               "legend" : "Enhetsidentifikation",
+               "location" : "Plats",
+               "msg" : "Informationen nedan hjälper dig att identifiera vilken dockningsenhet du kommunicerar med. Denna information används också av Evidence.com för att ge information om enhetens status.",
+               "your_agency" : "Din byrå"
+            },
+            "password_change" : {
+               "confirm_new_password" : "Skriv in nytt lösenord igen",
+               "current_password" : "Nuvarande lösenord",
+               "error_no_password" : "För att ändra administratörens inloggningsuppgifter krävs aktuellt lösenord.",
+               "legend" : "Ändra inloggningsuppgifter",
+               "msg" : "Hantera administratörsanvändarnamnet och lösenordet som används för att komma åt den här dockningsenheten.",
+               "new_password" : "Nytt lösenord",
+               "username" : "Användarnamn"
+            },
+            "snmp" : {
+               "authentication" : "Autentisering",
+               "disable" : "Inaktivera",
+               "enable_snmp" : "Aktivera SNMP",
+               "enc_password" : "Krypteringslösenord",
+               "encrypt_msg" : "Lämna ”krypteringslösenord” tomt om du vill använda samma ”SNMP-lösenord” för kryptering.",
+               "encryption" : "Kryptering",
+               "error_no_password" : "Ändring av SNMP-användarnamnet kräver ett tillhörande lösenord.",
+               "error_title" : "Ange SNMP-fel",
+               "legend" : "SNMP-server",
+               "legend_config" : "SNMP-konfigurering",
+               "msg" : "SNMP är inaktiverat som standard. För att aktivera det använder du kryssruta och inmatningskonfigurering.",
+               "password" : "SNMP-lösenord",
+               "username" : "SNMP-användarnamn"
+            }
+         },
+         "set_configuration_error_title" : "Ange konfiguration",
+         "settings_changed" : {
+            "p1" : "Inställningar från din byrå har ändrats!",
+            "p2" : "Tryck på knappen [Uppdatera] för att tillämpa ändringar från din byrå på dockningsenheten.",
+            "p3" : "Annars trycker du på [Avbryt] och uppdaterar sedan dina inställningar manuellt, ändringarna synkroniseras med din byrå.",
+            "p4" : "Lista på ändringar:",
+            "title" : "Inställningar har ändrats"
+         }
+      },
+      "axonsup" : {
+         "headers" : {
+            "data" : "Supportdata"
+         },
+         "page_title" : "Axon Support",
+         "sections" : {
+            "data" : {
+               "legend" : "Axon supportdata",
+               "msg" : "Datablobbarna nedan kan vara användbara när du arbetar med en kundtjänstrepresentant från Axon.",
+               "result1" : "Resultat 1:",
+               "result2" : "Resultat 2:"
+            }
+         }
+      },
+	  "cgi" : {
+          "csrf_fail" : "Cookie-fel",
+          "invalid_auth" : "Felaktigt användarnamn eller lösenord",
+          "invalid_cmd" : "Ogiltigt kommando",
+          "invalid_domain" : "Ingen domän angiven",
+          "invalid_proxy_config" : "Ogiltig proxykonfiguration",
+          "invalid_proxy_user_pass" : "Användarnamn eller lösenord saknas",
+          "invalid_snmp_user" : "Det gick inte att tillämpa SNMP-konfiguration. Ogiltigt SNMP-användarnamn.",
+          "no_content" : "Inget innehåll",
+          "no_snmp_pw" : "Det gick inte att tillämpa SNMP-konfiguration. Inget lösenord angett.",
+          "not_released" : "Inte släppt",
+          "ok" : "OK",
+          "unable_disable_snmp" : "Det gick inte att inaktivera SNMP-konfiguration.",
+          "unable_set_snmp" : "Det gick inte att tillämpa SNMP-konfiguration.",
+          "unable_set_snmp_auth" : "Det gick inte att tillämpa SNMP-konfigurationsautentisering.",
+          "unable_set_snmp_enable" : "Det gick inte att aktivera SNMP-konfiguration.",
+          "unable_set_snmp_enc" : "Det gick inte att tillämpa SNMP-konfigurationskryptering.",
+          "unable_set_snmp_pass" : "Det gick inte att använda SNMP-konfigurationslösenordet.",
+          "unable_set_snmp_user" : "Det gick inte att använda SNMP-konfigurationens användarnamn.",
+          "unable_set_sslonly" : "Det gick inte att ändra inställningen \"Acceptera endast SSL-förfrågningar\".",
+          "unknown_err" : "Okänt fel",
+          "web_creds_err" : "Det gick inte att uppdatera administratörsuppgifterna.",
+          "web_creds_invalid_username" : "Det gick inte att uppdatera administratörsuppgifterna: användarnamnet är ogiltigt.",
+          "web_creds_invalid_cur_pass" : "Det gick inte att uppdatera administratörsuppgifterna: nuvarande lösenord är ogiltigt.",
+          "web_creds_invalid_new_pass" : "Det gick inte att uppdatera administratörsuppgifterna: det nya lösenordet är ogiltig"
+      },
+      "common" : {
+        "admin_name_allowed_characters" : "Ogiltigt användarnamn. Tillåtna tecken: alfanumerisk mellanslag # ! @ ( ) [ ] - . _",
+        "at_least" : "måste vara minst",
+        "cannot_contain_duplicate" : "får inte innehålla duplicerade tecken",
+        "cannot_contain_more_than" : "får inte innehålla mer än",
+        "cannot_contain_username" : "får inte innehålla ditt användarnamn eller andra vanliga ord",
+        "character" : "tecken",
+        "characters" : "tecken",
+        "characters_in_seq" : "tecken i sekvens",
+        "input_valid_IP" : "Ange en giltig IP-adress",
+        "less_than" : "måste vara mindre än",
+        "mandatory_field" : "Detta fält måste anges.",
+        "must_contain" : "måste innehålla",
+        "no" : "Nej",
+        "not_secure" : "är inte tillräckligt säkert",
+        "please_provide" : "Ange minst",
+        "select_valid_entry" : "Välj en giltig post i listan",
+        "snmp_name_allowed_characters" : "Ogiltigt användarnamn. Tillåtna tecken: alfanumerisk # ! @ ( ) [ ] - . _",
+        "value_not_equal" : "Värde inte detsamma som i fältet för Nytt lösenord",
+        "yes" : "Ja"
+      },
+      "configassist" : {
+         "dlg_assign" : {
+            "msg1" : "Det här formuläret ändrar ägaren till en enhet till den användare som anges nedan. Användarnamnet och lösenordet lagras inte i dockningsenheten.",
+            "msg2" : "Ange din autentisering nedan och klicka på ”OK” för att tilldela denna enhet till DIG, annars klickar du på ”Avbryt” för att återvända.",
+            "password" : "Lösenord",
+            "username" : "Användarnamn"
+         },
+         "dlg_format" : {
+            "msg" : "Detta uppdaterar enhetskonfigurationen och den fasta programvaran. Inga data kommer att gå förlorade."
+         },
+         "dlg_format_auth" : {
+            "admin_password" : "Admin. Lösenord",
+            "admin_username" : "Admin. Användarnamn",
+            "msg" : "Du måste ha administratörsbehörighet för Evidence.com för att kunna utföra den här åtgärden. Ditt användarnamn och lösenord lagras inte på dockningsenheten Ange din autentisering nedan och klicka på ”OK” för att formatera den här enheten, annars klickar du på ”Avbryt” för att återvända."
+         },
+         "err_cannot_get_log" : {
+            "msg" : "Ett fel uppstod när vi försökte läsa aktivitetsloggen från den här enheten.",
+            "title" : "Kan inte läsa loggfilen från den här enheten"
+         },
+         "err_cannot_read_file" : {
+            "msg" : "Ett fel uppstod när vi skulle läsa media och bevisinformation från den här enheten. Kontakta Axons tekniska support om felet kvarstår.",
+            "title" : "Kan inte läsa en bevisfil från den här enheten."
+         },
+         "err_cannot_rm_log" : {
+            "msg" : "Ett fel uppstod när vi försökte rensa aktivitetsloggen på den här enheten efter att den laddats upp till evidence.com.",
+            "title" : "Kan inte rensa loggfilen på den här enheten"
+         },
+         "err_device_lost_communication" : {
+            "msg" : "Den här anslutningen för enheten har slutat fungera. Docka ur och docka enheten igen. Kontakta din byrås administratör om problemet kvarstår.",
+            "title" : "Dockningsenheten har förlorat kommunikationen med den här enheten."
+         },
+         "err_device_maintenance" : {
+            "msg" : "Denna dockningsenhet utför automatiskt underhåll. Enheten återupptar automatiskt normal drift. Ingen åtgärd krävs.",
+            "title" : "Denna dockningsenhet utför automatiskt underhåll på denna enhet."
+         },
+         "err_devtype_cfg_failure" : {
+             "msg" : "Det går inte att ställa in enheten i kroppskameraläge. Se instruktionerna för felsökning.",
+             "title" : "Den här enheten är inte inställd som kroppskamera"
+         },
+         "err_format_failure" : {
+            "msg" : "Enhetsformatet misslyckades. Se anvisningarna för felsökning.",
+            "title" : "Enhetsformatet misslyckades"
+         },
+         "err_fwup_cfg_failure" : {
+             "msg": "Fältet Uppdatering av fast programvara kunde inte ställas in. Se anvisningarna för felsökning.",
+             "title" : "Den här enheten är inte inställd som uppdateringsbar för fast programvara"
+         },
+         "err_inactive_device" : {
+            "msg" : "Enheten är för närvarande inte aktiv på den här byrån. Anslut enheten till Evidence Sync och tilldela enheten till en lämplig användare.",
+            "title" : "Din enhet är inte aktiv på din byrå just nu"
+         },
+         "err_invalid_device_type" : {
+            "msg" : "Det går inte att konfigurera enheten till den angivna typen. Se instruktionerna för felsökning.",
+            "title" : "Enheten är ogiltig"
+         },
+         "err_invalid_model" : {
+            "msg" : "Enheten som är ansluten till dockningsenheten är inte känd som en giltig Axon-enhet. Ta bort den från dockningsenheten.",
+            "title" : "Dockningsenheten känner inte igen den här typen av enhet"
+         },
+         "err_invalid_serial" : {
+            "msg" : "Enheten som är ansluten till dockningsenheten har inget giltigt serienummer. Det kan vara ett återkommande fel. Ta bort och anslut enheten till dockningsenheten igen. Om det här felet kvarstår bör du returnera enheten.",
+            "title" : "Den här enheten har ett ogiltigt serienummer"
+         },
+         "err_inventory_failure" : {
+            "msg" : "Ett fel uppstod när vi skulle läsa media och bevisinformation för den här enheten. Kontakta Axons tekniska support om felet kvarstår.",
+            "title" : "Kan inte läsa bevislistan från den här enheten."
+         },
+         "err_mount_failed" : {
+            "msg" : "Fortsätt till sidan Administration och starta om dockningsenheten.",
+            "title" : "Ett fel uppstod vid anslutning till enheten."
+         },
+         "err_network_failed" : {
+            "msg" : "Detta orsakas sannolikt av en dålig internetanslutning, en dålig anslutning till Evidence.com, Evidence.com är under stor belastning eller Evidence.com är nere för underhåll. Detta är inte ett kritiskt fel. Dockningsenheten försöker utföra åtgärden igen.",
+            "title" : "Dockningsenheten påträffade ett nätverksproblem när den här enheten bearbetades"
+         },
+         "err_no_usb" : {
+            "msg" : "Dockningsenheten kan inte kommunicera med den här enheten. Det kan vara ett återkommande fel. Ta bort och anslut enheten till dockningsenheten igen. Om det här felet kvarstår bör du returnera enheten.",
+            "title" : "Kunde inte kommunicera med enheten"
+         },
+         "err_not_offline" : {
+            "msg" : "Denna dockningsenhet är konfigurerad för offlinefunktion, den bearbetar inte enheter som är inställda på onlineläge. Om du vill ställa in den här enheten i offlineläge ansluter du enheten till Evidence Sync och följer instruktionerna.",
+            "title" : "Den här enheten är inte inställd för offlinedrift"
+         },
+         "err_not_online" : {
+            "msg" : "Denna dockningsenhet är konfigurerad för onlinefunktion, den bearbetar inte enheter som är inställda på offlineläge. Om du vill ställa in den här enheten i offlineläge ansluter du enheten till Evidence Sync och följer instruktionerna.",
+            "title" : "Den här enheten är inte inställd för onlinedrift"
+         },
+         "err_system_maintenance" : {
+            "msg" : "Denna dockningsenhet utför automatiskt underhåll på denna enhet. Enheten återupptar automatiskt normal drift. Ingen åtgärd krävs.",
+            "title" : "Dockningsenheten utför internt underhåll."
+         },
+         "err_transfer_failed" : {
+            "msg" : "Detta orsakas sannolikt av en dålig internetanslutning, en dålig anslutning till Evidence.com, Evidence.com är hårt belastad eller Evidence.com är nere för underhåll. Detta är inte ett kritiskt fel, Dock kommer dock att fortsätta att försöka ladda upp filen igen.",
+            "title" : "Dockningsenheten kunde inte överföra en video från den här enheten"
+         },
+         "err_transfer_failed_noretry" : {
+            "msg" : "Detta orsakas sannolikt av ett problem med enheten. Kontakta Axons tekniska support.",
+            "title" : "Ett permanent fel uppstod när en video överfördes från den här enheten"
+         },
+         "err_unknown_port_type" : {
+            "msg" : "Porttypen som enheten är ansluten till stöds inte eller är okänd. Se anvisningarna för felsökning.",
+            "title" : "Porttypen är okänd"
+         },
+         "err_wrong_agency" : {
+            "msg" : "Enheten är inte tilldelad till din byrå. Vänligen kontakta din byrås administrator för hjälp med denna enhet.",
+            "title" : "Denna enhet är inte ännu registrerad hos din byrå."
+         },
+         "if_problem_continues" : "Om problemet kvarstår, kontakta Axons tekniska support på:",
+         "more_help" : "För mer hjälp med det här problemet, kontakta Axons tekniska support på:",
+         "no_dns" : {
+            "msg" : "Vi kunde inte hitta någon DNS-server. Detta orsakas vanligtvis av en ogiltig IP-adress som konfigurerats för DNS-servern. Vi rekommenderar att du verifierar DNS-inställningarna på nätverkssidan.",
+            "return_msg" : "Klicka på ”OK” för att gå till nätverkssidan och kontrollera DNS-informationen eller tryck på ESC för att stänga den här dialogen.",
+            "title" : "Kunde inte hitta någon DNS-server"
+         },
+         "no_ecom" : {
+            "msg" : "Vi kunde inte autentisera den här dockningsenheten med Evidence.com. Detta beror vanligtvis på att registreringsnycklarna för din byrå och denna dockningsenhet är ogiltiga eller saknas. Vi rekommenderar att du registrerar dockningsenheten på sidan Åtgärder.",
+            "return_msg" : "Klicka på ”OK” för att gå till sidan Åtgärder och registrera din dockningsenhet eller tryck på ESC för att stänga den här dialogen.",
+            "title" : "Ingen Evidence.com-autentisering"
+         },
+         "no_gateway" : {
+            "msg" : "Det gick inte att kontakta nätverkets standardgateway. Detta orsakas vanligtvis av en ogiltig IP-adress, men vissa gateways svarar inte på nätverkets ”pingar”.",
+            "return_msg" : "Klicka på ”OK” för att gå till nätverkssidan och kontrollera din standardgateway eller tryck på ESC för att stänga den här dialogen.",
+            "title" : "Inga gateway hittades"
+         },
+         "no_https" : {
+            "msg" : "Det gick inte att kommunicera via en säker (HTTPS-) kanal. Detta orsakas vanligtvis av att HTTPS-porten (443) blockeras av brandväggen. Vi rekommenderar att du kontrollerar att HTTPS-porten är öppen i brandväggen.",
+            "return_msg" : "Klicka på ”OK” nedan för att återvända till statussidan.",
+            "title" : "Ingen HTTPS tillgänglig."
+         },
+         "no_ip_dynamic" : {
+            "msg" : "Det gick inte att hämta en IP-adress från DHCP-servern. Detta orsakas vanligtvis av att ingen DHCP-server är aktiv i nätverket. Du kan behöva ange statisk IP-konfiguration för den här dockningsstationen.",
+            "return_msg" : "Klicka på ”OK” för att gå till nätverkssidan och ange statisk IP-information eller tryck på ESC för att stänga den här dialogen.",
+            "title" : "IP-adress."
+         },
+         "no_ip_static" : {
+            "msg" : "Det gick inte att hämta IP-adressen som du angav i den statiska IP-inställningen för den här dockningsenheten. Detta orsakas vanligtvis av att du använder samma statiska IP-adress för mer än en dator. Vi rekommenderar att du kontrollerar IP-adressen som anges på nätverkssidan.",
+            "return_msg" : "Klicka på ”OK” för att gå till nätverkssidan och kontrollera dina inställningar eller tryck på ESC för att stänga den här dialogen.",
+            "title" : "IP-adress."
+         },
+         "no_ntp" : {
+            "msg" : "Det gick inte att kommunicera med en nätverkstidsserver. Detta orsakas vanligtvis av att både port 80 och port 123 blockeras på en brandvägg. Vi rekommenderar att du kontrollerar att ANTINGEN port 80 eller 123 är öppen i brandväggen.",
+            "return_msg" : "Klicka på ”OK” för att gå till nätverkssidan och ändra din tidserver eller tryck på ESC för att stänga den här dialogen.",
+            "title" : "NTP-servern svarar inte"
+         },
+         "no_status" : {
+            "msg" : "Vi har inte kunnat fastställa din nätverkstyp ännu. Det kan bero på att vårt system fortfarande är på väg. Vi föreslår att du väntar två eller tre minuter och uppdaterar den här sidan. Statussidan uppdateras också om ny information visas.",
+            "return_msg" : "Klicka på ”OK” nedan för att återvända till statussidan.",
+            "title" : "Inga status hittades."
+         },
+         "title" : "Konfigurationsassistent",
+         "we_found" : "Efter att ha undersökt ditt nätverk har vi hittat följande fel:",
+         "welcome" : "Välkommen till konfigurationsassistenten."
+      },
+      "device_status_codes" : {
+         "capchk" : "Kapacitetskontroll",
+         "cfg" : "Konfigurerar",
+         "chg" : "Laddar",
+         "del" : "Raderar",
+         "device_maint" : "Enhetsunderhåll",
+         "devid" : "Identifierar",
+         "err" : "Fel (nytt försök väntande)",
+         "fail" : "Fel",
+         "fwdone" : "Fast programvara uppdaterad",
+         "fwupdate" : "Uppdaterar inbyggd programvara",
+         "inact" : "Inaktiv",
+         "init" : "Initierar",
+         "inventory" : "Lager",
+         "logerase" : "Raderar logg",
+         "logsend" : "Laddar upp logg",
+         "lost" : "Förlorad kommunikation",
+         "net_retry" : "Försök ansluta till nätverket igen",
+         "new" : "Nytt enhet",
+         "nonet" : "Nätverk nere",
+         "plugin" : "Ansluter",
+         "proc" : "Överför fil",
+         "rdy" : "Redo",
+         "register" : "Registrerar",
+         "summary" : "Hämta sammanfattning",
+         "sys_maint" : "Systemunderhåll",
+         "unk" : "Okänt",
+         "unsupported" : "Stöds ej",
+         "wait" : "Väntar"
+      },
+      "diag" : {
+         "headers" : {
+            "diag" : "Diagnostik"
+         },
+         "page_title" : "Status",
+         "sections" : {
+            "netdiag" : {
+               "command" : "Kommando:",
+               "commands" : {
+                  "date" : "DATUM rapporterat av docka",
+                  "ifconfig" : "IFCONFIG-nätverksstatistik",
+                  "nslookup_goog" : "NSLOOKUP google.com",
+                  "nslookup_taser" : "NSLOOKUP taser.evidence.com",
+                  "ping_8888" : "PING 8.8.8.8",
+                  "ping_gateway" : "Standardkategori ping",
+                  "ping_goog" : "PING google.com",
+                  "tail_etmlog" : "TAIL 100 rader av dockningslogg",
+                  "tail_syslog" : "TAIL 100 rader av syslogg",
+                  "tr_goog" : "TRACEROUTE google.com",
+                  "tr_taser" : "TRACEROUTE taser.evidence.com"
+               },
+               "execute" : "Kör",
+               "legend" : "Nätverksdiagnostik",
+               "menu" : "Välj det diagnostiska testet från rullgardinsmenyn och tryck på kör ...",
+               "msg1" : "Kommandona som visas här används för att diagnostisera problem med nätverksanslutningen.",
+               "msg2" : "Utför inte kommandona nedan om inte en kundtjänstrepresentant från Axon har instruerat dig att göra det.",
+               "result" : "Resultat:"
+            }
+         }
+      },
+      "firmware" : {
+         "current_version" : "Aktuell version av fast programvara",
+         "dvr_update_starting" : "Kontaktar Axons server för att leta efter uppdateringar ... Uppdatering av fast programvara startar när DVR är färdig med uppladdning av filer",
+         "etm_update_starting" : "Uppdatering av fast programvara har påbörjats. Kom tillbaka om några minuter för att se om versionen har uppdaterats ...",
+         "headers" : {
+            "firmware_mgmt" : "Hantering av fast programvara"
+         },
+         "not_released" : "Inte släppt",
+         "page_title" : "Firmware-uppdatering",
+         "sections" : {
+            "device_firmware_update" : {
+               "legend" : "Uppdatering av enhetens fasta programvara",
+               "msg" : "Om du vill uppgradera fast programvara för alla enheter som är dockade klickar du på knappen nedan. Om en uppdatering finns tillgänglig installeras den automatiskt på alla enheter.",
+               "device_name" : "Enhetsnamn",
+               "released_firmware" : "Släppt fast programvara",
+               "early_access_firmware" : "Tidig tillgång fast programvara",
+               "perform_fw_update" : "Uppdatera Axon-enheter"
+            },
+            "etm_firmware_update" : {
+               "check_update" : "Uppdatera inbyggd programvara",
+               "legend" : "Uppdatering av fast programvara för dockningsenhet",
+               "msg" : "Om du vill uppdatera den inbyggda programvaran för dockningsenheten klickar du på UPPDATERA FAST PROGRAMVARA. Dockningsenheten kontaktar Axons servrar och kontrollerar den senaste versionen av den fasta programvaran. Om det finns en ny version av den fasta programvaran installeras den automatiskt.",
+               "show_version_details" : "Detaljer",
+               "version_details" : "Detaljer"
+            }
+         },
+         "update_failed" : "Kunde inte starta uppdatering av fast programvara",
+         "update_title" : "Firmware-uppdatering"
+      },
+      "general" : {
+         "closeparen" : ")",
+         "copyright" : "&copy; 2023 Axon Enterprise, Inc. Med ensamrätt",
+         "error_code" : "felkod",
+         "firmware" : "Firmware",
+         "footnote" : "*TASER-batterier har firmware för TASER 7 (T7)- och TASER 10 (T10)- handtag samt för TASER BLE.",
+         "openparen" : "(",
+         "refresh" : "Uppdatera",
+         "sections" : {
+            "button_bar" : {
+               "discard_changes" : "Ignorera ändringar",
+               "loading_wait" : "Laddar konfiguration ... vänta ...",
+               "reset_registration" : "Återställ registrering",
+               "save_changes" : "Spara ändringar",
+               "continue" : "Fortsätt"
+            },
+            "snmp" : {
+               "showhide_password" : "Visa/dölj SNMP-lösenord"
+            }
+         }
+      },
+      "index" : {
+         "footer" : {
+            "help_center" : "Hjälpcenter"
+         },
+         "headers" : {
+            "system_status" : "Systemstatus"
+         },
+         "page_title" : "Status",
+         "sections" : {
+            "devices" : {
+               "device" : "Enhet",
+               "firmware" : "Firmware*",
+               "hidden_info" : "Klicka för att se data",
+               "legend" : "Enheter",
+               "owner" : "Ägare",
+               "serial" : "Serienummer",
+               "status" : "Status"
+            },
+            "networking" : {
+               "active" : "Aktiv",
+               "dns_server" : "DNS-server",
+               "ecom_registration" : "Evidence.com-registrering",
+               "gateway" : "Internet-gateway",
+               "https_port" : "HTTPS (Port 443)",
+               "ipaddress" : "IP-adress",
+               "legend" : "Nätverk",
+               "mac_address" : "MAC-adress",
+               "not_registered" : "Inte registrerad",
+               "serial_number" : "Serienummer",
+               "time_server" : "Tidserver"
+            }
+         }
+      },
+      "links" : {
+         "administration" : "Administration",
+         "firmware" : "Firmware",
+         "networking" : "Nätverk",
+         "operations" : "Åtgärder",
+         "status" : "Status"
+      },
+      "lookups" : {
+         "netmode" : {
+            "dynamic" : "dynamisk",
+            "static" : "statisk"
+         }
+      },
+      "networking" : {
+         "headers" : {
+            "net_setup" : "Nätverksinställning"
+         },
+         "page_title" : "Nätverksinställningar",
+         "restart_title" : "Omstart av nätverk",
+         "saved_restarting" : "Inställningar är sparade, nätverket startar om ...",
+         "sections" : {
+            "conn_type" : {
+               "label_dynamic" : "Dynamisk IP (DHCP)",
+               "label_static" : "Statisk IP",
+               "legend" : "Anslutningstyp",
+               "msg" : "Det finns två sätt för dockningsenheten att fungera med ditt befintliga nätverk för att tillåta internet-åtkomst för AXON-enheterna. Antingen med dynamisk IP (kallas även DHCP) eller statisk IP-adress. Välj lämplig metod nedan:"
+            },
+            "static_ip" : {
+               "dns_servers" : "DNS-servrar",
+               "gateway" : "Standardgateway",
+               "ip_address" : "IP-adress",
+               "legend" : "Statisk IP-konfiguration",
+               "msg" : "Om ditt nätverk inte använder DHCP eller om internetåtkomst endast är tillgänglig genom statisk IP-tilldelning måste du ange konfigurationsinformation för dockningsenheten. Om du inte har den här informationen tillgänglig kontaktar du nätverksadministratören",
+               "subnet_mask" : "Subnetmask"
+            },
+            "throttle" : {
+               "label_mbps" : "Mbps",
+               "legend" : "Begränsning uppström",
+               "max_speed" : "Högsta uppladdningshastighet",
+               "msg" : "Normalt använder dockningsenheten all tillgänglig bandbredd för att ladda upp videor från AXON-enheterna så snabbt som möjligt. Om detta inte är önskat beteende kan du begränsa överföringshastigheten under (mätt i megabit per sekund). Ett nollvärde anger att dockningsenheten ska använda all tillgänglig bandbredd."
+            }
+         }
+      },
+      "ops" : {
+         "an_error_occurred" : "Ett fel uppstod",
+         "generating_tokens" : "Genererar säkerhetstecken ...",
+         "headers" : {
+            "operations" : "Åtgärder"
+         },
+         "page_title" : "Allmänna åtgärder",
+         "regenerate_keys_query" : "Du har redan autentiserad på Evidence.com. Vill du generera säkerhetsnycklar igen?",
+         "regenerate_keys_title" : "Generera säkerhetsnycklar igen",
+         "register_with_ecom" : "Registrera på Evidence.com",
+         "registering_etm" : "Registrerar dockningsenheten ...",
+         "processing" : "Behandlar …",
+         "poll_uri_code" : "Hämtar aktiveringslänk och kod ...",
+         "reset_reg" : "Återställ registrering",
+         "reset_reg_failed" : "Kunde inte återställa registrering",
+         "resetting_reg_dock" : "Återställer registrering av dockningsenheten till standard. Laddar sidan igen om 30 sekunder.",
+         "restarting_etm" : "Startar om dockningsenheten, detta tar ungefär 30 sekunder ...",
+         "sections" : {
+            "e_com_reg" : {
+               "admin_password" : "Admin. Lösenord",
+               "admin_username" : "Admin. Användarnamn",
+               "agency_name" : "Evidence.com Byrå",
+               "already_registered" : "Denna dockningsenhet har redan registrerats på Evidence.com",
+               "domain_name" : "Domännamn",
+               "legend" : "Evidence.com-registrering",
+               "msg" : "För att registrera denna dockningsenhet på din Evidence.com-byrå anger du ditt byrånamn för Evidence.com, användarnamn och lösenord. När dockningsenheten är registrerad på Evidence.com, kommer alla mediefiler att överföras till ditt Evidence.com-konto. Ditt användarnamn och lösenord lagras inte på dockningsenheten.",
+               "msg_shorten" : "För att registrera denna docka till din Evidence.com byrå anger du ditt Evidence.com byrånamn. När dockan är registrerad på Evidence.com kommer den att överföra alla mediefiler till ditt Evidence.com konto.",
+               "msg_login_uri_code" : "Öppna länken och ange koden för att slutföra registreringen:"
+            }
+         }
+      },
+      "proxy": {
+         "headers": {
+            "proxy_setup": "Inställning av proxy"
+         },
+         "page_title": "Proxyinställningar",
+         "proxy_test_title": "Proxytest",
+         "proxy_test_in_progress": "Proxytest pågår ...",
+         "proxy_test_success_msg": "Proxytestet lyckades",
+         "proxy_test_fail_msg": "Proxytestet misslyckades",
+         "configuration_saved_title": "Proxykonfiguration sparad",
+         "configuration_saved_msg": "Proxykonfigurationen sparas och kommer att träda i kraft inom kort",
+         "sections": {
+            "http_proxy": {
+               "legend": "Http proxy",
+               "msg": "Om du ställer in HTTP-proxy omdirigeras alla HTTP-förfrågningar till en angiven proxyserver.",
+               "enable": "Aktivera",
+               "legend_config": "Konfiguration",
+               "legend_advanced_config": "Avancerad konfiguration",
+               "disable_dns_check": "Inaktivera DNS-kontroll",
+               "msg_config": "Användarnamn och lösenord är valfria.",
+               "host": "Proxyvärd",
+               "port": "Proxyport",
+               "username": "Användarnamn",
+               "password": "Lösenord",
+               "test_connection": "Testa anslutningen"
+            }
+         }
+      },
+      "strings" : {
+         "an_error_occurred" : "Ett fel uppstod",
+         "axon_flex" : "Axon Flex",
+         "calculating_rate" : "Räknar ...",
+         "cancel" : "Avbryt",
+         "cannot_get_data_too_many_failed_login_attempts" : "Kan inte hämta data på grund av för många misslyckade inloggningsförsök",
+         "click_for_details" : "Klicka för detaljer",
+         "device_error" : "Enhetsfel",
+         "error" : "Fel",
+         "error_download" : "Fel vid inläsning av https",
+         "error_internal" : "Internt fel",
+         "failed_auth": "För många misslyckade verifieringsförsök. Kontot är tillfälligt avstängt.",
+         "finished" : "Klar",
+         "invalid_hostname" : "är inte ett giltigt värdnamn",
+         "kbps" : "kbps",
+         "login_failed" : "Inloggnings misslyckades",
+         "no_server_response" : "Inget svar från servern",
+         "ok" : "OK",
+         "operation_complete_success" : "Åtgärden har slutförts.",
+         "please_complete_mandatory" : "Fyll i detta obligatoriska fält.",
+         "please_enter_numeric" : "Ange ett numeriskt värde",
+         "please_enter_valid_email" : "Vänligen ange en giltig e-postadress.",
+         "please_enter_valid_URL" : "Ange en giltig webbadress.",
+         "please_enter_value_larger" : "Ange ett värde som är större än",
+         "please_enter_value_smaller" : "Ange ett värde som är mindre än",
+         "reloading_status" : "Laddar om status ...",
+         "reloading_status_title" : "Uppdaterar",
+         "unassigned" : "Ej tilldelad",
+         "unspecified_error" : "Inget svar från servern",
+         "waiting_for_response" : "Väntar på svar ...",
+         "authentication_failed" : "Autentiseringen misslyckades",
+         "invalid_request" : "Anropet är null eller ogiltigt"
+      }
+   }
+}

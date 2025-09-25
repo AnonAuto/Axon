@@ -1,0 +1,117 @@
+#!/bin/sh
+#
+### BEGIN INIT INFO
+# Provides:          networking
+# Required-Start:    $local_fs mountvirtfs
+# Required-Stop:     $local_fs
+# Default-Start:     S
+# Default-Stop:      0 6
+# Short-Description: Raise network interfaces and configure them
+### END INIT INFO
+
+# import global constants and configuration
+. /etm/bin/etm-net-common.sh
+
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+if ! [ -x /sbin/ifup ]; then
+    exit 0
+fi
+
+networking_start() {
+    local RC=0
+
+    # start loopback interface
+    ifdown lo
+    if ! ifup lo ; then
+        echo "ERROR: Failed to start loopback interface"
+        RC=1
+    fi
+
+    # start LAN interface
+    ifdown "${LAN_IFACE}"
+    sleep 1s
+    if ! ifup "${LAN_IFACE}" ; then
+        echo "ERROR: Failed to start ${LAN_IFACE} interface"
+        RC=1
+    fi
+
+    # start ifplugd
+    if ! /etc/init.d/busybox-ifplugd start ; then
+        echo "ERROR: Failed to start ifplugd"
+        RC=1
+    fi
+
+    return ${RC}
+}
+
+networking_stop() {
+    local RC=0
+
+    # stop ifplugd
+    if ! /etc/init.d/busybox-ifplugd stop ; then
+        echo "ERROR: Failed to stop ifplugd"
+        RC=1 
+    fi
+
+    # stop LAN interface
+    if ! ifdown "${LAN_IFACE}" ; then
+        echo "ERROR: Failed to stop ${LAN_IFACE} interface"
+        RC=1
+    fi
+
+    # stop loopback interface
+    if ! ifdown lo ; then
+        echo "ERROR: failed to stop loopback interface"
+        RC=1
+    fi
+
+    return ${RC}
+}
+
+case "$1" in
+    start)
+        if sed -n 's/^[^ ]* \([^ ]*\) \([^ ]*\) .*$/\1 \2/p' /proc/mounts | grep -q "^/ nfs$"; then
+            echo "NOT configuring network interfaces: / is an NFS mount"
+        elif sed -n 's/^[^ ]* \([^ ]*\) \([^ ]*\) .*$/\1 \2/p' /proc/mounts | grep -q "^/ smbfs$"; then
+            echo "NOT configuring network interfaces: / is an SMB mount"
+        elif sed -n 's/^[^ ]* \([^ ]*\) \([^ ]*\) .*$/\2/p' /proc/mounts | grep -qE '^(nfs|smbfs|ncp|coda)$'; then
+            echo "NOT configuring network interfaces: network shares still mounted."
+        else
+            echo -n "Configuring network interfaces... "
+            if ! networking_start ; then
+                exit 1
+            fi
+            echo "done."
+        fi
+        ;;
+    stop)
+        if sed -n 's/^[^ ]* \([^ ]*\) \([^ ]*\) .*$/\1 \2/p' /proc/mounts | grep -q "^/ nfs$"; then
+            echo "NOT deconfiguring network interfaces: / is an NFS mount"
+        elif sed -n 's/^[^ ]* \([^ ]*\) \([^ ]*\) .*$/\1 \2/p' /proc/mounts | grep -q "^/ smbfs$"; then
+            echo "NOT deconfiguring network interfaces: / is an SMB mount"
+        elif sed -n 's/^[^ ]* \([^ ]*\) \([^ ]*\) .*$/\2/p' /proc/mounts | grep -qE '^(nfs|smbfs|ncp|coda)$'; then
+            echo "NOT deconfiguring network interfaces: network shares still mounted."
+        else
+            echo -n "Deconfiguring network interfaces... "
+            if ! networking_stop ; then
+                exit 1
+            fi
+            echo "done."
+        fi
+        ;;
+    force-reload|restart)
+        echo -n "Reconfiguring network interfaces... "
+        networking_stop
+        if ! networking_start ; then
+            exit 1
+        fi
+        echo "done."
+        ;;
+    *)
+        echo "Usage: /etc/init.d/networking {start|stop|restart|force-reload}"
+        exit 1
+        ;;
+esac
+
+exit 0

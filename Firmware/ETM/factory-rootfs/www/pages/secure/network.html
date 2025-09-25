@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- begin_include meta -->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="csrf-token" content="__CSRF_TOKEN_PLACEHOLDER__">
+
+  <title>Axon Dock</title>
+  <!-- end_include meta -->
+
+  <!-- begin_include script -->
+  <script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-migrate-3.3.0.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-ui-1.12.1.js"></script>
+  <script type="text/javascript" src="/js/jquery-tools.min.js"></script>
+  <script type="text/javascript" src="/js/purl.js"></script>
+  <script type="text/javascript" src="/js/menu.js"></script>
+  <script type="text/javascript" src="/js/common.js"></script>
+  <script type="text/javascript" src="/js/jquery.localize.js"></script>
+  <script type="text/javascript" src="/js/etm-main.js"></script>
+  <link rel="stylesheet" href="/css/styles.css"/>
+  <link rel="stylesheet" href="/css/custom-theme/jquery-ui-1.12.1.css"/>
+  <link rel="stylesheet" href="/css/menu.css"/>
+  <link rel="stylesheet" href="/css/styles-ext.css"/>
+  <!-- end_include script -->
+
+  <script type="text/javascript" src="/js/etm-network.js"></script>
+
+</head>
+<body>
+  <div id="container">
+    <!-- begin_include header -->
+    <div id="header" class="header">
+      <div id="nav" class="primary-navigation">
+        <ul class="navigation-block">
+          <!-- languageLink marks links that need a lang attribute added -->
+          <li class="sitenavigation-item"><a class="languageLink" href="/index.html"><img class="sitenavigation-fulllogo" src="/images/axon-dock.png" alt="Axon Dock"/></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/index.html"><span data-localize="ETM.links.status">Status</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/network.html"><span data-localize="ETM.links.networking">Networking</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/ops.html" ><span data-localize="ETM.links.operations">Operations</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/admin.html" ><span data-localize="ETM.links.administration">Administration</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/firmware.html" ><span data-localize="ETM.links.firmware">Firmware</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="agency-info">
+      <p><span id="title-agency"></span> &mdash; <span id="agency-name"></span></p>
+      <p><span id="device-home"></span><span id="agency-loc"></span></p>
+      <p><span id="ddate"></span> &mdash; <span id="dtime"></span></p>
+    </div>
+    <!-- end_include header -->
+    <div id="content" class="content clearfix">
+      <h2 data-localize="ETM.networking.headers.net_setup">Network Setup</h2>
+
+      <div class="content-box-wrap">
+        <div class="content-box">
+          <div class="content-box-inner">
+            <form action="">
+              <fieldset>
+                <legend data-localize="ETM.networking.sections.conn_type.legend">Connection Type</legend>
+                <p data-localize="ETM.networking.sections.conn_type.msg">
+                  There are two ways the Dock can work with your existing networking in order to allow Internet access for the AXON devices.
+                  Either by Dynamic IP (also called DHCP) or static IP address. Select the appropriate method below:
+                </p>
+                <div id="rProtocol" class="radio">
+                  <input type="radio" id="rConnD" name="network.wan.proto" value="dhcp" checked="1"><label for="rConnD" data-localize="ETM.networking.sections.conn_type.label_dynamic">Dynamic IP (DHCP)</label>
+                  <input type="radio" id="rConnS" name="network.wan.proto" value="static"><label for="rConnS" data-localize="ETM.networking.sections.conn_type.label_static">Static IP</label>
+                </div>
+              </fieldset>
+            </form>
+
+            <form id="frmStaticIP">
+              <fieldset>
+                <legend data-localize="ETM.networking.sections.static_ip.legend">Static IP Configuration</legend>
+                <p data-localize="ETM.networking.sections.static_ip.msg">If your network does not use DHCP, or Internet access is available by static IP assignment only,
+                  then you will need to provide configuration information for the Dock.
+                  If you do not have this information available, please contact your network administrator
+                </p>
+                <table class="content-table">
+                  <tr>
+                    <td data-localize="ETM.networking.sections.static_ip.ip_address">IP Address</td>
+                    <td><input type="ip" name="network.wan.ipaddr" required="1"/></td>
+                  </tr>
+                  <tr>
+                    <td data-localize="ETM.networking.sections.static_ip.subnet_mask">Subnet Mask</td>
+                    <td><input type="ip" name="network.wan.netmask" required="1"/></td>
+                  </tr>
+                  <tr>
+                    <td data-localize="ETM.networking.sections.static_ip.gateway">Default Gateway</td>
+                    <td><input type="ip" name="network.wan.gateway" required="1"/></td>
+                  </tr>
+                  <tr>
+                    <td data-localize="ETM.networking.sections.static_ip.dns_servers">DNS Servers</td>
+                    <td><input type="ip" id="dns0" name="network.wan.dns[0]" required="1"/><br/>
+                      <input type="ip" id="dns1" name="network.wan.dns[1]"/></td>
+                  </tr>
+                </table>
+                <br/>
+              </fieldset>
+            </form>
+
+            <form id="frmUpstream" action="">
+                <fieldset>
+                    <legend data-localize="ETM.networking.sections.throttle.legend">Upstream Throttle</legend>
+                    <p data-localize="ETM.networking.sections.throttle.msg">
+                        Normally the Dock will use all available bandwidth to upload videos from the AXON units as quickly as possible. If this is not desired behavior, you may limit the
+                        transfer speed below (measured in Megabits per second). A zero value will tell the Dock to use all available bandwidth.
+                    </p>
+                    <table class="content-table">
+                        <tr>
+                            <td data-localize="ETM.networking.sections.throttle.max_speed">Max. Upload Speed</td>
+                            <td><input name="etm.etm.netlimit_mbitps" type="number" min="0" max="20" value="" step="0.5"/>
+                            <label>&nbsp;</label>
+                            <label class="no-text-transform" data-localize="ETM.networking.sections.throttle.label_mbps">Mbps</label></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+
+            <div class="btnRow">
+              <button class="btn" id="btnSave" data-localize="ETM.general.sections.button_bar.save_changes">Save Changes</button>
+              <button class="btn" id="btnDiscard" data-localize="ETM.general.sections.button_bar.discard_changes">Discard Changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- begin_include footer -->
+  <div id="footer">
+    <div class="footer-lang-select">
+      <select id="langchoice">
+         <option value="ms">Bahasa Melayu</option>
+         <option value="cs">Čeština</option>
+         <option value="da">Dansk</option>
+         <option value="de">Deutsch</option>
+         <option value="en-us">English</option>
+         <option value="es">Español</option>
+         <option value="fr">Français</option>
+         <option value="it">Italiano</option>
+         <option value="hu">Magyar</option>
+         <option value="nl">Nederlands</option>
+         <option value="no">Norsk</option>
+         <option value="pt-br">Português</option>
+         <option value="ro">Român</option>
+         <option value="fi">Suomi</option>
+         <option value="sv">Svenska</option>
+         <option value="ru">Pусский язык</option>
+         <option value="uk">украї́нська мо́ва</option>
+         <option value="th">ไทย</option>
+         <option value="ko">한국어</option>
+         <option value="ja">日本語</option>
+         <option value="zh-tw">漢語中文</option>
+         <option value="ar">اَلْعَرَبِيَّةُ</option>
+      </select>
+      <span id="footer-copyright" data-localize="ETM.general.copyright">&copy; 2020 Axon Enterprise, Inc. All rights reserved</span>
+    </div>
+    <div class="footer-contact-info">
+      <span id="footer-contactInfo"><a href="mailto:support@axon.com">support@axon.com</a></span>
+      <span id="footer-supportLink">
+        <a href="https://help.axon.com"><span data-localize="ETM.index.footer.help_center">Help Center</span></a>
+      </span>
+    </div>
+  </div>
+  <!-- end_include footer -->
+</body>
+</html>

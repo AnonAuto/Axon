@@ -1,0 +1,558 @@
+{
+   "ETM" : {
+      "admin" : {
+         "admin_title" : "Správa doku",
+         "configuring_msg" : "Probíhá konfigurace, bude trvat přibližně 40 sekund…",
+         "headers" : {
+            "administration" : "Správa doku"
+         },
+         "page_title" : "Správcovská nastavení",
+         "rebooting_msg" : "Probíhá restart, bude trvat přibližně 40 sekund…",
+         "saving_settings" : "Probíhá uložení nastavení…",
+         "sections" : {
+            "admin_maint" : {
+               "legend" : "Údržba",
+               "reboot" : "Restartovat dok"
+            },
+            "admin_ssl" : {
+               "accept_only_https" : "Přijímat pouze požadavky SSL",
+               "legend" : "Konfigurace SSL",
+               "regen_ssl" : "Znovu generovat certifikát SSL",
+               "require_https_time" : "Vyžadovat SSL pro výchozí kontrolu času"
+            },
+            "device_id" : {
+               "etm_name" : "Název doku",
+               "home" : "Úložiště zařízení",
+               "legend" : "Identifikace zařízení",
+               "location" : "Umístění",
+               "msg" : "Níže uvedené údaje vám pomohou rozeznat zařízení, se kterým komunikujete. Tyto údaje využije i aplikace Evidence.com k tomu, aby vám poskytla stavové informace.",
+               "your_agency" : "Vaše agentura"
+            },
+            "password_change" : {
+               "confirm_new_password" : "Napište nové heslo znovu",
+               "current_password" : "Aktuální heslo",
+               "error_no_password" : "Změna přihlašovacích údajů správce vyžaduje současné heslo.",
+               "legend" : "Změnit přihlašovací údaje",
+               "msg" : "Správa uživatelského jména a hesla správce, které se používají k přístupu k tomuto doku.",
+               "new_password" : "Nové heslo",
+               "username" : "Uživatelské jméno"
+            },
+            "snmp" : {
+               "authentication" : "Ověření",
+               "disable" : "Vypnout",
+               "enable_snmp" : "Zapnout SNMP",
+               "enc_password" : "Heslo šifrování",
+               "encrypt_msg" : "Pokud si přejete používat „Heslo SNMP” i pro šifrování, ponechte pole „Heslo šifrování” prázdné.",
+               "encryption" : "Šifrování",
+               "error_no_password" : "Změna uživatelského jména SNMP vyžaduje příslušné heslo.",
+               "error_title" : "Při nastavování SNMP došlo k chybě",
+               "legend" : "Server SNMP",
+               "legend_config" : "Konfigurace SNMP",
+               "msg" : "Ve výchozím stavu je SNMP vypnuto. Pro zapnutí zaškrtněte příslušné políčko a zadejte konfiguraci.",
+               "password" : "Heslo SNMP",
+               "username" : "Uživatelské jméno SNMP"
+            }
+         },
+         "set_configuration_error_title" : "Nastavit konfiguraci",
+         "settings_changed" : {
+            "p1" : "Nastavení z vaší agentury byla změněna!",
+            "p2" : "Stisknutím tlačítka [Aktualizovat] aplikujete změny z vaší agentury na nastavení doku.",
+            "p3" : "Případně stiskněte tlačítko [Zrušit] a nastavení upravte ručně. Nastavení budou synchronizována do vaší agentury.",
+            "p4" : "Seznam změn:",
+            "title" : "Nastavení bylo změněno"
+         }
+      },
+      "axonsup" : {
+         "headers" : {
+            "data" : "Data pro podporu"
+         },
+         "page_title" : "Podpora Axon",
+         "sections" : {
+            "data" : {
+               "legend" : "Data pro podporu Axon",
+               "msg" : "Níže uvedené datové objekty mohou být užitečné při komunikaci s pracovníky podpory společnosti Axon.",
+               "result1" : "Výsledek 1:",
+               "result2" : "Výsledek 2:"
+            }
+         }
+      },
+	  "cgi" : {
+          "csrf_fail" : "Chyba souboru cookie",
+          "invalid_auth" : "Neplatné uživatelské jméno nebo heslo",
+          "invalid_cmd" : "Neplatný příkaz",
+          "invalid_domain" : "Není zadána žádná doména",
+          "invalid_proxy_config" : "Neplatná konfigurace proxy serveru",
+          "invalid_proxy_user_pass" : "Chybí uživatelské jméno nebo heslo",
+          "invalid_snmp_user" : "Nelze použít konfiguraci SNMP. Neplatné uživatelské jméno SNMP.",
+          "no_content" : "Žádný obsah",
+          "no_snmp_pw" : "Nelze použít konfiguraci SNMP. Nebylo zadáno žádné heslo.",
+          "not_released" : "Není vydán",
+          "ok" : "OK",
+          "unable_disable_snmp" : "Nelze deaktivovat konfiguraci SNMP.",
+          "unable_set_snmp" : "Nelze použít konfiguraci SNMP.",
+          "unable_set_snmp_auth" : "Nelze použít konfiguraci SNMP – ověřování.",
+          "unable_set_snmp_enable" : "Nelze aktivovat konfiguraci SNMP.",
+          "unable_set_snmp_enc" : "Nelze použít konfiguraci SNMP – šifrování.",
+          "unable_set_snmp_pass" : "Nelze použít konfiguraci SNMP – heslo.",
+          "unable_set_snmp_user" : "Nelze použít konfiguraci SNMP – uživatelské jméno.",
+          "unable_set_sslonly" : "Nelze změnit nastavení „Přijímat pouze požadavky SSL“",
+          "unknown_err" : "Neznámá chyba",
+          "web_creds_err" : "Nepodařilo se aktualizovat ověřovací údaje správce.",
+          "web_creds_invalid_username" : "Nepodařilo se aktualizovat ověřovací údaje správce: uživatelské jméno je neplatné.",
+          "web_creds_invalid_cur_pass" : "Nepodařilo se aktualizovat ověřovací informace správce: aktuální heslo je neplatné.",
+          "web_creds_invalid_new_pass" : "Nepodařilo se aktualizovat ověřovací informace správce: nové heslo je neplatné."
+      },
+      "common" : {
+        "admin_name_allowed_characters" : "Neplatné uživatelské jméno. Povolené znaky: alfanumerické mezera # ! @ ( ) [ ] - . _",
+        "at_least" : "musí být delší než",
+        "cannot_contain_duplicate" : "nesmí obsahovat duplicitní znaky",
+        "cannot_contain_more_than" : "nesmí obsahovat více než ",
+        "cannot_contain_username" : "nesmí obsahovat vaše uživatelské jméno nebo jiná běžná slova",
+        "character" : " znak",
+        "characters" : " znaky/znaků",
+        "characters_in_seq" : " znaků za sebou",
+        "input_valid_IP" : "Zadejte platnou IP adresu",
+        "less_than" : "musí být kratší než",
+        "mandatory_field" : "Toto pole musí být vyplněno.",
+        "must_contain" : "musí obsahovat ",
+        "no" : "Ne",
+        "not_secure" : "není dost bezpečné ",
+        "please_provide" : "Zadejte alespoň",
+        "select_valid_entry" : "Vyberte platnou položku ze seznamu",
+        "snmp_name_allowed_characters" : "Neplatné uživatelské jméno. Povolené znaky: alfanumerické # ! @ ( ) [ ] - . _",
+        "value_not_equal" : "Hodnota neodpovídá poli Nové heslo",
+        "yes" : "Ano"
+      },
+      "configassist" : {
+         "dlg_assign" : {
+            "msg1" : "Tento formulář změní vlastníka zařízení na níže uvedeného uživatele. Uživatelské jméno a heslo nejsou v doku uloženy.",
+            "msg2" : "Pokud si přejete přiřadit toto zařízne SOBĚ, zadejte níže své ověřovací údaje a stiskněte tlačítko „OK”, jinak stiskněte tlačítko „Zrušit”.",
+            "password" : "Heslo",
+            "username" : "Uživatelské jméno"
+         },
+         "dlg_format" : {
+            "msg" : "Tato akce aktualizuje firmware a nastavení tohoto zařízení. Žádná data nebudou ztracena."
+         },
+         "dlg_format_auth" : {
+            "admin_password" : "Heslo správce",
+            "admin_username" : "Uživatelské jméno správce",
+            "msg" : "K provedení této akce musíte mít správcovská práva k Evidence.com. Vaše uživatelské jméno a heslo nebudou v doku uloženy. Pokud si přejete formátovat toto zařízení, zadejte níže své ověřovací údaje a stiskněte tlačítko „OK”, jinak stiskněte tlačítko „Zrušit”."
+         },
+         "err_cannot_get_log" : {
+            "msg" : "Při pokusu o načtení protokolu aktivit ze zařízení došlo k chybě.",
+            "title" : "Protokol aktivit z tohoto zařízení nelze načíst"
+         },
+         "err_cannot_read_file" : {
+            "msg" : "Při pokusu o načtení informací o médiích a důkazech ze zařízení došlo k chybě. Pokud tento problém přetrvává, kontaktujte technickou podporu Axon.",
+            "title" : "Soubor důkazů z tohoto zařízení nelze načíst."
+         },
+         "err_cannot_rm_log" : {
+            "msg" : "Došlo k chybě při pokusu vymazat protokol aktivit na zařízení poté, co byl uložen na evidence.com.",
+            "title" : "Protokol aktivit z tohoto zařízení nelze vymazat"
+         },
+         "err_device_lost_communication" : {
+            "msg" : "Připojení tohoto zařízení přestalo fungovat. Zkuste zařízení vyjmout z doku a zase ho tam vrátit. Jestliže problém přetrvává, obraťte se na správce systému vaší agentury.",
+            "title" : "Zařízení přestalo komunikovat s dokem."
+         },
+         "err_device_maintenance" : {
+            "msg" : "Dok na zařízení provádí automatickou údržbu. Po dokončení bude zařízení normálně fungovat. Není třeba žádná akce.",
+            "title" : "Dok na zařízení provádí automatickou údržbu. "
+         },
+         "err_devtype_cfg_failure" : {
+             "msg" : "Zařízení se nepodařilo přepnout do režimu kamery na těle. Zkuste se podívat do instrukcí pro řešení problémů.",
+             "title" : "Zařízení není nastaveno jako kamera na těle"
+         },
+         "err_format_failure" : {
+            "msg" : "Formátování úložiště zařízení selhalo. Zkuste se podívat do instrukcí pro řešení problémů.",
+            "title" : "Formátování úložiště zařízení selhalo"
+         },
+         "err_fwup_cfg_failure" : {
+             "msg": "Nastavení pole aktualizovatelný firmware zařízení se nepodařilo nastavit.",
+             "title" : "Firmware zařízení není nastaven jako aktualizovatelný"
+         },
+         "err_inactive_device" : {
+            "msg" : "Zařízení není v agentuře aktivní. Připojte zařízení k Evidence Sync a přiřaďte příslušnému uživateli.",
+            "title" : "Zařízení není v agentuře aktivní"
+         },
+         "err_invalid_device_type" : {
+            "msg" : "Zařízení se nepodařilo nastavit na daný typ. Zkuste se podívat do instrukcí pro řešení problémů.",
+            "title" : "Zařízení je neplatné"
+         },
+         "err_invalid_model" : {
+            "msg" : "Zařízení v doku nebylo rozpoznáno jako platné zařízení Axon. Odeberte zařízení z doku.",
+            "title" : "Dok nerozpoznal typ zařízení"
+         },
+         "err_invalid_serial" : {
+            "msg" : "Zařízení v doku nemá platné sériové číslo. Může se jednat o přechodnou chybu, zkuste zařízení vyjmout a znovu vložit. Pokud problém přetrvá, zařízení reklamujte.",
+            "title" : "Zařízení nemá platné sériové číslo"
+         },
+         "err_inventory_failure" : {
+            "msg" : "Při pokusu o načtení informací o médiích a důkazech ze zařízení došlo k chybě. Pokud tento problém přetrvává, kontaktujte technickou podporu Axon.",
+            "title" : "Seznam důkazů z tohoto zařízení nelze načíst."
+         },
+         "err_mount_failed" : {
+            "msg" : "Přejděte na stránku správy a restartujte dok.",
+            "title" : "Při připojování k zařízení došlo k chybě."
+         },
+         "err_network_failed" : {
+            "msg" : "Příčinou je pravděpodobně špatné připojení k internetu, špatné připojení k webu Evidence.com, velké zatížení webu Evidence.com nebo odstávka webu Evidence.com z důvodu údržby. Nejedná se o kritickou chybu, dok se pokusí operaci zopakovat.",
+            "title" : "Při zpracování zařízení dokem došlo k síťové chybě"
+         },
+         "err_no_usb" : {
+            "msg" : "Doku se nedaří navázat spojení se zařízením. Může se jednat o přechodnou chybu, zkuste zařízení vyjmout a znovu vložit. Pokud problém přetrvá, zařízení reklamujte.",
+            "title" : "Dok nemůže navázat spojení se zařízením"
+         },
+         "err_not_offline" : {
+            "msg" : "Dok je konfigurován na offline provoz a zařízení pracující v online režimu nezpracuje. Pokud si přejete zařízení přepnout do offline režimu, připojte je k Evidence Sync a postupujte dle instrukcí.",
+            "title" : "Zařízení není nastaveno na offline provoz"
+         },
+         "err_not_online" : {
+            "msg" : "Dok je konfigurován na online provoz a zařízení pracující v offline  režimu nezpracuje. Pokud si přejete zařízení přepnout do online režimu, připojte je k Evidence Sync a postupujte dle instrukcí.",
+            "title" : "Zařízení není nastaveno na online provoz"
+         },
+         "err_system_maintenance" : {
+            "msg" : "Dok provádí automatickou údržbu. Po dokončení bude zařízení normálně fungovat. Není třeba žádná akce.",
+            "title" : "Dok provádí automatickou vnitřní údržbu"
+         },
+         "err_transfer_failed" : {
+            "msg" : "Příčinou je pravděpodobně špatné připojení k internetu, špatné připojení k webu Evidence.com, velké zatížení webu Evidence.com nebo odstávka webu Evidence.com z důvodu údržby. Nejedná se o kritickou chybu, dok se bude dál pokoušet nahrát soubor.",
+            "title" : "Přenos videozáznamu ze zařízení selhal"
+         },
+         "err_transfer_failed_noretry" : {
+            "msg" : "Chyba bývá zpravidla na straně zařízení. Kontaktujte technickou podporu Axon.",
+            "title" : "Přenos videozáznamu ze zařízení selhal s trvalou chybou"
+         },
+         "err_unknown_port_type" : {
+            "msg" : "Typ portu, do kterého je zařízení připojeno, není platný nebo podporovaný. Zkuste se podívat do instrukcí pro řešení problémů.",
+            "title" : "Typ portu je neznámý"
+         },
+         "err_wrong_agency" : {
+            "msg" : "Toto zařízení není aktuálně přiřazeno do vaší agentury. Obraťte se na správce agentury za účelem pomoci s tímto zařízením.",
+            "title" : "Toto zařízení není přiřazeno k vaší agentuře."
+         },
+         "if_problem_continues" : "Pokud tento problém přetrvává, kontaktujte technickou podporu Axon:",
+         "more_help" : "Pro další pomoc s tímto problémem kontaktujte technickou podporu Axon:",
+         "no_dns" : {
+            "msg" : "Nepodařilo se najít DNS server. Příčinou zpravidla bývá neplatná IP adresa DNS serveru v konfiguraci. Doporučujeme zkontrolovat nastavení DNS na stránce Síť.",
+            "return_msg" : "Pokud si přejete přejít na stránku Sítě, klikněte na tlačítko „OK” a zkontrolujte nastavení DNS, jinak stiskněte tlačítko ESC a tím zavřete dialogové okno.",
+            "title" : "Nepodařilo se najít DNS server"
+         },
+         "no_ecom" : {
+            "msg" : "Tento dok se nám v Evidence.com nepodařilo ověřit. Příčinou zpravidla jsou neplatné nebo chybějící registrační klíče pro tento dok a vaši agenturu. Doporučujeme dok registrovat na stránce Operace.",
+            "return_msg" : "Pokud si přejete přejít na stránku Operace a registrovat dok, klikněte na tlačítko „OK”, jinak stiskněte tlačítko ESC a tím zavřete dialogové okno.",
+            "title" : "Ověření na Evidence.com není k dispozici"
+         },
+         "no_gateway" : {
+            "msg" : "Nepodařilo se spojit s výchozí bránou sítě. Příčinou zpravidla bývá neplatná IP, ale některé brány nereagují na příkaz „ping”.",
+            "return_msg" : "Pokud si přejete přejít na stránku Sítě změnit nastavení výchozí brány, klikněte na tlačítko „OK”, jinak stiskněte tlačítko ESC a tím zavřete dialogové okno.",
+            "title" : "Nebyla nalezena žádná brána"
+         },
+         "no_https" : {
+            "msg" : "Nepodařilo se navázat komunikaci přes zabezpečené spojení (HTTPS). Příčinou zpravidla bývá blokování HTTPS portu 443 firewallem. Doporučujeme ověřit, zda je HTTPS port 443 povolen.",
+            "return_msg" : "Kliknutím na tlačítko „OK” se vrátíte na stavovou stránku.",
+            "title" : "Protokol HTTPS není k dispozici."
+         },
+         "no_ip_dynamic" : {
+            "msg" : "Nepodařilo se získat IP adresu od DHCP serveru. Zpravidla je to způsobeno absencí aktivního DHCP serveru ve vaší síti. Možná bude nutné pro tento dok zadat statickou konfiguraci IP adresy.",
+            "return_msg" : "Pokud si přejete přejít na stránku Sítě a zadat statickou IP adresu, klikněte na tlačítko „OK”, jinak stiskněte tlačítko ESC a tím zavřete dialogové okno.",
+            "title" : "Nebyla přidělena žádná IP adresa."
+         },
+         "no_ip_static" : {
+            "msg" : "Nepodařilo se získat IP adresu ze statické IP konfigurace vašeho doku. Zpravidla je to způsobeno nastavením stejné IP adresy pro více počítačů. Doporučujme zkontrolovat statickou IP adresu zadanou na stránce Sítě.",
+            "return_msg" : "Pokud si přejete přejít na stránku Sítě a zkontrolovat nastavení, klikněte na tlačítko „OK”, jinak stiskněte tlačítko ESC a tím zavřete dialogové okno.",
+            "title" : "IP adresa nebyla přidělena."
+         },
+         "no_ntp" : {
+            "msg" : "Nepodařilo se spojit s časovým serverem. Příčinou zpravidla bývá zablokování portu 80 a 123 firewallem. Doporučujeme ověřit, zda je port 80 nebo 123 povolen.",
+            "return_msg" : "Pokud si přejete přejít na stránku Sítě změnit časový server, klikněte na tlačítko „OK”, jinak stiskněte tlačítko ESC a tím zavřete dialogové okno.",
+            "title" : "NTP server neodpovídá"
+         },
+         "no_status" : {
+            "msg" : "Zatím jsme nebyli schopni určit typ vaší sítě. Může to být způsobeno tím, že se náš systém teprve spouští. Doporučujeme počkat 2-3 minuty a tuto stránku znovu načíst. Pokud přijdou nové informace, stavová stránka se načte znovu sama.",
+            "return_msg" : "Kliknutím na tlačítko „OK” se vrátíte na stavovou stránku.",
+            "title" : "Stav nebyl nalezen."
+         },
+         "title" : "Asistent konfigurace",
+         "we_found" : "Při kontrole vaší sítě jsme narazili na následující problém:",
+         "welcome" : "Vítejte v konfiguračním asistentu."
+      },
+      "device_status_codes" : {
+         "capchk" : "Kontrola kapacity",
+         "cfg" : "Probíhá konfigurace",
+         "chg" : "Nabíjí se",
+         "del" : "Odebírá se...",
+         "device_maint" : "Údržba zařízení",
+         "devid" : "Probíhá identifikace",
+         "err" : "Chyba (proběhne opakovaný pokus)",
+         "fail" : "Chyba",
+         "fwdone" : "Firmware aktualizován",
+         "fwupdate" : "Aktualizace firmwaru",
+         "inact" : "Neaktivní",
+         "init" : " Inicializování",
+         "inventory" : "Zásoby",
+         "logerase" : "Probíhá výmaz protokolu",
+         "logsend" : "Probíhá uložení protokolu",
+         "lost" : "Spojení bylo ztraceno",
+         "net_retry" : "Obnovit síťové připojení",
+         "new" : "Nové zařízení",
+         "nonet" : "Síť mimo provoz",
+         "plugin" : "Připojování",
+         "proc" : "Probíhá přenos souboru",
+         "rdy" : "Připraveno",
+         "register" : "Probíhá registrace",
+         "summary" : "Načíst souhrn",
+         "sys_maint" : "Údržba systému",
+         "unk" : "Neznámý",
+         "unsupported" : "Nepodporováno",
+         "wait" : "Čekání"
+      },
+      "diag" : {
+         "headers" : {
+            "diag" : "Diagnostika"
+         },
+         "page_title" : "Stav",
+         "sections" : {
+            "netdiag" : {
+               "command" : "Příkaz:",
+               "commands" : {
+                  "date" : "DATUM, nahlášené dokem",
+                  "ifconfig" : "Síťové statistiky IPCONFIG",
+                  "nslookup_goog" : "NSLOOKUP google.com",
+                  "nslookup_taser" : "NSLOOKUP taser.evidence.com",
+                  "ping_8888" : "PING 8.8.8.8",
+                  "ping_gateway" : "PING na výchozí bránu",
+                  "ping_goog" : "PING google.com",
+                  "tail_etmlog" : "TAIL - posledních 100 řádků protokolu doku",
+                  "tail_syslog" : "TAIL - posledních 100 řádků protokolu syslog",
+                  "tr_goog" : "TRACEROUTE google.com",
+                  "tr_taser" : "TRACEROUTE taser.evidence.com"
+               },
+               "execute" : "Spustit",
+               "legend" : "Diagnostika sítě",
+               "menu" : "Z rozbalovací nabídky vyberte diagnostický test a stiskněte spustit…",
+               "msg1" : "K diagnostice problémů se síťovým připojením se používají zde uvedené příkazy.",
+               "msg2" : "Příkazy níže nespouštějte, pokud k tomu nedostanete pokyn od zástupce zákaznických služeb Axon.",
+               "result" : "Výsledek:"
+            }
+         }
+      },
+      "firmware" : {
+         "current_version" : "Současná verze firmwaru",
+         "dvr_update_starting" : "Probíhá spojení se serverem Axon - kontrola aktualizací… Poté, co DVR dokončí ukládání souborů, bude spuštěna aktualizace firmware.",
+         "etm_update_starting" : "Aktualizace firmware byla zahájena. Po několika minutách zde zkontrolujte, jestli je instalována nová verze…",
+         "headers" : {
+            "firmware_mgmt" : "Správa firmware"
+         },
+         "not_released" : "Není vydán",
+         "page_title" : "Aktualizace firmwaru",
+         "sections" : {
+            "device_firmware_update" : {
+               "legend" : "Aktualizace firmwaru zařízení",
+               "msg" : "Chcete-li provést upgrade firmwaru všech dokovaných zařízení, stiskněte níže uvedené tlačítko. Pokud je k dispozici aktualizace, bude automaticky instalována na všechna zařízení.",
+               "device_name" : "Název zařízení",
+               "released_firmware" : "Vydaný firmware",
+               "early_access_firmware" : "Firmware pro uživatele s přednostním přístupem",
+               "perform_fw_update" : "Aktualizovat zařízení Axon"
+            },
+            "etm_firmware_update" : {
+               "check_update" : "Aktualizovat firmware",
+               "legend" : "Aktualizace firmwaru doku",
+               "msg" : "Pokud si přejete aktualizovat firmware doku, klikněte na AKTUALIZOVAT FIRMWARE. Dok kontaktuje servery Axon a zkontroluje poslední verzi firmware. Jestliže je k dispozici nová verze, bude automaticky instalována.",
+               "show_version_details" : "Detaily",
+               "version_details" : "Detaily"
+            }
+         },
+         "update_failed" : "Nepodařilo se spustit Aktualizaci Firmware",
+         "update_title" : "Aktualizace firmwaru"
+      },
+      "general" : {
+         "closeparen" : ")",
+         "copyright" : "&copy; 2023 Axon Enterprise, Inc. Všechna práva vyhrazena",
+         "error_code" : "kód chyby",
+         "firmware" : "Firmware",
+         "footnote" : "* Baterie TASER obsahují firmware pro rukojeti TASER 7 (T7) a TASER 10 (T10) a také pro TASER BLE.",
+         "openparen" : "(",
+         "refresh" : "Obnovit",
+         "sections" : {
+            "button_bar" : {
+               "discard_changes" : "Zahodit změny",
+               "loading_wait" : "Konfigurace se načítá… čekejte…",
+               "reset_registration" : "Resetovat registraci",
+               "save_changes" : "Uložit změny",
+               "continue" : "Pokračovat"
+            },
+            "snmp" : {
+               "showhide_password" : "Zobrazit/Skrýt heslo SNMP"
+            }
+         }
+      },
+      "index" : {
+         "footer" : {
+            "help_center" : "Centrum nápovědy"
+         },
+         "headers" : {
+            "system_status" : "Stav systému"
+         },
+         "page_title" : "Stav",
+         "sections" : {
+            "devices" : {
+               "device" : "Zařízení",
+               "firmware" : "Firmware*",
+               "hidden_info" : "Kliknutím zobrazíte data",
+               "legend" : "Zařízení",
+               "owner" : "Vlastník",
+               "serial" : "Sériové č.",
+               "status" : "Stav"
+            },
+            "networking" : {
+               "active" : "Aktivní",
+               "dns_server" : "Server DNS",
+               "ecom_registration" : "Registrace na Evidence.com",
+               "gateway" : "Internetová brána",
+               "https_port" : "HTTPS (Port 443)",
+               "ipaddress" : "IP adresa",
+               "legend" : "Sítě",
+               "mac_address" : "Adresa MAC",
+               "not_registered" : "Není registrován",
+               "serial_number" : "Sériové č.",
+               "time_server" : "Časový server"
+            }
+         }
+      },
+      "links" : {
+         "administration" : "Správa",
+         "firmware" : "Firmware",
+         "networking" : "Sítě",
+         "operations" : "Operace",
+         "status" : "Stav"
+      },
+      "lookups" : {
+         "netmode" : {
+            "dynamic" : "dynamická",
+            "static" : "statická"
+         }
+      },
+      "networking" : {
+         "headers" : {
+            "net_setup" : "Nastavení sítě"
+         },
+         "page_title" : "Nastavení sítí",
+         "restart_title" : "Restart sítě",
+         "saved_restarting" : "Nastavení jsou uložena, síť restartuje…",
+         "sections" : {
+            "conn_type" : {
+               "label_dynamic" : "Dynamická IP (DHCP)",
+               "label_static" : "Statická IP",
+               "legend" : "Typ připojení",
+               "msg" : "Jsou dva způsoby, kterými dok může pracovat s vašimi stávajícími sítěmi, aby se zařízení AXON mohla připojit k internetu. Buď s dynamickou IP adresou (rovněž nazýváno DHCP) nebo statickou IP adresou. Způsob připojení vyberte níže:"
+            },
+            "static_ip" : {
+               "dns_servers" : "Servery DNS",
+               "gateway" : "Výchozí brána",
+               "ip_address" : "IP adresa",
+               "legend" : "Konfigurace statické IP",
+               "msg" : "Pokud vaše síť nevyužívá DHCP nebo je internet k dispozici pouze přes statickou IP adresu budete muset dok správně nakonfigurovat. Pokud požadované informace nemáte k dispozici, kontaktujte vašeho správce sítě.",
+               "subnet_mask" : "Maska podsítě"
+            },
+            "throttle" : {
+               "label_mbps" : "Mb/s",
+               "legend" : "Omezení rychlosti odesílání",
+               "max_speed" : "Maximální rychlost odesílání",
+               "msg" : "Za normálních okolností využije dok k ukládání videozáznamů z jednotek Axon veškerou kapacitu připojení, aby byly uloženy co nejrychleji. Pokud je takové chování není žádoucí, můžete rychlost omezit níže (měřeno v megabitech za sekundu). Hodnota nula znamená využít veškerou kapacitu."
+            }
+         }
+      },
+      "ops" : {
+         "an_error_occurred" : "Došlo k chybě",
+         "generating_tokens" : "Generují se tokeny zabezpečení…",
+         "headers" : {
+            "operations" : "Operace"
+         },
+         "page_title" : "Obecné operace",
+         "regenerate_keys_query" : "U Evidence.com jste již ověřeni. Přejete si generovat bezpečnostní klíče znovu?",
+         "regenerate_keys_title" : "Generovat klíče znovu",
+         "register_with_ecom" : "Registrovat na Evidence.com",
+         "registering_etm" : "Probíhá registrace doku…",
+         "processing" : "Probíhá zpracování...",
+         "poll_uri_code" : "Načítání aktivačního odkazu a kódu...",
+         "reset_reg" : "Resetovat registraci",
+         "reset_reg_failed" : "Nelze resetovat registraci",
+         "resetting_reg_dock" : "Registrace se resetuje na výchozí hodnoty. Stránka bude načtena znovu za 30 sekund.",
+         "restarting_etm" : "Probíhá restart doku, bude trvat přibližně 30 sekund…",
+         "sections" : {
+            "e_com_reg" : {
+               "admin_password" : "Heslo správce",
+               "admin_username" : "Uživatelské jméno správce",
+               "agency_name" : "Agentura Evidence.com",
+               "already_registered" : "Tento případ je již registrován na Evidence.com",
+               "domain_name" : "Název domény",
+               "legend" : "Registrace na Evidence.com",
+               "msg" : "Pro registraci doku v agentuře na Evidence.com zadejte název agentury, uživatelské jméno a heslo. Jakmile bude dok registrován, přenese veškeré soubory s médii do vašeho účtu na Evidence.com. Vaše uživatelské jméno a heslo nebude v doku uloženo.",
+               "msg_shorten" : "Pro registraci tohoto doku k vaší agentuře na Evidence.com zadejte název své agentury. Jakmile bude dok registrován, přenese veškeré mediální soubory do vašeho účtu na Evidence.com.",
+               "msg_login_uri_code" : "Otevřete prosím odkaz a poskytněte kód pro dokončení registrace:"
+            }
+         }
+      },
+      "proxy": {
+         "headers": {
+            "proxy_setup": "Nastavení proxy serveru"
+         },
+         "page_title": "Nastavení proxy",
+         "proxy_test_title": "Test proxy serveru",
+         "proxy_test_in_progress": "Probíhá test proxy serveru…",
+         "proxy_test_success_msg": "Test proxy serveru byl úspěšný",
+         "proxy_test_fail_msg": "Test proxy serveru selhal",
+         "configuration_saved_title": "Konfigurace proxy serveru byla uložena",
+         "configuration_saved_msg": "Konfigurace proxy byla uložena a brzy nabyde platnosti",
+         "sections": {
+            "http_proxy": {
+               "legend": "HTTP Proxy",
+               "msg": "Nastavením HTTP proxy se všechny HTTP požadavky přesměrují na určený proxy server.",
+               "enable": "Povolit",
+               "legend_config": "Konfigurace",
+               "legend_advanced_config": "Pokročilá konfigurace",
+               "disable_dns_check": "Zakázat DNS kontrolu",
+               "msg_config": "Uživatelské jméno a heslo jsou nepovinné.",
+               "host": "Proxy - server",
+               "port": "Proxy - port",
+               "username": "Uživatelské jméno",
+               "password": "Heslo",
+               "test_connection": "Otestovat připojení"
+            }
+         }
+      },
+      "strings" : {
+         "an_error_occurred" : "Došlo k chybě",
+         "axon_flex" : "Axon Flex",
+         "calculating_rate" : "Probíhá kalkulace…",
+         "cancel" : "Storno",
+         "cannot_get_data_too_many_failed_login_attempts" : "Nelze získat data kvůli příliš mnoha neúspěšným pokusům o přihlášení",
+         "click_for_details" : "Kliknutím zobrazíte podrobnosti",
+         "device_error" : "Chyba zařízení",
+         "error" : "Chyba",
+         "error_download" : "Chyba při stahování https",
+         "error_internal" : "Vnitřní chyba",
+         "failed_auth": "Příliš mnoho neúspěšných pokusů o ověření. Účet dočasně pozastaven.",
+         "finished" : "Dokončeno",
+         "invalid_hostname" : " není platný název hostitelského počítače",
+         "kbps" : "kb/s",
+         "login_failed" : "Přihlášení selhalo",
+         "no_server_response" : "Žádná odezva od serveru",
+         "ok" : "OK",
+         "operation_complete_success" : "Operace byla úspěšně ukončena.",
+         "please_complete_mandatory" : "Vyplňte toto povinné pole.",
+         "please_enter_numeric" : "Zadejte číselnou hodnotu.",
+         "please_enter_valid_email" : "Zadejte prosím platnou e-mailovou adresu.",
+         "please_enter_valid_URL" : "Zadejte platnou adresu URL.",
+         "please_enter_value_larger" : "Zadejte hodnotu větší než ",
+         "please_enter_value_smaller" : "Zadejte hodnotu menší než ",
+         "reloading_status" : "Probíhá opětovné načtení stavu…",
+         "reloading_status_title" : "Probíhá obnovení",
+         "unassigned" : "Zrušeno přiřazení",
+         "unspecified_error" : "Došlo k nespecifikované chybě.",
+         "waiting_for_response" : "Čeká se na odezvu…",
+         "authentication_failed" : "Ověření selhalo",
+         "invalid_request" : "Požadavek je nulový nebo neplatný"
+      }
+   }
+}

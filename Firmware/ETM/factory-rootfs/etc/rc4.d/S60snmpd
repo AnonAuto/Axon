@@ -1,0 +1,99 @@
+#! /bin/sh
+# /etc/init.d/snmpd: start snmp daemon.
+
+. /etc/init.d/functions
+. /etm/bin/etm-common.sh
+
+test -x /usr/sbin/snmpd || exit 0
+
+SCRIPT_NAME="/etc/init.d/snmpd"
+# Defaults
+export MIBDIRS=/usr/share/snmp/mibs
+SNMPDOPTS='-Lsd -Lf /dev/null -p /var/run/snmpd.pid'
+PIDFILE=/var/run/snmpd.pid
+
+# Dock snmp config
+CONFIG_DIR="/etc/snmp"
+SNMPD_CONF="${CONFIG_DIR}/snmpd.conf"
+
+regenerate_conf() {
+    LOCATION="$(/sbin/uci get etm.etm.location 2>/dev/null)"
+    SNMP_USER="$(/sbin/uci get etm.etm.snmp_user 2>/dev/null)"
+    SNMP_SEC="$(/sbin/uci get etm.etm.snmp_sec 2>/dev/null)"
+
+    if [[ -z "${LOCATION}" || -z "${SNMP_USER}" || -z "${SNMP_SEC}" ]]; then
+        log_err_msg_no_echo "${SCRIPT_NAME}" "Event=CannotStartSnmpd Reason=InsufficientData"
+        exit 1
+    fi
+
+    # Make sure snmp config dir is existed and have proper permissions and ownership.
+    /bin/mkdir -p "${CONFIG_DIR}"
+    /bin/chown root:snmp "${CONFIG_DIR}"
+    /bin/chmod 550 "${CONFIG_DIR}"
+    /bin/touch "${SNMPD_CONF}"
+
+    cat > ${SNMPD_CONF} << EOF
+# Changes to the specified user after opening the listening port(s).
+agentuser snmp
+agentgroup snmp
+# Create a view just for ETM DOCK
+view system    included    .1.3.6.1.2.1.1
+view system    excluded    .1.3.6.1.2.1.1.2
+view system    excluded    .1.3.6.1.2.1.1.4
+view system    excluded    .1.3.6.1.2.1.1.8
+view system    excluded    .1.3.6.1.2.1.1.9
+##################### System
+sysDescr Axon_Dock_v${ETM_VERSION}
+sysLocation ${LOCATION}
+sysName ${SN}
+######################### User
+rouser ${SNMP_USER} ${SNMP_SEC} -V system
+EOF
+}
+
+ENABLED_SNMP="$(/sbin/uci get etm.etm.enable_snmp 2>/dev/null)"
+if [[ "${ENABLED_SNMP}" == "1" ]] ; then
+    SNMPDRUN=yes
+    regenerate_conf
+else
+    SNMPDRUN=no
+    rm -rf "${SNMPD_CONF}"
+fi
+
+case "$1" in
+  start)
+    if [ "${SNMPDRUN}" = "yes" ]; then
+      if [[ -f "${SNMPD_CONF}" && ! -f "$PIDFILE" ]]; then
+        start-stop-daemon -o --start --quiet --name snmpd --pidfile "${PIDFILE}" \
+                          --exec /usr/sbin/snmpd -- ${SNMPDOPTS}
+        log_info_msg_no_echo "${SCRIPT_NAME}" "Starting snmp service success."
+      else
+        log_info_msg_no_echo "${SCRIPT_NAME}" "Starting snmp service failed."
+      fi
+    else
+        log_info_msg_no_echo "${SCRIPT_NAME}" "Starting of snmp is not enabled by configuration."
+    fi
+
+    test ! -x /sbin/restorecon || /sbin/restorecon -FR /var/lib/net-snmp
+    ;;
+  stop)
+    if [[ -f  "${PIDFILE}" ]]; then
+        start-stop-daemon -o --stop  --quiet --pidfile "${PIDFILE}" --name snmpd
+        log_info_msg_no_echo "${SCRIPT_NAME}" "Stopping snmp service success."
+        rm -rf "${PIDFILE}"
+    else
+        log_info_msg_no_echo "${SCRIPT_NAME}" "Stopping snmp service failed."
+    fi
+    ;;
+  restart|reload|force-reload)
+    "${0}" stop
+    # Allow the daemons time to exit completely.
+    sleep 2
+    "${0}" start
+    ;;
+  *)
+    echo "Usage: /etc/init.d/snmpd {start|stop|restart|reload|force-reload}"
+    exit 1
+esac
+
+exit 0

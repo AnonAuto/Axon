@@ -1,0 +1,558 @@
+{
+   "ETM" : {
+      "admin" : {
+         "admin_title" : "Dokstyring",
+         "configuring_msg" : "Konfigurerer. Dette vil tage ca. 40 sekunder ...",
+         "headers" : {
+            "administration" : "Dokstyring"
+         },
+         "page_title" : "Administratorindstillinger",
+         "rebooting_msg" : "Genstarter. Dette vil tage ca. 60 sekunder ...",
+         "saving_settings" : "Gemmer indstillinger ...",
+         "sections" : {
+            "admin_maint" : {
+               "legend" : "Vedligeholdelse",
+               "reboot" : "Genstart dok"
+            },
+            "admin_ssl" : {
+               "accept_only_https" : "Acceptér kun SSL-anmodninger",
+               "legend" : "SSL-konfiguration",
+               "regen_ssl" : "Gendan SSL-certifikat",
+               "require_https_time" : "Kræver SSL til første tidstjek"
+            },
+            "device_id" : {
+               "etm_name" : "Doknavn",
+               "home" : "Enhedshjem",
+               "legend" : "Enhedsidentifikation",
+               "location" : "Sted",
+               "msg" : "Nedestående oplysninger vil hjælpe dig med at identificere den dokenhed, du kommunikerer med. Disse oplysninger bruges også af Evidence.com til at vise information om enhedens status.",
+               "your_agency" : "Din organisation"
+            },
+            "password_change" : {
+               "confirm_new_password" : "Indtast den nye adgangskode igen",
+               "current_password" : "Aktuel adgangskode",
+               "error_no_password" : "Hvis du vil ændre administratorens legitimationsoplysninger, skal du bruge den nuværende adgangskode.",
+               "legend" : "Ændr legitimationsoplysninger",
+               "msg" : "Administrér administratorens brugernavn og adgangskode, der bruges til at få adgang til denne dok.",
+               "new_password" : "Ny adgangskode",
+               "username" : "Brugernavn"
+            },
+            "snmp" : {
+               "authentication" : "Godkendelse",
+               "disable" : "Deaktiver",
+               "enable_snmp" : "Aktivér SNMP",
+               "enc_password" : "Krypteringskode",
+               "encrypt_msg" : "Lad \"Krypteringskode\" stå tom, hvis du vil bruge det samme \"SNMP-kode\" til kryptering.",
+               "encryption" : "Kryptering",
+               "error_no_password" : "Hvis du vil ændre SNMP-brugernavnet, kræver det en tilsvarende adgangskode.",
+               "error_title" : "Fejl ved SNMP-indstilling",
+               "legend" : "SNMP-server",
+               "legend_config" : "SNMP-konfiguration",
+               "msg" : "SNMP er deaktiveret som standard. For at aktivere funktionen skal du bruge afkrydsningsfeltet og inputkonfiguration.",
+               "password" : "SNMP-kode",
+               "username" : "SNMP-brugernavn"
+            }
+         },
+         "set_configuration_error_title" : "Indstil konfiguration",
+         "settings_changed" : {
+            "p1" : "Indstillingerne fra din organisation er blevet ændret!",
+            "p2" : "Tryk på knappen [Opdatér] for at overføre din organisations ændringer til dokken.",
+            "p3" : "Ellers skal du trykke [Annullér] og manuelt opdatere dine indstillinger. Ændringerne vil blive synkroniseret med din organisation.",
+            "p4" : "Oversigt over ændringer:",
+            "title" : "Indstillinger ændret"
+         }
+      },
+      "axonsup" : {
+         "headers" : {
+            "data" : "Supportdata"
+         },
+         "page_title" : "Axon-support",
+         "sections" : {
+            "data" : {
+               "legend" : "Axon-supportdata",
+               "msg" : "Databoblerne herunder kan være nyttige, når du er i kontakt med en repræsentant fra Axon-kundeservice.",
+               "result1" : "Resultat 1:",
+               "result2" : "Resultat 2:"
+            }
+         }
+      },
+	  "cgi" : {
+          "csrf_fail" : "Cookie-fejl",
+          "invalid_auth" : "Ugyldigt brugernavn eller adgangskode",
+          "invalid_cmd" : "Ugyldig kommando",
+          "invalid_domain" : "Intet domæne angivet",
+          "invalid_proxy_config" : "Ugyldig proxy-konfiguration",
+          "invalid_proxy_user_pass" : "Brugernavn eller adgangskode mangler",
+          "invalid_snmp_user" : "Ikke i stand til at anvende SNMP-konfiguration. Ugyldigt SNMP-brugernavn.",
+          "no_content" : "Intet indhold",
+          "no_snmp_pw" : "Ikke i stand til at anvende SNMP-konfiguration. Ingen adgangskode angivet.",
+          "not_released" : "Ikke frigivet",
+          "ok" : "OK",
+          "unable_disable_snmp" : "Kunne ikke deaktivere SNMP-konfiguration.",
+          "unable_set_snmp" : "Kunne ikke anvende SNMP-konfiguration.",
+          "unable_set_snmp_auth" : "Kunne ikke anvende SNMP-konfiguration –autentificering.",
+          "unable_set_snmp_enable" : "Kunne ikke aktivere SNMP-konfiguration.",
+          "unable_set_snmp_enc" : "Kunne ikke anvende SNMP-konfiguration – kryptering.",
+          "unable_set_snmp_pass" : "Kunne ikke anvende SNMP-konfiguration – adgangskode.",
+          "unable_set_snmp_user" : "Kunne ikke anvende SNMP-konfiguration – brugernavn.",
+          "unable_set_sslonly" : "Kunne ikke ændre indstillingen 'Accepter kun SSL-anmodninger'",
+          "unknown_err" : "Ukendt fejl",
+          "web_creds_err" : "Kunne ikke opdatere administrator-oplysninger.",
+          "web_creds_invalid_username" : "Kunne ikke opdatere administrator-oplysninger: Brugernavnet er ugyldigt.",
+          "web_creds_invalid_cur_pass" : "Kunne ikke opdatere administrator-oplysninger: Nuværende adgangskode er ugyldig.",
+          "web_creds_invalid_new_pass" : "Kunne ikke opdatere administrator-oplysninger: Nyt brugernavn er ugyldigt."
+      },
+      "common" : {
+        "admin_name_allowed_characters" : "Ugyldigt brugernavn. Tilladte tegn: alfanumeriske tegn mellemrum # ! @ ( ) [ ] - . _",
+        "at_least" : "skal være mindst",
+        "cannot_contain_duplicate" : "må ikke indeholde gentagelser af tegn",
+        "cannot_contain_more_than" : "må ikke indeholder mere end",
+        "cannot_contain_username" : "må ikke indeholde dit brugernavn eller andre almindelige ord",
+        "character" : "tegn",
+        "characters" : "tegn",
+        "characters_in_seq" : "tegn i sekvens",
+        "input_valid_IP" : "Indtast en gyldig IP-adresse",
+        "less_than" : "skal være mindre end",
+        "mandatory_field" : "Dette felt skal udfyldes.",
+        "must_contain" : "skal indeholde",
+        "no" : "Nej",
+        "not_secure" : "er ikke sikkert nok",
+        "please_provide" : "Indtast mindst",
+        "select_valid_entry" : "Vælg et gyldigt input fra listen",
+        "snmp_name_allowed_characters" : "Ugyldigt brugernavn. Tilladte tegn: alfanumeriske tegn # ! @ ( ) [ ] - . _",
+        "value_not_equal" : "Værdi ikke lig med Ny adgangskode-feltet",
+        "yes" : "Ja"
+      },
+      "configassist" : {
+         "dlg_assign" : {
+            "msg1" : "Denne formular ændrer enhedens ejer til nedenstående bruger. Brugernavnet og adgangkoden er ikke opbevaret på dokken.",
+            "msg2" : "Indtast din godkendelse herunder, og klik \"OK\" for at knytte denne enhed til DIG. Ellers klik \"Annullér\" for at vende tilbage.",
+            "password" : "Adgangskode",
+            "username" : "Brugernavn"
+         },
+         "dlg_format" : {
+            "msg" : "Dette vil opdatere enhedens konfiguration og firmware. Ingen data vil gå tabt."
+         },
+         "dlg_format_auth" : {
+            "admin_password" : "Administratorkode",
+            "admin_username" : "Administratorbrugernavn",
+            "msg" : "Du skal have administratorrettigheder fra Evidence.com for at udføre denne handling. Dit brugernavn og din adgangskode gemmes ikke på dokken. Indtast din godkendelse, og klik \"OK\" for at formattere denne enhed. Ellers klik \"Annullér\" for at vende tilbage."
+         },
+         "err_cannot_get_log" : {
+            "msg" : "Der opstod en fejl, da enheden forsøgte at læse aktivitetsloggen.",
+            "title" : "Kan ikke læse logfilen fra denne enhed"
+         },
+         "err_cannot_read_file" : {
+            "msg" : "Der opstod en fejl, da enheden forsøgte at læse medie- og bevisinformation. Hvis fejlen vedbliver, skal du kontakte Axons tekniske support.",
+            "title" : "Kan ikke læse bevisfilen fra denne enhed."
+         },
+         "err_cannot_rm_log" : {
+            "msg" : "Der opstod en fejl, da enheden forsøgte at læse aktivitetsloggen på denne enhed, efter den blev uploadet til evidence.com.",
+            "title" : "Kan ikke rydde logfilen fra denne enhed"
+         },
+         "err_device_lost_communication" : {
+            "msg" : "Forbindelsen til denne enhed er stopped med at fungere. Tag enheden ud af dokken et øjeblik, og indsæt den så igen. Hvis problemet vedbliver, skal du kontakte din organisationsadministrator.",
+            "title" : "Dokken kan ikke længere kommunikere med denne enhed."
+         },
+         "err_device_maintenance" : {
+            "msg" : "Denne dok udfører automatisk vedligeholdende på denne enhed. Enheden vil fungere normalt igen automatisk. Du skal ikke foretage dig noget.",
+            "title" : "Denne dok udfører automatisk vedligeholdelse på denne enhed."
+         },
+         "err_devtype_cfg_failure" : {
+             "msg" : "Kunne ikke indstille enheden til Bodycam Mode. Følg instruktionerne til fejlsøgning.",
+             "title" : "Denne enhed er ikke indstillet som Bodycam"
+         },
+         "err_format_failure" : {
+            "msg" : "Fejl i enhedens drevformat. Følg instruktionerne til fejlsøgning. ",
+            "title" : "Fejl i drevformatet for denne enhed"
+         },
+         "err_fwup_cfg_failure" : {
+             "msg": "Feltet til firmwareopdatering kunne ikke konfigureres. Følg instruktionerne til fejlsøgning.",
+             "title" : "Denne enhed er ikke konfigureret til firmwareopdatering"
+         },
+         "err_inactive_device" : {
+            "msg" : "Enheden er ikke aktiv i denne organisation i øjeblikket. Opret forbindelse mellem enheden og Evidence Sync, og knyt enheden til det rette bruger.",
+            "title" : "Din enhed er ikke aktiv i din organisation i øjeblikket."
+         },
+         "err_invalid_device_type" : {
+            "msg" : "Kunne ikke konfigurere enheden til den valgte type. Følg instruktionerne til fejlsøgning.",
+            "title" : "Enheden er ugyldig"
+         },
+         "err_invalid_model" : {
+            "msg" : "Enheden, der er forbundet til dokken, genkendes ikke som en gyldig Axonenhed. Fjern den fra dokken.",
+            "title" : "Dokken genkender ikke denne type enhed."
+         },
+         "err_invalid_serial" : {
+            "msg" : "Enheden, som er forbundet til dokken, har ikke et gyldigt serienummer. Dette kan være en fejl. Fjern enheden fra dokken, og opret forbindelse igen. Hvis fejlen vedbliver, skal du anmode om en RMA på enheden.",
+            "title" : "Enheden har intet gyldigt serienummer."
+         },
+         "err_inventory_failure" : {
+            "msg" : "Der opstod en fejl, da enheden forsøgte at læse medie- og bevisinformation. Hvis fejlen fortsætter med at opstå, skal du kontakte Axons tekniske support.",
+            "title" : "Kan ikke læse bevisfilen fra denne enhed."
+         },
+         "err_mount_failed" : {
+            "msg" : "Gå til administrationssiden, og genstart dokken.",
+            "title" : "Der opstod en fejl under oprettelsen af forbindelse til enheden."
+         },
+         "err_network_failed" : {
+            "msg" : "Dette kan skyldes en dårlig internetforbindelse, en dårlig forbindelse til Evidence.com, høj belastning af Evidence.com eller at Evidence.com er lukket pga. vedligeholdelse. Dette er ikke en kritisk fejl. Dokken vil forsøge at gennemføre handlingen igen.",
+            "title" : "Dokken oplevede et netværksproblem under behandlingen af denne enhed."
+         },
+         "err_no_usb" : {
+            "msg" : "Dokken kan ikke kommunikere med denne enhed. Dette kan være en fejl. Fjern enheden fra dokken, og opret forbindelse igen. Hvis fejlen vedbliver, skal du anmode om en RMA på enheden.",
+            "title" : "Kan ikke kommunikere med denne enhed."
+         },
+         "err_not_offline" : {
+            "msg" : "Denne dok er konfigureret til offline brug. Den kan ikke behandle enheder, der er konfigureret til online brug. Hvis du ønsker at indstille denne enhed til offline brug skal du oprette forbindelse mellem enheden og Evidence.com og følge instruktionerne.",
+            "title" : "Enheder er ikke indstillet til offline brug"
+         },
+         "err_not_online" : {
+            "msg" : "Denne dok er konfigureret til online brug. Den kan ikke behandle enheder, der er konfigureret til offline brug. Hvis du ønsker at indstille denne enhed til online brug skal du oprette forbindelse mellem enheden og Evidence.com og følge instruktionerne.",
+            "title" : "Enheder er ikke indstillet til online brug"
+         },
+         "err_system_maintenance" : {
+            "msg" : "Denne dok udfører automatisk vedligeholdende. Enheden vil fungere normalt igen automatisk. Du skal ikke foretage dig noget.",
+            "title" : "Dokken udfører intern vedligeholdelse."
+         },
+         "err_transfer_failed" : {
+            "msg" : "Dette kan skyldes en dårlig internetforbindelse, en dårlig forbindelse til Evidence.com, høj belastning af Evidence.com eller at Evidence.com er lukket pga. vedligeholdelse. Dette er ikke en kritisk fejl. Dokken vil fortsætte med at forsøge at gennemføre denne upload.",
+            "title" : "Dokken kunne ikke overføre en video fra denne enhed."
+         },
+         "err_transfer_failed_noretry" : {
+            "msg" : "Dette kan skyldes et problem med enheden. Kontakt Axons tekniske support.",
+            "title" : "Der opstod en permanent fejl i dokken under overførelsen af en video fra denne enhed"
+         },
+         "err_unknown_port_type" : {
+            "msg" : "Porttypen for den tilsluttede enhed understøttes ikke eller er ukendt. Følg instruktionerne til fejlsøgning.",
+            "title" : "Porttypen er ukendt"
+         },
+         "err_wrong_agency" : {
+            "msg" : "Denne enhed er ikke i øjeblikket tildelt din organisation. Du bedes kontakte din organisations administrator for hjælp med denne enhed.",
+            "title" : "Denne enhed er ikke i øjeblikket tildelt din organisation."
+         },
+         "if_problem_continues" : "Hvis dette problem vedbliver, skal du kontakte Axon tekniske support.",
+         "more_help" : "For at få yderligere hjælp med dette problem skal du kontakte Axons tekniske support.",
+         "no_dns" : {
+            "msg" : "Vi kunne ikke lokalisere en DNS-server. Dette kan skyldes en ugyldig IP-adresse, der er konfigureret til din DNS-server. Vi anbefaler dig at dobbelttjekke DNS-indstillingerne på netværkssiden.",
+            "return_msg" : "Klik \"OK\" herunder for at gå til netværkssiden og dobbelttjekke DNS-oplysningerne, eller klik Esc for at lukke denne dialog.",
+            "title" : "Kunne ikke finde en DNS-server"
+         },
+         "no_ecom" : {
+            "msg" : "Vi kunne ikke godkende denne dok via Evidence.com. Dette kan skyldes en ugyldig eller manglende registreringsnøgle for din organisation og denne dok. Vi anbefaler dig at registrere denne dok via operationssiden.",
+            "return_msg" : "Klik \"OK\" herunder for at gå til operationssiden og og registrere din dok, eller tryk Esc for at lukke denne dialog.",
+            "title" : "Ingen godkendelse fra Evidence.com"
+         },
+         "no_gateway" : {
+            "msg" : "Vi kunne ikke kontakt dit netværks standardport. Dette kan skyldes en ugyldig IP-adresse, men der findes dog nogle porte, der ikke responderer på \"netværkpings\".",
+            "return_msg" : "Klik \"OK\" herunder for at gå til netværkssiden og ændre din standardport, eller klik Esc for at lukke denne dialog.",
+            "title" : "Ingen port fundet"
+         },
+         "no_https" : {
+            "msg" : "Vi kunne ikke kommunikere over en sikker (HTTPS) kanal. Dette kan være fordi, HTTPS-porten (443) bliver blokeret af din firewall. Vi anbefaler dig at tjekke, om HTTPS-porten er åben i din firewall.",
+            "return_msg" : "Klik \"OK\" herunder for at komme tilbage til statussiden.",
+            "title" : "Ingen HTTPS tilgængelig."
+         },
+         "no_ip_dynamic" : {
+            "msg" : "Vi kunne ikke få en IP-adresse fra din DHCP-server. Dette kan skyldes, at der ikke er en DHCP-server aktiv på dit netværk. Du kan være nødsaget til at indtaste statisk IP-konfiguration for denne dok.",
+            "return_msg" : "Klik \"OK\" herunder for at gå til netværkssiden og indtaste den statiske IP-information, eller klik Esc for at lukke denne dialog.",
+            "title" : "Ingen IP-adresse."
+         },
+         "no_ip_static" : {
+            "msg" : "Vi kunne ikke indhente IP-adressen, du angav i den statiske IP-opsætning for denne dok. Dette kan være fordi, du har brugt den samme statiske IP til mere end én computer. Vi anbefaler dig at dobbelttjekke den IP-adresse, du angav, på netværkssiden.",
+            "return_msg" : "Klik \"OK\" herunder for at gå til netværkssiden og dobbelttjekke dine indstillinger, eller klik Esc for at lukke denne dialog.",
+            "title" : "Ingen IP-adresse."
+         },
+         "no_ntp" : {
+            "msg" : "Vi kunne ikke kommunikere med en Network Time-server. Dette kan skyldes, at både port 80 og port 123 er blokeret af en firewall. Vi anbefaler dig at tjekke, om port 80 og port 123 begge er åbne i dine firewall.",
+            "return_msg" : "Klik \"OK\" herunder for at gå til netværkssiden og ændre din tidsserver, eller klik Esc for at lukke denne dialog.",
+            "title" : "NTP-server svarer ikke"
+         },
+         "no_status" : {
+            "msg" : "Vi har endnu ikke kunnet identificere din netværkstype. Dette kan være fordi, vores system stadig er ved at komme op. Vi anbefaler dig at vente 2-3 minutter og herefter opdatere siden. Statussiden vil også blive opdateret, hvis der er nye oplysninger at vise.",
+            "return_msg" : "Klik \"OK\" herunder for at komme tilbage til statussiden.",
+            "title" : "Ingen status fundet."
+         },
+         "title" : "Konfigurationsassistent ",
+         "we_found" : "Efter undersøgelse af dit netværk kan du fundet følgende problem:",
+         "welcome" : "Velkommen til Konfigurationsassistenten."
+      },
+      "device_status_codes" : {
+         "capchk" : "Kapacitetstjek",
+         "cfg" : "Konfigurerer",
+         "chg" : "Oplader",
+         "del" : "Fjerner",
+         "device_maint" : "Enhedsvedligeholdelse",
+         "devid" : "Identificerer",
+         "err" : "Fejl (nyt forsøg afventer)",
+         "fail" : "Fejl",
+         "fwdone" : "Firmware opdateret",
+         "fwupdate" : "Opdaterer firmware",
+         "inact" : "Inaktiv",
+         "init" : "Initialiserer",
+         "inventory" : "Lager",
+         "logerase" : "Sletter log",
+         "logsend" : "Uploader log",
+         "lost" : "Tabt kommunikation",
+         "net_retry" : "Forsøg at oprette forbindelse til netværker igen",
+         "new" : "Ny enhed",
+         "nonet" : "Netværk nede",
+         "plugin" : "Tilslutter",
+         "proc" : "Overfører fil",
+         "rdy" : "Klar",
+         "register" : "Registrerer",
+         "summary" : "Hent resumé",
+         "sys_maint" : "Systemvedligeholdelse",
+         "unk" : "Ukendt",
+         "unsupported" : "Ikke understøttet",
+         "wait" : "Afventer"
+      },
+      "diag" : {
+         "headers" : {
+            "diag" : "Diagnostik"
+         },
+         "page_title" : "Status",
+         "sections" : {
+            "netdiag" : {
+               "command" : "Kommando:",
+               "commands" : {
+                  "date" : "Rapporteret DATO fra dok",
+                  "ifconfig" : "IFCONFIG-netværksdiagnostik",
+                  "nslookup_goog" : "NSLOOKUP google.com",
+                  "nslookup_taser" : "NSLOOKUP taser.evidence.com",
+                  "ping_8888" : "PING 8.8.8.8",
+                  "ping_gateway" : "PING standardport",
+                  "ping_goog" : "PING google.com",
+                  "tail_etmlog" : "TAIL 100 linjer af doklog",
+                  "tail_syslog" : "TAIL 100 linjer af syslog",
+                  "tr_goog" : "TRACEROUTE google.com",
+                  "tr_taser" : "TRACEROUTE taser.evidence.com"
+               },
+               "execute" : "Udfør",
+               "legend" : "Netværksdiagnostik",
+               "menu" : "Vælg en diagnostiktest fra rullemenuen, og tryk udfør ...",
+               "msg1" : "Kommandoerne her bruges til at diagnosticere problemer med netværksforbindelsen.",
+               "msg2" : "Udfør ikke kommandoerne herunder, med mindre du bliver instrueret til det af en repræsentant fra Axon-kundeserve.",
+               "result" : "Resultat:"
+            }
+         }
+      },
+      "firmware" : {
+         "current_version" : "Nuværende firmwareversion",
+         "dvr_update_starting" : "Kontakter Axon-serveren for at tjekke for opdateringer. Firmware-opdateringer vil blive udført efter DVR er færdig med at oploade filer",
+         "etm_update_starting" : "Firmware-opdatering er gået i gang. Kom tilbage om nogle minutter for at se, om versionen er blevet opdateret ...",
+         "headers" : {
+            "firmware_mgmt" : "Firmwarestyring"
+         },
+         "not_released" : "Ikke frigivet",
+         "page_title" : "Opdatering af firmware",
+         "sections" : {
+            "device_firmware_update" : {
+               "legend" : "Opdatering til enhedens firmware",
+               "msg" : "For at opgradere firmware for alle enheder, der er i dok i øjeblikket, skal du klikke på nedenstående knap. Hvis en opdatering er tilgængelig, vil den automatisk blive installeret på alle enheder.",
+               "device_name" : "Enhedsnavn",
+               "released_firmware" : "Udgivet firmware",
+               "early_access_firmware" : "Tidlig adgang-firmware",
+               "perform_fw_update" : "Opdatér Axon-enheder"
+            },
+            "etm_firmware_update" : {
+               "check_update" : "Opdatér firmware",
+               "legend" : "Opdatering til dokfirmware",
+               "msg" : "For at opdatere din doks firmware skal du klikke på OPDATÉR FIRMWARE. Dokken vil kontakte Axons servere og søge efter den nyeste firmwareversion. Hvis en ny firmwareversion er tilgængelig, vil den automatisk blive installeret.",
+               "show_version_details" : "Detaljer",
+               "version_details" : "Detaljer"
+            }
+         },
+         "update_failed" : "Kunne ikke begynde firmwareopdatering",
+         "update_title" : "Opdatering af firmware"
+      },
+      "general" : {
+         "closeparen" : ")",
+         "copyright" : "&copy; 2023 Axon Enterprise, Inc. Alle rettigheder forbeholdes",
+         "error_code" : "fejlkode",
+         "firmware" : "Firmware",
+         "footnote" : "*TASER-batterierne har firmware til TASER 7 (T7) og TASER 10 (T10) Fungerer også med TASER BLE.",
+         "openparen" : "(",
+         "refresh" : "Opdatér",
+         "sections" : {
+            "button_bar" : {
+               "discard_changes" : "Afvis ændringer",
+               "loading_wait" : "Henter konfiguration ... Vent venligst ...",
+               "reset_registration" : "Nulstil registrering",
+               "save_changes" : "Gem ændringer",
+               "continue" : "Fortsæt"
+            },
+            "snmp" : {
+               "showhide_password" : "Vis/skjul SNMP-kode"
+            }
+         }
+      },
+      "index" : {
+         "footer" : {
+            "help_center" : "Hjælp-center"
+         },
+         "headers" : {
+            "system_status" : "Systemstatus"
+         },
+         "page_title" : "Status",
+         "sections" : {
+            "devices" : {
+               "device" : "Enhed",
+               "firmware" : "Firmware*",
+               "hidden_info" : "Klik for at se data",
+               "legend" : "Enheder",
+               "owner" : "Ejer",
+               "serial" : "Serienr.",
+               "status" : "Status"
+            },
+            "networking" : {
+               "active" : "Aktiv",
+               "dns_server" : "DNS-server",
+               "ecom_registration" : "Evidence.com-registrering",
+               "gateway" : "Internetport",
+               "https_port" : "HTTPS (port 443)",
+               "ipaddress" : "IP-adresse",
+               "legend" : "Netværk",
+               "mac_address" : "MAC-adresse",
+               "not_registered" : "Ikke registreret",
+               "serial_number" : "Serienr.",
+               "time_server" : "Tidsserver"
+            }
+         }
+      },
+      "links" : {
+         "administration" : "Administration",
+         "firmware" : "Firmware",
+         "networking" : "Netværk",
+         "operations" : "Operationer",
+         "status" : "Status"
+      },
+      "lookups" : {
+         "netmode" : {
+            "dynamic" : "dynamisk",
+            "static" : "statisk"
+         }
+      },
+      "networking" : {
+         "headers" : {
+            "net_setup" : "Netværksopsætning"
+         },
+         "page_title" : "Netværksindstillinger",
+         "restart_title" : "Netværksgenstart",
+         "saved_restarting" : "Indstillingerne blev gemt. Netværket genstarter ...",
+         "sections" : {
+            "conn_type" : {
+               "label_dynamic" : "Dynamisk IP (DHCP)",
+               "label_static" : "Statisk IP",
+               "legend" : "Forbindelsestype",
+               "msg" : "Dokken kan interagere med dit eksisterende netværk på to måder for at tillade internetadgang for AXONenheder. Enten via dynamisk IP (også kaldet DHCP) eller statisk IP. Vælg den rette måde herunder:"
+            },
+            "static_ip" : {
+               "dns_servers" : "DNS-servere",
+               "gateway" : "Standardport",
+               "ip_address" : "IP-adresse",
+               "legend" : "Konfiguration af statisk IP",
+               "msg" : "Hvis dit netværk ikke bruger DHCP, eller hvis internetadgang er tilgængelig via statisk IP, skal du angive konfigurationsoplysninger for dokken. Hvis du ikke har adgang til disse oplysninger, skal du kontakte din netværksadministrator.",
+               "subnet_mask" : "Subnetmaske"
+            },
+            "throttle" : {
+               "label_mbps" : "Mbps",
+               "legend" : "Udgående throttle",
+               "max_speed" : "Maksimal uploadhastighed",
+               "msg" : "Normalt vil dokken brug al tilgængelig båndbredde til at uploade videoer fra AXON-enheder så hurtigt som muligt. Hvis denne opførsel ikke ønskes, kan du begrænse overførselshastigheden herunder (målt i megabits per sekund). En nulværdi betyder, at dokken bruger al tilgængelig båndbredde."
+            }
+         }
+      },
+      "ops" : {
+         "an_error_occurred" : "Der opstod en fejl",
+         "generating_tokens" : "Genererer sikkerhedstokens ...",
+         "headers" : {
+            "operations" : "Operationer"
+         },
+         "page_title" : "Generelle operationer",
+         "regenerate_keys_query" : "Du er allerede blevet godkendt via Evidence.com. Ønsker du at gendanne sikkerhedsnøgler?",
+         "regenerate_keys_title" : "Gendan nøgler",
+         "register_with_ecom" : "Registrer dig via Evidence.com",
+         "registering_etm" : "Registrerer dokken ...",
+         "processing" : "Behandler...",
+         "poll_uri_code" : "Henter aktiveringslink og kode...",
+         "reset_reg" : "Nulstil registrering",
+         "reset_reg_failed" : "Kunne ikke nulstille registreringen",
+         "resetting_reg_dock" : "Nulstiller registreringen af dokken til standarden. Opdaterer siden om 30 sekunder.",
+         "restarting_etm" : "Genstarter dokken. Dette vil tage ca. 30 sekunder ...",
+         "sections" : {
+            "e_com_reg" : {
+               "admin_password" : "Administratorkode",
+               "admin_username" : "Administratorbrugernavn",
+               "agency_name" : "Evidence.com-organisation",
+               "already_registered" : "Denne dok er allerede blevet registreret via Evidence.com",
+               "domain_name" : "Domænenavn",
+               "legend" : "Evidence.com-registrering",
+               "msg" : "For at registrere denne dok til din Evidence.com-organisation skal du indtaste navnet på din Evidence.com-organisation samt brugernavn og adgangskode. Når dokken er registreret via Evidence.com, vil den overføre alle mediefiler til din Evidence.com-konto. Dit brugernavn og din adgangskode bliver ikke gemt på dokken.",
+               "msg_shorten" : "For at registrere denne dok til din Evidence.com-organisation skal du indtaste navnet på din Evidence.com-organisation. Når dokken er registreret hos Evidence.com, vil den overføre alle mediefiler til din Evidence.com-konto.",
+               "msg_login_uri_code" : "Åben venligst linket og skriv koden for at gennemføre registreringen:"
+            }
+         }
+      },
+      "proxy": {
+         "headers": {
+            "proxy_setup": "Proxy-opsætning"
+         },
+         "page_title": "Proxy-indstillinger",
+         "proxy_test_title": "Proxy-test",
+         "proxy_test_in_progress": "Proxy-test i gang ...",
+         "proxy_test_success_msg": "Proxy-test lykkedes",
+         "proxy_test_fail_msg": "Proxy-test mislykkedes",
+         "configuration_saved_title": "Proxy-konfiguration gemt",
+         "configuration_saved_msg": "Proxy-konfiguration gemt og vil træde i kraft snarest",
+         "sections": {
+            "http_proxy": {
+               "legend": "HTTP-proxy",
+               "msg": "Ved at indstille HTTP-proxy vil alle HTTP-anmodninger blive dirigeret til samme udvalgte proxy-server.",
+               "enable": "Aktivér",
+               "legend_config": "Konfiguration",
+               "legend_advanced_config": "Advanceret konfiguration",
+               "disable_dns_check": "Deaktiver DNS tjek",
+               "msg_config": "Brugernavn og adgangskode er valgfri",
+               "host": "Proxy-vært",
+               "port": "Proxy-port",
+               "username": "Brugernavn",
+               "password": "Adgangskode",
+               "test_connection": "Test forbindelse"
+            }
+         }
+      },
+      "strings" : {
+         "an_error_occurred" : "Der opstod en fejl",
+         "axon_flex" : "Axon Flex",
+         "calculating_rate" : "Beregner ...",
+         "cancel" : "Annullér",
+         "cannot_get_data_too_many_failed_login_attempts" : "Kan ikke indlæse data grundet for mange mislykkedes loginforsøg",
+         "click_for_details" : "Klik for at læse mere",
+         "device_error" : "Enhedsfejl",
+         "error" : "Fejl",
+         "error_download" : "Fejl ved download af https",
+         "error_internal" : "Intern fejl",
+         "failed_auth": "For mange mislykkede autentificeringsforsøg. Konto midlertidigt suspenderet.",
+         "finished" : "Udført",
+         "invalid_hostname" : "er ikke et gyldigt værtsnavn",
+         "kbps" : "kbps",
+         "login_failed" : "Log-on mislykkedes",
+         "no_server_response" : "Intet svar fra serveren",
+         "ok" : "OK",
+         "operation_complete_success" : "Operationen blev gennemført.",
+         "please_complete_mandatory" : "Udfyld dette obligatoriske felt.",
+         "please_enter_numeric" : "Indtast en numerisk værdi.",
+         "please_enter_valid_email" : "Du skal indtaste gyldig e-mailadresse.",
+         "please_enter_valid_URL" : "Indtast en gyldig URL.",
+         "please_enter_value_larger" : "Indtast en værdi, der er større end",
+         "please_enter_value_smaller" : "Indtast en værdi, der er mindre end",
+         "reloading_status" : "Opdaterer status ...",
+         "reloading_status_title" : "Opdaterer",
+         "unassigned" : "Ikke-tildelt",
+         "unspecified_error" : "Der opstod en uspecificeret fejl:",
+         "waiting_for_response" : "Afventer svar ...",
+         "authentication_failed" : "Godkendelse mislykkedes",
+         "invalid_request" : "Anmodningen er nul eller ugyldig"
+      }
+   }
+}

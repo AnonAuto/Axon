@@ -1,0 +1,50 @@
+#!/bin/sh
+
+. /etm/bin/etm-common.sh
+
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+DAEMON=/usr/sbin/lighttpd
+NAME=lighttpd
+DESC="Lighttpd Web Server"
+OPTS="-f /etc/lighttpd.conf"
+
+
+prepare_logs() {
+    # Lighttpd fails to start if it can't create/access its log files. This function
+    # enssures that all required log files exist with appropriate permissions.
+    /bin/touch "${TMPFS_LOG_DIR}/lighttpd.access.log"
+    /bin/chown wwwrun:wwwrun "${TMPFS_LOG_DIR}/lighttpd.access.log"
+    /bin/touch "${TMPFS_LOG_DIR}/lighttpd.breakage.log"
+    /bin/chown wwwrun:wwwrun "${TMPFS_LOG_DIR}/lighttpd.breakage.log"
+    /bin/touch "${TMPFS_LOG_DIR}/lighttpd.error.log"
+    /bin/chown wwwrun:wwwrun "${TMPFS_LOG_DIR}/lighttpd.error.log"
+}
+
+case "$1" in
+  start)
+	echo -n "Starting $DESC: "
+    prepare_logs
+	start-stop-daemon --start -x "$DAEMON" -- $OPTS
+	echo "$NAME."
+	;;
+  stop)
+	echo -n "Stopping $DESC: "
+	start-stop-daemon --stop -x "$DAEMON"
+	echo "$NAME."
+	;;
+  restart|force-reload)
+	echo -n "Restarting $DESC: "
+	start-stop-daemon --stop -x "$DAEMON"
+	sleep 1
+    prepare_logs
+	start-stop-daemon --start -x "$DAEMON" -- $OPTS
+	echo "$NAME."
+	;;
+  *)
+	N=/etc/init.d/$NAME
+	echo "Usage: $N {start|stop|restart|force-reload}" >&2
+	exit 1
+	;;
+esac
+
+exit 0

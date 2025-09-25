@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- begin_include meta -->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="csrf-token" content="__CSRF_TOKEN_PLACEHOLDER__">
+
+  <title>Axon Dock</title>
+  <!-- end_include meta -->
+
+  <!-- begin_include script -->
+  <script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-migrate-3.3.0.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-ui-1.12.1.js"></script>
+  <script type="text/javascript" src="/js/jquery-tools.min.js"></script>
+  <script type="text/javascript" src="/js/purl.js"></script>
+  <script type="text/javascript" src="/js/menu.js"></script>
+  <script type="text/javascript" src="/js/common.js"></script>
+  <script type="text/javascript" src="/js/jquery.localize.js"></script>
+  <script type="text/javascript" src="/js/etm-main.js"></script>
+  <link rel="stylesheet" href="/css/styles.css"/>
+  <link rel="stylesheet" href="/css/custom-theme/jquery-ui-1.12.1.css"/>
+  <link rel="stylesheet" href="/css/menu.css"/>
+  <link rel="stylesheet" href="/css/styles-ext.css"/>
+  <!-- end_include script -->
+
+  <script type="text/javascript" src="/js/etm-index.js"></script>
+
+</head>
+<body>
+  <div id="container">
+    <!-- begin_include header -->
+    <div id="header" class="header">
+      <div id="nav" class="primary-navigation">
+        <ul class="navigation-block">
+          <!-- languageLink marks links that need a lang attribute added -->
+          <li class="sitenavigation-item"><a class="languageLink" href="/index.html"><img class="sitenavigation-fulllogo" src="/images/axon-dock.png" alt="Axon Dock"/></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/index.html"><span data-localize="ETM.links.status">Status</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/network.html"><span data-localize="ETM.links.networking">Networking</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/ops.html" ><span data-localize="ETM.links.operations">Operations</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/admin.html" ><span data-localize="ETM.links.administration">Administration</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/firmware.html" ><span data-localize="ETM.links.firmware">Firmware</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="agency-info">
+      <p><span id="title-agency"></span> &mdash; <span id="agency-name"></span></p>
+      <p><span id="device-home"></span><span id="agency-loc"></span></p>
+      <p><span id="ddate"></span> &mdash; <span id="dtime"></span></p>
+    </div>
+    <!-- end_include header -->
+    <div id="content" class="content clearfix">
+      <h2 data-localize="ETM.index.headers.system_status">System Status</h2>
+      <div class="content-box-wrap">
+        <div class="content-box" >
+          <div class="content-box-inner">
+            <form action="">
+            <fieldset>
+              <legend data-localize="ETM.index.sections.networking.legend">Networking</legend>
+              <table id="index-status-table" class="status content-table list-table">
+                <tr>
+                  <td class="icon"></td>
+                  <td><span data-localize="ETM.index.sections.networking.ipaddress">IP Address </span>
+                      <span data-localize="ETM.general.openparen">(</span>
+                      <span id="net_mode" data-localize-lookup="ETM.lookups.netmode">...</span>
+                      <span data-localize="ETM.general.closeparen">)</span></td>
+                  <td id="net_ip" nowrap>...</td>
+                </tr>
+                <tr>
+                  <td class="icon"></td>
+                  <td data-localize="ETM.index.sections.networking.gateway">Internet Gateway</td>
+                  <td id="net_gateway">...</td>
+                </tr>
+                <tr>
+                  <td class="icon"></td>
+                  <td data-localize="ETM.index.sections.networking.dns_server">DNS Server</td>
+                  <td id="net_dns">...</td>
+                </tr>
+                <tr>
+                  <td class="icon"></td>
+                  <td data-localize="ETM.index.sections.networking.time_server">Time Server</td>
+                  <td id="net_ntp">...</td>
+                </tr>
+
+                <tr class="online_status_fields">
+                  <td class="icon"></td>
+                  <td data-localize="ETM.index.sections.networking.https_port">HTTPS (Port 443)</td>
+                  <td id="net_https">...</td>
+                </tr>
+                <tr class="online_status_fields">
+                  <td class="icon"></td>
+                  <td data-localize="ETM.index.sections.networking.ecom_registration">Evidence.com Registration</td>
+                  <td id="net_ecom">...</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td data-localize="ETM.index.sections.networking.mac_address">MAC Address</td>
+                  <td id="etm_mac" nowrap>...</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td data-localize="ETM.index.sections.networking.serial_number">Serial #</td>
+                  <td id="etm_serial" nowrap>...</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td data-localize="ETM.general.firmware">Firmware</td>
+                  <td id="fwVersion" nowrap>...</td>
+                </tr>
+              </table>
+              <div id="btnRefresh" class="btn" data-localize="ETM.general.refresh">Refresh</div>
+            </fieldset>
+            </form>
+
+            <form action="">
+            <fieldset>
+              <legend data-localize="ETM.index.sections.devices.legend">Devices</legend>
+              <table id="index-status-device" class="status content-table edit-table">
+                <thead><tr>
+                  <th data-localize="ETM.index.sections.devices.serial">Serial #</th>
+                  <th data-localize="ETM.index.sections.devices.device">Device</th>
+                  <th data-localize="ETM.index.sections.devices.firmware">Firmware*</th>
+                  <th data-localize="ETM.index.sections.devices.owner">Owner</th>
+                  <th data-localize="ETM.index.sections.devices.status">Status</th>
+                </tr></thead>
+              </table>
+            </fieldset>
+            </form>
+          </div> <!-- end of content -->
+        </div> <!-- end of content-box-wrap -->
+      </div> <!-- end of content-box -->
+    </div> <!-- end of content-box-inner -->
+    <div class="footnote">
+      <span id="taser-battery-fw" data-localize="ETM.general.footnote">*TASER Batteries carry firmware for TASER 7 (T7) and TASER 10 (T10) Handles as well as for TASER 7 & 10 BLE.</span>
+    </div>
+  </div> <!-- end of container -->
+
+  <!-- begin_include footer -->
+  <div id="footer">
+    <div class="footer-lang-select">
+      <select id="langchoice">
+         <option value="ms">Bahasa Melayu</option>
+         <option value="cs">Čeština</option>
+         <option value="da">Dansk</option>
+         <option value="de">Deutsch</option>
+         <option value="en-us">English</option>
+         <option value="es">Español</option>
+         <option value="fr">Français</option>
+         <option value="it">Italiano</option>
+         <option value="hu">Magyar</option>
+         <option value="nl">Nederlands</option>
+         <option value="no">Norsk</option>
+         <option value="pt-br">Português</option>
+         <option value="ro">Român</option>
+         <option value="fi">Suomi</option>
+         <option value="sv">Svenska</option>
+         <option value="ru">Pусский язык</option>
+         <option value="uk">украї́нська мо́ва</option>
+         <option value="th">ไทย</option>
+         <option value="ko">한국어</option>
+         <option value="ja">日本語</option>
+         <option value="zh-tw">漢語中文</option>
+         <option value="ar">اَلْعَرَبِيَّةُ</option>
+      </select>
+      <span id="footer-copyright" data-localize="ETM.general.copyright">&copy; 2020 Axon Enterprise, Inc. All rights reserved</span>
+    </div>
+    <div class="footer-contact-info">
+      <span id="footer-contactInfo"><a href="mailto:support@axon.com">support@axon.com</a></span>
+      <span id="footer-supportLink">
+        <a href="https://help.axon.com"><span data-localize="ETM.index.footer.help_center">Help Center</span></a>
+      </span>
+    </div>
+  </div>
+  <!-- end_include footer -->
+
+
+<div id="NO_STATUS" class="dialog"> <div class="help">
+<p><b data-localize="ETM.configassist.welcome">Welcome to the configuration assistant.</b><br/>
+<span data-localize="ETM.configassist.we_found">After examining your network we found the following issue:</span>
+<p class="warn" data-localize="ETM.configassist.no_status.title">No status found.</p>
+<p data-localize="ETM.configassist.no_status.msg">We have not been able to determine your network type yet. This may be because our system is still coming up.
+We suggest waiting 2 or 3 minutes and refreshing this page. The status page will also refresh if any new information comes in.
+</p>
+<p><span data-localize="ETM.configassist.if_problem_continues">If this problem continues please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a>
+</p>
+<p class="notice" data-localize="ETM.configassist.no_status.return_msg">Click "OK" below to return to the status page.</p>
+</div> </div>
+
+<div id="NO_IP_STATIC" class="dialog"> <div class="help">
+<p><b data-localize="ETM.configassist.welcome">Welcome to the configuration assistant.</b><br/>
+<span data-localize="ETM.configassist.we_found">After examining your network we found the following issue:</span>
+<p class="warn" data-localize="ETM.configassist.no_ip_static.title">No IP Address.</p>
+<p data-localize="ETM.configassist.no_ip_static.msg">We were unable to obtain the IP address you specified in the static IP setup for this Dock. This is usually caused by using the same static IP for more than one computer. We recommend verifying the IP address entered on the networking page.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p class="notice" data-localize="ETM.configassist.no_ip_static.return_msg">Click "OK" below to go to the Networking page to verify your settings, or press ESC to close this dialog.</p>
+</div> </div>
+
+<div id="NO_IP_DYNAMIC" class="dialog"> <div class="help">
+<p><b data-localize="ETM.configassist.welcome">Welcome to the configuration assistant.</b><br/>
+<span data-localize="ETM.configassist.we_found">After examining your network we found the following issue:</span>
+<p class="warn" data-localize="ETM.configassist.no_ip_dynamic.title">No IP Address.</p>
+<p data-localize="ETM.configassist.no_ip_dynamic.msg">We were unable to obtain an IP address from your DHCP server. This is usually caused by no DHCP server active on your network. You may need to enter static IP configuration for this Dock.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p class="notice" data-localize="ETM.configassist.no_ip_dynamic.return_msg">Click "OK" below to go to the Networking page to enter static IP information, or press ESC to close this dialog.</p>
+</div> </div>
+
+<div id="NO_DNS" class="dialog"> <div class="help">
+<p><b data-localize="ETM.configassist.welcome">Welcome to the configuration assistant.</b><br/>
+<span data-localize="ETM.configassist.we_found">After examining your network we found the following issue:</span>
+<p class="warn" data-localize="ETM.configassist.no_dns.title">Could not find a DNS Server</p>
+<p data-localize="ETM.configassist.no_dns.msg">We were unable to locate a DNS server. This is usually caused by an invalid IP address configured for your DNS server. We recommend verifying the DNS settings on the Networking page.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p class="notice" data-localize="ETM.configassist.no_dns.return_msg">Click "OK" below to go to the Networking page and verify DNS information, or press ESC to close this dialog.</p>
+</div> </div>
+
+<div id="NO_GATEWAY" class="dialog"> <div class="help">
+<p><b data-localize="ETM.configassist.welcome">Welcome to the configuration assistant.</b><br/>
+<span data-localize="ETM.configassist.we_found">After examining your network we found the following issue:</span>
+<p class="warn" data-localize="ETM.configassist.no_gateway.title">No Gateway found</p>
+<p data-localize="ETM.configassist.no_gateway.msg">We were unable to contact your network's default gateway. This is usually caused by an invalid IP address, however some gateways do not response to network "pings".</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p class="notice" data-localize="ETM.configassist.no_gateway.return_msg">Click "OK" below to go to the Networking page to change your default gateway, or press ESC to close this dialog.</p>
+</div> </div>
+
+<div id="NO_NTP" class="dialog"> <div class="help">
+<p><b data-localize="ETM.configassist.welcome">Welcome to the configuration assistant.</b><br/>
+<span data-localize="ETM.configassist.we_found">After examining your network we found the following issue:</span>
+<p class="warn" data-localize="ETM.configassist.no_ntp.title">NTP Server not responding</p>
+<p data-localize="ETM.configassist.no_ntp.msg">We were unable to communicate with a network time server. This is usually caused by both port 80 and port 123 blocked on a firewall. We recommend verifying that EITHER port 80 or 123 is open in your firewall.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p class="notice" data-localize="ETM.configassist.no_ntp.return_msg">Click "OK" below to go to the Networking page to change your timeserver, or press ESC to close this dialog.</p>
+</div> </div>
+
+<div id="NO_HTTPS" class="dialog"> <div class="help">
+<p><b data-localize="ETM.configassist.welcome">Welcome to the configuration assistant.</b><br/>
+<span data-localize="ETM.configassist.we_found">After examining your network we found the following issue:</span>
+<p class="warn" data-localize="ETM.configassist.no_https.title">No HTTPS available.</p>
+<p data-localize="ETM.configassist.no_https.msg">We were unable to communicate over a secure (HTTPS) channel. This is usually caused by the HTTPS port (443) being blocked by your firewall. We recommend verifying that the HTTPS port is open in your firewall.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p class="notice" data-localize="ETM.configassist.no_https.return_msg">Click "OK" below to return to the status page.</p>
+</div> </div>
+
+<div id="NO_ECOM" class="dialog"> <div class="help">
+<p><b data-localize="ETM.configassist.welcome">Welcome to the configuration assistant.</b><br/>
+<span data-localize="ETM.configassist.we_found">After examining your network we found the following issue:</span>
+<p class="warn" data-localize="ETM.configassist.no_ecom.title">No Evidence.com Authentication</p>
+<p data-localize="ETM.configassist.no_ecom.msg">We were unable to authenticate this Dock with Evidence.com. This is usually caused by invalid or missing registration keys for your agency and this Dock. We recommend registering this Dock using the Operations page.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p class="notice" data-localize="ETM.configassist.no_ecom.return_msg">Click "OK" below to go to the Operations page to register your Dock, or press ESC to close this dialog.</p>
+</div> </div>
+
+<div id="err_wrong_agency" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_wrong_agency.title">This device is not currently assigned to your agency.</p>
+<p data-localize="ETM.configassist.err_wrong_agency.msg">This device is not currently assigned to your agency. Please contact your agency admin for assistance with this device.
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: wrong_agency</span></p>
+</div> </div>
+
+<div id="err_device_lost_communication" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_device_lost_communication.title">The Dock has lost communication with this device.</p>
+<p data-localize="ETM.configassist.err_device_lost_communication.msg">This connection for this device has stopped functioning. Please undock and re-dock the device. If the problem continues, please contact your agency admin for assistance with this device.
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: device_lost_communication</span></p>
+</div> </div>
+
+<div id="err_system_maintenance" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_system_maintenance.title">The Dock is performing internal maintenance.</p>
+<p data-localize="ETM.configassist.err_system_maintenance.msg">This Dock is performing automatic maintenance. The device will resume normal operation automatically. No action is required.
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: system_maintenance</span></p>
+</div> </div>
+
+<div id="err_device_maintenance" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_device_maintenance.title">This Dock is performing automatic maintenance on this device.</p>
+<p data-localize="ETM.configassist.err_device_maintenance.msg">This Dock is performing automatic maintenance on this device. The device will resume normal operation automatically. No action is required.
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: device_maintenance</span></p>
+</div> </div>
+
+<div id="err_mount_failed" class="dialog">
+    <div class="help">
+        <p class="warn" data-localize="ETM.configassist.err_mount_failed.title">There was an error connecting to the device.</p>
+        <p><span data-localize="ETM.configassist.err_mount_failed.msg">Please proceed to the Administration page and reboot the Dock.</span></p>
+        <p>
+            <span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span>
+            <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a>
+        </p>
+        <p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: mount_failure</span></p>
+    </div>
+</div>
+
+<div id="dlg_assign" class="dialog"> <div class="help">
+<p data-localize="ETM.configassist.dlg_assign.msg1">This form changes the owner of a device to the user specified below.
+The username and password are not stored on the Dock.
+</p>
+<p data-localize="ETM.configassist.dlg_assign.msg2">Enter your authentication below and click "OK" to assign this device to YOU, otherwise click "Cancel" to return.</p>
+          <table class="content-table">
+            <tr>
+              <td data-localize="ETM.configassist.dlg_assign.username">Username</td>
+              <td><input id="owner_auth_user" name="username" type="text" value="" required="1"/></td>
+            </tr>
+            <tr>
+              <td data-localize="ETM.configassist.dlg_assign.password">Password</td>
+              <td><input id="owner_auth_pass" name="password" type="password" value="" required="1"/></td>
+            </tr>
+          </table>
+</div> </div>
+
+<div id="dlg_format" class="dialog"> <div class="help">
+<p data-localize="ETM.configassist.dlg_format.msg">This will refresh the device's configuration and firmware. No data will be lost.
+</p>
+<div id="dlgFormatAuth">
+<p data-localize="ETM.configassist.dlg_format_auth.msg">You must have Evidence.com Administrator rights to perform this action.
+Your username and password are not stored on the Dock.
+Enter your authentication below and click "OK" to format this device, otherwise click "Cancel" to return.</p>
+          <table class="content-table">
+            <tr>
+              <td data-localize="ETM.configassist.dlg_format_auth.admin_username">Admin. Username</td>
+              <td><input id="format_auth_user" name="username" type="text" value="" required="1"/></td>
+            </tr>
+            <tr>
+              <td data-localize="ETM.configassist.dlg_format_auth.admin_password">Admin. Password</td>
+              <td><input id="format_auth_pass" name="password" type="password" value="" required="1"/></td>
+            </tr>
+          </table>
+</div>
+</div> </div>
+
+<div id="err_transfer_failed" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_transfer_failed.title">The Dock failed to successfully transfer a video from this device</p>
+<p data-localize="ETM.configassist.err_transfer_failed.msg">This is most likely caused by a bad Internet connection, a bad connection to Evidence.com, Evidence.com is under heavy load or Evidence.com is down for
+maintenance. This is not a critical error, the Dock will continue to retry the file upload.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: transfer_failed</span></p>
+</div> </div>
+
+<div id="err_network_failed" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_network_failed.title">The Dock encountered a network issue while processing this device</p>
+<p data-localize="ETM.configassist.err_network_failed.msg">This is most likely caused by a bad Internet connection, a bad connection to Evidence.com, Evidence.com is under heavy load or Evidence.com is down for
+maintenance. This is not a critical error, the Dock will retry the operation.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: network_failed</span></p>
+</div> </div>
+
+<div id="err_transfer_failed_noretry" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_transfer_failed_noretry.title">The Dock experienced a permanent error transferring a video from this device</p>
+<p data-localize="ETM.configassist.err_transfer_failed_noretry.msg">This is most likely caused by a problem with the device. Please contact Axon technical support.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: transfer_failed_noretry</span></p>
+</div> </div>
+
+<div id="err_inactive_device" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_inactive_device.title">Your device is currently not active on your agency</p>
+<p data-localize="ETM.configassist.err_inactive_device.msg">Device is currently not active on this agency. Please connect the device to Evidence Sync and assign device to an appropriate user.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: inactive_device</span></p>
+</div> </div>
+
+<div id="err_invalid_model" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_invalid_model.title">The Dock does not recognize this type of device</p>
+<p data-localize="ETM.configassist.err_invalid_model.msg">The device connected to the Dock is not recognized as a valid Axon device. Please remove it from the Dock.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: invalid_model</span></p>
+</div> </div>
+
+<div id="err_not_online" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_not_online.title">This device is not set for on-line operation</p>
+<p data-localize="ETM.configassist.err_not_online.msg">This Dock is configured for on-line operation, it will not process devices that are set to off-line mode.
+If you wish to set this device to on-line mode, please connect the device to Evidence Sync and follow the instructions.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: not_online</span></p>
+</div> </div>
+
+<div id="err_not_offline" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_not_offline.title">This device is not set of off-line operation</p>
+<p data-localize="ETM.configassist.err_not_offline.msg">This Dock is configured for off-line operation, it will not process devices that are set to on-line mode.
+If you wish to set this device to off-line mode, please connect the device to Evidence Sync and follow the instructions.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: not_offline</span></p>
+</div> </div>
+
+<div id="err_cannot_get_log" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_cannot_get_log.title">Unable to read the log file from this device</p>
+<p data-localize="ETM.configassist.err_cannot_get_log.msg">An error occurred trying to read the activity log from this device.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: cannot_get_log</span></p>
+</div> </div>
+
+<div id="err_cannot_rm_log" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_cannot_rm_log.title">Unable to clear the log file on this device</p>
+<p data-localize="ETM.configassist.err_cannot_rm_log.msg">An error occurred trying to clear the activity log on this device after it was uploaded to evidence.com.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: cannot_rm_log</span></p>
+</div> </div>
+
+<div id="err_invalid_serial" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_invalid_serial.title">This device has an invalid serial number</p>
+<p data-localize="ETM.configassist.err_invalid_serial.msg">The device connected to the Dock does not have a valid serial number. This may be an intermittent error, please remove and reconnect the
+device in the Dock. If this error persists, please RMA the device.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: invalid_serial</span></p>
+</div> </div>
+
+<div id="err_format_failure" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_format_failure.title">The drive format of this device failed</p>
+<p data-localize="ETM.configassist.err_format_failure.msg">The device drive format failed. Please refer to the troubleshooting instructions.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: format_failure</span></p>
+</div> </div>
+
+<div id="err_fwup_cfg_failure" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_fwup_cfg_failure.title">This device is not set as firmware updatable</p>
+<p data-localize="ETM.configassist.err_fwup_cfg_failure.msg">The Firmware Updatable field could not be set. Please refer to the troubleshooting instructions.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: fwup_cfg_failure</span></p>
+</div> </div>
+
+<div id="err_devtype_cfg_failure" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_devtype_cfg_failure.title">This device is not set as Bodycam</p>
+<p data-localize="ETM.configassist.err_devtype_cfg_failure.msg">Unable to set the device to Bodycam Mode. Please refer to the troubleshooting instructions.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: devtype_cfg_failure</span></p>
+</div> </div>
+
+<div id="err_unknown_port_type" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_unknown_port_type.title">Port type is unknown</p>
+<p data-localize="ETM.configassist.err_unknown_port_type.msg"> Port type in which the device connected is not supported or unknown. Please refer to the troubleshooting instructions.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: unknown_port_type</span></p>
+</div> </div>
+
+<div id="err_invalid_device_type" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_invalid_device_type.title">Device is invalid</p>
+<p data-localize="ETM.configassist.err_invalid_device_type.msg"> Unable to configure the device to the given type. Please refer to the troubleshooting instructions.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: invalid_device_type</span></p>
+</div> </div>
+
+<div id="err_no_usb" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_no_usb.title">Unable to communicate with device</p>
+<p data-localize="ETM.configassist.err_no_usb.msg">The Dock is not able to communicate with this device. This may be an intermittent error, please remove and reconnect the
+device in the Dock. If this error persists, please RMA the device.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: no_usb</span></p>
+</div> </div>
+
+<div id="err_inventory_failure" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_inventory_failure.title">Unable to read the evidence list from this device.</p>
+<p data-localize="ETM.configassist.err_inventory_failure.msg">An error occurred reading the media and evidence information for this device. If this error persists please contact Axon technical support.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: inventory_failure</span></p>
+</div> </div>
+
+<div id="err_cannot_read_file" class="dialog"> <div class="help">
+<p class="warn" data-localize="ETM.configassist.err_cannot_read_file.title">Unable to read an evidence file from this device.</p>
+<p data-localize="ETM.configassist.err_cannot_read_file.msg">An error occurred reading the media and evidence information from this device. If this error persists please contact Axon technical support.</p>
+<p><span data-localize="ETM.configassist.more_help">For more help with this issue, please contact Axon technical support at:</span> <a href="mailto:support@axon.com" tabindex="-1">support@axon.com</a> </p>
+<p><span class="error-code"><span data-localize="ETM.general.error_code">error code</span>: cannot_read_file</span></p>
+</div> </div>
+
+</body>
+</html>

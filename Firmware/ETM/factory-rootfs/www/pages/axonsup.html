@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <!-- begin_include meta -->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="csrf-token" content="__CSRF_TOKEN_PLACEHOLDER__">
+
+  <title>Axon Dock</title>
+  <!-- end_include meta -->
+
+  <!-- begin_include script -->
+  <script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-migrate-3.3.0.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-ui-1.12.1.js"></script>
+  <script type="text/javascript" src="/js/jquery-tools.min.js"></script>
+  <script type="text/javascript" src="/js/purl.js"></script>
+  <script type="text/javascript" src="/js/menu.js"></script>
+  <script type="text/javascript" src="/js/common.js"></script>
+  <script type="text/javascript" src="/js/jquery.localize.js"></script>
+  <script type="text/javascript" src="/js/etm-main.js"></script>
+  <link rel="stylesheet" href="/css/styles.css"/>
+  <link rel="stylesheet" href="/css/custom-theme/jquery-ui-1.12.1.css"/>
+  <link rel="stylesheet" href="/css/menu.css"/>
+  <link rel="stylesheet" href="/css/styles-ext.css"/>
+  <!-- end_include script -->
+
+  <script type="text/javascript" src="/js/etm-axonsup.js"></script>
+
+</head>
+<body>
+  <div id="container">
+    <!-- begin_include header -->
+    <div id="header" class="header">
+      <div id="nav" class="primary-navigation">
+        <ul class="navigation-block">
+          <!-- languageLink marks links that need a lang attribute added -->
+          <li class="sitenavigation-item"><a class="languageLink" href="/index.html"><img class="sitenavigation-fulllogo" src="/images/axon-dock.png" alt="Axon Dock"/></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/index.html"><span data-localize="ETM.links.status">Status</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/network.html"><span data-localize="ETM.links.networking">Networking</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/ops.html" ><span data-localize="ETM.links.operations">Operations</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/admin.html" ><span data-localize="ETM.links.administration">Administration</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/firmware.html" ><span data-localize="ETM.links.firmware">Firmware</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="agency-info">
+      <p><span id="title-agency"></span> &mdash; <span id="agency-name"></span></p>
+      <p><span id="device-home"></span><span id="agency-loc"></span></p>
+      <p><span id="ddate"></span> &mdash; <span id="dtime"></span></p>
+    </div>
+    <!-- end_include header -->
+    <div id="content" class="content clearfix">
+      <h2 data-localize="ETM.axonsup.headers.data">Support Data</h2>
+
+      <div class="content-box-wrap">
+        <div class="content-box" >
+          <div class="content-box-inner">
+            <legend data-localize="ETM.axonsup.sections.data.legend">Axon Support Data</legend>
+            <p data-localize="ETM.axonsup.sections.data.msg">The data blobs below may be useful when working with an Axon customer service representative.</span></p>
+            <table class="content-table axonsup-table">
+              <tr>
+                <td data-localize="ETM.axonsup.sections.data.result1">Result 1:</td>
+                <td colspan="2"><textarea id="datablob1" rows="18"></textarea></td>
+              </tr>
+              <tr>
+                <td data-localize="ETM.axonsup.sections.data.result2">Result 2:</td>
+                <td colspan="2"><textarea id="datablob2" rows="18"></textarea></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- begin_include footer -->
+  <div id="footer">
+    <div class="footer-lang-select">
+      <select id="langchoice">
+         <option value="ms">Bahasa Melayu</option>
+         <option value="cs">Čeština</option>
+         <option value="da">Dansk</option>
+         <option value="de">Deutsch</option>
+         <option value="en-us">English</option>
+         <option value="es">Español</option>
+         <option value="fr">Français</option>
+         <option value="it">Italiano</option>
+         <option value="hu">Magyar</option>
+         <option value="nl">Nederlands</option>
+         <option value="no">Norsk</option>
+         <option value="pt-br">Português</option>
+         <option value="ro">Român</option>
+         <option value="fi">Suomi</option>
+         <option value="sv">Svenska</option>
+         <option value="ru">Pусский язык</option>
+         <option value="uk">украї́нська мо́ва</option>
+         <option value="th">ไทย</option>
+         <option value="ko">한국어</option>
+         <option value="ja">日本語</option>
+         <option value="zh-tw">漢語中文</option>
+         <option value="ar">اَلْعَرَبِيَّةُ</option>
+      </select>
+      <span id="footer-copyright" data-localize="ETM.general.copyright">&copy; 2020 Axon Enterprise, Inc. All rights reserved</span>
+    </div>
+    <div class="footer-contact-info">
+      <span id="footer-contactInfo"><a href="mailto:support@axon.com">support@axon.com</a></span>
+      <span id="footer-supportLink">
+        <a href="https://help.axon.com"><span data-localize="ETM.index.footer.help_center">Help Center</span></a>
+      </span>
+    </div>
+  </div>
+  <!-- end_include footer -->
+</body>
+</html>

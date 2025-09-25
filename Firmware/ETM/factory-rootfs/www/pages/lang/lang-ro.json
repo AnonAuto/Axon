@@ -1,0 +1,558 @@
+{
+   "ETM" : {
+      "admin" : {
+         "admin_title" : "Administrare stații de andocare",
+         "configuring_msg" : "Se configurează; acest proces va dura aproximativ 40 de secunde...",
+         "headers" : {
+            "administration" : "Administrare stații de andocare"
+         },
+         "page_title" : "Setări administrator",
+         "rebooting_msg" : "Repornește; acest proces va dura aproximativ 60 de secunde...",
+         "saving_settings" : "Se salvează setările...",
+         "sections" : {
+            "admin_maint" : {
+               "legend" : "Întreținere",
+               "reboot" : "Reporniți stația de andocare"
+            },
+            "admin_ssl" : {
+               "accept_only_https" : "Acceptați doar solicitări SSL",
+               "legend" : "Configurare SSL",
+               "regen_ssl" : "Regenerați Certificatul SSL",
+               "require_https_time" : "Solicitați SSL pentru verificarea inițială a orei"
+            },
+            "device_id" : {
+               "etm_name" : "Denumire stație de andocare",
+               "home" : "Locație dispozitiv",
+               "legend" : "Identificare dispozitiv",
+               "location" : "Locație",
+               "msg" : "Informațiile de mai jos vă vor ajuta să identificați cu ce dispozitiv stație de andocare comunicați. Aceste informații sunt, de asemenea, utilizate de Evidence.com pentru a furniza informații despre starea dispozitivului.",
+               "your_agency" : "Agenția dvs."
+            },
+            "password_change" : {
+               "confirm_new_password" : "Tastați din nou parola nouă",
+               "current_password" : "Parola actuală",
+               "error_no_password" : "Pentru a schimba acreditările de administrator este necesară parola curentă.",
+               "legend" : "Schimbați acreditările",
+               "msg" : "Gestionați numele de utilizator și parola de administrator utilizate pentru a accesa această stație de andocare.",
+               "new_password" : "Parolă nouă",
+               "username" : "Nume utilizator"
+            },
+            "snmp" : {
+               "authentication" : "Autentificare",
+               "disable" : "Dezactivare",
+               "enable_snmp" : "Activați SNMP",
+               "enc_password" : "Parolă de criptare",
+               "encrypt_msg" : "Lăsați câmpul „Parolă de criptare” gol, dacă doriți să utilizați aceeași „Parolă SNMP” pentru criptare.",
+               "encryption" : "Criptare",
+               "error_no_password" : "Pentru schimbarea numelui de utilizator SNMP este necesară o parolă corespunzătoare.",
+               "error_title" : "Setați eroare SNMP",
+               "legend" : "Server SNMP",
+               "legend_config" : "Configurare SNMP",
+               "msg" : "SNMP este dezactivat în mod implicit. Pentru a-l activa, utilizați caseta de selectare și configurarea intrării.",
+               "password" : "Parola SNMP",
+               "username" : "Nume de utilizator SNMP"
+            }
+         },
+         "set_configuration_error_title" : "Setați configurația",
+         "settings_changed" : {
+            "p1" : "Setările de la agenția dvs. au fost schimbate.",
+            "p2" : "Apăsați butonul [Actualizare] pentru a aplica schimbările de la agenția dvs. la stația de andocare.",
+            "p3" : "În caz contrar, apăsați [Anulare], apoi actualizați manual setările, iar modificările vor fi sincronizate la agenția dvs.",
+            "p4" : "Lista de modificări:",
+            "title" : "Setările au fost modificate"
+         }
+      },
+      "axonsup" : {
+         "headers" : {
+            "data" : "Date privind asistența"
+         },
+         "page_title" : "Asistență Axon",
+         "sections" : {
+            "data" : {
+               "legend" : "Date privind asistența Axon",
+               "msg" : "Bloburile de date de mai jos pot fi utile atunci când lucrați cu un reprezentant al serviciului asistență clienți Axon.",
+               "result1" : "Rezultat 1:",
+               "result2" : "Rezultat 2:"
+            }
+         }
+      },
+	  "cgi" : {
+          "csrf_fail" : "Eroare modul cookie",
+          "invalid_auth" : "Nume de utilizator incorect sau parolă greșită",
+          "invalid_cmd" : "Comandă nevalidă",
+          "invalid_domain" : "Niciun domeniu specificat",
+          "invalid_proxy_config" : "Configurație proxy nevalidă",
+          "invalid_proxy_user_pass" : "Numele de utilizator sau parola lipsesc",
+          "invalid_snmp_user" : "Nu se poate aplica configurația SNMP. Nume de utilizator SNMP nevalid.",
+          "no_content" : "Niciun conținut",
+          "no_snmp_pw" : "Nu se poate aplica configurația SNMP. Nu a fost furnizată nicio parolă.",
+          "not_released" : "Nu a fost lansat",
+          "ok" : "OK",
+          "unable_disable_snmp" : "Nu se poate dezactiva configurația SNMP. ",
+          "unable_set_snmp" : "Nu se poate aplica configurația SNMP. ",
+          "unable_set_snmp_auth" : "Nu se poate aplica configurația SNMP Autentificare.",
+          "unable_set_snmp_enable" : "Nu se poate activa configurarea SNMP.",
+          "unable_set_snmp_enc" : "Nu se poate aplica criptarea configurației SNMP.",
+          "unable_set_snmp_pass" : "Nu se poate aplica parola de configurare SNMP.",
+          "unable_set_snmp_user" : "Nu se poate aplica numele de utilizator al configurației SNMP.",
+          "unable_set_sslonly" : "Nu se poate modifica setarea „Acceptare numai solicitări SSL”",
+          "unknown_err" : "Eroare necunoscută",
+          "web_creds_err" : "Nu s-a reușit actualizarea acreditărilor de administrator.",
+          "web_creds_invalid_username" : "Nu s-a reușit actualizarea acreditărilor de administrator: numele de utilizator este nevalid.",
+          "web_creds_invalid_cur_pass" : "Nu s-a reușit actualizarea acreditărilor de administrator: parola curentă este nevalidă.",
+          "web_creds_invalid_new_pass" : "Nu s-a reușit actualizarea acreditărilor de administrator: parola nouă este nevalidă."
+      },
+      "common" : {
+        "admin_name_allowed_characters" : "Nume de utilizator nevalid. Caractere permise: spațiu alfanumeric # ! @ ( ) [ ] - . _",
+        "at_least" : "trebuie să aibă cel puțin",
+        "cannot_contain_duplicate" : "nu poate conține caractere dublate",
+        "cannot_contain_more_than" : "nu poate conține mai mult de",
+        "cannot_contain_username" : "nu poate conține numele dvs. de utilizator sau alte cuvinte comune",
+        "character" : "caracter",
+        "characters" : "caractere",
+        "characters_in_seq" : "caractere succesive",
+        "input_valid_IP" : "Introduceți o adresă IP validă",
+        "less_than" : "trebuie să aibă mai puțin de",
+        "mandatory_field" : "Acest câmp trebuie să fie furnizat.",
+        "must_contain" : "trebuie să conțină",
+        "no" : "Nu",
+        "not_secure" : "nu este suficient de sigur(ă)",
+        "please_provide" : "Furnizați cel puțin",
+        "select_valid_entry" : "Selectați o intrare validă din listă",
+        "snmp_name_allowed_characters" : "Nume de utilizator nevalid. Caractere permise: alfanumerice # ! @ ( ) [ ] - . _",
+        "value_not_equal" : "Valoarea nu este egală cu câmpul Parolă nouă",
+        "yes" : "Da"
+      },
+      "configassist" : {
+         "dlg_assign" : {
+            "msg1" : "Acest formular schimbă proprietarul unui dispozitiv la utilizatorul specificat mai jos. Numele de utilizator și parola nu sunt stocate pe stația de andocare.",
+            "msg2" : "Introduceți datele de autentificare mai jos și apăsați „OK” pentru a aloca acest dispozitiv pentru DVS.; în caz contrar, apăsați „Anulare” pentru a reveni.",
+            "password" : "Parolă",
+            "username" : "Nume utilizator"
+         },
+         "dlg_format" : {
+            "msg" : "Acest lucru va reîmprospăta configurarea și firmware-ul dispozitivului. Nu se vor pierde date."
+         },
+         "dlg_format_auth" : {
+            "admin_password" : "Parolă administrator",
+            "admin_username" : "Nume utilizator administrator",
+            "msg" : "Trebuie să aveți drepturi de administrator la Evidence.com pentru a efectua această acțiune. Numele dvs. de utilizator și parola nu sunt stocate pe stația de andocare. Introduceți datele de autentificare mai jos și apăsați „OK”  pentru a formata acest dispozitiv; în caz contrar, faceți clic pe „Anulare” pentru a reveni."
+         },
+         "err_cannot_get_log" : {
+            "msg" : "A apărut o eroare la încercarea de a citi jurnalul de activități de pe acest dispozitiv.",
+            "title" : "Nu a putut fi citit jurnalul de activități de pe acest dispozitiv"
+         },
+         "err_cannot_read_file" : {
+            "msg" : "A apărut o eroare la citirea informațiilor cu privire la media și probe de pe acest dispozitiv. Dacă această eroare persistă, contactați serviciul de asistență tehnică Axon.",
+            "title" : "Nu a putut fi citit un fișier de probe de pe acest dispozitiv."
+         },
+         "err_cannot_rm_log" : {
+            "msg" : "A apărut o eroare la încercarea de a șterge jurnalul de activități de pe acest dispozitiv după ce a fost încărcat pe evidence.com.",
+            "title" : "Nu a putut fi șters fișierul jurnal de pe acest dispozitiv"
+         },
+         "err_device_lost_communication" : {
+            "msg" : "Această conexiune pentru acest dispozitiv a încetat să mai funcționeze. Vă rugăm să scoateți dispozitivul din stația de andocare și să îl andocați din nou. Dacă problema persistă, contactați administratorul agenției pentru asistență în ceea ce privește acest dispozitiv.",
+            "title" : "Stația de andocare a pierdut comunicarea cu acest dispozitiv."
+         },
+         "err_device_maintenance" : {
+            "msg" : "Această stație de andocare efectuează întreținerea automată a acestui dispozitiv. Dispozitivul își va relua automat funcționarea normală. Nu este necesară nicio acțiune.",
+            "title" : "Această stație de andocare efectuează întreținerea automată a acestui dispozitiv."
+         },
+         "err_devtype_cfg_failure" : {
+             "msg" : "Dispozitivul nu poate fi setat în modul cameră de corp. Consultați instrucțiunile de depanare.",
+             "title" : "Acest dispozitiv nu este setat precum cameră de corp"
+         },
+         "err_format_failure" : {
+            "msg" : "Formatul unității dispozitivului a eșuat. Consultați instrucțiunile de depanare.",
+            "title" : "Formatul unității acestui dispozitiv a eșuat"
+         },
+         "err_fwup_cfg_failure" : {
+             "msg": "Câmpul pentru firmware actualizabil nu a putut fi setat. Consultați instrucțiunile de depanare.",
+             "title" : "Acest dispozitiv nu este setat ca firmware actualizabil"
+         },
+         "err_inactive_device" : {
+            "msg" : "Dispozitivul nu este activ momentan la această agenție. Conectați dispozitivul la Evidence Sync și alocați dispozitivul la un utilizator adecvat.",
+            "title" : "Dispozitivul dvs. nu este activ momentan la agenția dvs."
+         },
+         "err_invalid_device_type" : {
+            "msg" : "Dispozitivul nu poate fi configurat la tipul dat. Consultați instrucțiunile de depanare.",
+            "title" : "Dispozitivul este nevalid"
+         },
+         "err_invalid_model" : {
+            "msg" : "Dispozitivul conectat la stația de andocare nu este recunoscut ca un dispozitiv Axon valid. Vă rugăm să îl scoateți din stația de andocare.",
+            "title" : "Stația de andocare nu recunoaște acest tip de dispozitiv."
+         },
+         "err_invalid_serial" : {
+            "msg" : "Dispozitivul conectat la stația de andocare nu are un număr de serie valabil. Este posibil să fie o eroare intermitentă; vă rugăm să scoateți dispozitivul și apoi să-l reconectați la stația de andocare. Dacă această eroare persistă, solicitați RMA pentru dispozitiv.",
+            "title" : "Acest dispozitiv are un număr de serie nevalid"
+         },
+         "err_inventory_failure" : {
+            "msg" : "A apărut o eroare la citirea informațiilor cu privire la media și probe pentru acest dispozitiv. Dacă această eroare persistă, contactați serviciul de asistență tehnică Axon.",
+            "title" : "Nu a putut fi citită lista de probe de pe acest dispozitiv."
+         },
+         "err_mount_failed" : {
+            "msg" : "Accesați pagina de administrare și să reporniți stația de andocare.",
+            "title" : "A apărut o eroare la conectarea la dispozitiv."
+         },
+         "err_network_failed" : {
+            "msg" : "Acest lucru este cel mai probabil cauzat de o conexiune slabă la internet, o conexiune slabă la Evidence.com sau Evidence.com este supraîncărcat sau oprit pentru întreținere. Nu este o eroare critică; stația de andocare va reîncerca să efectueze operațiunea.",
+            "title" : "Stația de andocare a întâmpinat o problemă de rețea în timpul procesării acestui dispozitiv"
+         },
+         "err_no_usb" : {
+            "msg" : "Stația de andocare nu poate comunica cu acest dispozitiv. Este posibil să fie o eroare intermitentă; vă rugăm să scoateți dispozitivul și apoi să-l reconectați la stația de andocare. Dacă această eroare persistă, solicitați RMA pentru dispozitiv.",
+            "title" : "Nu se poate comunica cu dispozitivul"
+         },
+         "err_not_offline" : {
+            "msg" : "Stația de andocare este configurată pentru funcționarea offline; aceasta nu va procesa dispozitivele care sunt setate în modul online. Dacă doriți să setați acest dispozitiv în modul offline, conectați dispozitivul la Evidence Sync și urmați instrucțiunile.",
+            "title" : "Dispozitivul nu este setat pentru funcționarea offline"
+         },
+         "err_not_online" : {
+            "msg" : "Stația de andocare este configurată pentru funcționarea online; aceasta nu va procesa dispozitivele care sunt setate în modul offline. Dacă doriți să setați acest dispozitiv în modul online, conectați dispozitivul la Evidence Sync și urmați instrucțiunile.",
+            "title" : "Dispozitivul nu este setat pentru funcționarea online"
+         },
+         "err_system_maintenance" : {
+            "msg" : "Această stație de andocare efectuează întreținerea automată. Dispozitivul își va relua automat funcționarea normală. Nu este necesară nicio acțiune.",
+            "title" : "Stația de andocare efectuează întreținerea internă."
+         },
+         "err_transfer_failed" : {
+            "msg" : "Acest lucru este cel mai probabil cauzat de o conexiune slabă la internet, o conexiune slabă la Evidence.com sau Evidence.com este supraîncărcat sau oprit pentru întreținere. Nu este o eroare critică; stația de andocare va reîncerca să încarce fișierul.",
+            "title" : "Stația de andocare nu a putut transfera un videoclip de pe acest dispozitiv"
+         },
+         "err_transfer_failed_noretry" : {
+            "msg" : "Acest lucru este cel mai probabil cauzat de o problemă cu dispozitivul. Contactați serviciul de asistență tehnică Axon.",
+            "title" : "Stația de andocare a întâmpinat o eroare permanentă la transferarea unui videoclip de pe acest dispozitiv"
+         },
+         "err_unknown_port_type" : {
+            "msg" : "Tipul de port la care este conectat dispozitivul nu este acceptat sau este necunoscut. Consultați instrucțiunile de depanare.",
+            "title" : "Tipul de port este necunoscut"
+         },
+         "err_wrong_agency" : {
+            "msg" : "În prezent, acest dispozitiv nu este atribuit agenției dvs. Luați legătura cu administratorul de agenție pentru a primi ajutor în legătură cu acest dispozitiv.",
+            "title" : "Dispozitivul nu este momentan alocat la agenția dvs."
+         },
+         "if_problem_continues" : "Dacă această problemă persistă, contactați serviciul de asistență tehnică Axon la:",
+         "more_help" : "Pentru ajutor cu această problemă, contactați serviciul de asistență tehnică Axon la:",
+         "no_dns" : {
+            "msg" : "Nu am putut localiza serverul DNS. De obicei, acest lucru este cauzat de o adresă IP nevalidă configurată pentru serverul dvs. DNS. Recomandăm să verificați setările DNS pe pagina de rețea.",
+            "return_msg" : "Faceți clic pe „OK” mai jos pentru a accesa pagina Rețea și a verifica informațiile DNS sau apăsați ESC pentru a închide această fereastră de dialog.",
+            "title" : "Nu am putit găsi un server DNS"
+         },
+         "no_ecom" : {
+            "msg" : "Nu am reușit să autentificăm această stație de andocare în Evidence.com. De obicei, acest lucru este cauzat de chei de înregistrare nevalide sau care lipsesc pentru agenția dvs. și pentru această stație de andocare. Vă recomandăm să înregistrați această stație de andocare utilizând pagina Operațiuni.",
+            "return_msg" : "Faceți clic pe „OK” mai jos pentru a accesa pagina Operațiuni pentru a înregistra stația dvs. de andocare sau apăsați ESC pentru a închide această fereastră de dialog.",
+            "title" : "Nicio autentificare Evidence.com"
+         },
+         "no_gateway" : {
+            "msg" : "Nu am reușit să contactăm gateway-ul implicit al rețelei dvs. De obicei, acest lucru este cauzat de o adresă IP nevalidă; totuși, unele gateway-uri nu răspund la „ping-urile” rețelei.",
+            "return_msg" : "Faceți clic pe „OK” mai jos pentru a accesa pagina Rețea pentru a schimba gateway-ul dvs. implicit sau apăsați ESC pentru a închide această fereastră de dialog.",
+            "title" : "Nu s-a găsit niciun Gateway"
+         },
+         "no_https" : {
+            "msg" : "Nu am reușit să comunicăm pe un canal securizat (HTTPS). De obicei, acest lucru este cauzat de faptul că portul HTTPS (443) este blocat de firewallul dvs. Vă recomandăm să verificați dacă portul HTTPS este deschis în firewall.",
+            "return_msg" : "Faceți clic pe „OK” pentru a reveni la pagina de stare.",
+            "title" : "Niciun HTTPS disponibil."
+         },
+         "no_ip_dynamic" : {
+            "msg" : "Nu am reușit să obținem o adresă IP de la serverul dvs. DHCP. De obicei, acest lucru este cauzat de lipsa unui server DHCP activ în rețeaua dvs. Este posibil să fie necesar să introduceți o configurare IP static pentru această stație de andocare.",
+            "return_msg" : "Faceți clic pe „OK” mai jos pentru a accesa pagina Rețea și a introduce informațiile privind IP-ul static sau apăsați ESC pentru a închide această fereastră de dialog.",
+            "title" : "Nicio adresă IP."
+         },
+         "no_ip_static" : {
+            "msg" : "Nu am reușit să obținem adresa IP pe care ați specificat-o în configurarea IP-ului static pentru această stație de andocare. De obicei, acest lucru este cauzat de utilizarea aceluiași IP static pentru mai multe computere. Vă recomandăm să verificați adresa IP introdusă pe pagina de rețea.",
+            "return_msg" : "Faceți clic pe „OK” mai jos pentru a accesa pagina Rețea pentru a verifica setările sau apăsați ESC pentru a închide această fereastră de dialog.",
+            "title" : "Nicio adresă IP."
+         },
+         "no_ntp" : {
+            "msg" : "Nu am reușit să comunicăm cu un server de timp al rețelei. De obicei, acest lucru este din cauza faptului că porturile 80 și 123 sunt blocate pe un firewall. Vă recomandăm să verificați dacă ORICARE dintre portul 80 și portul 123 este deschis în firewall.",
+            "return_msg" : "Faceți clic pe „OK” mai jos pentru a accesa pagina Rețea pentru a schimba serverul de timp al dvs. sau apăsați ESC pentru a închide această fereastră de dialog.",
+            "title" : "Serverul NTP nu răspunde"
+         },
+         "no_status" : {
+            "msg" : "Nu am reușit încă să determinăm tipul dvs. de rețea. Acest lucru poate fi din cauza faptului că sistemul nostru este încă în curs de instalare. Vă sugerăm să așteptați 2 sau 3 minute și să reîmprospătați această pagină. De asemenea, pagina de stare se va reîmprospăta dacă apar informații noi.",
+            "return_msg" : "Faceți clic pe „OK” pentru a reveni la pagina de stare.",
+            "title" : "Nu s-a găsit nicio stare."
+         },
+         "title" : "Asistent configurare",
+         "we_found" : "După examinarea rețelei dvs. am identificat următoarea problemă:",
+         "welcome" : "Bun venit la asistentul de configurare."
+      },
+      "device_status_codes" : {
+         "capchk" : "Verificare capacitate",
+         "cfg" : "Se configurează...",
+         "chg" : "Se încarcă",
+         "del" : "Se elimină",
+         "device_maint" : "Întreținere dispozitiv",
+         "devid" : "Se identifică...",
+         "err" : "Eroare (Reîncercare în așteptare)",
+         "fail" : "Eroare",
+         "fwdone" : "Firmware actualizat",
+         "fwupdate" : "Se actualizează firmware-ul",
+         "inact" : "Inactiv",
+         "init" : "Inițializare",
+         "inventory" : "Inventar",
+         "logerase" : "Se șterge jurnalul",
+         "logsend" : "Se încarcă jurnalul",
+         "lost" : "Legătură pierdută",
+         "net_retry" : "Reîncercați conectarea la rețea",
+         "new" : "Dispozitiv nou",
+         "nonet" : "Rețea picată",
+         "plugin" : "În curs de conectare",
+         "proc" : "Se transferă fișierul",
+         "rdy" : "Pregătit",
+         "register" : "Se realizează înscrierea",
+         "summary" : "Se obține rezumatul",
+         "sys_maint" : "Întreținere sistem",
+         "unk" : "Necunoscut",
+         "unsupported" : "Neacceptat",
+         "wait" : "Se așteaptă"
+      },
+      "diag" : {
+         "headers" : {
+            "diag" : "Diagnostic"
+         },
+         "page_title" : "Stare",
+         "sections" : {
+            "netdiag" : {
+               "command" : "Comandă:",
+               "commands" : {
+                  "date" : "DATA raportată de stația de andocare",
+                  "ifconfig" : "Statistici rețea IFCONFIG",
+                  "nslookup_goog" : "NSLOOKUP google.com",
+                  "nslookup_taser" : "NSLOOKUP taser.evidence.com",
+                  "ping_8888" : "PING 8.8.8.8",
+                  "ping_gateway" : "PING gateway implicit",
+                  "ping_goog" : "PING google.com",
+                  "tail_etmlog" : "Linii TAIL 100 din jurnalul de andocare",
+                  "tail_syslog" : "Linii TAIL 100 din jurnalul de sistem",
+                  "tr_goog" : "TRACEROUTE google.com",
+                  "tr_taser" : "TRACEROUTE taser.evidence.com"
+               },
+               "execute" : "Executați",
+               "legend" : "Diagnostic rețea",
+               "menu" : "Selectați testul de diagnosticare din meniul derulant și apăsați Executați...",
+               "msg1" : "Comenzile furnizate aici sunt utilizate pentru a diagnostica problemele de conectivitate a rețelei.",
+               "msg2" : "Nu executați comenzile de mai jos decât dacă vi se indică acest lucru de către un reprezentant al serviciului asistență Axon.",
+               "result" : "Rezultat:"
+            }
+         }
+      },
+      "firmware" : {
+         "current_version" : "Versiune firmware actuală",
+         "dvr_update_starting" : "Se contactează serverul Axon pentru a căuta actualizări... Actualizarea firmware-ului va începe după ce DVR-ul a terminat de încărcat fișiere",
+         "etm_update_starting" : "Actualizarea firmware-ului a început. Verificați în câteva minute dacă versiunea a fost actualizată...",
+         "headers" : {
+            "firmware_mgmt" : "Gestionare firmware"
+         },
+         "not_released" : "Nu a fost lansat",
+         "page_title" : "Actualizare firmware",
+         "sections" : {
+            "device_firmware_update" : {
+               "legend" : "Actualizare firmware dispozitiv",
+               "msg" : "Pentru a efectua upgrade pentru firmware-ul tuturor dispozitivelor care sunt momentan andocate, faceți clic pe butonul de mai jos. Dacă este disponibilă o actualizare, aceasta se va instala automat pe toate dispozitivele.",
+               "device_name" : "Nume dispozitiv",
+               "released_firmware" : "Firmware lansat",
+               "early_access_firmware" : "Firmware cu acces timpuriu",
+               "perform_fw_update" : "Actualizați dispozitivele Axon"
+            },
+            "etm_firmware_update" : {
+               "check_update" : "Actualizați firmware",
+               "legend" : "Actualizare firmware stație de andocare",
+               "msg" : "Pentru a actualiza firmware-ul stației dvs. de andocare, faceți clic pe ACTUALIZAȚI FIRMWARE. Stația de andocare va contacta serverele Axon și va verifica cea mai recentă versiune de firmware. Dacă este disponibilă o nouă versiune de firmware, aceasta se va instala automat.",
+               "show_version_details" : "Detalii",
+               "version_details" : "Detalii"
+            }
+         },
+         "update_failed" : "Nu s-a putut porni actualizarea firmware-ului",
+         "update_title" : "Actualizare firmware"
+      },
+      "general" : {
+         "closeparen" : ")",
+         "copyright" : "&copy; 2023 Axon Enterprise, Inc. Toate drepturile rezervate",
+         "error_code" : "cod de eroare",
+         "firmware" : "Firmware",
+         "footnote" : "*Bateriile TASER sunt prevăzute cu firmware pentru Mânere TASER 7 (T7) și TASER 10 (T10), precum și pentru TASER 7 și 10 BLE.",
+         "openparen" : "(",
+         "refresh" : "Reîmprospătare",
+         "sections" : {
+            "button_bar" : {
+               "discard_changes" : "Renunțați la modificări",
+               "loading_wait" : "Se încarcă configurarea.... vă rugăm așteptați...",
+               "reset_registration" : "Resetați înregistrarea",
+               "save_changes" : "Salvare modificări",
+               "continue" : "Continuați"
+            },
+            "snmp" : {
+               "showhide_password" : "Afișați/ascundeți parola SNMP"
+            }
+         }
+      },
+      "index" : {
+         "footer" : {
+            "help_center" : "Centru de ajutor"
+         },
+         "headers" : {
+            "system_status" : "Stare sistem"
+         },
+         "page_title" : "Stare",
+         "sections" : {
+            "devices" : {
+               "device" : "Dispozitiv",
+               "firmware" : "Firmware*",
+               "hidden_info" : "Faceți clic pentru a vedea datele",
+               "legend" : "Dispozitive",
+               "owner" : "Proprietar",
+               "serial" : "Număr serie",
+               "status" : "Stare"
+            },
+            "networking" : {
+               "active" : "Activ",
+               "dns_server" : "Server DNS",
+               "ecom_registration" : "Înregistrare pe Evidence.com",
+               "gateway" : "Gateway internet",
+               "https_port" : "HTTPS (Port 443)",
+               "ipaddress" : "Adresă IP",
+               "legend" : "Rețea",
+               "mac_address" : "Adresă MAC",
+               "not_registered" : "Nu a fost înregistrat",
+               "serial_number" : "Număr serie",
+               "time_server" : "Server de timp"
+            }
+         }
+      },
+      "links" : {
+         "administration" : "Administrare",
+         "firmware" : "Firmware",
+         "networking" : "Rețea",
+         "operations" : "Operațiuni",
+         "status" : "Stare"
+      },
+      "lookups" : {
+         "netmode" : {
+            "dynamic" : "dinamic",
+            "static" : "static"
+         }
+      },
+      "networking" : {
+         "headers" : {
+            "net_setup" : "Configurare rețea"
+         },
+         "page_title" : "Setări rețea",
+         "restart_title" : "Repornire rețea",
+         "saved_restarting" : "Setările sunt salvate; rețeaua repornește...",
+         "sections" : {
+            "conn_type" : {
+               "label_dynamic" : "IP dinamic (DHCP)",
+               "label_static" : "IP static",
+               "legend" : "Tip conexiune",
+               "msg" : "Există două moduri în care stația de andocare poate funcționa în rețeaua dvs. actuală pentru a permite accesul la internet pentru dispozitivele AXON. Fie prin adresă IP dinamic (numit și DHCP), fie prin adresă IP static. Selectați metoda corespunzătoare de mai jos:"
+            },
+            "static_ip" : {
+               "dns_servers" : "Servere DNS",
+               "gateway" : "Gateway implicit",
+               "ip_address" : "Adresă IP",
+               "legend" : "Configurare IP static",
+               "msg" : "Dacă rețeaua dvs. nu utilizează DHCP sau dacă accesul la internet este disponibil numai prin alocarea IP-ului static, atunci trebuie să furnizați informații de configurare pentru stația de andocare. Dacă nu aveți aceste informații disponibile, contactați administratorul de rețea",
+               "subnet_mask" : "Mască de subrețea"
+            },
+            "throttle" : {
+               "label_mbps" : "Mbps",
+               "legend" : "Reglare în amonte",
+               "max_speed" : "Viteză maximă de încărcare",
+               "msg" : "În mod normal, stația de andocare va utiliza toată lățimea de bandă disponibilă pentru a încărca videoclipurile de pe unitățile AXON cât mai repede posibil. Dacă acest comportament nu este cel dorit, puteți limita viteza de transfer de mai jos (măsurată în Megabiți pe secundă). Valoarea zero îi va transmite stației de andocare să utilizeze toată lățimea de bandă disponibilă."
+            }
+         }
+      },
+      "ops" : {
+         "an_error_occurred" : "A apărut o eroare",
+         "generating_tokens" : "Se generează tokenuri de siguranță...",
+         "headers" : {
+            "operations" : "Operațiuni"
+         },
+         "page_title" : "Operațiuni generale",
+         "regenerate_keys_query" : "V-ați autentificat deja în Evidence.com; doriți să generați din nou chei de securitate?",
+         "regenerate_keys_title" : "Generați din nou chei",
+         "register_with_ecom" : "Înregistrați-vă în Evidence.com",
+         "registering_etm" : "Se înregistrează stația de andocare...",
+         "processing" : "Se procesează...",
+         "poll_uri_code" : "Se obține linkul și codul de activare...",
+         "reset_reg" : "Resetați înregistrarea",
+         "reset_reg_failed" : "Nu se poate reseta înregistrarea",
+         "resetting_reg_dock" : "Se resetează înregistrarea stației de andocare la valoarea implicită. Pagina se reîncarcă în 30 de secunde.",
+         "restarting_etm" : "Repornește stația de andocare; acest proces va dura aproximativ 30 de secunde...",
+         "sections" : {
+            "e_com_reg" : {
+               "admin_password" : "Parolă administrator",
+               "admin_username" : "Nume utilizator administrator",
+               "agency_name" : "Agenție Evidence.com",
+               "already_registered" : "Această stație de andocare a fost deja înregistrată în Evidence.com",
+               "domain_name" : "Denumire domeniu",
+               "legend" : "Înregistrare pe Evidence.com",
+               "msg" : "Pentru a înregistra această stație de andocare în agenția dvs. din Evidence.com introduceți numele agenției din Evidence.com, numele de utilizator și parola. Odată ce stația de andocare este înregistrată la Evidence.com, aceasta va transfera toate fișierele media în contul dvs. Evidence.com. Numele dvs. de utilizator și parola nu sunt stocate pe stația de andocare.",
+               "msg_shorten" : "Pentru a înregistra această stație de andocare în agenția dvs. din Evidence.com introduceți numele agenției. Odată ce stația de andocare este înregistrată la Evidence.com, aceasta va transfera toate fișierele media în contul dvs. Evidence.com.",
+               "msg_login_uri_code" : "Deschideți linkul și introduceți codul pentru a finaliza înregistrarea:"
+            }
+         }
+      },
+      "proxy": {
+         "headers": {
+            "proxy_setup": "Configurare proxy"
+         },
+         "page_title": "Setări proxy",
+         "proxy_test_title": "Testare proxy",
+         "proxy_test_in_progress": "Testarea proxy este în curs...",
+         "proxy_test_success_msg": "Testarea proxy a reușit",
+         "proxy_test_fail_msg": "Testarea proxy nu a reușit",
+         "configuration_saved_title": "Configurația proxy a fost salvată",
+         "configuration_saved_msg": "Configurația proxy a fost salvată și va intra în vigoare în scurt timp",
+         "sections": {
+            "http_proxy": {
+               "legend": "Proxy HTTP",
+               "msg": "Setarea proxy pentru HTTP va redirecționa toate solicitările HTTP către serverul proxy desemnat.",
+               "enable": "Activare",
+               "legend_config": "Configurare",
+               "legend_advanced_config": "Configurare avansată",
+               "disable_dns_check": "Dezactivați verificarea DNS",
+               "msg_config": "Numele de utilizator și parola sunt opționale.",
+               "host": "Gazdă proxy",
+               "port": "Port proxy",
+               "username": "Nume utilizator",
+               "password": "Parolă",
+               "test_connection": "Testarea conexiunii"
+            }
+         }
+      },
+      "strings" : {
+         "an_error_occurred" : "A apărut o eroare",
+         "axon_flex" : "Axon Flex",
+         "calculating_rate" : "Se calculează...",
+         "cancel" : "Revocare",
+         "cannot_get_data_too_many_failed_login_attempts" : "Nu se pot obține date din cauza unui număr prea mare de încercări nereușite de autentificare",
+         "click_for_details" : "Faceți clic pentru a vedea detaliile",
+         "device_error" : "Eroare dispozitiv",
+         "error" : "Eroare",
+         "error_download" : "Eroare la descărcare https",
+         "error_internal" : "Eroare internă",
+         "failed_auth": "Prea multe încercări de autentificare eșuate. Cont suspendat temporar.",
+         "finished" : "Terminat",
+         "invalid_hostname" : "nu este un nume de gazdă valid",
+         "kbps" : "kbps",
+         "login_failed" : "Conectarea nu a reușit",
+         "no_server_response" : "Niciun răspuns de la server",
+         "ok" : "OK",
+         "operation_complete_success" : "Operațiunea a fost finalizată.",
+         "please_complete_mandatory" : "Completați acest câmp obligatoriu.",
+         "please_enter_numeric" : "Introduceți o valoare numerică.",
+         "please_enter_valid_email" : "Introduceți o adresă de e-mail corectă.",
+         "please_enter_valid_URL" : "Introduceți un URL valid.",
+         "please_enter_value_larger" : "Introduceți o valoare mai mare decât",
+         "please_enter_value_smaller" : "Introduceți o valoare mai mică decât",
+         "reloading_status" : "Se reîncarcă starea...",
+         "reloading_status_title" : "Se reîmprospătează",
+         "unassigned" : "Neatribuit",
+         "unspecified_error" : "A apărut o eroare de nespecificată:",
+         "waiting_for_response" : "Se așteaptă răspunsul...",
+         "authentication_failed" : "Autentificare eșuată",
+         "invalid_request" : "Solicitarea este nulă sau nevalidă"
+      }
+   }
+}

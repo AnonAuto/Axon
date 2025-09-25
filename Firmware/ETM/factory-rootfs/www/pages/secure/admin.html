@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- begin_include meta -->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="csrf-token" content="__CSRF_TOKEN_PLACEHOLDER__">
+
+  <title>Axon Dock</title>
+  <!-- end_include meta -->
+
+  <!-- begin_include script -->
+  <script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-migrate-3.3.0.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-ui-1.12.1.js"></script>
+  <script type="text/javascript" src="/js/jquery-tools.min.js"></script>
+  <script type="text/javascript" src="/js/purl.js"></script>
+  <script type="text/javascript" src="/js/menu.js"></script>
+  <script type="text/javascript" src="/js/common.js"></script>
+  <script type="text/javascript" src="/js/jquery.localize.js"></script>
+  <script type="text/javascript" src="/js/etm-main.js"></script>
+  <link rel="stylesheet" href="/css/styles.css"/>
+  <link rel="stylesheet" href="/css/custom-theme/jquery-ui-1.12.1.css"/>
+  <link rel="stylesheet" href="/css/menu.css"/>
+  <link rel="stylesheet" href="/css/styles-ext.css"/>
+  <!-- end_include script -->
+
+  <script type="text/javascript" src="/js/etm-admin.js"></script>
+
+</head>
+<body>
+  <div id="container">
+    <!-- begin_include header -->
+    <div id="header" class="header">
+      <div id="nav" class="primary-navigation">
+        <ul class="navigation-block">
+          <!-- languageLink marks links that need a lang attribute added -->
+          <li class="sitenavigation-item"><a class="languageLink" href="/index.html"><img class="sitenavigation-fulllogo" src="/images/axon-dock.png" alt="Axon Dock"/></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/index.html"><span data-localize="ETM.links.status">Status</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/network.html"><span data-localize="ETM.links.networking">Networking</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/ops.html" ><span data-localize="ETM.links.operations">Operations</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/admin.html" ><span data-localize="ETM.links.administration">Administration</span></a></li>
+          <li class="sitenavigation-item"><a class="languageLink sitenavigation-link" href="/secure/firmware.html" ><span data-localize="ETM.links.firmware">Firmware</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="agency-info">
+      <p><span id="title-agency"></span> &mdash; <span id="agency-name"></span></p>
+      <p><span id="device-home"></span><span id="agency-loc"></span></p>
+      <p><span id="ddate"></span> &mdash; <span id="dtime"></span></p>
+    </div>
+    <!-- end_include header -->
+
+    <div id="content" class="content clearfix">
+      <h2 data-localize="ETM.admin.headers.administration">Dock Administration</h2>
+
+      <div class="content-box-wrap">
+        <div class="content-box" >
+          <div class="content-box-inner">
+
+            <form id="frmHeader">
+            <fieldset>
+                <legend data-localize="ETM.admin.sections.device_id.legend">Device Identification</legend>
+          <p data-localize="ETM.admin.sections.device_id.msg">The information below will help you identify which Dock device you are communicating with. This information is also used by Evidence.com to provide device status information.
+          </p>
+          <table class="content-table">
+            <tr>
+              <td data-localize="ETM.admin.sections.device_id.your_agency">Your Agency</td>
+              <td><input name="etm.etm.agency" type="text"/></td>
+            </tr>
+            <tr>
+              <td data-localize="ETM.admin.sections.device_id.etm_name">Dock Name</td>
+              <td><input name="etm.etm.name" type="text"/></td>
+            </tr>
+            <tr>
+              <td data-localize="ETM.admin.sections.device_id.location">Location</td>
+              <td><input name="etm.etm.location" type="text"/></td>
+            </tr>
+            <tr>
+              <td data-localize="ETM.admin.sections.device_id.home">Device Home</td>
+              <td><select name="etm.etm.device_home"></select></td>
+            </tr>
+          </table>
+          <br/>
+        </fieldset>
+        </form>
+
+          <form id="frmInfo" action="">
+          <fieldset>
+              <legend data-localize="ETM.admin.sections.password_change.legend">Change Credentials</legend>
+          <p data-localize="ETM.admin.sections.password_change.msg">
+            Manage the administration username and password used to access this Dock.
+            </p>
+          <table class="content-table">
+            <tr>
+              <td data-localize="ETM.admin.sections.password_change.username">Username</td>
+              <td><input id="web_admin_user" name="etm.etm.web_admin_user" type="text" validatename="admin_uname"/></td>
+            </tr>
+            <tr>
+              <td data-localize="ETM.admin.sections.password_change.current_password">Current Password</td>
+              <td><input id="web_admin_cur_pass" name="Current Password" type="password" /></td>
+            </tr>
+            <tr>
+              <td data-localize="ETM.admin.sections.password_change.new_password">New Password</td>
+              <td><input id="web_admin_new_pass" name="New Password" type="password" /></td>
+            </tr>
+            <tr>
+              <td data-localize="ETM.admin.sections.password_change.confirm_new_password">Re-type New Password</td>
+              <td><input name="web_admin_confirm_new_pass" type="password" data-equals="New Password" /></td>
+            </tr>
+          </table>
+          <br/>
+          </fieldset>
+          </form>
+
+        <form id="frmSSL" action="">
+        <fieldset>
+          <legend data-localize="ETM.admin.sections.admin_ssl.legend">SSL Configuration</legend>
+          <table class="content-table">
+          <tr>
+            <td data-localize="ETM.admin.sections.admin_ssl.require_https_time">Require SSL For Initial Time Check</td>
+            <td><input type="checkbox" name="etm.etm.require_https_time"/></td>
+          </tr>
+          <tr>
+            <td data-localize="ETM.admin.sections.admin_ssl.accept_only_https">Accept only SSL Requests</td>
+            <td><input type="checkbox" name="etm.etm.accept_only_https"/></td>
+          </tr>
+
+          </table>
+          <br/>
+        </fieldset>
+        </form>
+
+        <form action="">
+          <fieldset>
+            <legend data-localize="ETM.admin.sections.snmp.legend">SNMP server</legend>
+            <p data-localize="ETM.admin.sections.snmp.msg">
+              SNMP is disabled by default. To enable it, use checkbox and input configuration.
+            </p>
+            <table class="content-table">
+              <tr>
+                <td data-localize="ETM.admin.sections.snmp.enable_snmp">Enable SNMP</td>
+                <td><input type="checkbox" id=enable_snmp name="etm.etm.enable_snmp"/></td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+
+        <form id="frmSNMP" class="sub-form" action="" onkeypress="return event.keyCode != 13;">
+        <fieldset>
+          <legend data-localize="ETM.admin.sections.snmp.legend_config">SNMP Configuration</legend>
+          <table class="content-table">
+          <tr>
+            <td data-localize="ETM.admin.sections.snmp.username">SNMP Username</td>
+            <td><input id="snmp_username" name="etm.etm.snmp_user" type="text" validatename="snmp_uname"/></td>
+          </tr>
+          <tr>
+            <td data-localize="ETM.admin.sections.snmp.password">SNMP Password</td>
+            <td><input id="snmp_password" name="snmp_password" type="password" optminlength="8"/></td>
+          </tr>
+          <tr>
+            <td data-localize="ETM.admin.sections.snmp.authentication">Authentication</td>
+            <td>
+              <div id="snmpAuth" class="radio">
+                <input type="radio" id = "MD5" name="etm.etm.snmp_auth" value="MD5">
+                <label for="MD5">MD5</label>
+                <input type="radio" id = "SHA" name="etm.etm.snmp_auth" value="SHA">
+                <label for="SHA">SHA</label>
+              </div>
+            </td>
+          </tr>
+          <tr >
+            <td data-localize="ETM.admin.sections.snmp.enc_password">Encryption Password</td>
+            <td><input id="snmp_encryption_password" name="snmp_encryption_password" type="password" optminlength="8"/></td>
+          </tr>
+          <tr>
+            <td data-localize="ETM.admin.sections.snmp.encryption">Encryption</td>
+            <td>
+              <div id="snmpEncrypt" class="radio">
+                <input type="radio" id="disable" name="etm.etm.snmp_encrypt" value="NoPriv">
+                <label for="disable" data-localize="ETM.admin.sections.snmp.disable">Disable</label>
+                <input type="radio" id="DES" name="etm.etm.snmp_encrypt" value="DES">
+                <label for="DES">DES</label>
+                <input type="radio" id="AES" name="etm.etm.snmp_encrypt" value="AES">
+                <label for="AES">AES</label>
+              </div>
+            </td>
+          </tr>
+          </tr><td colspan="2">
+             <p data-localize="ETM.admin.sections.snmp.encrypt_msg">Leave "Encryption Password" blank if you want to use the same "SNMP Password" for encryption.</p>
+          </td></tr>
+          </tr><td></td><td><button id="btnShowPass" class="btn" data-localize="ETM.general.sections.snmp.showhide_password">Show/Hide SNMP password</button></td></tr>
+          </table>
+          <br/>
+        </fieldset>
+        </form>
+
+        <fieldset>
+        <div class="btnRow">
+          <legend data-localize="ETM.general.sections.button_bar.save_changes">Save Changes</legend>
+          <button id="btnSave" class="btn" data-localize="ETM.general.sections.button_bar.save_changes">Save Changes</button>
+          <button id="btnDiscard" class="btn"  data-localize="ETM.general.sections.button_bar.discard_changes">Discard Changes</button>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        </fieldset>
+
+        <form id="frmMaint" action="">
+        <fieldset>
+          <legend data-localize="ETM.admin.sections.admin_maint.legend">Maintenance</legend>
+          <div class="btnRow">
+            <button id="btnReboot" class="btn" data-localize="ETM.admin.sections.admin_maint.reboot">Reboot Dock</button>
+            <button id="btnNewSSL" class="btn" data-localize="ETM.admin.sections.admin_ssl.regen_ssl">Regenerate SSL Certificate</button>
+          </div>
+          <br/>
+        </fieldset>
+        </form>
+
+          </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  <!-- begin_include footer -->
+  <div id="footer">
+    <div class="footer-lang-select">
+      <select id="langchoice">
+         <option value="ms">Bahasa Melayu</option>
+         <option value="cs">Čeština</option>
+         <option value="da">Dansk</option>
+         <option value="de">Deutsch</option>
+         <option value="en-us">English</option>
+         <option value="es">Español</option>
+         <option value="fr">Français</option>
+         <option value="it">Italiano</option>
+         <option value="hu">Magyar</option>
+         <option value="nl">Nederlands</option>
+         <option value="no">Norsk</option>
+         <option value="pt-br">Português</option>
+         <option value="ro">Român</option>
+         <option value="fi">Suomi</option>
+         <option value="sv">Svenska</option>
+         <option value="ru">Pусский язык</option>
+         <option value="uk">украї́нська мо́ва</option>
+         <option value="th">ไทย</option>
+         <option value="ko">한국어</option>
+         <option value="ja">日本語</option>
+         <option value="zh-tw">漢語中文</option>
+         <option value="ar">اَلْعَرَبِيَّةُ</option>
+      </select>
+      <span id="footer-copyright" data-localize="ETM.general.copyright">&copy; 2020 Axon Enterprise, Inc. All rights reserved</span>
+    </div>
+    <div class="footer-contact-info">
+      <span id="footer-contactInfo"><a href="mailto:support@axon.com">support@axon.com</a></span>
+      <span id="footer-supportLink">
+        <a href="https://help.axon.com"><span data-localize="ETM.index.footer.help_center">Help Center</span></a>
+      </span>
+    </div>
+  </div>
+  <!-- end_include footer -->
+
+</body>
+</html>

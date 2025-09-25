@@ -1,0 +1,93 @@
+#!/bin/sh
+#
+# udhcpc script modified by Taser International Inc. 2015
+# udhcpc script edited by Tim Riker <Tim@Rikers.org>
+
+. /etm/bin/etm-net-common.sh
+
+[ -z "$1" ] && echo "Error: should be called from udhcpc" && exit 1
+
+readonly RESOLV_CONF="/etc/resolv.conf"
+readonly SCRIPT_NAME="udhcpc-50default"
+
+# udhcpc passes parameters to this script via environment variables:
+#   $interface    the interface
+#   $ip           the client IP address
+#   $subnet       the subnet mask
+#   $mask         the subnet mask in a bit count form
+#   $broadcast    the broadcast address
+#   $router       the list of routers
+#   $domain       the domain name of the network
+#   $dns          the list of DNS servers
+
+[ -n "$broadcast" ] && BROADCAST="broadcast $broadcast"
+[ -n "$subnet" ] && NETMASK="netmask $subnet"
+
+HAVE_BIN_IP=0
+if [[ -x /bin/ip ]] ; then
+  HAVE_BIN_IP=1
+fi
+
+case "$1" in
+    deconfig)
+        # reset DNS configuration
+        update_dns_cfg "${SCRIPT_NAME}"
+
+        if [[ ${HAVE_BIN_IP} -eq 1 ]] ; then
+            /bin/ip addr flush dev $interface
+            /bin/ip link set dev $interface up
+        else
+            /sbin/ifconfig $interface 0.0.0.0
+        fi
+        ;;
+
+    renew|bound)
+        if [[ ${HAVE_BIN_IP} -eq 1 ]] ; then
+            /bin/ip addr add dev $interface local $ip/$mask ${BROADCAST}
+        else
+            /sbin/ifconfig $interface $ip ${BROADCAST} ${NETMASK}
+        fi
+
+        # report IP address to syslog
+        get_ip_address $interface "${SCRIPT_NAME}"
+
+        if [[ -n "$router" ]] ; then
+            if [[ ${HAVE_BIN_IP} -eq 1 ]] ; then
+                while /bin/ip route del default 2>/dev/null ; do
+                    :
+                done
+            else
+                while /sbin/route del default gw 0.0.0.0 dev $interface 2>/dev/null ; do
+                    :
+                done
+            fi
+
+            METRIC=0
+            for I in $router ; do
+                if [[ ${HAVE_BIN_IP} -eq 1 ]] ; then
+                    /bin/ip route add default via ${I} metric ${METRIC}
+                else
+                    /sbin/route add default gw ${I} dev $interface metric ${METRIC} 2>/dev/null
+                fi
+                METRIC=$((METRIC + 1))
+            done
+        fi
+
+        # Update resolver configuration file
+        R=""
+        [ -n "$domain" ] && R="domain $domain
+"
+        for I in $dns; do
+            echo "$0: Adding DNS ${I}"
+            R="${R}nameserver ${I}
+"
+        done
+
+        # reset DNS configuration
+        update_dns_cfg "udhcpc-50default"
+        # update DNS configuration
+        echo -n "${R}" > "${RESOLV_CONF}"
+        ;;
+esac
+
+exit 0

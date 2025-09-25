@@ -1,0 +1,558 @@
+{
+   "ETM" : {
+      "admin" : {
+         "admin_title" : "Dockbeheer",
+         "configuring_msg" : "Bezig met configureren. Dit duurt ongeveer 40 seconden.",
+         "headers" : {
+            "administration" : "Dockbeheer"
+         },
+         "page_title" : "Beheerinstellingen",
+         "rebooting_msg" : "Bezig met opnieuw opstarten. Dit duurt ongeveer 60 seconden.",
+         "saving_settings" : "Instellingen opslaan...",
+         "sections" : {
+            "admin_maint" : {
+               "legend" : "Onderhoud",
+               "reboot" : "Dock opnieuw opstarten"
+            },
+            "admin_ssl" : {
+               "accept_only_https" : "Alleen SSL-verzoeken accepteren",
+               "legend" : "SSL-configuratie",
+               "regen_ssl" : "SSL-certificaat opnieuw genereren",
+               "require_https_time" : "SSL vereisen voor eerste tijdcontrole"
+            },
+            "device_id" : {
+               "etm_name" : "Docknaam",
+               "home" : "Thuislocatie van apparaat",
+               "legend" : "Apparaatidentificatie",
+               "location" : "Locatie",
+               "msg" : "Aan de hand van de onderstaande informatie kunt u achterhalen met welk dockapparaat u communiceert. Deze informatie wordt ook door Evidence.com gebruikt voor het verstrekken van statusinformatie over apparaten.",
+               "your_agency" : "Uw organisatie"
+            },
+            "password_change" : {
+               "confirm_new_password" : "Nieuw wachtwoord opnieuw invoeren",
+               "current_password" : "Huidig wachtwoord",
+               "error_no_password" : "Voor het wijzigen van de inloggegevens van beheerders is het huidige wachtwoord vereist.",
+               "legend" : "Inloggegevens wijzigen",
+               "msg" : "Beheer de gebruikersnaam en het wachtwoord die worden gebruikt voor toegang tot deze dock.",
+               "new_password" : "Nieuw wachtwoord",
+               "username" : "Gebruikersnaam"
+            },
+            "snmp" : {
+               "authentication" : "Verificatie",
+               "disable" : "Uitschakelen",
+               "enable_snmp" : "SNMP inschakelen",
+               "enc_password" : "Versleutelingswachtwoord",
+               "encrypt_msg" : "Laat 'Versleutelingswachtwoord' leeg als u voor versleuteling hetzelfde SNMP-wachtwoord wilt gebruiken.",
+               "encryption" : "Codering",
+               "error_no_password" : "Voor het wijzigen van de SNMP-gebruikersnaam is het bijbehorende wachtwoord vereist.",
+               "error_title" : "Fout bij instellen SNMP",
+               "legend" : "SNMP-server",
+               "legend_config" : "SNMP-configuratie",
+               "msg" : "SNMP is standaard uitgeschakeld. Vink het vakje aan om SNMP in te schakelen en stel de configuratie in.",
+               "password" : "SNMP-wachtwoord",
+               "username" : "SNMP-gebruikersnaam"
+            }
+         },
+         "set_configuration_error_title" : "Configuratie instellen",
+         "settings_changed" : {
+            "p1" : "De instellingen van uw agentschap zijn gewijzigd.",
+            "p2" : "Druk op de knop [Bijwerken] om de wijzigingen van uw agentschap toe te passen op de dock.",
+            "p3" : "U kunt ook op [Annuleren] drukken en uw instellingen handmatig bijwerken. De instellingen worden dan gesynchroniseerd naar uw agentschap.",
+            "p4" : "Lijst met wijzigingen:",
+            "title" : "Instellingen gewijzigd"
+         }
+      },
+      "axonsup" : {
+         "headers" : {
+            "data" : "Ondersteuningsgegevens"
+         },
+         "page_title" : "Axon Support",
+         "sections" : {
+            "data" : {
+               "legend" : "Gegevens Axon Support",
+               "msg" : "De onderstaande gegevensblobs kunnen nuttig zijn in het contact met een medewerker van de klantenservice van Axon.",
+               "result1" : "Resultaat 1:",
+               "result2" : "Resultaat 2:"
+            }
+         }
+      },
+	  "cgi" : {
+          "csrf_fail" : "Cookie-fout",
+          "invalid_auth" : "Ongeldige gebruikersnaam of ongeldig wachtwoord",
+          "invalid_cmd" : "Ongeldige opdracht",
+          "invalid_domain" : "Geen domein opgegeven",
+          "invalid_proxy_config" : "Ongeldige proxy-configuratie",
+          "invalid_proxy_user_pass" : "Gebruikersnaam of wachtwoord ontbreekt",
+          "invalid_snmp_user" : "SNMP-configuratie kan niet worden toegepast. Ongeldige SNMP-gebruikersnaam.",
+          "no_content" : "Geen inhoud",
+          "no_snmp_pw" : "SNMP-configuratie kan niet worden toegepast. Geen wachtwoord opgegeven.",
+          "not_released" : "Niet vrijgegeven",
+          "ok" : "OK",
+          "unable_disable_snmp" : "SNMP-configuratie kan niet worden uitgeschakeld.",
+          "unable_set_snmp" : "SNMP-configuratie kan niet worden toegepast.",
+          "unable_set_snmp_auth" : "Authenticatie van SNMP-configuratie kan niet worden toegepast.",
+          "unable_set_snmp_enable" : "SNMP-configuratie kan niet worden ingeschakeld.",
+          "unable_set_snmp_enc" : "Versleuteling van SNMP-configuratie kan niet worden toegepast.",
+          "unable_set_snmp_pass" : "Wachtwoord van SNMP-configuratie kan niet worden toegepast.",
+          "unable_set_snmp_user" : "Gebruikersnaam van SNMP-configuratie kan niet worden toegepast.",
+          "unable_set_sslonly" : "Instelling van 'Alleen SSL-verzoeken accepteren' kan niet worden gewijzigd",
+          "unknown_err" : "Onbekende fout",
+          "web_creds_err" : "Bijwerken van inloggegevens van beheerders mislukt.",
+          "web_creds_invalid_username" : "Bijwerken van inloggegevens van beheerders mislukt: gebruikersnaam is ongeldig.",
+          "web_creds_invalid_cur_pass" : "Bijwerken van inloggegevens van beheerders mislukt: huidig wachtwoord is ongeldig.",
+          "web_creds_invalid_new_pass" : "Bijwerken van inloggegevens van beheerders mislukt: nieuw wachtwoord is ongeldig."
+      },
+      "common" : {
+        "admin_name_allowed_characters" : "Ongeldige gebruikersnaam. Toegestane tekens: alfanumeriek spatie # ! @ ( ) [ ] - . _",
+        "at_least" : "moet bestaan uit minimaal ",
+        "cannot_contain_duplicate" : "mag geen dubbele tekens bevatten",
+        "cannot_contain_more_than" : "mag niet bestaan uit meer dan ",
+        "cannot_contain_username" : "mag niet uw gebruikersnaam of andere veelgebruikte woorden bevatten",
+        "character" : " teken",
+        "characters" : " tekens",
+        "characters_in_seq" : " opeenvolgende tekens",
+        "input_valid_IP" : "Voer een geldig IP-adres in",
+        "less_than" : "moet bestaan uit minder dan ",
+        "mandatory_field" : "Dit veld moet worden ingevuld.",
+        "must_contain" : "moet bestaan uit ",
+        "no" : "Nee",
+        "not_secure" : "is niet veilig genoeg ",
+        "please_provide" : "Typ minimaal ",
+        "select_valid_entry" : "Selecteer een geldige invoer in de lijst",
+        "snmp_name_allowed_characters" : "Ongeldige gebruikersnaam. Toegestane tekens: alfanumeriek # ! @ ( ) [ ] - . _",
+        "value_not_equal" : "Waarde niet gelijk aan het veld Nieuw wachtwoord",
+        "yes" : "Ja"
+      },
+      "configassist" : {
+         "dlg_assign" : {
+            "msg1" : "Met dit formulier wijzigt u de eigenaar van een apparaat in de hieronder opgegeven gebruiker. De gebruikersnaam en het wachtwoord worden niet opgeslagen op de dock.",
+            "msg2" : "Voer hieronder uw verificatiegegevens in en klik op 'OK' om dit apparaat aan UZELF toe te wijzen, of klik op 'Annuleren' om terug te keren.",
+            "password" : "Wachtwoord",
+            "username" : "Gebruikersnaam"
+         },
+         "dlg_format" : {
+            "msg" : "Als u dit doet, worden de configuratie en firmware van het apparaat vernieuwd. Er gaan geen gegevens verloren."
+         },
+         "dlg_format_auth" : {
+            "admin_password" : "Wachtwoord beheerder",
+            "admin_username" : "Gebruikersnaam beheerder",
+            "msg" : "U kunt deze actie alleen uitvoeren als u beschikt over beheerdersrechten voor Evidence.com. Uw gebruikersnaam en wachtwoord worden niet opgeslagen op de dock. Voer hieronder uw verificatiegegevens in en klik op 'OK' om dit apparaat te formatteren, of klik op 'Annuleren' om terug te keren."
+         },
+         "err_cannot_get_log" : {
+            "msg" : "Er is een fout opgetreden bij het lezen van het activiteitenlogboek vanaf dit apparaat.",
+            "title" : "Kan het logboekbestand niet lezen vanaf dit apparaat"
+         },
+         "err_cannot_read_file" : {
+            "msg" : "Er is een fout opgetreden bij het lezen van de media en bewijsinformatie vanaf dit apparaat. Neem contact op met de technische ondersteuning van Axon als dit probleem zich blijft voordoen.",
+            "title" : "Kan een bewijsbestand niet lezen vanaf dit apparaat."
+         },
+         "err_cannot_rm_log" : {
+            "msg" : "Er is een fout opgetreden bij het wissen van het activiteitenlogboek op dit apparaat nadat het is geüpload naar Evidence.com.",
+            "title" : "Kan het logboekbestand op dit apparaat niet wissen"
+         },
+         "err_device_lost_communication" : {
+            "msg" : "De verbinding met dit apparaat is verbroken. Verwijder het apparaat uit de dock en sluit het opnieuw aan. Als het probleem zich blijft voordoen, neem dan contact op met de beheerder van uw agentschap voor hulp bij dit apparaat.",
+            "title" : "De dock kan niet meer communiceren met dit apparaat."
+         },
+         "err_device_maintenance" : {
+            "msg" : "De dock is bezig met het uitvoeren van automatisch onderhoud op dit apparaat. De normale werking van het apparaat wordt automatisch hervat. U hoeft niets te doen.",
+            "title" : "De dock is bezig met het uitvoeren van automatisch onderhoud op dit apparaat."
+         },
+         "err_devtype_cfg_failure" : {
+             "msg" : "Kan het apparaat niet instellen op de lichaamscameramodus. Raadpleeg de instructies voor probleemoplossing.",
+             "title" : "Dit apparaat is niet ingesteld als lichaamscamera"
+         },
+         "err_format_failure" : {
+            "msg" : "De stationsindeling van het apparaat is mislukt. Raadpleeg de instructies voor probleemoplossing.",
+            "title" : "De stationsindeling van dit apparaat is mislukt"
+         },
+         "err_fwup_cfg_failure" : {
+             "msg": "Het veld 'Firmware kan worden bijgewerkt' kan niet worden ingesteld. Raadpleeg de instructies voor probleemoplossing.",
+             "title" : "Dit apparaat is niet zo ingesteld dat de firmware kan worden bijgewerkt"
+         },
+         "err_inactive_device" : {
+            "msg" : "Dit apparaat is momenteel niet actief in dit agentschap. Sluit het apparaat aan op Evidence Sync en wijs het toe aan de juiste gebruiker.",
+            "title" : "Uw apparaat is momenteel niet actief in uw agentschap"
+         },
+         "err_invalid_device_type" : {
+            "msg" : "Kan het apparaat niet configureren naar het opgegeven type. Raadpleeg de instructies voor probleemoplossing.",
+            "title" : "Apparaat is ongeldig"
+         },
+         "err_invalid_model" : {
+            "msg" : "Het op de dock aangesloten apparaat is niet herkend als geldig Axon-apparaat. Verwijder het uit de dock.",
+            "title" : "De dock herkent dit type apparaat niet"
+         },
+         "err_invalid_serial" : {
+            "msg" : "Het op de dock aangesloten apparaat heeft geen geldig serienummer. Dit kan een terugkerende fout zijn. Verwijder het apparaat uit de dock en sluit het opnieuw aan. Vraag een RMA aan voor het apparaat als dit probleem zich blijft voordoen.",
+            "title" : "Dit apparaat heeft een ongeldig serienummer"
+         },
+         "err_inventory_failure" : {
+            "msg" : "Er is een fout opgetreden bij het lezen van de media en bewijsinformatie voor dit apparaat. Neem contact op met de technische ondersteuning van Axon als dit probleem zich blijft voordoen.",
+            "title" : "Kan de bewijslijst niet lezen vanaf dit apparaat."
+         },
+         "err_mount_failed" : {
+            "msg" : "Ga verder naar de beheerpagina en start de dock opnieuw op.",
+            "title" : "Er heeft zich een fout voorgedaan bij het verbinding maken met het apparaat."
+         },
+         "err_network_failed" : {
+            "msg" : "Dit komt waarschijnlijk door een slechte internetverbinding, een slechte verbinding met Evidence.com, Evidence.com wordt vaak aangeroepen of doordat Evidence.com offline is vanwege onderhoud. Dit is geen kritieke fout. De dock probeert de bewerking opnieuw uit te voeren.",
+            "title" : "Er is een netwerkprobleem met de dock opgetreden bij het verwerken van dit apparaat"
+         },
+         "err_no_usb" : {
+            "msg" : "De dock kan niet communiceren met dit apparaat. Dit kan een terugkerende fout zijn. Verwijder het apparaat uit de dock en sluit het opnieuw aan. Voer een RMA uit voor het apparaat als dit probleem zich blijft voordoen.",
+            "title" : "Kan niet communiceren met apparaat"
+         },
+         "err_not_offline" : {
+            "msg" : "Deze dock is geconfigureerd voor offlinegebruik. De dock verwerkt geen apparaten die in de onlinemodus staan. Als u dit apparaat wilt instellen op de offlinemodus, sluit het dan aan op Evidence Sync en volg de instructies op.",
+            "title" : "Dit apparaat is niet ingesteld voor offlinegebruik"
+         },
+         "err_not_online" : {
+            "msg" : "Deze dock is geconfigureerd voor onlinegebruik. De dock verwerkt geen apparaten die in de offlinemodus staan. Als u dit apparaat wilt instellen op de onlinemodus, sluit het dan aan op Evidence Sync en volg de instructies op.",
+            "title" : "Dit apparaat is niet ingesteld voor onlinegebruik"
+         },
+         "err_system_maintenance" : {
+            "msg" : "De dock is bezig met het uitvoeren van automatisch onderhoud. De normale werking van het apparaat wordt automatisch hervat. U hoeft niets te doen.",
+            "title" : "De dock is bezig met het uitvoeren van intern onderhoud."
+         },
+         "err_transfer_failed" : {
+            "msg" : "Dit komt waarschijnlijk door een slechte internetverbinding, een slechte verbinding met Evidence.com, Evidence.com wordt vaak aangeroepen of doordat Evidence.com offline is vanwege onderhoud. Dit is geen kritieke fout. De dock probeert het bestand opnieuw te uploaden.",
+            "title" : "Het overdragen van een video vanaf dit apparaat door de dock is mislukt."
+         },
+         "err_transfer_failed_noretry" : {
+            "msg" : "Dit komt waarschijnlijk door een probleem met het apparaat. Neem contact op met de technische ondersteuning van Axon.",
+            "title" : "Er is een permanente fout opgetreden bij het overdragen van een video vanaf dit apparaat door de dock"
+         },
+         "err_unknown_port_type" : {
+            "msg" : "Poorttype waarop het apparaat is aangesloten wordt niet ondersteund of is onbekend. Raadpleeg de instructies voor probleemoplossing.",
+            "title" : "Poorttype is onbekend"
+         },
+         "err_wrong_agency" : {
+            "msg" : "Dit apparaat is momenteel niet toegewezen aan uw agentschap.  Neem contact op met de beheerder van uw agentschap voor hulp met dit apparaat.",
+            "title" : "Dit apparaat is momenteel niet toegewezen aan uw agentschap."
+         },
+         "if_problem_continues" : "Neem, als dit probleem zich blijft voordoen, contact op met de technische ondersteuning van Axon op:",
+         "more_help" : "Neem voor meer hulp bij dit probleem contact op met de technische ondersteuning van Axon op:",
+         "no_dns" : {
+            "msg" : "Er is geen DNS-server gevonden. Dit komt meestal doordat er een ongeldig IP-adres is geconfigureerd voor de DNS-server. Controleer de DNS-instellingen op de pagina 'Netwerken'.",
+            "return_msg" : "Klik hieronder op 'OK' om naar de pagina 'Netwerken' te gaan en de DNS-gegevens te controleren, of druk op ESC om dit dialoogvenster te sluiten.",
+            "title" : "Kan geen DNS-server vinden"
+         },
+         "no_ecom" : {
+            "msg" : "Deze dock kan niet worden geverifieerd met Evidence.com. Dit komt meestal doordat er registratiesleutels ontbreken voor het agentschap en deze dock. Registreer de dock via de pagina 'Bewerkingen'.",
+            "return_msg" : "Klik hieronder op 'OK' om naar de pagina 'Bewerkingen' te gaan en uw dock te registreren, of druk op ESC om dit dialoogvenster te sluiten.",
+            "title" : "Geen verificatie met Evidence.com"
+         },
+         "no_gateway" : {
+            "msg" : "Er kan geen contact worden gemaakt met de standaardgateway van uw netwerk. Dit komt meestal door een ongeldig IP-adres, maar bepaalde gateways reageren ook niet op netwerk-pings.",
+            "return_msg" : "Klik hieronder op 'OK' om naar de pagina 'Netwerken' te gaan en uw standaardgateway te wijzigen, of druk op ESC om dit dialoogvenster te sluiten.",
+            "title" : "Geen gateway gevonden"
+         },
+         "no_https" : {
+            "msg" : "Er kan niet worden gecommuniceerd via een beveiligd (HTTPS-)kanaal. Dit komt meestal doordat de HTTPS-poort (443) wordt geblokkeerd door een firewall. Controleer in uw firewall of de HTTPS-poort openstaat.",
+            "return_msg" : "Klik hieronder op 'OK' om terug te keren naar de statuspagina.",
+            "title" : "Geen HTTPS beschikbaar."
+         },
+         "no_ip_dynamic" : {
+            "msg" : "Er kan geen IP-adres worden verkregen van uw DHCP-server. Dit komt meestal doordat er geen DHCP-server actief is op het netwerk. Mogelijk dient u een statische IP-configuratie in te voeren voor deze dock.",
+            "return_msg" : "Klik hieronder op 'OK' om naar de pagina 'Netwerken' te gaan en statische IP-informatie in te voeren, of druk op ESC om dit dialoogvenster te sluiten.",
+            "title" : "Geen IP-adres."
+         },
+         "no_ip_static" : {
+            "msg" : "Het IP-adres dat u hebt opgegeven in de statische IP-configuratie voor deze dock, kan niet worden opgehaald. Dit komt meestal doordat het statische IP-adres wordt gebruikt voor meerdere computers. Controleer het ingevoerde IP-adres op de pagina 'Netwerken'.",
+            "return_msg" : "Klik hieronder op 'OK' om naar de pagina 'Netwerken' te gaan en uw instellingen te controleren, of druk op ESC om dit dialoogvenster te sluiten.",
+            "title" : "Geen IP-adres."
+         },
+         "no_ntp" : {
+            "msg" : "Er kan niet worden gecommuniceerd met een netwerktijdserver. Dit komt meestal doordat de poorten 80 en 123 worden geblokkeerd door een firewall. Controleer in uw firewall of poort 80 of 123 openstaat.",
+            "return_msg" : "Klik hieronder op 'OK' om naar de pagina 'Netwerken' te gaan en uw tijdserver te wijzigen, of druk op 'OK' om dit dialoogvenster te sluiten.",
+            "title" : "NTP-server reageert niet"
+         },
+         "no_status" : {
+            "msg" : "Het is nog niet gelukt om uw netwerktype vast te stellen. Dit kan komen doordat het systeem nog bezig is. Wacht 2 of 3 minuten en vernieuw de pagina. De statuspagina wordt ook vernieuwd wanneer er nieuwe informatie beschikbaar is.",
+            "return_msg" : "Klik hieronder op 'OK' om terug te keren naar de statuspagina.",
+            "title" : "Geen status gevonden."
+         },
+         "title" : "Configuratieassistent",
+         "we_found" : "Bij het onderzoeken van uw netwerk is het volgende probleem aangetroffen:",
+         "welcome" : "Welkom bij de configuratieassistent."
+      },
+      "device_status_codes" : {
+         "capchk" : "Capaciteitscontrole",
+         "cfg" : "Configureren",
+         "chg" : "Laden",
+         "del" : "Bezig met verwijderen",
+         "device_maint" : "Apparaatonderhoud",
+         "devid" : "Identificeren",
+         "err" : "Fout (opnieuw in behandeling)",
+         "fail" : "Fout",
+         "fwdone" : "Firmware bijgewerkt",
+         "fwupdate" : "Bezig met firmware updaten",
+         "inact" : "Inactief",
+         "init" : "Initialiseren",
+         "inventory" : "Inventaris",
+         "logerase" : "Logboek wissen",
+         "logsend" : "Logboek uploaden",
+         "lost" : "Communicatie verbroken",
+         "net_retry" : "Opnieuw proberen verbinding te maken met het netwerk",
+         "new" : "Nieuw apparaat",
+         "nonet" : "Netwerk offline",
+         "plugin" : "Verbinden...",
+         "proc" : "Bestand overdragen",
+         "rdy" : "Gereed",
+         "register" : "Bezig met registreren",
+         "summary" : "Overzicht ophalen",
+         "sys_maint" : "Systeemonderhoud",
+         "unk" : "Onbekend",
+         "unsupported" : "Niet-ondersteund",
+         "wait" : "Wachten"
+      },
+      "diag" : {
+         "headers" : {
+            "diag" : "Diagnose"
+         },
+         "page_title" : "Status",
+         "sections" : {
+            "netdiag" : {
+               "command" : "Opdracht:",
+               "commands" : {
+                  "date" : "DATUM zoals gerapporteerd door dock",
+                  "ifconfig" : "IFCONFIG netwerkstatistieken",
+                  "nslookup_goog" : "NSLOOKUP google.com",
+                  "nslookup_taser" : "NSLOOKUP taser.evidence.com",
+                  "ping_8888" : "PING 8.8.8.8",
+                  "ping_gateway" : "PING standaardgateway",
+                  "ping_goog" : "PING google.com",
+                  "tail_etmlog" : "TAIL 100 regels van docklogboek",
+                  "tail_syslog" : "TAIL 100 regels van syslog",
+                  "tr_goog" : "TRACEROUTE google.com",
+                  "tr_taser" : "TRACEROUTE taser.evidence.com"
+               },
+               "execute" : "Uitvoeren",
+               "legend" : "Netwerkdiagnose",
+               "menu" : "Selecteer in het vervolgkeuzemenu een diagnostische test en klik op 'Uitvoeren'.",
+               "msg1" : "Met de hier opgegeven opdrachten kunnen diagnoses worden gesteld van problemen met netwerkverbindingen.",
+               "msg2" : "Voer de onderstaande opdrachten alleen uit als een medewerker van de klantenservice van Axon u vraagt dat te doen.",
+               "result" : "Resultaat:"
+            }
+         }
+      },
+      "firmware" : {
+         "current_version" : "Huidige firmwareversie",
+         "dvr_update_starting" : "Contact maken met Axon-server om te controleren op updates... De firmware-update start nadat het uploaden van bestanden door de DVR is voltooid.",
+         "etm_update_starting" : "De firmware-update is gestart. Controleer over een paar minuten of de versie is bijgewerkt.",
+         "headers" : {
+            "firmware_mgmt" : "Firmwarebeheer"
+         },
+         "not_released" : "Niet vrijgegeven",
+         "page_title" : "Firmware-update",
+         "sections" : {
+            "device_firmware_update" : {
+               "legend" : "Update van apparaatfirmware",
+               "msg" : "Klik op de knop hieronder om de firmware te upgraden op alle apparaten die momenteel zijn aangesloten op de dock. Als er een update beschikbaar is, wordt deze automatisch geïnstalleerd op alle apparaten.",
+               "device_name" : "Apparaatnaam",
+               "released_firmware" : "Uitgebrachte firmware",
+               "early_access_firmware" : "Firmware met vervroegde toegang",
+               "perform_fw_update" : "Axon-apparaten bijwerken"
+            },
+            "etm_firmware_update" : {
+               "check_update" : "Firmware bijwerken",
+               "legend" : "Update van dock-firmware",
+               "msg" : "Klik op 'Firmware bijwerken' om de firmware van uw dock bij te werken. De dock maakt contact met de servers van Axon en controleert wat de laatste firmwareversie is. Als er een nieuwe versie beschikbaar is, wordt deze automatisch geïnstalleerd.",
+               "show_version_details" : "Details",
+               "version_details" : "Details"
+            }
+         },
+         "update_failed" : "Kan firmware-update niet starten",
+         "update_title" : "Firmware-update"
+      },
+      "general" : {
+         "closeparen" : ")",
+         "copyright" : "&copy; 2023 Axon Enterprise, Inc. Alle rechten voorbehouden",
+         "error_code" : "foutcode",
+         "firmware" : "Firmware",
+         "footnote" : "*TASER-batterijen bevatten firmware voor TASER 7 (T7)- en TASER 10 (T10)-handgrepen alsook voor TASER BLE.",
+         "openparen" : "(",
+         "refresh" : "Vernieuwen",
+         "sections" : {
+            "button_bar" : {
+               "discard_changes" : "Wijzigingen negeren",
+               "loading_wait" : "Configuratie laden... Een ogenblik geduld...",
+               "reset_registration" : "Registratie opnieuw instellen",
+               "save_changes" : "Wijzigingen opslaan",
+               "continue" : "Verdergaan"
+            },
+            "snmp" : {
+               "showhide_password" : "SNMP-wachtwoord weergeven/verbergen"
+            }
+         }
+      },
+      "index" : {
+         "footer" : {
+            "help_center" : "Helpcentrum"
+         },
+         "headers" : {
+            "system_status" : "Systeemstatus"
+         },
+         "page_title" : "Status",
+         "sections" : {
+            "devices" : {
+               "device" : "Apparaat",
+               "firmware" : "Firmware*",
+               "hidden_info" : "Klik hier om gegevens weer te geven",
+               "legend" : "Apparaten",
+               "owner" : "Eigenaar",
+               "serial" : "Serienummer",
+               "status" : "Status"
+            },
+            "networking" : {
+               "active" : "Actief",
+               "dns_server" : "DNS-server",
+               "ecom_registration" : "Registratie op Evidence.com",
+               "gateway" : "Internetgateway",
+               "https_port" : "HTTPS (poort 443)",
+               "ipaddress" : "IP-adres",
+               "legend" : "Netwerken",
+               "mac_address" : "MAC-adres",
+               "not_registered" : "Niet geregistreerd",
+               "serial_number" : "Serienummer",
+               "time_server" : "Tijdserver"
+            }
+         }
+      },
+      "links" : {
+         "administration" : "Beheer",
+         "firmware" : "Firmware",
+         "networking" : "Netwerken",
+         "operations" : "Bewerkingen",
+         "status" : "Status"
+      },
+      "lookups" : {
+         "netmode" : {
+            "dynamic" : "dynamisch",
+            "static" : "statisch"
+         }
+      },
+      "networking" : {
+         "headers" : {
+            "net_setup" : "Netwerkconfiguratie"
+         },
+         "page_title" : "Netwerkinstellingen",
+         "restart_title" : "Netwerk opnieuw opstarten",
+         "saved_restarting" : "De instellingen zijn opgeslagen. Netwerk opnieuw opstarten...",
+         "sections" : {
+            "conn_type" : {
+               "label_dynamic" : "Dynamische IP (DHCP)",
+               "label_static" : "Statische IP",
+               "legend" : "Type verbinding",
+               "msg" : "De dock kan de AXON-apparaten op twee manieren via uw bestaande netwerk toegang geven tot internet: via dynamische IP (ook DHCP genoemd) of via een statisch IP-adres. Selecteer hieronder de gewenste methode:"
+            },
+            "static_ip" : {
+               "dns_servers" : "DNS-servers",
+               "gateway" : "Standaardgateway",
+               "ip_address" : "IP-adres",
+               "legend" : "Statische IP-configuratie",
+               "msg" : "Als uw netwerk geen gebruikmaakt van DHCP, of als internettoegang alleen mogelijk is via statische IP-toewijzing, dan moet u configuratiegegevens opgeven voor de dock. Neem contact op met uw netwerkbeheerder als u niet over deze informatie beschikt.",
+               "subnet_mask" : "Subnetmasker"
+            },
+            "throttle" : {
+               "label_mbps" : "Mbps",
+               "legend" : "Upstreambeperking",
+               "max_speed" : "Max. uploadsnelheid",
+               "msg" : "De dock maakt normaal gesproken gebruik van de volledige beschikbare bandbreedte om video's zo snel mogelijk te uploaden vanaf de AXON-eenheden. Als u dat niet wilt, kunt u hieronder de overdrachtssnelheid (gemeten in Megabits per seconde) verlagen. Als de waarde 0 is, gebruikt de dock de volledige beschikbare bandbreedte."
+            }
+         }
+      },
+      "ops" : {
+         "an_error_occurred" : "Er is een fout opgetreden",
+         "generating_tokens" : "Beveiligingstokens genereren...",
+         "headers" : {
+            "operations" : "Bewerkingen"
+         },
+         "page_title" : "Algemene bewerkingen",
+         "regenerate_keys_query" : "U bent al geverifieerd op Evidence.com. Wilt u de beveiligingssleutels opnieuw genereren?",
+         "regenerate_keys_title" : "Sleutels opnieuw genereren",
+         "register_with_ecom" : "Registreren op Evidence.com",
+         "registering_etm" : "De dock registreren...",
+         "processing" : "Bezig met verwerken...",
+         "poll_uri_code" : "Activeringslink en -code worden opgehaald...",
+         "reset_reg" : "Registratie opnieuw instellen",
+         "reset_reg_failed" : "Kan de registratie niet opnieuw instellen",
+         "resetting_reg_dock" : "De registratie van de dock wordt teruggezet naar de standaardwaarde. De pagina wordt over 30 seconden opnieuw geladen.",
+         "restarting_etm" : "Bezig met het opnieuw opstarten van de dock. Dit duurt ongeveer 30 seconden.",
+         "sections" : {
+            "e_com_reg" : {
+               "admin_password" : "Wachtwoord beheerder",
+               "admin_username" : "Gebruikersnaam beheerder",
+               "agency_name" : "Evidence.com-agentschap",
+               "already_registered" : "Deze dock is al geregistreerd op Evidence.com",
+               "domain_name" : "Domeinnaam",
+               "legend" : "Registratie op Evidence.com",
+               "msg" : "Voer de naam, de gebruikersnaam en het wachtwoord van uw agentschap voor Evidence.com in om deze dock te registreren op Evidence.com. Zodra de dock is geregistreerd, draagt deze alle mediabestanden over naar uw Evidence.com-account. Uw gebruikersnaam en wachtwoord worden niet opgeslagen op de dock.",
+               "msg_shorten" : "Voer de naam van uw agentschap voor Evidence.com in om deze dock te registreren op Evidence.com. Zodra de dock is geregistreerd, draagt deze alle mediabestanden over naar uw Evidence.com-account.",
+               "msg_login_uri_code" : "Open de link en geef de code op om de registratie af te ronden:"
+            }
+         }
+      },
+      "proxy": {
+         "headers": {
+            "proxy_setup": "Proxy-installatie"
+         },
+         "page_title": "Proxy-instellingen",
+         "proxy_test_title": "Proxytest",
+         "proxy_test_in_progress": "Proxytest wordt uitgevoerd...",
+         "proxy_test_success_msg": "Proxytest geslaagd",
+         "proxy_test_fail_msg": "Proxytest mislukt",
+         "configuration_saved_title": "Proxyconfiguratie opgeslagen",
+         "configuration_saved_msg": "Proxyconfiguratie is opgeslagen en wordt spoedig uitgevoerd",
+         "sections": {
+            "http_proxy": {
+               "legend": "HTTP-proxy",
+               "msg": "Als de HTTP-proxy wordt ingesteld, worden alle HTTP-aanvragen omgeleid naar de aangewezen proxyserver.",
+               "enable": "Inschakelen",
+               "legend_config": "Configuratie",
+               "legend_advanced_config": "Geavanceerde configuratie",
+               "disable_dns_check": "DNS-controle uitschakelen",
+               "msg_config": "Gebruikersnaam en wachtwoord zijn optioneel.",
+               "host": "Proxyhost",
+               "port": "Proxypoort",
+               "username": "Gebruikersnaam",
+               "password": "Wachtwoord",
+               "test_connection": "Verbinding testen"
+            }
+         }
+      },
+      "strings" : {
+         "an_error_occurred" : "Er is een fout opgetreden",
+         "axon_flex" : "Axon Flex",
+         "calculating_rate" : "Berekenen...",
+         "cancel" : "Annuleren",
+         "cannot_get_data_too_many_failed_login_attempts" : "Kan data niet ophalen door te veel mislukte aanmeldpogingen",
+         "click_for_details" : "Klik hier voor meer informatie",
+         "device_error" : "Apparaatfout",
+         "error" : "Fout",
+         "error_download" : "Fout bij downloaden van https",
+         "error_internal" : "Interne fout",
+         "failed_auth": "Te veel mislukte verificatiepogingen. Account tijdelijk buiten werking.",
+         "finished" : "Voltooid",
+         "invalid_hostname" : " is geen geldige hostnaam",
+         "kbps" : "kbps",
+         "login_failed" : "Aanmelden mislukt",
+         "no_server_response" : "Geen respons van de server",
+         "ok" : "OK",
+         "operation_complete_success" : "De bewerking is voltooid.",
+         "please_complete_mandatory" : "Vul dit verplichte veld in.",
+         "please_enter_numeric" : "Voer een numerieke waarde in.",
+         "please_enter_valid_email" : "Geef een geldig e-mailadres in.",
+         "please_enter_valid_URL" : "Voer een geldige URL in.",
+         "please_enter_value_larger" : "Voer een waarde in die hoger is dan ",
+         "please_enter_value_smaller" : "Voer een waarde in die lager is dan ",
+         "reloading_status" : "Status opnieuw laden...",
+         "reloading_status_title" : "Bezig met vernieuwen",
+         "unassigned" : "Niet toegewezen",
+         "unspecified_error" : "Er is een niet-gespecificeerde fout opgetreden:",
+         "waiting_for_response" : "Wachten op antwoord...",
+         "authentication_failed" : "Authenticatie mislukt",
+         "invalid_request" : "Verzoek is null of ongeldig"
+      }
+   }
+}

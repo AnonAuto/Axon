@@ -1,0 +1,30 @@
+#!/bin/sh
+#-------------------------------------------------
+#
+# Copyright (c) 2013 TASER International, Inc.
+# All Rights Reserved
+# TASER Data Classification: CONFIDENTIAL
+#
+# this script has been modified for ETMv2.  It retains the absence of the
+# .sh suffix for the express purpose of not requiring a documentation
+# change for the field service team.
+
+/etc/init.d/etm.sh stop
+/sbin/uci set etm.etm.agency="New Agency"
+/sbin/uci set etm.etm.name="New Name"
+/sbin/uci set etm.etm.location="New Location"
+/sbin/uci delete etm.etm.device_home
+/sbin/uci delete etm.operation.agency
+/sbin/uci delete etm.operation.agency_domain
+/sbin/uci delete etm.operation.agency_id
+/sbin/uci delete etm.operation.access_key
+/sbin/uci delete etm.operation.secret_key
+/sbin/uci delete etm.operation.authenticated
+/sbin/uci set etm.operation.mode=none
+/sbin/uci commit etm
+# update the dock's ssh password after all registration of agency is removed
+/etm/bin/update-passwd.sh
+# reset timeserver info that ties to agency info
+sed -i "/ntpcheck/d" "/var/state/etm" 
+sed -i "/ntpcheck/d" "/tmp/status.config" # cache by UI from /var/state/etm when hit btnRefresh
+/etc/init.d/etm.sh start

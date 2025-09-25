@@ -1,0 +1,558 @@
+{
+   "ETM" : {
+      "admin" : {
+         "admin_title" : "Administración de la base",
+         "configuring_msg" : "Configurando. Esto puede tardar unos 40 segundos aproximadamente...",
+         "headers" : {
+            "administration" : "Administración de la base"
+         },
+         "page_title" : "Ajustes del administrador",
+         "rebooting_msg" : "Reiniciando, esto puede tardar unos 60 segundos aproximadamente...",
+         "saving_settings" : "Guardando parámetros...",
+         "sections" : {
+            "admin_maint" : {
+               "legend" : "Mantenimiento",
+               "reboot" : "Reinicie la base"
+            },
+            "admin_ssl" : {
+               "accept_only_https" : "Aceptar solo solicitudes SSL",
+               "legend" : "Configuración de SSL",
+               "regen_ssl" : "Regenerar certificado SSL",
+               "require_https_time" : "Requiere SSL para comprobación de tiempo inicial"
+            },
+            "device_id" : {
+               "etm_name" : "Nombre de la base",
+               "home" : "Ubicación del dispositivo",
+               "legend" : "Identificación del dispositivo",
+               "location" : "Ubicación",
+               "msg" : "La información que se encuentra más abajo le ayuda a identificar con qué dispositivo de la base se está comunicando. Esta información también la usa Evidence.com para facilitar datos sobre el estado de dispositivos.",
+               "your_agency" : "Su agencia"
+            },
+            "password_change" : {
+               "confirm_new_password" : "Vuelva a escribir la nueva contraseña",
+               "current_password" : "Contraseña actual",
+               "error_no_password" : "Para cambiar las credenciales del administrador se necesita la contraseña actual.",
+               "legend" : "Cambiar credenciales",
+               "msg" : "Gestione el nombre de usuario y la contraseña de administración usada para acceder a esta base.",
+               "new_password" : "Contraseña Nueva",
+               "username" : "Nombre de usuario"
+            },
+            "snmp" : {
+               "authentication" : "Autenticación",
+               "disable" : "Desactivar",
+               "enable_snmp" : "Activar SNMP",
+               "enc_password" : "Contraseña de cifrado",
+               "encrypt_msg" : "Deje el campo \"Contraseña de cifrado\" en blanco si quiere usar la contraseña de SNMP para el cifrado.",
+               "encryption" : "Cifrado",
+               "error_no_password" : "Para cambiar el nombre de usuario de SNMP se necesita la contraseña correspondiente.",
+               "error_title" : "Error al establecer SNMP",
+               "legend" : "Servidor SNMP",
+               "legend_config" : "Configuración de SNMP",
+               "msg" : "SNMP está desactivado de forma predeterminada. Para activarlo, use la casilla e introduzca la configuración.",
+               "password" : "Contraseña de SNMP",
+               "username" : "Nombre de usuario de SNMP"
+            }
+         },
+         "set_configuration_error_title" : "Establecer configuración",
+         "settings_changed" : {
+            "p1" : "Los ajustes de su agencia han cambiado.",
+            "p2" : "Pulse el botón [Actualizar] para aplicar los cambios de su agencia en la base.",
+            "p3" : "De lo contrario, pulse [Cancelar] y luego actualice los ajustes manualmente. Los cambios se sincronizarán con su agencia.",
+            "p4" : "Lista de cambios:",
+            "title" : "Ajustes modificados"
+         }
+      },
+      "axonsup" : {
+         "headers" : {
+            "data" : "Datos de asistencia"
+         },
+         "page_title" : "Asistencia de Axon",
+         "sections" : {
+            "data" : {
+               "legend" : "Datos de asistencia de Axon",
+               "msg" : "Los datos que aparecen más abajo pueden resultarle útiles cuando se comunique con un representante de atención al cliente de Axon.",
+               "result1" : "Resultado 1:",
+               "result2" : "Resultado 2:"
+            }
+         }
+      },
+	  "cgi" : {
+          "csrf_fail" : "Error de cookies",
+          "invalid_auth" : "La contraseña o el nombre de usuario no es válido.",
+          "invalid_cmd" : "Comando no válido",
+          "invalid_domain" : "Sin dominio especificado",
+          "invalid_proxy_config" : "Configuración de proxy no válida",
+          "invalid_proxy_user_pass" : "Falta el nombre de usuario o la contraseña",
+          "invalid_snmp_user" : "No se pudo aplicar la configuración de SNMP. Nombre de usuario de SNMP no válido.",
+          "no_content" : "Sin contenido",
+          "no_snmp_pw" : "No se pudo aplicar la configuración de SNMP. No se proporcionó contraseña.",
+          "not_released" : "No disponible",
+          "ok" : "Aceptar",
+          "unable_disable_snmp" : "No se pudo desactivar la configuración de SNMP.",
+          "unable_set_snmp" : "No se pudo aplicar la configuración de SNMP.",
+          "unable_set_snmp_auth" : "No se pudo aplicar la autenticación de la configuración de SNMP.",
+          "unable_set_snmp_enable" : "No se pudo activar la configuración de SNMP.",
+          "unable_set_snmp_enc" : "No se pudo aplicar el cifrado de la configuración de SNMP.",
+          "unable_set_snmp_pass" : "No se pudo aplicar la contraseña de la configuración de SNMP.",
+          "unable_set_snmp_user" : "No se pudo aplicar el nombre de usuario de la configuración de SNMP.",
+          "unable_set_sslonly" : "No se pudo cambiar el ajuste \"Aceptar solo solicitudes SSL\"",
+          "unknown_err" : "Error desconocido",
+          "web_creds_err" : "No se pudieron actualizar las credenciales de administrador.",
+          "web_creds_invalid_username" : "No se pudieron actualizar las credenciales de administrador: el nombre de usuario no es válido.",
+          "web_creds_invalid_cur_pass" : "No se pudieron actualizar las credenciales de administrador: la contraseña actual no es válida.",
+          "web_creds_invalid_new_pass" : "No se pudieron actualizar las credenciales de administrador: la nueva contraseña no es válida."
+      },
+      "common" : {
+        "admin_name_allowed_characters" : "Nombre de usuario no válido. Caracteres permitidos: alfanuméricos, espacio y # ! @ ( ) [ ] - . _",
+        "at_least" : "debe tener al menos",
+        "cannot_contain_duplicate" : "no puede incluir caracteres duplicados",
+        "cannot_contain_more_than" : "no puede tener más de",
+        "cannot_contain_username" : "no puede incluir su nombre de usuario u otras palabras comunes",
+        "character" : " carácter",
+        "characters" : " caracteres",
+        "characters_in_seq" : " caracteres en secuencia",
+        "input_valid_IP" : "Introduzca una dirección IP válida",
+        "less_than" : "debe tener menos de",
+        "mandatory_field" : "Este campo es obligatorio.",
+        "must_contain" : "debe tener",
+        "no" : "No",
+        "not_secure" : "no es lo suficientemente segura",
+        "please_provide" : "Incluya al menos",
+        "select_valid_entry" : "Elija una entrada válida de la lista",
+        "snmp_name_allowed_characters" : "Nombre de usuario no válido. Caracteres permitidos: alfanuméricos y # ! @ ( ) [ ] - . _",
+        "value_not_equal" : "El valor es diferente al campo de nueva contraseña",
+        "yes" : "Sí"
+      },
+      "configassist" : {
+         "dlg_assign" : {
+            "msg1" : "Este formulario cambia el propietario de un dispositivo al usuario especificado más abajo. El nombre de usuario y la contraseña no se almacenan en la base.",
+            "msg2" : "Introduzca los datos de autenticación a continuación y haga clic en \"Aceptar\" para asignarse este dispositivo. De lo contrario, haga clic en \"Cancelar\" para regresar.",
+            "password" : "Contraseña",
+            "username" : "Nombre de usuario"
+         },
+         "dlg_format" : {
+            "msg" : "Esto actualizará la configuración y el firmware del dispositivo. No se perderá ningún dato."
+         },
+         "dlg_format_auth" : {
+            "admin_password" : " Contraseña del administrador",
+            "admin_username" : " Nombre del usuario admistrador",
+            "msg" : "Debe tener permisos de administrador de Evidence.com para hacer esta acción. Su nombre de usuario y contraseña no están almacenados en la base. Introduzca sus datos de autenticación más abajo y haga clic en \"Aceptar\" para formatear este dispositivo. De lo contrario, haga clic en \"Cancelar\" para regresar."
+         },
+         "err_cannot_get_log" : {
+            "msg" : "Ha ocurrido un error al intentar leer el registro de actividad en este dispositivo.",
+            "title" : "No se puede leer el archivo de registro desde en dispositivo"
+         },
+         "err_cannot_read_file" : {
+            "msg" : "Ha ocurrido un error al leer la información de evidencia y el contenido multimedia en este dispositivo. Si el error persiste, hable con el equipo de asistencia técnica de Axon.",
+            "title" : "No se puede leer el archivo de evidencia en este dispositivo."
+         },
+         "err_cannot_rm_log" : {
+            "msg" : "Ha ocurrido un error al intentar borrar el registro de actividad en este dispositivo después de cargarlo a Evidence.com",
+            "title" : "No se puede borrar el archivo de registro en este dispositivo"
+         },
+         "err_device_lost_communication" : {
+            "msg" : "La conexión de este dispositivo ha dejado de funcionar. Desacople y vuelva a acoplar el dispositivo. Si el problema persiste, hable con el administrador de su agencia para obtener ayuda con este dispositivo.",
+            "title" : "La base ha perdido comunicación con este dispositivo."
+         },
+         "err_device_maintenance" : {
+            "msg" : "Esta base está haciendo un mantenimiento automático en este dispositivo. El dispositivo volverá a su funcionamiento normal automáticamente. No hace falta que haga nada.",
+            "title" : "Esta base está haciendo un mantenimiento automático en este dispositivo."
+         },
+         "err_devtype_cfg_failure" : {
+             "msg" : "No se ha podido establecer el modo de cámara corporal en el dispositivo. Consulte las indicaciones para resolver problemas.",
+             "title" : "Este dispositivo no se ha establecido como cámara corporal"
+         },
+         "err_format_failure" : {
+            "msg" : "El formato de la unidad del dispositivo ha fallado. Consulte las indicaciones para resolver problemas.",
+            "title" : "El formato de la unidad de este dispositivo ha fallado"
+         },
+         "err_fwup_cfg_failure" : {
+             "msg": "No se ha podido establecer el campo de actualización de firmware. Consulte las indicaciones para resolver problemas.",
+             "title" : "El firmware de este dispositivo no se ha establecido como actualizable."
+         },
+         "err_inactive_device" : {
+            "msg" : "El dispositivo no está activo en esta agencia. Conecte el dispositivo a Evidence Sync y asígnelo a un usuario.",
+            "title" : "Su dispositivo no está activo en su agencia"
+         },
+         "err_invalid_device_type" : {
+            "msg" : "No se ha podido configurar el tipo determinado en el dispositivo. Consulte las indicaciones para resolver problemas.",
+            "title" : "El dispositivo no es válido"
+         },
+         "err_invalid_model" : {
+            "msg" : "El dispositivo conectado a la base no es un dispositivo válido de Axon. Quítelo de la base.",
+            "title" : "La base no reconoce este tipo de dispositivo"
+         },
+         "err_invalid_serial" : {
+            "msg" : "El dispositivo conectado a la base no tiene un número de serie válido. Esto puede ser un error intermitente. Quite y vuelva a conectar el dispositivo en la base. Si el error persiste, devuelva el dispositivo.",
+            "title" : "Este dispositivo tiene un número de serie no válido"
+         },
+         "err_inventory_failure" : {
+            "msg" : "Ha ocurrido un error al leer la información de evidencia y el contenido multimedia de este dispositivo. Si el error persiste, hable con el equipo de asistencia técnica de Axon.",
+            "title" : "No se puede leer la lista de evidencia en este dispositivo."
+         },
+         "err_mount_failed" : {
+            "msg" : "Acceda a la página de administración y reinicie la base.",
+            "title" : "Se ha producido un error al conectar el dispositivo."
+         },
+         "err_network_failed" : {
+            "msg" : "Lo más probable es que se deba a una mala conexión a Internet, a una mala conexión con Evidence.com, a que Evidence.com está sobrecargado o a que Evidence.com está en mantenimiento. Esto no es un error crítico. La base reintentará llevar a cabo la operación. ",
+            "title" : "La base ha encontrado un problema de red durante el procesamiento de este dispositivo"
+         },
+         "err_no_usb" : {
+            "msg" : "La base no se puede comunicar con este dispositivo. Esto puede ser un error intermitente. Quite y vuelva a conectar el dispositivo en la base. Si el error persiste, devuelva el dispositivo.",
+            "title" : "No hay comunicación con el dispositivo"
+         },
+         "err_not_offline" : {
+            "msg" : "La base está configurada para funcionar sin conexión, por lo tanto, no procesará dispositivos configurados con el modo en línea. Si quiere establecer el modo sin conexión en este dispositivo, conéctelo a Evidence Sync y siga las instrucciones.",
+            "title" : "Este dispositivo no está configurado para el funcionamiento sin conexión"
+         },
+         "err_not_online" : {
+            "msg" : "La base está configurada para funcionar en línea, por lo tanto, no procesará dispositivos configurados con el modo sin conexión. Si quiere establecer el modo en línea en este dispositivo, conéctelo a Evidence Sync y siga las instrucciones.",
+            "title" : "Este dispositivo no está configurado para el funcionamiento en línea"
+         },
+         "err_system_maintenance" : {
+            "msg" : "Esta base está haciendo un mantenimiento automático. El dispositivo volverá a su funcionamiento normal automáticamente. No hace falta que haga nada.",
+            "title" : "La base está haciendo un mantenimiento interno."
+         },
+         "err_transfer_failed" : {
+            "msg" : "Lo más probable es que se deba a una mala conexión a Internet, a una mala conexión con Evidence.com, a que Evidence.com está sobrecargado o a que Evidence.com está en mantenimiento. Esto no es un error crítico. La base intentará volver a cargar el archivo.",
+            "title" : "La base no ha podido transferir un video desde este dispositivo"
+         },
+         "err_transfer_failed_noretry" : {
+            "msg" : "Lo más probable es que esto sea un problema del dispositivo. Hable con el equipo de asistencia técnica de Axon.",
+            "title" : "Ha habido un error permanente en la base al transferir un video desde este dispositivo"
+         },
+         "err_unknown_port_type" : {
+            "msg" : "El tipo de puerto en el que está conectado el dispositivo no es compatible o no se conoce. Consulte las indicaciones para resolver problemas.",
+            "title" : "Tipo de puerto desconocido"
+         },
+         "err_wrong_agency" : {
+            "msg" : "Este dispositivo no se encuentra asignado a su agencia actualmente. Comuníquese con el administrador de su agencia para obtener ayuda con este dispositivo.",
+            "title" : "Este dispositivo no está asignado a su agencia."
+         },
+         "if_problem_continues" : "Si este problema persiste, hable con el equipo de asistencia técnica de Axon:",
+         "more_help" : "Para obtener más ayuda con este problema, contacte con el equipo de asistencia técnica de Axon:",
+         "no_dns" : {
+            "msg" : "No hemos podido localizar un servidor DNS. Esto suele deberse a una dirección IP no válida configurada en su servidor DNS. Le recomendamos verificar los ajustes de DNS en la página de red.",
+            "return_msg" : "Haga clic en \"Aceptar\" para ir a la página de red y verificar la información de DNS, o pulse ESC para cerrar esta ventana.",
+            "title" : "No se ha podido encontrar un servidor DNS"
+         },
+         "no_ecom" : {
+            "msg" : "No hemos podido autenticar esta base con Evidence.com. Esto suele deberse a que el usuario y contraseña de registro de su agencia y de esta base no son válidas o no existen. Le recomendamos registrar la base en la página de operaciones.",
+            "return_msg" : "Haga clic en \"Aceptar\" para ir a la página de operaciones y registrar la base, o pulse ESC para cerrar esta ventana.",
+            "title" : "No hay autenticación de Evidence.com"
+         },
+         "no_gateway" : {
+            "msg" : "No hemos podido contactar con la puerta de enlace predeterminada de su red. Esto suele deberse a una dirección IP no válida. Sin embargo, algunas puertas de enlace no responden a \"pings\" de red.",
+            "return_msg" : "Haga clic en \"Aceptar\" para ir a la página de red y cambiar la puerta de enlace predeterminada, o pulse ESC para cerrar esta ventana.",
+            "title" : "No se ha encontrado ninguna puerta de enlace"
+         },
+         "no_https" : {
+            "msg" : "No hemos podido comunicarnos mediante un canal seguro (HTTPS). Esto suele deberse a que su firewall ha bloqueado el puerto HTTPS (443). Le recomendamos verificar que el puerto HTTPS esté abierto en su firewall.",
+            "return_msg" : "Haga clic en \"Aceptar\" para regresar a la página de estado.",
+            "title" : "No hay ninguna conexión HTTPS disponible."
+         },
+         "no_ip_dynamic" : {
+            "msg" : "No hemos podido obtener una dirección IP de su servidor DHCP. Esto suele deberse a que no hay ningún servidor DHCP activo en su red. Deberá introducir una configuración IP estática para esta base.",
+            "return_msg" : "Haga clic en \"Aceptar\" para ir a la página de red e introducir información de IP estática, o pulse ESC para cerrar esta ventana.",
+            "title" : "No hay ninguna dirección IP."
+         },
+         "no_ip_static" : {
+            "msg" : "No hemos podido obtener la dirección IP que especificó en la configuración de IP estática para esta base. Esto suele deberse a que se usa la misma IP estática para varios equipos. Le recomendamos verificar la dirección IP que ha introducido en la página de red.",
+            "return_msg" : "Haga clic en \"Aceptar\" para ir a la página de red y verificar la configuración, o pulse ESC para cerrar esta ventana.",
+            "title" : "No hay ninguna dirección IP."
+         },
+         "no_ntp" : {
+            "msg" : "No hemos podido comunicarnos con un servidor NTP. Esto suele deberse al bloqueo de los puertos 80 y 123 en un firewall. Le recomendamos verificar que el puerto 80 o el 123 estén abiertos en su firewall.",
+            "return_msg" : "Haga clic en \"Aceptar\" para ir a la página de red y cambiar su servidor de horario, o pulse ESC para cerrar esta ventana.",
+            "title" : "El servidor NTP no responde"
+         },
+         "no_status" : {
+            "msg" : "Aún no hemos podido determinar su tipo de red. Esto puede deberse a que nuestro sistema todavía se está iniciando. Le sugerimos esperar 2 o 3 minutos y actualizar esta página. La página de estado también se actualizará si llega nueva información.",
+            "return_msg" : "Haga clic en \"Aceptar\" para regresar a la página de estado.",
+            "title" : "No se ha encontrado ningún estado."
+         },
+         "title" : "Asistente de configuración",
+         "we_found" : "Después de examinar su red, hemos encontrado el siguiente problema:",
+         "welcome" : "Le damos la bienvenida al asistente de configuración"
+      },
+      "device_status_codes" : {
+         "capchk" : "Comprobación de capacidad",
+         "cfg" : "Configurando",
+         "chg" : "Cargando",
+         "del" : "Eliminando",
+         "device_maint" : "Mantenimiento de dispositivos",
+         "devid" : "Identificando",
+         "err" : "Error (reintento pendiente)",
+         "fail" : "Error",
+         "fwdone" : "Firmware actualizado",
+         "fwupdate" : "Actualizando firmware",
+         "inact" : "Inactivo",
+         "init" : "Inicializando",
+         "inventory" : "Inventario",
+         "logerase" : "Borrando registro",
+         "logsend" : "Cargando registro",
+         "lost" : "Comunicación perdida",
+         "net_retry" : "Reintentar conexión de red",
+         "new" : "Nuevo dispositivo",
+         "nonet" : "Red fuera de servicio",
+         "plugin" : "Conectando",
+         "proc" : "Transfiriendo archivo",
+         "rdy" : "Listo",
+         "register" : "Registrando",
+         "summary" : "Obtener resumen",
+         "sys_maint" : "Mantenimiento del sistema",
+         "unk" : "Desconocido",
+         "unsupported" : "No compatible",
+         "wait" : "Esperando"
+      },
+      "diag" : {
+         "headers" : {
+            "diag" : "Diagnóstico"
+         },
+         "page_title" : "Estado",
+         "sections" : {
+            "netdiag" : {
+               "command" : "Comando:",
+               "commands" : {
+                  "date" : "FECHA informada por la base",
+                  "ifconfig" : "IFCONFIG estadísticas de la red",
+                  "nslookup_goog" : "NSLOOKUP google.com",
+                  "nslookup_taser" : "NSLOOKUP taser.evidence.com",
+                  "ping_8888" : "PING 8.8.8.8",
+                  "ping_gateway" : "PING puerta de enlace predeterminada",
+                  "ping_goog" : "PING google.com",
+                  "tail_etmlog" : "TAIL 100 líneas de registro de la base",
+                  "tail_syslog" : "TAIL 100 líneas de syslog",
+                  "tr_goog" : "TRACEROUTE google.com",
+                  "tr_taser" : "TRACEROUTE taser.evidence.com"
+               },
+               "execute" : "Ejecutar",
+               "legend" : "Diagnóstico de red",
+               "menu" : "Seleccione la prueba diagnóstica del menú desplegable y pulse \"Ejecutar\"...",
+               "msg1" : "Los comandos proporcionados se usan para diagnosticar problemas de conectividad de red.",
+               "msg2" : "No ejecute los comandos a menos que se lo haya indicado un representante de atención al cliente de Axon.",
+               "result" : "Resultado:"
+            }
+         }
+      },
+      "firmware" : {
+         "current_version" : "Versión actual de firmware",
+         "dvr_update_starting" : "Contactando con el servidor de Axon para buscar actualizaciones... La actualización del firmware comenzará cuando el DVR termine de cargar archivos.",
+         "etm_update_starting" : "La actualización del firmware ha comenzado. Regrese en unos minutos para ver si la versión se ha actualizado...",
+         "headers" : {
+            "firmware_mgmt" : "Gestión de firmware"
+         },
+         "not_released" : "No disponible",
+         "page_title" : "Actualización de firmware",
+         "sections" : {
+            "device_firmware_update" : {
+               "legend" : "Actualización de firmware del dispositivo",
+               "msg" : "Para actualizar el firmware de todos los dispositivos acoplados, haga clic en el botón que aparece a continuación. Si hay una actualización disponible, se instalará automáticamente en todos los dispositivos.",
+               "device_name" : "Nombre del dispositivo",
+               "released_firmware" : "Firmware publicado",
+               "early_access_firmware" : "Acceso anticipado al firmware",
+               "perform_fw_update" : "Actualizar dispositivos de Axon"
+            },
+            "etm_firmware_update" : {
+               "check_update" : "Actualizar firmware",
+               "legend" : "Actualización de firmware de la base",
+               "msg" : "Para actualizar el firmware de su base, haga clic en ACTUALIZAR FIRMWARE. La base contactará con los servidores de Axon y buscará la última versión del firmware. Si hay una nueva versión disponible, se instalará automáticamente.",
+               "show_version_details" : "Detalles",
+               "version_details" : "Detalles"
+            }
+         },
+         "update_failed" : "No se ha podido iniciar la actualización del firmware",
+         "update_title" : "Actualización de firmware"
+      },
+      "general" : {
+         "closeparen" : ")",
+         "copyright" : "&copy; 2023 Axon Enterprise, Inc. Todos los derechos reservados",
+         "error_code" : "código de error",
+         "firmware" : "Firmware",
+         "footnote" : "*Las baterías de TASER incluyen firmware para mangos de TASER 7 (T7) y TASER 10 (T10), así como para BLE de TASER.",
+         "openparen" : "(",
+         "refresh" : "Actualizar",
+         "sections" : {
+            "button_bar" : {
+               "discard_changes" : "Descartar cambios",
+               "loading_wait" : "Cargando configuración... Aguarde...",
+               "reset_registration" : "Restablecer registro",
+               "save_changes" : "Guardar cambios",
+               "continue" : "Continuar"
+            },
+            "snmp" : {
+               "showhide_password" : "Mostrar/ocultar contraseña de SNMP"
+            }
+         }
+      },
+      "index" : {
+         "footer" : {
+            "help_center" : "Centro de ayuda"
+         },
+         "headers" : {
+            "system_status" : "Estado del sistema"
+         },
+         "page_title" : "Estado",
+         "sections" : {
+            "devices" : {
+               "device" : "Dispositivo",
+               "firmware" : "Firmware*",
+               "hidden_info" : "Haga clic para ver los datos",
+               "legend" : "Dispositivos",
+               "owner" : "Propietario",
+               "serial" : "N.º de serie",
+               "status" : "Estado"
+            },
+            "networking" : {
+               "active" : "Activo",
+               "dns_server" : "Servidor DNS",
+               "ecom_registration" : "Registro de Evidence.com",
+               "gateway" : "Puerta de enlace (gateway) de Internet",
+               "https_port" : "HTTPS (Puerto 443)",
+               "ipaddress" : "Dirección IP",
+               "legend" : "Conexión de red",
+               "mac_address" : "Dirección MAC",
+               "not_registered" : "Sin registrar",
+               "serial_number" : "N.º de serie",
+               "time_server" : "Servidor de hora (Time Server)"
+            }
+         }
+      },
+      "links" : {
+         "administration" : "Administración",
+         "firmware" : "Firmware",
+         "networking" : "Conexión de red",
+         "operations" : "Operaciones",
+         "status" : "Estado"
+      },
+      "lookups" : {
+         "netmode" : {
+            "dynamic" : "dinámica",
+            "static" : "estática"
+         }
+      },
+      "networking" : {
+         "headers" : {
+            "net_setup" : "Configuración de red"
+         },
+         "page_title" : "Configuración de red",
+         "restart_title" : "Reinicio de la red",
+         "saved_restarting" : "La configuración se ha guardado. La red se está reiniciando...",
+         "sections" : {
+            "conn_type" : {
+               "label_dynamic" : "IP dinámica (DHCP)",
+               "label_static" : "IP estática",
+               "legend" : "Tipo de conexión",
+               "msg" : "Hay dos formas en las que la base puede funcionar con su conexión de red actual para permitir que los dispositivos AXON tengan acceso a Internet: con una dirección IP dinámica (también llamada DHCP) o con una dirección IP estática. Elija el método adecuado a continuación:"
+            },
+            "static_ip" : {
+               "dns_servers" : "Servidores DNS",
+               "gateway" : "Puerta de enlace predeterminada (Default gateway)",
+               "ip_address" : "Dirección IP",
+               "legend" : "Configuración de IP estática",
+               "msg" : "Si su red no usa DHCP, o si solo se puede acceder a Internet mediante la asignación de una dirección IP estática, deberá facilitar información de configuración para la base. Si no tiene esta información, hable con el administrador de la red.",
+               "subnet_mask" : "Máscara de subred"
+            },
+            "throttle" : {
+               "label_mbps" : "Mbps",
+               "legend" : "Limitación de subida",
+               "max_speed" : "Velocidad máxima de carga",
+               "msg" : "Por lo general, la base usa todo el ancho de banda disponible para cargar videos de las unidades AXON lo más rápido posible. Si lo prefiere, a continuación puede limitar la velocidad de transferencia (medida en megabits por segundo). Un valor de cero le indicará a la base que debe usar todo el ancho de banda disponible."
+            }
+         }
+      },
+      "ops" : {
+         "an_error_occurred" : "Ha ocurrido un error",
+         "generating_tokens" : "Generando tokens de seguridad...",
+         "headers" : {
+            "operations" : "Operaciones"
+         },
+         "page_title" : "Operaciones generales",
+         "regenerate_keys_query" : "Ya se ha autenticado en Evidence.com. ¿Quiere volver a generar las claves de seguridad?",
+         "regenerate_keys_title" : "Volver a generar claves",
+         "register_with_ecom" : "Registrar en Evidence.com",
+         "registering_etm" : "Registrando la base..",
+         "processing" : "Procesando...",
+         "poll_uri_code" : "Recuperando el enlace y el código de activación...",
+         "reset_reg" : "Restablecer registro",
+         "reset_reg_failed" : "No se puede restablecer el registro",
+         "resetting_reg_dock" : "Reseteando el registro de la dock a los valores por defecto. Recargando la página en 30 segundos.",
+         "restarting_etm" : "Reiniciando la base. Esto puede tardar unos 30 segundos...",
+         "sections" : {
+            "e_com_reg" : {
+               "admin_password" : " Contraseña del administrador",
+               "admin_username" : " Nombre del usuario admistrador",
+               "agency_name" : "Agencia de Evidence.com",
+               "already_registered" : "Esta base ya se ha registrado en Evidence.com",
+               "domain_name" : "Nombre del dominio",
+               "legend" : "Registro de Evidence.com",
+               "msg" : "Para registrar esta base en su agencia de Evidence.com, introduzca el nombre, el nombre de usuario y la contraseña de su agencia de Evidence.com. Cuando esté registrada en Evidence.com, la base transferirá todos los archivos multimedia a su cuenta de Evidence.com. Su nombre de usuario y contraseña no están almacenados en la base de carga.",
+               "msg_shorten" : "Para registrar esta base en su agencia de Evidence.com, introduzca el nombre de su agencia de Evidence.com. Cuando esté registrada en Evidence.com, la base transferirá todos los archivos multimedia a su cuenta de Evidence.com.",
+               "msg_login_uri_code" : "Abra el enlace y proporcione el código para completar el registro:"
+            }
+         }
+      },
+      "proxy": {
+         "headers": {
+            "proxy_setup": "Configuración de proxy"
+         },
+         "page_title": "Ajustes del proxy",
+         "proxy_test_title": "Prueba de proxy",
+         "proxy_test_in_progress": "Prueba de proxy en curso...",
+         "proxy_test_success_msg": "Prueba de proxy correcta",
+         "proxy_test_fail_msg": "Error en la prueba de proxy",
+         "configuration_saved_title": "Configuración de proxy guardada",
+         "configuration_saved_msg": "La configuración del proxy se ha guardado y se aplicará en breve",
+         "sections": {
+            "http_proxy": {
+               "legend": "Proxy HTTP",
+               "msg": "Configurar el proxy HTTP redirigirá todas las solicitudes HTTP al servidor de proxy designado.",
+               "enable": "Activar",
+               "legend_config": "Configuración",
+               "legend_advanced_config": "Configuración avanzada",
+               "disable_dns_check": "Desactivar comprobación de DNS",
+               "msg_config": "El nombre de usuario y la contraseña son opcionales.",
+               "host": "Host de proxy",
+               "port": "Puerto de proxy",
+               "username": "Nombre de usuario",
+               "password": "Contraseña",
+               "test_connection": "Probar conexión"
+            }
+         }
+      },
+      "strings" : {
+         "an_error_occurred" : "Ha ocurrido un error",
+         "axon_flex" : "Axon Flex",
+         "calculating_rate" : "Calculando...",
+         "cancel" : "Cancelar",
+         "cannot_get_data_too_many_failed_login_attempts" : "No se pueden obtener datos debido a demasiados intentos fallidos de inicio de sesión",
+         "click_for_details" : "Haga clic para ver más información",
+         "device_error" : "Error de dispositivo",
+         "error" : "Error",
+         "error_download" : "Error al descargar https",
+         "error_internal" : "Error interno",
+         "failed_auth": "Demasiados intentos fallidos de autentificación. Cuenta suspendida temporalmente.",
+         "finished" : "Finalizado",
+         "invalid_hostname" : " no es un nombre de host válido",
+         "kbps" : "Kbps",
+         "login_failed" : "Error al iniciar sesión",
+         "no_server_response" : "No hay respuesta del servidor",
+         "ok" : "Aceptar",
+         "operation_complete_success" : "La operación se ha completado.",
+         "please_complete_mandatory" : "Complete este campo obligatorio.",
+         "please_enter_numeric" : "Introduzca un valor numérico.",
+         "please_enter_valid_email" : "Introduzca una dirección de correo electrónico válida.",
+         "please_enter_valid_URL" : "Introduzca una URL válida.",
+         "please_enter_value_larger" : "Introduzca un valor superior a",
+         "please_enter_value_smaller" : "Introduzca un valor inferior a",
+         "reloading_status" : "Recargando el estado…",
+         "reloading_status_title" : "Refrescando",
+         "unassigned" : "Sin asignar",
+         "unspecified_error" : "Ha ocurrido un error no especificado:",
+         "waiting_for_response" : "Esperando una respuesta...",
+         "authentication_failed" : "Error de autenticación",
+         "invalid_request" : "La solicitud es nula o no válida"
+      }
+   }
+}

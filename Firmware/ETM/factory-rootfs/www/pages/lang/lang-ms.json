@@ -1,0 +1,558 @@
+{
+   "ETM" : {
+      "admin" : {
+         "admin_title" : "Pentadbiran Dok",
+         "configuring_msg" : "Mengkonfigurasi, Ini akan mengambil masa lebih kurang 40 saat...",
+         "headers" : {
+            "administration" : "Pentadbiran Dok"
+         },
+         "page_title" : " Tetapan Pentadbiran",
+         "rebooting_msg" : "But semula, Ini akan mengambil masa lebih kurang 60 saat...",
+         "saving_settings" : "Menyimpan tetapan...",
+         "sections" : {
+            "admin_maint" : {
+               "legend" : "Penyelenggaraan",
+               "reboot" : "But Semula Dok"
+            },
+            "admin_ssl" : {
+               "accept_only_https" : "Terima Permintaan SSL sahaja",
+               "legend" : "Konfigurasi SSL",
+               "regen_ssl" : "Jana Semula Pensijilan SSL",
+               "require_https_time" : "Memerlukan SSL Untuk Semakan Masa Permulaan"
+            },
+            "device_id" : {
+               "etm_name" : "Nama Dok",
+               "home" : "Halaman Utama Peranti",
+               "legend" : "Pengenalan Peranti",
+               "location" : "Lokasi",
+               "msg" : "Maklumat di bawah akan membantu anda mengenal pasti peranti Dok yang sedang berkomunikasi dengan anda. Maklumat ini juga digunakan oleh Evidence.com untuk memberikan maklumat status peranti.",
+               "your_agency" : "Agensi Anda"
+            },
+            "password_change" : {
+               "confirm_new_password" : "Taip Semula Kata Laluan Baharu",
+               "current_password" : "Kata Laluan Semasa",
+               "error_no_password" : "Kata laluan semasa diperlukan untuk mengubah kelayakan Pentadbir.",
+               "legend" : "Ubah Kelayakan",
+               "msg" : "Urus nama pengguna dan kata laluan pentadbiran yang digunakan untuk mengakses Dok ini.",
+               "new_password" : "Kata Laluan Baharu",
+               "username" : "Nama Pengguna"
+            },
+            "snmp" : {
+               "authentication" : "Pengesahan",
+               "disable" : "Nyahdayakan",
+               "enable_snmp" : "Dayakan SNMP",
+               "enc_password" : "Kata Laluan Penyulitan",
+               "encrypt_msg" : "Biarkan \"Kata Laluan Penyulitan\" kosong jika anda ingin menggunakan \"Kata Laluan SNMP\" yang sama untuk penyulitan.",
+               "encryption" : "Penyulitan",
+               "error_no_password" : "Kata laluan yang sepadan diperlukan untuk mengubah nama pengguna SNMP.",
+               "error_title" : "Ralat Menetapkan SNMP",
+               "legend" : "Pelayan SNMP",
+               "legend_config" : "Konfigurasi SNMP",
+               "msg" : "SNMP dinyahdayakan secara lalai. Untuk mendayakannya, gunakan kotak semak dan masukkan konfigurasi.",
+               "password" : "Kata Laluan SNMP",
+               "username" : "Nama Pengguna SNMP"
+            }
+         },
+         "set_configuration_error_title" : "Tetapkan Konfigurasi",
+         "settings_changed" : {
+            "p1" : "Tetapan daripada Agensi anda telah berubah!",
+            "p2" : "Tekan butang [Kemas Kini] untuk menggunakan perubahan daripada Agensi anda pada Dok.",
+            "p3" : "Jika tidak, tekan [Batal] kemudian kemas kini tetapan anda secara manual, perubahan akan disegerakkan pada Agensi anda.",
+            "p4" : "Senarai perubahan:",
+            "title" : "Tetapan diubah"
+         }
+      },
+      "axonsup" : {
+         "headers" : {
+            "data" : "Data Sokongan"
+         },
+         "page_title" : "Sokongan Axon",
+         "sections" : {
+            "data" : {
+               "legend" : "Data Sokongan Axon",
+               "msg" : "Blob data di bawah mungkin berguna apabila bekerja dengan wakil khidmat pelanggan Axon.",
+               "result1" : "Keputusan 1:",
+               "result2" : "Keputusan 2:"
+            }
+         }
+      },
+	  "cgi" : {
+          "csrf_fail" : "Ralat kuki",
+          "invalid_auth" : "Nama pengguna atau kata laluan yang tidak sah",
+          "invalid_cmd" : "Arahan tidak sah",
+          "invalid_domain" : "Tiada domain ditentukan",
+          "invalid_proxy_config" : "Konfigurasi proksi tidak sah",
+          "invalid_proxy_user_pass" : "Tiada nama pengguna atau kata laluan",
+          "invalid_snmp_user" : "Tidak dapat menggunakan konfigurasi SNMP. Nama pengguna SNMP tidak sah.",
+          "no_content" : "Tiada kandungan",
+          "no_snmp_pw" : "Tidak dapat menggunakan konfigurasi SNMP. Kata laluan tidak diberikan.",
+          "not_released" : "Belum dikeluarkan",
+          "ok" : "OK",
+          "unable_disable_snmp" : "Tidak dapat menyahdayakan konfigurasi SNMP.",
+          "unable_set_snmp" : "Tidak dapat menggunakan konfigurasi SNMP.",
+          "unable_set_snmp_auth" : "Tidak dapat menggunakan Pengesahan konfigurasi SNMP.",
+          "unable_set_snmp_enable" : "Tidak dapat mendayakan konfigurasi SNMP.",
+          "unable_set_snmp_enc" : "Tidak dapat menggunakan penyulitan konfigurasi SNMP.",
+          "unable_set_snmp_pass" : "Tidak dapat menggunakan kata laluan konfigurasi SNMP.",
+          "unable_set_snmp_user" : "Tidak dapat menggunakan nama pengguna konfigurasi SNMP.",
+          "unable_set_sslonly" : "Tidak dapat menukar tetapan 'Terima Permintaan SSL Sahaja'",
+          "unknown_err" : "Ralat tidak diketahui",
+          "web_creds_err" : "Gagal mengemaskinikan kelayakan Pentadbir.",
+          "web_creds_invalid_username" : "Gagal mengemaskinikan kelayakan Pentadbir: nama pengguna tidak sah.",
+          "web_creds_invalid_cur_pass" : "Gagal mengemaskinikan kelayakan Pentadbir: kata laluan semasa tidak sah.",
+          "web_creds_invalid_new_pass" : "Gagal mengemaskinikan kelayakan Pentadbir: kata laluan baharu tidak sah."
+      },
+      "common" : {
+        "admin_name_allowed_characters" : "Nama pengguna tidak sah. Aksara yang dibenarkan: ruang abjad angka # ! @ ( ) [ ] - . _",
+        "at_least" : "mestilah sekurang-kurangnya",
+        "cannot_contain_duplicate" : "tidak boleh mengandungi aksara pendua",
+        "cannot_contain_more_than" : "tidak boleh mengandungi lebih daripada",
+        "cannot_contain_username" : "tidak boleh mengandungi nama pengguna anda atau perkataan biasa yang lain",
+        "character" : "aksara",
+        "characters" : "aksara",
+        "characters_in_seq" : "aksara mengikut urutan",
+        "input_valid_IP" : "Sila masukkan alamat IP yang sah",
+        "less_than" : "mestilah kurang daripada",
+        "mandatory_field" : "Medan ini mesti diisi.",
+        "must_contain" : "mesti mengandungi",
+        "no" : "Tidak",
+        "not_secure" : "tidak cukup selamat",
+        "please_provide" : "Sila berikan sekurang-kurangnya",
+        "select_valid_entry" : "Sila pilih entri yang sah daripada senarai",
+        "snmp_name_allowed_characters" : "Nama pengguna tidak sah. Aksara yang dibenarkan: abjad angka # ! @ ( ) [ ] - . _",
+        "value_not_equal" : "Nilai tidak sama dengan medan Kata Laluan Baharu",
+        "yes" : "Ya"
+      },
+      "configassist" : {
+         "dlg_assign" : {
+            "msg1" : "Borang ini mengubah pemilik peranti kepada pengguna yang dinyatakan di bawah. Nama pengguna dan kata laluan tidak disimpan pada Dok.",
+            "msg2" : "Masukkan pengesahan anda di bawah dan klik \"OK\" untuk menetapkan peranti ini kepada ANDA, jika tidak, klik \"Batal\" untuk kembali.",
+            "password" : "Kata laluan",
+            "username" : "Nama pengguna"
+         },
+         "dlg_format" : {
+            "msg" : "Ini akan menyegar semula konfigurasi dan perisian tegar peranti. Tiada data akan hilang."
+         },
+         "dlg_format_auth" : {
+            "admin_password" : " Kata Laluan Pentadbiran",
+            "admin_username" : "Nama Pengguna Pentadbiran",
+            "msg" : "Anda mesti mempunyai hak Pentadbir Evidence.com untuk melakukan tindakan ini. Nama pengguna dan kata laluan anda tidak disimpan pada Dok. Masukkan pengesahan anda di bawah dan klik \"OK\" untuk memformat peranti ini, jika tidak, klik \"Batal\" untuk kembali."
+         },
+         "err_cannot_get_log" : {
+            "msg" : "Ralat berlaku semasa cuba membaca log aktiviti daripada peranti ini.",
+            "title" : "Tidak dapat membaca fail log daripada peranti ini"
+         },
+         "err_cannot_read_file" : {
+            "msg" : "Ralat berlaku semasa membaca media dan maklumat bukti daripada peranti ini. Jika ralat ini berterusan, sila hubungi sokongan teknikal Axon.",
+            "title" : "Tidak dapat membaca fail bukti daripada peranti ini."
+         },
+         "err_cannot_rm_log" : {
+            "msg" : "Ralat berlaku semasa cuba mengosongkan log aktiviti pada peranti ini selepas ia dimuat naik ke evidence.com.",
+            "title" : "Tidak dapat mengosongkan fail log pada peranti ini"
+         },
+         "err_device_lost_communication" : {
+            "msg" : "Sambungan untuk peranti ini telah berhenti berfungsi. Sila keluar dok dan dok semula peranti. Jika masalah berterusan, sila hubungi pentadbir agensi anda untuk mendapatkan bantuan dengan peranti ini.",
+            "title" : "Dok telah kehilangan komunikasi dengan peranti ini."
+         },
+         "err_device_maintenance" : {
+            "msg" : "Dok ini sedang menjalankan penyelenggaraan automatik pada peranti ini. Peranti akan menyambung semula operasi normal secara automatik. Tiada tindakan diperlukan.",
+            "title" : "Dok ini sedang menjalankan penyelenggaraan automatik pada peranti ini."
+         },
+         "err_devtype_cfg_failure" : {
+             "msg" : "Tidak dapat menetapkan peranti kepada Mod Kamera Badan. Sila rujuk arahan penyelesaian masalah. ",
+             "title" : "Peranti ini tidak ditetapkan sebagai Kamera Badan"
+         },
+         "err_format_failure" : {
+            "msg" : "Format pemacu peranti gagal. Sila rujuk arahan penyelesaian masalah.",
+            "title" : "Format pemacu peranti ini gagal"
+         },
+         "err_fwup_cfg_failure" : {
+             "msg": "Medan Kebolehkemaskinian Perisian Tegar tidak dapat ditetapkan. Sila rujuk arahan penyelesaian masalah. ",
+             "title" : "Peranti ini tidak ditetapkan sebagai perisian tegar yang boleh dikemas kini"
+         },
+         "err_inactive_device" : {
+            "msg" : "Peranti tidak aktif pada agensi ini buat masa ini. Sila sambungkan peranti kepada Penyegerakan Bukti dan tetapkan peranti kepada pengguna yang sesuai.",
+            "title" : "Peranti anda tidak aktif pada agensi anda buat masa ini"
+         },
+         "err_invalid_device_type" : {
+            "msg" : "Tidak dapat mengkonfigurasikan peranti dengan jenis yang diberikan. Sila rujuk arahan penyelesaian masalah.",
+            "title" : "Peranti tidak sah"
+         },
+         "err_invalid_model" : {
+            "msg" : "Peranti yang disambungkan kepada Dok tidak diiktiraf sebagai peranti Axon yang sah. Sila alih keluar peranti daripada Dok.",
+            "title" : "Dok tidak mengiktiraf jenis peranti ini"
+         },
+         "err_invalid_serial" : {
+            "msg" : "Peranti yang disambungkan kepada Dok tidak mempunyai nombor siri yang sah. Ini mungkin ralat berkala, sila alih keluar dan sambung semula peranti dalam Dok. Jika ralat ini berterusan, sila RMA peranti.",
+            "title" : "Peranti ini mempunyai nombor siri yang tidak sah"
+         },
+         "err_inventory_failure" : {
+            "msg" : "Ralat berlaku semasa membaca media dan maklumat bukti untuk peranti ini. Jika ralat ini berterusan, sila hubungi sokongan teknikal Axon.",
+            "title" : "Tidak dapat membaca senarai bukti daripada peranti ini."
+         },
+         "err_mount_failed" : {
+            "msg" : "Sila teruskan ke halaman Pentadbiran dan but semula Dok.",
+            "title" : "Terdapat ralat semasa menyambung kepada peranti."
+         },
+         "err_network_failed" : {
+            "msg" : "Isu ini berkemungkinan besar disebabkan oleh sambungan Internet yang teruk, sambungan yang teruk ke Evidence.com, Evidence.com mengalami beban berat atau Evidence.com terputus untuk penyelenggaraan. Isu ini bukan ralat kritikal, Dock akan mencuba semula operasi.",
+            "title" : "Dok menghadapi isu rangkaian semasa memproses peranti ini"
+         },
+         "err_no_usb" : {
+            "msg" : "Dok tidak dapat berkomunikasi dengan peranti ini. Ini mungkin ralat berkala, sila alih keluar dan sambung semula peranti dalam Dok. Jika ralat ini berterusan, sila RMA peranti.",
+            "title" : "Tidak dapat berkomunikasi dengan peranti"
+         },
+         "err_not_offline" : {
+            "msg" : "Dok ini dikonfigurasikan untuk operasi luar talian, ia tidak akan memproses peranti yang ditetapkan kepada mod dalam talian. Jika anda ingin menetapkan peranti ini kepada mod luar talian, sila sambungkan peranti kepada Penyegerakan Bukti dan ikut arahan.",
+            "title" : "Peranti ini tidak ditetapkan untuk operasi luar talian"
+         },
+         "err_not_online" : {
+            "msg" : "Dok ini dikonfigurasikan untuk operasi dalam talian, ia tidak akan memproses peranti yang ditetapkan kepada mod luar talian. Jika anda ingin menetapkan peranti ini kepada mod dalam talian, sila sambungkan peranti kepada Penyegerakan Bukti dan ikut arahan.",
+            "title" : "Peranti ini tidak ditetapkan untuk operasi dalam talian"
+         },
+         "err_system_maintenance" : {
+            "msg" : "Dok ini sedang menjalankan penyelenggaraan automatik. Peranti akan menyambung semula operasi normal secara automatik. Tiada tindakan diperlukan.",
+            "title" : "Dok sedang menjalankan penyelenggaraan dalaman."
+         },
+         "err_transfer_failed" : {
+            "msg" : "Isu ini berkemungkinan besar disebabkan oleh sambungan Internet yang teruk, sambungan yang teruk ke Evidence.com, Evidence.com mengalami beban berat atau Evidence.com terputus untuk penyelenggaraan. Isu ini bukan ralat kritikal, Dock akan mencuba semula muat naik fail.",
+            "title" : "Dok gagal memindahkan video daripada peranti ini"
+         },
+         "err_transfer_failed_noretry" : {
+            "msg" : "Ini berkemungkinan besar disebabkan oleh masalah dengan peranti. Sila hubungi sokongan teknikal Axon.",
+            "title" : "Dok mengalami ralat kekal semasa memindahkan video daripada peranti ini"
+         },
+         "err_unknown_port_type" : {
+            "msg" : "Jenis port yang disambungkan peranti tidak disokong atau tidak diketahui. Sila rujuk arahan penyelesaian masalah.  ",
+            "title" : "Jenis port tidak diketahui"
+         },
+         "err_wrong_agency" : {
+            "msg" : "Peranti ini tidak ditetapkan untuk agensi anda buat masa ini. Sila hubungi admin agensi anda untuk bantuan dengan peranti ini.",
+            "title" : "Peranti ini tidak ditetapkan kepada agensi anda buat masa ini."
+         },
+         "if_problem_continues" : "Jika masalah ini berterusan, sila hubungi sokongan teknikal Axon di:",
+         "more_help" : "Untuk mendapatkan bantuan lanjut berkenaan isu ini, sila hubungi sokongan teknikal Axon di:",
+         "no_dns" : {
+            "msg" : "Kami tidak dapat mengesan pelayan DNS. Ini biasanya terjadi disebabkan oleh alamat IP tidak sah yang dikonfigurasikan untuk pelayan DNS anda. Kami mengesyorkan anda mengesahkan tetapan DNS pada halaman Rangkaian.",
+            "return_msg" : "Klik \"OK\" di bawah untuk pergi ke halaman Rangkaian dan mengesahkan maklumat DNS, atau tekan ESC untuk menutup dialog ini.",
+            "title" : "Tidak dapat mengesan Pelayan DNS"
+         },
+         "no_ecom" : {
+            "msg" : "Kami tidak dapat mengesahkan Dok ini dengan Evidence.com. Ini biasanya terjadi disebabkan kunci pendaftaran tidak sah atau tiada untuk agensi anda dan Dok ini. Kami mengesyorkan anda mendaftarkan Dok ini menggunakan halaman Operasi.",
+            "return_msg" : "Klik \"OK\" di bawah untuk pergi ke halaman Operasi untuk mendaftarkan Dok anda atau tekan ESC untuk menutup dialog ini.",
+            "title" : "Tiada Pengesahan Evidence.com"
+         },
+         "no_gateway" : {
+            "msg" : "Kami tidak dapat menghubungi get laluan lalai rangkaian anda. Ini biasanya terjadi disebabkan alamat IP yang tidak sah, namun sesetengah get laluan tidak bertindak balas kepada \"ping\" rangkaian.",
+            "return_msg" : "Klik \"OK\" di bawah untuk pergi ke halaman Rangkaian dan mengubah get laluan lalai anda, atau tekan ESC untuk menutup dialog ini.",
+            "title" : "Tiada Get Laluan ditemui"
+         },
+         "no_https" : {
+            "msg" : "Kami tidak dapat berkomunikasi melalui saluran (HTTPS) yang selamat. Ini biasanya terjadi disebabkan port HTTPS (443) disekat oleh tembok api anda. Kami mengesyorkan anda mengesahkan bahawa port HTTPS dibuka dalam tembok api anda.",
+            "return_msg" : "Klik \"OK\" di bawah untuk kembali ke halaman status.",
+            "title" : "Tiada HTTPS tersedia."
+         },
+         "no_ip_dynamic" : {
+            "msg" : "Kami tidak dapat memperoleh alamat IP daripada pelayan DHCP anda. Ini biasanya terjadi disebabkan tiada pelayan DHCP aktif pada rangkaian anda. Anda mungkin perlu memasukkan konfigurasi IP statik untuk Dok ini.",
+            "return_msg" : "Klik \"OK\" di bawah untuk pergi ke halaman Rangkaian dan memasukkan maklumat IP statik, atau tekan ESC untuk menutup dialog ini.",
+            "title" : "Tiada Alamat IP."
+         },
+         "no_ip_static" : {
+            "msg" : "Kami tidak dapat memperoleh alamat IP yang anda tentukan dalam persediaan IP statik untuk Dok ini. Ini biasanya terjadi disebabkan penggunaan IP statik yang sama untuk lebih daripada satu komputer. Kami mengesyorkan anda mengesahkan alamat IP yang dimasukkan pada halaman rangkaian.",
+            "return_msg" : "Klik \"OK\" di bawah untuk pergi ke halaman Rangkaian dan mengesahkan tetapan anda, atau tekan ESC untuk menutup dialog ini.",
+            "title" : "Tiada Alamat IP."
+         },
+         "no_ntp" : {
+            "msg" : "Kami tidak dapat berkomunikasi dengan pelayan masa rangkaian. Ini biasanya terjadi disebabkan port 80 dan port 123 disekat pada tembok api. Kami mengesyorkan anda mengesahkan SAMA ADA port 80 atau 123 dibuka dalam tembok api anda.",
+            "return_msg" : "Klik \"OK\" di bawah untuk pergi ke halaman Rangkaian dan mengubah pelayan masa anda, atau tekan ESC untuk menutup dialog ini.",
+            "title" : "Pelayan NTP tidak bertindak balas"
+         },
+         "no_status" : {
+            "msg" : "Kami belum dapat menentukan jenis rangkaian anda. Ini mungkin disebabkan sistem kami masih belum sedia. Kami mencadangkan anda menunggu 2 atau 3 minit dan segar semula halaman ini. Halaman status juga akan disegar semula jika ada maklumat baharu masuk.",
+            "return_msg" : "Klik \"OK\" di bawah untuk kembali ke halaman status.",
+            "title" : "Tiada status ditemui."
+         },
+         "title" : "Pembantu Konfigurasi",
+         "we_found" : "Selepas menyemak rangkaian anda, kami menemui isu berikut:",
+         "welcome" : "Selamat datang ke pembantu konfigurasi."
+      },
+      "device_status_codes" : {
+         "capchk" : "Semakan Kapasiti",
+         "cfg" : "Mengkonfigurasi",
+         "chg" : "Pengecasan",
+         "del" : "Mengalih Keluar",
+         "device_maint" : "Penyelenggaraan Peranti",
+         "devid" : "Mengenal Pasti",
+         "err" : "Ralat (Cuba semula belum selesai)",
+         "fail" : "Ralat",
+         "fwdone" : "Perisian Tegar Dikemas Kini",
+         "fwupdate" : "Mengemas Kini Peralatan Tegar",
+         "inact" : "Tidak Aktif",
+         "init" : "Memulakan",
+         "inventory" : "Inventori",
+         "logerase" : "Memadam Log",
+         "logsend" : "Memuat Naik Log",
+         "lost" : "Kehilangan Komunikasi",
+         "net_retry" : "Cuba Semula Sambungan Rangkaian",
+         "new" : "Peranti Baharu",
+         "nonet" : "Rangkaian Terputus",
+         "plugin" : "Menyambung",
+         "proc" : "Memindahkan Fail",
+         "rdy" : "Sedia",
+         "register" : "Mendaftar",
+         "summary" : "Dapatkan Ringkasan",
+         "sys_maint" : "Penyelenggaraan Sistem",
+         "unk" : "Tidak Diketahui",
+         "unsupported" : "Tidak Disokong",
+         "wait" : "Menunggu"
+      },
+      "diag" : {
+         "headers" : {
+            "diag" : "Diagnostik"
+         },
+         "page_title" : "Status",
+         "sections" : {
+            "netdiag" : {
+               "command" : "Arahan:",
+               "commands" : {
+                  "date" : "TARIKH seperti yang dilaporkan oleh Dok",
+                  "ifconfig" : "Statistik rangkaian IFCONFIG",
+                  "nslookup_goog" : "NSLOOKUP google.com",
+                  "nslookup_taser" : "NSLOOKUP taser.evidence.com",
+                  "ping_8888" : "PING 8.8.8.8",
+                  "ping_gateway" : "Get laluan lalai PING",
+                  "ping_goog" : "PING google.com",
+                  "tail_etmlog" : "TAIL 100 baris log Dok",
+                  "tail_syslog" : "TAIL 100 baris syslog",
+                  "tr_goog" : "TRACEROUTE google.com",
+                  "tr_taser" : "TRACEROUTE taser.evidence.com"
+               },
+               "execute" : "Laksanakan",
+               "legend" : "Diagnostik Rangkaian",
+               "menu" : "Pilih ujian diagnostik daripada menu juntai bawah dan tekan laksanakan...",
+               "msg1" : "Arahan yang disediakan di sini digunakan untuk mendiagnosis isu sambungan rangkaian.",
+               "msg2" : "Jangan laksanakan arahan di bawah melainkan diarahkan berbuat demikian oleh wakil khidmat pelanggan Axon.",
+               "result" : "Keputusan:"
+            }
+         }
+      },
+      "firmware" : {
+         "current_version" : "Versi Perisian Tegar semasa",
+         "dvr_update_starting" : "Menghubungi pelayan Axon untuk mencari kemas kini...Kemas kini perisian tegar akan dimulakan selepas DVR selesai memuat naik fail",
+         "etm_update_starting" : "Kemas Kini Perisian Tegar telah bermula. Semak semula dalam beberapa minit untuk melihat sama ada versi telah dikemas kini...",
+         "headers" : {
+            "firmware_mgmt" : "Pengurusan Perisian Tegar"
+         },
+         "not_released" : "Belum dikeluarkan",
+         "page_title" : "Kemas Kini Perisian Tegar",
+         "sections" : {
+            "device_firmware_update" : {
+               "legend" : "Kemas Kini Perisian Tegar Peranti",
+               "msg" : "Untuk menaik taraf perisian tegar semua peranti yang sedang didok, klik butang di bawah. Jika kemas kini tersedia, ia akan dipasang secara automatik pada semua peranti.",
+               "device_name" : "Nama Peranti",
+               "released_firmware" : "Perisian Tegar yang Dikeluarkan",
+               "early_access_firmware" : "Perisian Tegar Akses Awal",
+               "perform_fw_update" : "Kemas Kini peranti Axon"
+            },
+            "etm_firmware_update" : {
+               "check_update" : "Kemas Kini Perisian Tegar",
+               "legend" : "Kemas Kini Perisian Tegar Dok",
+               "msg" : "Untuk mengemas kini perisian tegar Dok anda, klik KEMAS KINI PERISIAN TEGAR. Dok akan menghubungi pelayan Axon dan menyemak versi perisian tegar terkini. Jika versi perisian tegar baharu tersedia, ia akan dipasang secara automatik.",
+               "show_version_details" : "Butiran",
+               "version_details" : "Butiran"
+            }
+         },
+         "update_failed" : "Tidak dapat memulakan Kemas Kini Perisian Tegar",
+         "update_title" : "Kemas Kini Perisian Tegar"
+      },
+      "general" : {
+         "closeparen" : ")",
+         "copyright" : "&copy; 2023 Axon Enterprise, Inc. Hak cipta terpelihara",
+         "error_code" : "kod ralat",
+         "firmware" : "Perisian Tegar",
+         "footnote" : "*Bateri TASER membawa perisian tegar untuk Pemegang TASER 7 (T7) dan TASER 10 (T10) serta untuk TASER BLE.",
+         "openparen" : "(",
+         "refresh" : "Muat Semula",
+         "sections" : {
+            "button_bar" : {
+               "discard_changes" : "Buang Perubahan",
+               "loading_wait" : "Memuatkan Konfigurasi... sila tunggu...",
+               "reset_registration" : "Tetapkan Semula Pendaftaran",
+               "save_changes" : "Simpan Perubahan",
+               "continue" : "Teruskan"
+            },
+            "snmp" : {
+               "showhide_password" : "Tunjukkan/Sembunyikan kata laluan SNMP"
+            }
+         }
+      },
+      "index" : {
+         "footer" : {
+            "help_center" : "Pusat Bantuan"
+         },
+         "headers" : {
+            "system_status" : "Status Sistem"
+         },
+         "page_title" : "Status",
+         "sections" : {
+            "devices" : {
+               "device" : "Peranti",
+               "firmware" : "Perisian tegar*",
+               "hidden_info" : "Klik untuk melihat data",
+               "legend" : "Peranti",
+               "owner" : "Pemilik",
+               "serial" : "# Siri",
+               "status" : "Status"
+            },
+            "networking" : {
+               "active" : "Aktif",
+               "dns_server" : "Pelayan DNS",
+               "ecom_registration" : "Pendaftaran Evidence.com",
+               "gateway" : "Get Laluan Internet",
+               "https_port" : "HTTPS (Port 443)",
+               "ipaddress" : "Alamat IP",
+               "legend" : "Rangkaian",
+               "mac_address" : "Alamat MAC",
+               "not_registered" : "Tidak didaftarkan",
+               "serial_number" : "# Siri",
+               "time_server" : "Pelayan Masa"
+            }
+         }
+      },
+      "links" : {
+         "administration" : "Pentadbiran",
+         "firmware" : "Perisian Tegar",
+         "networking" : "Rangkaian",
+         "operations" : "Operasi",
+         "status" : "Status"
+      },
+      "lookups" : {
+         "netmode" : {
+            "dynamic" : "dinamik",
+            "static" : "statik"
+         }
+      },
+      "networking" : {
+         "headers" : {
+            "net_setup" : "Persediaan Rangkaian"
+         },
+         "page_title" : "Tetapan Rangkaian",
+         "restart_title" : "Mulakan Semula Rangkaian",
+         "saved_restarting" : "Tetapan disimpan, rangkaian sedang dimulakan semula...",
+         "sections" : {
+            "conn_type" : {
+               "label_dynamic" : "IP Dinamik (DHCP)",
+               "label_static" : "IP Statik",
+               "legend" : "Jenis Sambungan",
+               "msg" : "Terdapat dua cara Dok boleh berfungsi dengan rangkaian sedia ada anda untuk membolehkan akses Internet bagi peranti AXON. Sama ada melalui alamat IP Dinamik (juga dipanggil DHCP) atau IP statik. Pilih kaedah yang sesuai di bawah:"
+            },
+            "static_ip" : {
+               "dns_servers" : "Pelayan DNS",
+               "gateway" : "Get Laluan Lalai",
+               "ip_address" : "Alamat IP",
+               "legend" : "Konfigurasi IP Statik",
+               "msg" : "Jika rangkaian anda tidak menggunakan DHCP, atau akses Internet tersedia melalui penetapan IP statik sahaja, maka anda perlu memberikan maklumat konfigurasi untuk Dok. Jika anda tidak mempunyai maklumat ini, sila hubungi pentadbir rangkaian anda",
+               "subnet_mask" : "Topeng Subnet"
+            },
+            "throttle" : {
+               "label_mbps" : "Mbps",
+               "legend" : "Pendikitan Huluan",
+               "max_speed" : "Kelajuan Muat Naik Maksimum",
+               "msg" : "Biasanya Dok akan menggunakan semua lebar jalur yang tersedia untuk memuat naik video daripada unit AXON secepat mungkin. Jika ini bukan tingkah laku yang diingini, anda boleh mengehadkan kelajuan pemindahan di bawah (diukur dalam Megabit sesaat). Nilai sifar akan memberitahu Dok untuk menggunakan semua lebar jalur yang tersedia."
+            }
+         }
+      },
+      "ops" : {
+         "an_error_occurred" : "Ralat berlaku",
+         "generating_tokens" : "Menjana Token Keselamatan...",
+         "headers" : {
+            "operations" : "Operasi"
+         },
+         "page_title" : "Operasi Umum",
+         "regenerate_keys_query" : "Anda sudah disahkan dengan Evidence.com, adakah anda ingin menjana semula kunci keselamatan?",
+         "regenerate_keys_title" : "Jana Semula Kunci",
+         "register_with_ecom" : "Daftar dengan Evidence.com",
+         "registering_etm" : "Mendaftar Dok...",
+         "processing" : "Memproses...",
+         "poll_uri_code" : "Mengambil semula pautan dan kod pengaktifan...",
+         "reset_reg" : "Tetapkan Semula Pendaftaran",
+         "reset_reg_failed" : "Tidak dapat Menetapkan Semula Pendaftaran",
+         "resetting_reg_dock" : "Menetapkan semula pendaftaran Dok kepada lalai. Memuatkan semula halaman dalam masa 30 saat.",
+         "restarting_etm" : "Memulakan semula Dok, ini akan mengambil masa kira-kira 30 saat...",
+         "sections" : {
+            "e_com_reg" : {
+               "admin_password" : "Kata Laluan Pentadbiran",
+               "admin_username" : "Nama Pengguna Pentadbiran",
+               "agency_name" : "Agensi Evidence.com",
+               "already_registered" : "Dok ini telah didaftarkan dengan Evidence.com",
+               "domain_name" : "Nama domain",
+               "legend" : "Pendaftaran Evidence.com",
+               "msg" : "Untuk mendaftarkan Dok ini kepada Agensi Evidence.com anda, masukkan nama, nama pengguna dan kata laluan agensi Evidence.com anda. Setelah Dok didaftarkan kepada Evidence.com, ia akan memindahkan semua fail media kepada akaun Evidence.com anda. Nama pengguna dan kata laluan anda tidak disimpan di Dok.",
+               "msg_shorten" : "Untuk mendaftarkan Dok ini kepada Agensi Evidence.com anda, masukkan nama agensi Evidence.com anda. Setelah Dok didaftarkan kepada Evidence.com, dok akan memindahkan semua fail media kepada akaun Evidence.com anda.",
+               "msg_login_uri_code" : "Sila buka pautan dan berikan kod untuk melengkapkan pendaftaran:"
+            }
+         }
+      },
+      "proxy": {
+         "headers": {
+            "proxy_setup": "Penyediaan Proksi"
+         },
+         "page_title": "Tetapan Proksi",
+         "proxy_test_title": "Ujian Proksi",
+         "proxy_test_in_progress": "Ujian proksi sedang berlangsung...",
+         "proxy_test_success_msg": "Ujian proksi berjaya",
+         "proxy_test_fail_msg": "Ujian proksi gagal",
+         "configuration_saved_title": "Konfigurasi Proksi Disimpan",
+         "configuration_saved_msg": "Konfigurasi proksi disimpan dan akan dikuatkuasakan sebentar lagi",
+         "sections": {
+            "http_proxy": {
+               "legend": "Proksi HTTP",
+               "msg": "Tetapan proksi HTTP akan menghalakan semula semua permintaan HTTP ke pelayan proksi yang ditetapkan.",
+               "enable": "Mendayakan",
+               "legend_config": "Konfigurasi",
+               "legend_advanced_config": "Konfigurasi Lanjutan",
+               "disable_dns_check": "Nyahdayakan Semakan DNS",
+               "msg_config": "Nama pengguna dan kata laluan tidak wajib.",
+               "host": "Hos Proksi",
+               "port": "Port Proksi",
+               "username": "Nama Pengguna",
+               "password": "Kata laluan",
+               "test_connection": "Uji Sambungan"
+            }
+         }
+      },
+      "strings" : {
+         "an_error_occurred" : "Ralat berlaku",
+         "axon_flex" : "Axon Flex",
+         "calculating_rate" : "Mengira...",
+         "cancel" : "Batal",
+         "cannot_get_data_too_many_failed_login_attempts" : "Tidak boleh mendapatkan data kerana terlalu banyak percubaan log masuk yang gagal",
+         "click_for_details" : "Klik untuk butiran",
+         "device_error" : "Ralat Peranti",
+         "error" : "Ralat",
+         "error_download" : "Ralat semasa memuat turun https",
+         "error_internal" : "Ralat Dalaman",
+         "failed_auth": "Terlalu banyak cubaan pengesahan yang gagal. Akaun digantung buat sementara.",
+         "finished" : "Selesai",
+         "invalid_hostname" : "bukan nama hos yang sah",
+         "kbps" : "kbps",
+         "login_failed" : "Log masuk gagal",
+         "no_server_response" : "Tiada Respons daripada pelayan",
+         "ok" : "OK",
+         "operation_complete_success" : "Operasi berjaya diselesaikan.",
+         "please_complete_mandatory" : "Sila lengkapkan medan wajib ini.",
+         "please_enter_numeric" : "Sila masukkan nilai angka.",
+         "please_enter_valid_email" : "Sila masukkan alamat e-mel yang sah/",
+         "please_enter_valid_URL" : "Sila masukkan URL yang sah.",
+         "please_enter_value_larger" : "Sila masukkan nilai yang lebih besar daripada",
+         "please_enter_value_smaller" : "Sila masukkan nilai yang lebih kecil daripada",
+         "reloading_status" : "Memuat semula status...",
+         "reloading_status_title" : "Menyegar semula",
+         "unassigned" : "Tidak ditetapkan",
+         "unspecified_error" : "Ralat yang tidak ditentukan telah berlaku:",
+         "waiting_for_response" : "Menunggu respons...",
+         "authentication_failed" : "Pengesahan gagal",
+         "invalid_request" : "Permintaan adalah batal atau tidak sah"
+      }
+   }
+}

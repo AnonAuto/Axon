@@ -1,0 +1,558 @@
+{
+   "ETM" : {
+      "admin" : {
+         "admin_title" : "Telakan hallinta",
+         "configuring_msg" : "Määritetään, tämä kestää noin 40 sekuntia...",
+         "headers" : {
+            "administration" : "Telakan hallinta"
+         },
+         "page_title" : "Järjestelmänvalvojan asetukset",
+         "rebooting_msg" : "Käynnistetään uudelleen, tämä kestää noin 60 sekuntia...",
+         "saving_settings" : "Tallennetaan asetuksia...",
+         "sections" : {
+            "admin_maint" : {
+               "legend" : "Ylläpito",
+               "reboot" : "Käynnistä telakka uudelleen"
+            },
+            "admin_ssl" : {
+               "accept_only_https" : "Hyväksy vain SSL-pyynnöt",
+               "legend" : "SSL-määritys",
+               "regen_ssl" : "Luo uudelleen SSL-varmenne",
+               "require_https_time" : "Vaadi SSL ensimmäiselle ajan tarkistukselle"
+            },
+            "device_id" : {
+               "etm_name" : "Telakan nimi",
+               "home" : "Laitteen koti",
+               "legend" : "Laitetunnistus",
+               "location" : "Sijainti",
+               "msg" : "Alla olevien tietojen avulla tunnistat, minkä telakkalaitteen kanssa olet yhteydessä. Evidence.com myös käyttää näitä tietoja antaakseen tietoja laitteen tilasta.",
+               "your_agency" : "Laitoksesi"
+            },
+            "password_change" : {
+               "confirm_new_password" : "Kirjoita uusi salasana uudelleen",
+               "current_password" : "Nykyinen salasana",
+               "error_no_password" : "Järjestelmänvalvojan tunnistetietojen vaihtamiseen vaaditaan nykyinen salasana.",
+               "legend" : "Vaihda tunnistetiedot",
+               "msg" : "Hallitse sitä hallinnon käyttäjänimeä ja salasanaa, joita käytetään tämän telakan käyttöä varten.",
+               "new_password" : "Uusi salasana",
+               "username" : "Käyttäjänimi"
+            },
+            "snmp" : {
+               "authentication" : "Todennus",
+               "disable" : "Poista käytöstä",
+               "enable_snmp" : "Ota SNMP käyttöön",
+               "enc_password" : "Salauksen salasana",
+               "encrypt_msg" : "Jätä \"salauksen salasana\" tyhjäksi, jos haluat käyttää samaa \"SNMP-salasanaa\" salaukseen.",
+               "encryption" : "Salaus",
+               "error_no_password" : "SNMP-käyttäjänimen muuttaminen vaatii vastaavan salasanan.",
+               "error_title" : "Virhe SNMP:n määrityksessä",
+               "legend" : "SNMP-palvelin",
+               "legend_config" : "SNMP-määritys",
+               "msg" : "SNMP on poistettu käytöstä oletusarvoisesti. Ottaaksesi sen käyttöön käytä valintaruutua ja syöttömääritystä.",
+               "password" : "SNMP-salasana",
+               "username" : "SNMP-käyttäjänimi"
+            }
+         },
+         "set_configuration_error_title" : "Aseta määritys",
+         "settings_changed" : {
+            "p1" : "Laitoksesi asetukset ovat muuttuneet!",
+            "p2" : "Paina [Päivitä]-painiketta ottaaksesi laitoksesi muutokset käyttöön telakassa.",
+            "p3" : "Muutoin paina [Peruuta]-painiketta ja sen jälkeen päivitä asetukset manuaalisesti, muutokset synkronoidaan laitokseesi.",
+            "p4" : "Luettelo muutoksista:",
+            "title" : "Asetuksia muutettu"
+         }
+      },
+      "axonsup" : {
+         "headers" : {
+            "data" : "Tukitiedot"
+         },
+         "page_title" : "Axon-tuki",
+         "sections" : {
+            "data" : {
+               "legend" : "Axon-tukitiedot",
+               "msg" : "Alla olevista blob-objekteista voi olla hyötyä Axon-asiakaspalvelun edustajan kanssa työskennellessä.",
+               "result1" : "Tulos 1:",
+               "result2" : "Tulos 2:"
+            }
+         }
+      },
+	  "cgi" : {
+          "csrf_fail" : "Evästevirhe",
+          "invalid_auth" : "Virheellinen käyttäjänimi tai salasana",
+          "invalid_cmd" : "Virheellinen komento",
+          "invalid_domain" : "Ei määritettyä verkkotunnusta",
+          "invalid_proxy_config" : "Virheellinen välityspalvelimen määritys",
+          "invalid_proxy_user_pass" : "Käyttäjätunnus tai salasana puuttuu",
+          "invalid_snmp_user" : "SNMP-määrityksen käyttäminen ei onnistu. Virheellinen SNMP-käyttäjätunnus.",
+          "no_content" : "Ei sisältöä",
+          "no_snmp_pw" : "SNMP-määrityksen käyttäminen ei onnistu. Salasanaa ei ole annettu.",
+          "not_released" : "Ei julkaistu",
+          "ok" : "OK",
+          "unable_disable_snmp" : "SNMP-määrityksen poistaminen käytöstä ei onnistu.",
+          "unable_set_snmp" : "SNMP-määrityksen käyttäminen ei onnistu.",
+          "unable_set_snmp_auth" : "SNMP-määrityksen vahvistus ei onnistu.",
+          "unable_set_snmp_enable" : "SNMP-määrityksen ottaminen käyttöön ei onnistu.",
+          "unable_set_snmp_enc" : "SNMP-määrityksen salauksen käyttäminen ei onnistu.",
+          "unable_set_snmp_pass" : "SNMP-määrityksen salasanan käyttäminen ei onnistu.",
+          "unable_set_snmp_user" : "SNMP-määrityksen käyttäjätunnuksen käyttäminen ei onnistu.",
+          "unable_set_sslonly" : "Hyväksy vain SSL-pyynnöt -asetuksen muuttaminen ei onnistu",
+          "unknown_err" : "Tuntematon virhe",
+          "web_creds_err" : "Järjestelmänvalvojan käyttäjätunnusten päivitys epäonnistui.",
+          "web_creds_invalid_username" : "Järjestelmänvalvojan käyttäjätunnusten päivitys epäonnistui: käyttäjätunnus on virheellinen.",
+          "web_creds_invalid_cur_pass" : "Järjestelmänvalvojan käyttäjätunnusten päivitys epäonnistui: nykyinen salasana on virheellinen.",
+          "web_creds_invalid_new_pass" : "Järjestelmänvalvojan käyttäjätunnusten päivitys epäonnistui: uusi salasana on virheellinen."
+      },
+      "common" : {
+        "admin_name_allowed_characters" : "Virheellinen käyttäjänimi. Sallitut merkit: aakkosnumeerinen välilyönti # ! @ ( ) [ ] - . _",
+        "at_least" : "on oltava vähintään",
+        "cannot_contain_duplicate" : "ei voi sisältää päällekkäisiä merkkejä",
+        "cannot_contain_more_than" : "ei voi sisältää enempää kuin",
+        "cannot_contain_username" : "ei voi sisältää käyttäjänimeäsi tai muita yleisiä sanoja",
+        "character" : "merkki",
+        "characters" : "merkit",
+        "characters_in_seq" : "merkkijono",
+        "input_valid_IP" : "Anna kelvollinen IP-osoite",
+        "less_than" : "on oltava vähemmän kuin",
+        "mandatory_field" : "Tämä kenttä täytyy antaa.",
+        "must_contain" : "täytyy sisältää",
+        "no" : "Ei",
+        "not_secure" : "ei ole tarpeeksi turvallinen",
+        "please_provide" : "Anna vähintään",
+        "select_valid_entry" : "Valitse kelvollinen merkintä luettelosta",
+        "snmp_name_allowed_characters" : "Virheellinen käyttäjänimi. Sallitut merkit: aakkosnumeerinen # ! @ ( ) [ ] - . _",
+        "value_not_equal" : "Arvo ei vastaa Uusi salasana -kentän arvoa",
+        "yes" : "Kyllä"
+      },
+      "configassist" : {
+         "dlg_assign" : {
+            "msg1" : "Tämä lomake muuttaa laitteen omistajan alla määritetyksi käyttäjäksi. Käyttäjänimeä ja salasanaa ei tallenneta telakkaan.",
+            "msg2" : "Anna todennuksesi alla ja napsauta \"OK\" osoittaaksesi tämän laitteen SINULLE, muutoin napsauta \"Peruuta\" palataksesi.",
+            "password" : "Salasana",
+            "username" : "Käyttäjänimi"
+         },
+         "dlg_format" : {
+            "msg" : "Tämä päivittää laitteen määrityksen ja laiteohjelmiston. Mitään tietoja ei menetetä."
+         },
+         "dlg_format_auth" : {
+            "admin_password" : "Järjestelmänvalvojan salasana",
+            "admin_username" : "Järjestelmänvalvojan käyttäjänimi",
+            "msg" : "Sinulla on oltava Evidence.comin järjestelmänvalvojan oikeudet suorittaaksesi tämän toiminnon. Käyttäjänimeäsi ja salasanaasi ei ole tallennettu telakkaan. Anna todennuksesi alla ja napsauta \"OK\" alustaaksesi tämän laitteen, muutoin napsauta \"Peruuta\" palataksesi."
+         },
+         "err_cannot_get_log" : {
+            "msg" : "Tapahtui virhe, kun yritettiin lukea tämän laitteen aktiviteettilokia.",
+            "title" : "Tämän laitteen lokitiedostoa ei voi lukea"
+         },
+         "err_cannot_read_file" : {
+            "msg" : "Tapahtui virhe, kun yritettiin lukea tämän laitteen media- ja todistetietoja. Jos virhe toistuu, ota yhteyttä Axonin tekniseen tukeen.",
+            "title" : "Tämän laitteen todistetiedostoa ei voi lukea."
+         },
+         "err_cannot_rm_log" : {
+            "msg" : "Tapahtui virhe, kun yritettiin tyhjentää tämän laitteen aktiviteettilokia sen jälkeen, kun se ladattiin evidence.comiin.",
+            "title" : "Tämän laitteen lokitiedostoa ei voi tyhjentää"
+         },
+         "err_device_lost_communication" : {
+            "msg" : "Tämän laitteen yhteys on lakannut toimimasta. Poista laite telakasta ja telakoi se uudelleen. Jos ongelma jatkuu, ota yhteyttä laitoksesi järjestelmänvalvojaan saadaksesi apua laitteen kanssa.",
+            "title" : "Telakka on menettänyt yhteyden tähän laitteeseen."
+         },
+         "err_device_maintenance" : {
+            "msg" : "Tämä telakka suorittaa tämän laitteen automaattista huoltoa. Laite palaa normaalitoimintaan automaattisesti. Toimenpiteitä ei tarvita.",
+            "title" : "Tämä telakka suorittaa tämän laitteen automaattista huoltoa."
+         },
+         "err_devtype_cfg_failure" : {
+             "msg" : "Laitetta ei voi asettaa vartalokameratilaan. Katso vianmääritysohjeita.",
+             "title" : "Tätä laitetta ei ole asetettu vartalokameraksi"
+         },
+         "err_format_failure" : {
+            "msg" : "Laitteen aseman muoto epäonnistui. Katso vianmääritysohjeita.",
+            "title" : "Tämän laitteen aseman muoto epäonnistui"
+         },
+         "err_fwup_cfg_failure" : {
+             "msg": "Laiteohjelmisto päivitettävissä -kenttää ei voitu asettaa. Katso vianmääritysohjeita.",
+             "title" : "Tätä laitetta ei ole asetettu laiteohjelmisto päivitettävissä -tilaan"
+         },
+         "err_inactive_device" : {
+            "msg" : "Laite ei ole tällä hetkellä aktiivinen tässä laitoksessa. Yhdistä laite Evidence Sync -sovellukseen ja osoite laite asianmukaiselle käyttäjälle.",
+            "title" : "Laitteesi ei tällä hetkellä ole aktiivinen laitoksessasi"
+         },
+         "err_invalid_device_type" : {
+            "msg" : "Laitetta ei voi määrittää annetuksi tyypiksi. Katso vianmääritysohjeita.",
+            "title" : "Laite on virheellinen"
+         },
+         "err_invalid_model" : {
+            "msg" : "Telakkaan yhdistettyä laitetta ei tunnisteta kelvolliseksi Axon-laitteeksi. Poista se telakasta.",
+            "title" : "Telakka ei tunnista tämän tyyppistä laitetta"
+         },
+         "err_invalid_serial" : {
+            "msg" : "Telakkaan yhdistetyllä laitteella ei ole kelvollista sarjanumeroa. Tämä voi olla satunnainen virhe, poista laite ja yhdistä se uudelleen telakkaan. Jos virhe toistuu, lähetä laite RMA-osastoon.",
+            "title" : "Tällä laitteella on virheellinen sarjanumero"
+         },
+         "err_inventory_failure" : {
+            "msg" : "Tapahtui virhe, kun yritettiin lukea tämän laitteen media- ja todistetietoja. Jos virhe toistuu, ota yhteyttä Axonin tekniseen tukeen.",
+            "title" : "Tämän laitteen todisteluetteloa ei voi lukea."
+         },
+         "err_mount_failed" : {
+            "msg" : "Jatka hallinto-sivulle ja käynnistä telakka uudelleen.",
+            "title" : "Tapahtui virhe muodostettaessa yhteyttä laitteeseen."
+         },
+         "err_network_failed" : {
+            "msg" : "Sen aiheutti todennäköisesti huono internetyhteys, huono yhteys osoitteeseen Evidence.com tai se, että Evidence.com on ruuhkautunut tai Evidence.com on poissa käytöstä huollon takia. Kyseessä ei ole kriittinen virhe, telakka yrittää toimintoa uudelleen.",
+            "title" : "Telakka havaitsi verkko-ongelma käsitellessään tätä laitetta"
+         },
+         "err_no_usb" : {
+            "msg" : "Telakka ei voi olla yhteydessä tähän laitteeseen. Tämä voi olla satunnainen virhe, poista laite ja yhdistä se uudelleen telakkaan. Jos virhe toistuu, lähetä laite RMA-osastoon.",
+            "title" : "Laitteen kanssa ei voi olla yhteydessä"
+         },
+         "err_not_offline" : {
+            "msg" : "Tämä telakka on määritetty offline-toiminnolle, se ei käsittele laitteita, jotka on asetettu online-tilaan. Jos haluat asettaa tämän laitteen offline-tilaan, yhdistä laite Evidence Sync -sovellukseen ja seuraa ohjeita.",
+            "title" : "Tätä laitetta ei ole asetettu offline-toiminnolle"
+         },
+         "err_not_online" : {
+            "msg" : "Tämä telakka on määritetty online-toiminnolle, se ei käsittele laitteita, jotka on asetettu offline-tilaan. Jos haluat asettaa tämän laitteen online-tilaan, yhdistä laite Evidence Sync -sovellukseen ja seuraa ohjeita.",
+            "title" : "Tätä laitetta ei ole asetettu online-toiminnolle"
+         },
+         "err_system_maintenance" : {
+            "msg" : "Tämä telakka suorittaa automaattista huoltoa. Laite palaa normaalitoimintaan automaattisesti. Toimenpiteitä ei tarvita.",
+            "title" : "Telakka suorittaa sisäistä huoltoa."
+         },
+         "err_transfer_failed" : {
+            "msg" : "Sen aiheutti todennäköisesti huono internetyhteys, huono yhteys osoitteeseen Evidence.com tai se, että Evidence.com on ruuhkautunut tai Evidence.com on poissa käytöstä huollon takia. Kyseessä ei ole kriittinen virhe, telakka yrittää tiedoston lataamista uudelleen.",
+            "title" : "Telakka ei onnistunut siirtämään videota tästä laitteesta"
+         },
+         "err_transfer_failed_noretry" : {
+            "msg" : "Tämä todennäköisesti johtuu ongelmasta laitteen kanssa. Ota yhteyttä Axonin tekniseen tukeen.",
+            "title" : "Telakka kohtasi pysyvän virheen siirtäessään videota tästä laitteesta"
+         },
+         "err_unknown_port_type" : {
+            "msg" : "Portin tyyppi, jossa yhdistettyä laitetta ei tueta tai se on tuntematon. Katso vianmääritysohjeita.",
+            "title" : "Portin tyyppi on tuntematon"
+         },
+         "err_wrong_agency" : {
+            "msg" : "Tätä laitetta ei ole tällä hetkellä osoitettu laitoksellesi. Pyydä apua tämän laitteen kanssa laitoksesi järjestelmänvalvojalta.",
+            "title" : "Tätä laitetta ei ole tällä hetkellä osoitettu laitoksellesi."
+         },
+         "if_problem_continues" : "Jos tämä ongelma jatkuu, ota yhteyttä Axonin tekniseen tukeen osoitteessa:",
+         "more_help" : "Saadaksesi lisää apua tämän ongelman kanssa ota yhteyttä Axonin tekniseen tukeen osoitteessa:",
+         "no_dns" : {
+            "msg" : "Emme löytäneet DNS-palvelinta. Tämä johtuu yleensä siitä, että DNS-palvelimellesi on määritetty virheellinen IP-osoite. Suosittelemme, että vahvistat DNS-asetukset Verkkokäyttö-sivulla.",
+            "return_msg" : "Napsauta \"OK\" alla siirtyäksesi Verkkokäyttö-sivulle ja vahvista DNS-tiedot tai paina ESC-painiketta sulkeaksesi tämän valintaikkunan.",
+            "title" : "DNS-palvelinta ei löytynyt"
+         },
+         "no_ecom" : {
+            "msg" : "Emme voineet todentaa tätä telakkaa Evidence.com-sivuston kanssa. Tämä johtuu yleensä laitoksesi ja tämän telakan virheellisistä tai puuttuvista rekisteröintiavaimista. Suosittelemme, että rekisteröit tämän telakan käyttämällä Toiminnot-sivua.",
+            "return_msg" : "Napsauta \"OK\" alla siirtyäksesi Toiminnot-sivulle rekisteröidäksesi telakkasi tai paina ESC-painiketta sulkeaksesi tämän valintaikkunan.",
+            "title" : "Ei Evidence.com-todennusta"
+         },
+         "no_gateway" : {
+            "msg" : "Emme saaneet yhteyttä verkkosi oletusyhdyskäytävään. Tämä johtuu yleensä virheellisestä IP-osoitteesta, mutta jotkut yhdyskäytävät eivät vastaa verkon \"ping-kutsuihin\".",
+            "return_msg" : "Napsauta \"OK\" alla siirtyäksesi Verkkokäyttö-sivulle muuttaaksesi oletusyhdyskäytävän tai paina ESC-painiketta sulkeaksesi tämän valintaikkunan.",
+            "title" : "Yhdyskäytävää ei löytynyt"
+         },
+         "no_https" : {
+            "msg" : "Kommunikointi ei onnistunut suojatussa (HTTPS)-kanavassa. Tämä johtuu yleensä siitä, että palomuurisi on estänyt HTTPS-portin (443). Suosittelemme, että vahvistat, että HTTPS-portti on avoinna palomuurissasi.",
+            "return_msg" : "Napsauta \"OK\" alla palataksesi tilasivulle.",
+            "title" : "HTTPS ei ole käytettävissä."
+         },
+         "no_ip_dynamic" : {
+            "msg" : "Emme saaneet IP-osoitetta DHCP-palvelimestasi. Tämä johtuu yleensä siitä, että verkossasi ei ole aktiivista DHCP-palvelinta. Sinun on ehkä annettava staattinen IP-määritys tälle telakalle.",
+            "return_msg" : "Napsauta \"OK\" alla siirtyäksesi Verkkokäyttö-sivulle antaaksesi staattiset IP-tiedot tai paina ESC-painiketta sulkeaksesi tämän valintaikkunan.",
+            "title" : "Ei IP-osoitetta."
+         },
+         "no_ip_static" : {
+            "msg" : "Emme saaneet määrittämääsi IP-osoitetta tämän telakan staattisessa IP-asennuksessa. Tämä johtuu yleensä siitä, että samaa staattista IP-osoitetta käytetään enemmän kuin yhdessä tietokoneessa. Suosittelemme, että vahvistat sen IP-osoitteen, joka annettiin verkkokäyttösivulla.",
+            "return_msg" : "Napsauta \"OK\" alla siirtyäksesi Verkkokäyttö-sivulle vahvistaaksesi asetuksesi tai paina ESC-painiketta sulkeaksesi tämän valintaikkunan.",
+            "title" : "Ei IP-osoitetta."
+         },
+         "no_ntp" : {
+            "msg" : "Kommunikointi ei onnistunut verkon aikapalvelimen kanssa. Tämä johtuu yleensä siitä, että palomuuri on estänyt sekä portin 80 että portin 123. Suosittelemme, että vahvistat, että JOKO portti 80 tai 123 on avoinna palomuurissasi.",
+            "return_msg" : "Napsauta \"OK\" alla siirtyäksesi Verkkokäyttö-sivulle muuttaaksesi aikapalvelimesi tai paina ESC-painiketta sulkeaksesi tämän valintaikkunan.",
+            "title" : "NTP-palvelin ei vastaa"
+         },
+         "no_status" : {
+            "msg" : "Emme ole vielä voineet määrittää verkkotyyppiäsi. Tämä voi johtua siitä, että järjestelmämme on vielä tulossa. Ehdotamme, että odotat 2-3 minuuttia ja päivität sivun. Tilasivu myös päivittyy, jos uutta tietoa saapuu.",
+            "return_msg" : "Napsauta \"OK\" alla palataksesi tilasivulle.",
+            "title" : "Tilaa ei löytynyt."
+         },
+         "title" : "Määritysavustaja",
+         "we_found" : "Kun tutkimme verkkoasi, löysimme seuraavan ongelman:",
+         "welcome" : "Tervetuloa määritysavustajaan"
+      },
+      "device_status_codes" : {
+         "capchk" : "Kapasiteetin tarkistus",
+         "cfg" : "Määritetään",
+         "chg" : "Lataa",
+         "del" : "Poistetaan",
+         "device_maint" : "Laitteen ylläpito",
+         "devid" : "Tunnistetaan",
+         "err" : "Virhe (Uudelleenyritys odottaa)",
+         "fail" : "Virhe",
+         "fwdone" : "Laiteohjelmisto päivitetty",
+         "fwupdate" : "Päivitetään laiteohjelmistoa",
+         "inact" : "Ei aktiivinen",
+         "init" : "Valmistellaan",
+         "inventory" : "Inventaario",
+         "logerase" : "Poistetaan lokia",
+         "logsend" : "Ladataan lokia",
+         "lost" : "Yhteys katkesi",
+         "net_retry" : "Yritä verkkoyhteyttä uudelleen",
+         "new" : "Uusi laite",
+         "nonet" : "Verkko alhaalla",
+         "plugin" : "Yhdistetään‏",
+         "proc" : "Siirretään tiedostoa",
+         "rdy" : "Valmis",
+         "register" : "Rekisteröinti",
+         "summary" : "Hanki yhteenveto",
+         "sys_maint" : "Järjestelmän ylläpito",
+         "unk" : "Tuntematon",
+         "unsupported" : "Ei tuettu",
+         "wait" : "Odottaa"
+      },
+      "diag" : {
+         "headers" : {
+            "diag" : "Diagnostiikka"
+         },
+         "page_title" : "Tila",
+         "sections" : {
+            "netdiag" : {
+               "command" : "Komento:",
+               "commands" : {
+                  "date" : "Telakan raportoima PÄIVÄMÄÄRÄ",
+                  "ifconfig" : "IFCONFIGin verkkotilastot",
+                  "nslookup_goog" : "NSLOOKUP google.com",
+                  "nslookup_taser" : "NSLOOKUP taser.evidence.com",
+                  "ping_8888" : "PING 8.8.8.8",
+                  "ping_gateway" : "PING oletusyhdyskäytävä",
+                  "ping_goog" : "PING google.com",
+                  "tail_etmlog" : "TAIL 100 riviä telakan lokia",
+                  "tail_syslog" : "TAIL 100 riviä syslogia",
+                  "tr_goog" : "TRACEROUTE google.com",
+                  "tr_taser" : "TRACEROUTE taser.evidence.com"
+               },
+               "execute" : "Suorita",
+               "legend" : "Verkon diagnostiikka",
+               "menu" : "Valitse diagnostiikkatesti alasvetovalikosta ja paina Suorita...",
+               "msg1" : "Tässä annettuja komentoja käytetään verkon yhteysongelmien vianmääritykseen.",
+               "msg2" : "Älä suorita alla olevia komentoja, ellei Axonin asiakaspalvelun edustaja ohjaa sinua tekemään niin.",
+               "result" : "Tulos:"
+            }
+         }
+      },
+      "firmware" : {
+         "current_version" : "Nykyinen laiteohjelmistoversio",
+         "dvr_update_starting" : "Otetaan yhteyttä Axon-palvelimeen etsiäksemme päivityksiä...Laiteohjelmiston päivitys alkaa sen jälkeen, kun DVR on ladannut tiedostot",
+         "etm_update_starting" : "Laiteohjelmiston päivitys on aloitettu. Tarkista muutaman minuutin kuluttua, onko versio päivitetty...",
+         "headers" : {
+            "firmware_mgmt" : "Laiteohjelmiston hallinta"
+         },
+         "not_released" : "Ei julkaistu",
+         "page_title" : "Laiteohjelmiston päivitys",
+         "sections" : {
+            "device_firmware_update" : {
+               "legend" : "Laitteen laiteohjelmiston päivitys",
+               "msg" : "Päivittääksesi kaikkien tällä hetkellä telakoituneena olevien laitteiden laiteohjelmistot, napsauta alla olevaa painiketta. Jos päivitys on käytettävissä, se asennetaan automaattisesti kaikkiin laitteisiin.",
+               "device_name" : "Laitteen nimi",
+               "released_firmware" : "Julkaistu laiteohjelmisto",
+               "early_access_firmware" : "Ennakkoon käytettävissä oleva laiteohjelmisto",
+               "perform_fw_update" : "Päivitä Axon-laitteet"
+            },
+            "etm_firmware_update" : {
+               "check_update" : "Päivitä laiteohjelmisto",
+               "legend" : "Telakan laiteohjelmiston päivitys",
+               "msg" : "Jos haluat päivittää telakkasi laiteohjelmiston, napsauta PÄIVITÄ LAITEOHJELMISTO. Telakka ottaa yhteyden Axonin palvelimiin ja tarkistaa viimeisimmän laiteohjelmistoversion. Jos uusi laiteohjelmistoversio on saatavilla, se asennetaan automaattisesti.",
+               "show_version_details" : "Lisätiedot",
+               "version_details" : "Lisätiedot"
+            }
+         },
+         "update_failed" : "Laiteohjelmiston päivitystä ei voi aloittaa",
+         "update_title" : "Laiteohjelmiston päivitys"
+      },
+      "general" : {
+         "closeparen" : ")",
+         "copyright" : "&copy; 2023 Axon Enterprise, Inc. Kaikki oikeudet pidätetään",
+         "error_code" : "virhekoodi",
+         "firmware" : "Laiteohjelmisto",
+         "footnote" : "*TASER-akut sisältävät laiteohjelmiston TASER 7 (T7)- ja TASER 10 (T10) -kahvoja sekä TASER BLE:tä varten.",
+         "openparen" : "(",
+         "refresh" : "Päivitä",
+         "sections" : {
+            "button_bar" : {
+               "discard_changes" : "Hylkää muutokset",
+               "loading_wait" : "Määritystä ladataan... odota...",
+               "reset_registration" : "Nollaa rekisteröinti",
+               "save_changes" : "Tallenna muutokset",
+               "continue" : "Jatka"
+            },
+            "snmp" : {
+               "showhide_password" : "Näytä/piilota SNMP-salasana"
+            }
+         }
+      },
+      "index" : {
+         "footer" : {
+            "help_center" : "Ohjekeskus"
+         },
+         "headers" : {
+            "system_status" : "Järjestelmän tila"
+         },
+         "page_title" : "Tila",
+         "sections" : {
+            "devices" : {
+               "device" : "Laite",
+               "firmware" : "Laiteohjelmisto*",
+               "hidden_info" : "Näet tiedot napsauttamalla",
+               "legend" : "Laitteet",
+               "owner" : "Omistaja",
+               "serial" : "Sarjanumero",
+               "status" : "Tila"
+            },
+            "networking" : {
+               "active" : "Aktiivinen",
+               "dns_server" : "DNS-palvelin",
+               "ecom_registration" : "Evidence.com-sivuston rekisteröinti",
+               "gateway" : "Internet-yhdyskäytävä",
+               "https_port" : "HTTPS (Portti 443)",
+               "ipaddress" : "IP-osoite",
+               "legend" : "Verkkokäyttö",
+               "mac_address" : "MAC-osoite",
+               "not_registered" : "Ei rekisteröity",
+               "serial_number" : "Sarjanumero",
+               "time_server" : "Aikapalvelin"
+            }
+         }
+      },
+      "links" : {
+         "administration" : "Hallinto",
+         "firmware" : "Laiteohjelmisto",
+         "networking" : "Verkkokäyttö",
+         "operations" : "Toiminnot",
+         "status" : "Tila"
+      },
+      "lookups" : {
+         "netmode" : {
+            "dynamic" : "dynaaminen",
+            "static" : "staattinen"
+         }
+      },
+      "networking" : {
+         "headers" : {
+            "net_setup" : "Verkon määritys"
+         },
+         "page_title" : "Verkkokäyttöasetukset",
+         "restart_title" : "Verkon uudelleenkäynnistys",
+         "saved_restarting" : "Asetukset on tallennettu, verkko uudelleenkäynnistyy...",
+         "sections" : {
+            "conn_type" : {
+               "label_dynamic" : "Dynaaminen IP (DHCP)",
+               "label_static" : "Staattinen IP",
+               "legend" : "Yhteystyyppi",
+               "msg" : "On kaksi tapaa, joilla telakka voi toimia nykyisen verkkokäyttösi kanssa salliakseen AXON-laitteiden Internet-käytön. Joko dynaaminen IP- (tunnetaan myös nimellä DHCP) tai staattinen IP-osoite. Valitse asianmukainen tapa alta:"
+            },
+            "static_ip" : {
+               "dns_servers" : "DNS-palvelimet",
+               "gateway" : "Oletusyhdyskäytävä",
+               "ip_address" : "IP-osoite",
+               "legend" : "Staattinen IP-määritys",
+               "msg" : "Jos verkkosi ei käytä DHCP:tä, tai Internet-yhteys on saatavilla vain staattisen IP-osoituksen kautta, sinun täytyy antaa määritystiedot telakalle. Jos sinulla ei ole näitä tietoja saatavilla, ota yhteyttä verkkosi järjestelmänvalvojaan",
+               "subnet_mask" : "Aliverkon peite"
+            },
+            "throttle" : {
+               "label_mbps" : "Mbit",
+               "legend" : "Ylöspäin suuntautuva rajoitus",
+               "max_speed" : "Maksimi latausnopeus",
+               "msg" : "Normaalisti telakka käyttää koko käytettävissä olevaa kaistanleveyttä ladatakseen videoita AXON-yksiköistä mahdollisimman nopeasti. Jos tämä ei ole haluttua toimintaa, voit rajoittaa siirtonopeutta alla (mitattuna megabitteinä per sekunti). Nolla-arvo ilmoittaa telakalle, että sen tulee käyttää koko käytettävissä olevaa kaistanleveyttä."
+            }
+         }
+      },
+      "ops" : {
+         "an_error_occurred" : "Tapahtui virhe",
+         "generating_tokens" : "Luodaan suojaustunnuksia...",
+         "headers" : {
+            "operations" : "Toiminnot"
+         },
+         "page_title" : "Yleiset toiminnot",
+         "regenerate_keys_query" : "Evidence.com-sivusto on jo todentanut sinut, haluatko luoda suojausavaimet uudelleen?",
+         "regenerate_keys_title" : "Luo avaimet uudelleen",
+         "register_with_ecom" : "Rekisteröidy Evidence.com-sivustolle",
+         "registering_etm" : "Rekisteröidään telakkaa...",
+         "processing" : "Käsitellään...",
+         "poll_uri_code" : "Haetaan aktivointilinkkiä ja koodia...",
+         "reset_reg" : "Nollaa rekisteröinti",
+         "reset_reg_failed" : "Rekisteröintiä ei voi nollata",
+         "resetting_reg_dock" : "Palautetaan telakan rekisteröintiä oletussarvoksi. Sivu ladataan uudelleen in 30 sekunnissa.",
+         "restarting_etm" : "Käynnistetään telakkaa uudelleen, tämä kestää noin 30 sekuntia...",
+         "sections" : {
+            "e_com_reg" : {
+               "admin_password" : "Järjestelmänvalvojan salasana",
+               "admin_username" : "Järjestelmänvalvojan käyttäjänimi",
+               "agency_name" : "Evidence.com-laitos",
+               "already_registered" : "Tämä telakka on jo rekisteröity Evidence.com-sivuston kanssa",
+               "domain_name" : "Toimialueen nimi",
+               "legend" : "Evidence.com-sivuston rekisteröinti",
+               "msg" : "Rekisteröidäksesi tämän telakan Evidence.com-laitoksesi kanssa anna Evidence.com-laitoksen nimi, käyttäjänimi ja salasana. Kun telakka on rekisteröity Evidence.com-sivustolle, se siirtää kaikki mediatiedostot Evidence.com-tilillesi. Käyttäjänimeäsi ja salasanaasi ei tallenneta telakkaan.",
+               "msg_shorten" : "Rekisteröi tämä telakka Evidence.com-laitokseesi syöttämällä Evidence.com-laitoksesi nimi. Kun telakka on rekisteröity Evidence.comiin, se siirtää kaikki mediatiedostot Evidence.com-tilillesi.",
+               "msg_login_uri_code" : "Avaa linkki ja anna koodi rekisteröinnin viimeistelemiseksi:"
+            }
+         }
+      },
+      "proxy": {
+         "headers": {
+            "proxy_setup": "Välityspalvelimen määritys"
+         },
+         "page_title": "Välityspalvelimen asetukset",
+         "proxy_test_title": "Välityspalvelimen testi",
+         "proxy_test_in_progress": "Välityspalvelimen testi käynnissä...",
+         "proxy_test_success_msg": "Välityspalvelimen testi onnistui",
+         "proxy_test_fail_msg": "Välityspalvelimen testi epäonnistui",
+         "configuration_saved_title": "Välityspalvelimen konfiguraatio on tallennettu",
+         "configuration_saved_msg": "Välityspalvelimen konfiguraatio on tallennettu ja astuu pian voimaan",
+         "sections": {
+            "http_proxy": {
+               "legend": "HTTP-välityspalvelin",
+               "msg": "HTTP-välityspalvelimen määritys uudelleenohjaa kaikki HTTP-pyynnöt valitulle välityspalvelimelle.",
+               "enable": "Ota käyttöön",
+               "legend_config": "Määritys",
+               "legend_advanced_config": "Erikoismääritys",
+               "disable_dns_check": "Poista DNS-tarkistus käytöstä",
+               "msg_config": "Käyttäjänimi ja salasana ovat valinnaisia.",
+               "host": "Välityspalvelimen isäntä",
+               "port": "Välityspalvelimen portti",
+               "username": "Käyttäjänimi",
+               "password": "Salasana",
+               "test_connection": "Testiyhteys"
+            }
+         }
+      },
+      "strings" : {
+         "an_error_occurred" : "Tapahtui virhe",
+         "axon_flex" : "Axon Flex",
+         "calculating_rate" : "Lasketaan...",
+         "cancel" : "Peruuta",
+         "cannot_get_data_too_many_failed_login_attempts" : "Tietoja ei voida hakea epäonnistuneiden kirjautumisyritysten takia",
+         "click_for_details" : "Saat lisätietoja napsauttamalla",
+         "device_error" : "Laitevirhe",
+         "error" : "Virhe",
+         "error_download" : "Virhe https-osoitteen lataamisessa",
+         "error_internal" : "Sisäinen virhe",
+         "failed_auth": "Liian monta epäonnistunutta todennusyritystä. Tilin käyttö on keskeytetty väliaikaisesti.",
+         "finished" : "Valmis",
+         "invalid_hostname" : "ei ole kelvollinen isäntänimi",
+         "kbps" : "kbps",
+         "login_failed" : "Sisäänkirjautuminen epäonnistui",
+         "no_server_response" : "Ei vastausta palvelimesta",
+         "ok" : "OK",
+         "operation_complete_success" : "Toiminnon suoritus onnistui.",
+         "please_complete_mandatory" : "Täydennä tämä pakollinen kenttä.",
+         "please_enter_numeric" : "Anna numeerinen arvo.",
+         "please_enter_valid_email" : "Syötä kelvollinen sähköpostiosoite.",
+         "please_enter_valid_URL" : "Anna kelvollinen URL-osoite.",
+         "please_enter_value_larger" : "Anna arvo, joka on suurempi kuin",
+         "please_enter_value_smaller" : "Anna arvo, joka on pienempi kuin",
+         "reloading_status" : "Ladataan tila uudelleen...",
+         "reloading_status_title" : "Päivitetään",
+         "unassigned" : "Osoitus poistettu",
+         "unspecified_error" : "Tapahtui määrittämätön virhe:",
+         "waiting_for_response" : "Odotetaan vastausta...",
+         "authentication_failed" : "Todennus epäonnistui",
+         "invalid_request" : "Pyyntö on tyhjä tai virheellinen"
+      }
+   }
+}

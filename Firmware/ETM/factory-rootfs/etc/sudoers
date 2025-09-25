@@ -1,0 +1,34 @@
+##
+## TASER sudoers configuration for sudo
+##
+
+##
+## User privilege specification
+##
+root ALL=(ALL) ALL
+
+##
+## Required for lighttpd
+##
+# uhttpd.lua calls logger directly
+wwwrun taser-etmv2=(root:root) NOPASSWD: /etm/bin/etmstat.sh
+wwwrun taser-etmv2=(root:root) NOPASSWD: /etm/bin/stage-wan-setting-changes.sh
+wwwrun taser-etmv2=(root:root) NOPASSWD: /etm/bin/update-passwd.sh
+wwwrun taser-etmv2=(root:root) NOPASSWD: /usr/bin/logger
+wwwrun taser-etmv2=(root:root) NOPASSWD: /www/scripts/generate-snmpv3-user.sh
+wwwrun taser-etmv2=(root:root) NOPASSWD: /www/scripts/get-keys-ecom.sh
+wwwrun taser-etmv2=(root:root) NOPASSWD: /www/scripts/get-uci-cfg.sh
+wwwrun taser-etmv2=(root:root) NOPASSWD: /www/scripts/get-header.sh
+wwwrun taser-etmv2=(root:root) NOPASSWD: /www/scripts/gettimeofday.sh
+wwwrun taser-etmv2=(root:root) NOPASSWD: /www/scripts/random.sh
+wwwrun taser-etmv2=(root:root) NOPASSWD: /www/scripts/register-ecom.sh
+wwwrun taser-etmv2=(root:root) NOPASSWD: /www/scripts/set-force-ssl.sh
+wwwrun taser-etmv2=(root:root) NOPASSWD: /www/scripts/set-http-proxy.sh
+wwwrun taser-etmv2=(root:root) NOPASSWD: /www/scripts/set-lighttpd-passwd.sh
+wwwrun taser-etmv2=(root:root) NOPASSWD: /www/scripts/uci-commit-etm.sh
+wwwrun taser-etmv2=(root:root) NOPASSWD: /www/scripts/uci-option.sh
+wwwrun taser-etmv2=(root:root) NOPASSWD: /www/scripts/ecom.sh
+wwwrun taser-etmv2=(root:root) NOPASSWD: /www/scripts/get-login-configuration-ecom.sh
+wwwrun taser-etmv2=(root:root) NOPASSWD: /www/scripts/get-login-uri-code.sh
+wwwrun taser-etmv2=(root:root) NOPASSWD: /www/scripts/get-access-token.sh
+wwwrun taser-etmv2=(root:root) NOPASSWD: /www/scripts/register-ecom-universal-login.sh

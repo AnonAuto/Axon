@@ -1,0 +1,558 @@
+{
+   "ETM" : {
+      "admin" : {
+         "admin_title" : "Administração do Dock",
+         "configuring_msg" : "Configurando. Esse processo levará aproximadamente 40 segundos...",
+         "headers" : {
+            "administration" : "Administração do Dock"
+         },
+         "page_title" : "Configurações de admin.",
+         "rebooting_msg" : "Reiniciando. Isso pode demorar aproximadamente 60 segundos...",
+         "saving_settings" : "Salvando configurações...",
+         "sections" : {
+            "admin_maint" : {
+               "legend" : "Manutenção",
+               "reboot" : "Reiniciar Dock"
+            },
+            "admin_ssl" : {
+               "accept_only_https" : "Aceitar apenas solicitações SSL",
+               "legend" : "Configuração de SSL",
+               "regen_ssl" : "Gerar certificado SSL novamente",
+               "require_https_time" : "Exigir SSL para verificação de hora inicial"
+            },
+            "device_id" : {
+               "etm_name" : "Nome do Dock",
+               "home" : "Página inicial do dispositivo",
+               "legend" : "Identificação do dispositivo",
+               "location" : "Localização",
+               "msg" : "As informações abaixo ajudarão você a identificar com qual dispositivo de Dock você está se comunicando. Elas também são usadas pelo Evidence.com para fornecer informações de status do dispositivo.",
+               "your_agency" : "Sua Agência"
+            },
+            "password_change" : {
+               "confirm_new_password" : "Digite a nova senha mais uma vez",
+               "current_password" : "Senha atual",
+               "error_no_password" : "A senha atual é necessária para alterar as credenciais de administrador.",
+               "legend" : "Alterar credenciais",
+               "msg" : "Gerencie o nome de usuário e a senha de administração usadas para acessar este Dock.",
+               "new_password" : "Nova senha",
+               "username" : "Nome de usuário"
+            },
+            "snmp" : {
+               "authentication" : "Autenticação",
+               "disable" : "Desativar",
+               "enable_snmp" : "Ativar SNMP",
+               "enc_password" : "Senha de criptografia",
+               "encrypt_msg" : "Deixe o campo \"Senha de criptografia\" em branco se quiser usar a mesma \"Senha de SNMP\" para criptografia.",
+               "encryption" : "Criptografia",
+               "error_no_password" : "Uma senha correspondente é necessária para alterar o nome de usuário de SNMP.",
+               "error_title" : "Erro ao definir SNMP",
+               "legend" : "Servidor SNMP",
+               "legend_config" : "Configuração de SNMP",
+               "msg" : "O SNMP está desativado por padrão. Para ativá-lo, use a caixa de seleção e insira a configuração.",
+               "password" : "Senha de SNMP",
+               "username" : "Nome de usuário de SNMP"
+            }
+         },
+         "set_configuration_error_title" : "Definir Configuração",
+         "settings_changed" : {
+            "p1" : "As configurações da sua agência foram alteradas!",
+            "p2" : "Pressione o botão [Atualizar] para aplicar as alterações da sua agência ao Dock.",
+            "p3" : "Caso contrário, pressione [Cancelar] e, em seguida, atualize manualmente suas configurações. As alterações serão sincronizadas com sua agência.",
+            "p4" : "Lista de alterações:",
+            "title" : "Configurações alteradas"
+         }
+      },
+      "axonsup" : {
+         "headers" : {
+            "data" : "Dados de suporte"
+         },
+         "page_title" : "Suporte da Axon",
+         "sections" : {
+            "data" : {
+               "legend" : "Dados de suporte da Axon",
+               "msg" : "Os blobs de dados abaixo podem ser úteis ao trabalhar com um representante de atendimento ao cliente da Axon.",
+               "result1" : "Resultado 1:",
+               "result2" : "Resultado 2:"
+            }
+         }
+      },
+	  "cgi" : {
+          "csrf_fail" : "Erro de cookie",
+          "invalid_auth" : "Nome de usuário ou senha inválidos",
+          "invalid_cmd" : "Comando inválido",
+          "invalid_domain" : "Nenhum domínio especificado",
+          "invalid_proxy_config" : "Configuração de proxy inválida",
+          "invalid_proxy_user_pass" : "O nome de usuário ou a senha está faltando",
+          "invalid_snmp_user" : "Não é possível aplicar a configuração SNMP. Nome de usuário SNMP inválido.",
+          "no_content" : "Nenhum conteúdo",
+          "no_snmp_pw" : "Não é possível aplicar a configuração SNMP. Nenhuma senha fornecida.",
+          "not_released" : "Não disponível",
+          "ok" : "OK",
+          "unable_disable_snmp" : "Não é possível desabilitar a configuração SNMP.",
+          "unable_set_snmp" : "Não é possível aplicar a configuração SNMP.",
+          "unable_set_snmp_auth" : "Não é possível aplicar a autenticação de configuração SNMP.",
+          "unable_set_snmp_enable" : "Não é possível habilitar a configuração SNMP.",
+          "unable_set_snmp_enc" : "Não é possível aplicar a criptografia de configuração SNMP.",
+          "unable_set_snmp_pass" : "Não é possível aplicar a senha de configuração SNMP.",
+          "unable_set_snmp_user" : "Não é possível aplicar o nome de usuário da configuração SNMP.",
+          "unable_set_sslonly" : "Não é possível alterar a configuração 'Aceitar somente solicitações SSL'",
+          "unknown_err" : "Erro desconhecido",
+          "web_creds_err" : "Falha ao atualizar as credenciais do administrador.",
+          "web_creds_invalid_username" : "Falha ao atualizar as credenciais do administrador: o nome de usuário é inválido.",
+          "web_creds_invalid_cur_pass" : "Falha ao atualizar as credenciais do administrador: a senha atual é inválida.",
+          "web_creds_invalid_new_pass" : "Falha ao atualizar as credenciais do administrador: a nova senha é inválida."
+      },
+      "common" : {
+        "admin_name_allowed_characters" : "Nome de usuário inválido. Caracteres permitidos: alfanuméricos, espaços e # ! @ ( ) [ ] - . _",
+        "at_least" : "precisa ter pelo menos",
+        "cannot_contain_duplicate" : "não pode ter caracteres duplicados",
+        "cannot_contain_more_than" : "não pode ter mais de",
+        "cannot_contain_username" : "não pode conter seu nome de usuário nem outras palavras comuns",
+        "character" : " caractere",
+        "characters" : " caracteres",
+        "characters_in_seq" : " caracteres em sequência",
+        "input_valid_IP" : "Insira um endereço IP válido",
+        "less_than" : "precisa ter menos de ",
+        "mandatory_field" : "Este campo precisa ser informado.",
+        "must_contain" : "precisa conter ",
+        "no" : "Não",
+        "not_secure" : "não é suficientemente segura ",
+        "please_provide" : "Forneça pelo menos ",
+        "select_valid_entry" : "Selecione um item válido da lista",
+        "snmp_name_allowed_characters" : "Nome de usuário inválido. Caracteres permitidos: alfanuméricos e # ! @ ( ) [ ] - . _",
+        "value_not_equal" : "O valor não equivale ao do campo \"Nova senha\"",
+        "yes" : "Sim"
+      },
+      "configassist" : {
+         "dlg_assign" : {
+            "msg1" : "Este formulário altera o proprietário de um dispositivo para o usuário especificado abaixo. O nome de usuário e a senha não são armazenados no Dock.",
+            "msg2" : "Insira sua autenticação abaixo e clique em \"OK\" para atribuir este dispositivo a VOCÊ ou clique em \"Cancelar\" para retornar.",
+            "password" : "Senha",
+            "username" : "Nome de usuário"
+         },
+         "dlg_format" : {
+            "msg" : "Isso atualizará a configuração e o firmware do dispositivo. Nenhum dado será perdido."
+         },
+         "dlg_format_auth" : {
+            "admin_password" : "Senha de admin.",
+            "admin_username" : "Nome de usuário de admin.",
+            "msg" : "Você precisa ter direitos de administrador do Evidence.com para realizar essa ação. Seu nome de usuário e sua senha não são armazenados no Dock. Insira sua autenticação abaixo e clique em \"OK\" para formatar este dispositivo. Caso contrário, clique em \"Cancelar\" para voltar."
+         },
+         "err_cannot_get_log" : {
+            "msg" : "Ocorreu um erro ao tentar ler o log de atividade deste dispositivo.",
+            "title" : "Não foi possível ler o arquivo de log deste dispositivo"
+         },
+         "err_cannot_read_file" : {
+            "msg" : "Ocorreu um erro ao ler a mídia e as informações de evidências deste dispositivo. Se esse erro persistir, entre em contato com o suporte técnico da Axon.",
+            "title" : "Não foi possível ler um arquivo de evidência deste dispositivo."
+         },
+         "err_cannot_rm_log" : {
+            "msg" : "Ocorreu um erro ao tentar limpar o log de atividade deste dispositivo depois que ele foi carregado para o Evidence.com",
+            "title" : "Não foi possível limpar o arquivo de log deste dispositivo"
+         },
+         "err_device_lost_communication" : {
+            "msg" : "A conexão deste dispositivo parou de funcionar. Desconecte e reconecte seu dispositivo ao Dock. Se o problema continuar, entre em contato com o administrador da sua agência para obter assistência relacionada a este dispositivo.",
+            "title" : "A comunicação do Dock com este dispositivo foi perdida."
+         },
+         "err_device_maintenance" : {
+            "msg" : "Este Dock está realizando uma manutenção automática neste dispositivo. O dispositivo retomará a operação normal automaticamente. Nenhuma ação é necessária.",
+            "title" : "Este Dock está realizando uma manutenção automática neste dispositivo."
+         },
+         "err_devtype_cfg_failure" : {
+             "msg" : "Não foi possível definir o dispositivo para o modo de câmera corporal. Consulte as instruções de solução de problemas.",
+             "title" : "Este dispositivo não está definido como câmera corporal"
+         },
+         "err_format_failure" : {
+            "msg" : "Houve uma falha no formato de unidade do dispositivo. Consulte as instruções de solução de problemas.",
+            "title" : "Houve uma falha no formato de unidade deste dispositivo"
+         },
+         "err_fwup_cfg_failure" : {
+             "msg": "Não foi possível definir o campo \"Firmware atualizável\". Consulte as instruções de solução de problemas.",
+             "title" : "Este dispositivo não está definido como firmware atualizável"
+         },
+         "err_inactive_device" : {
+            "msg" : "O dispositivo não está disponível no momento nesta agência. Conecte o dispositivo ao Evidence Sync e atribua o dispositivo a um usuário adequado.",
+            "title" : "Seu dispositivo não está ativo no momento na sua agência"
+         },
+         "err_invalid_device_type" : {
+            "msg" : "Não foi possível configurar o dispositivo para o tipo especificado. Consulte as instruções de solução de problemas.",
+            "title" : "O dispositivo é inválido"
+         },
+         "err_invalid_model" : {
+            "msg" : "O dispositivo conectado ao Dock não é reconhecido como um dispositivo Axon válido. Remova-o do Dock.",
+            "title" : "O Dock não reconhece esse tipo de dispositivo"
+         },
+         "err_invalid_serial" : {
+            "msg" : "O dispositivo conectado ao Dock não tem um número de série válido. Isso pode ser um erro intermitente. Remova e reconecte o dispositivo ao Dock. Se esse erro persistir, solicite uma RMA para o dispositivo.",
+            "title" : "Este dispositivo tem um número de série inválido"
+         },
+         "err_inventory_failure" : {
+            "msg" : "Ocorreu um erro ao ler a mídia e as informações de evidências deste dispositivo. Se esse erro persistir, entre em contato com o suporte técnico da Axon.",
+            "title" : "Não foi possível ler a lista de evidências deste dispositivo."
+         },
+         "err_mount_failed" : {
+            "msg" : "Siga para a página \"Administração\" e reinicie o Dock.",
+            "title" : "Houve um erro ao conectar ao dispositivo."
+         },
+         "err_network_failed" : {
+            "msg" : "Isso provavelmente foi causado por uma conexão de internet ruim, uma conexão ruim com o Evidence.com ou porque o Evidence.com está sobrecarregado ou indisponível por conta de uma manutenção. Esse erro não é crítico. O Dock tentará realizar a operação novamente.",
+            "title" : "O Dock encontrou um problema na rede ao processar este dispositivo"
+         },
+         "err_no_usb" : {
+            "msg" : "O Dock não conseguiu se comunicar com este dispositivo. Isso pode ser um erro intermitente. Remova e reconecte o dispositivo ao Dock. Se esse erro persistir, solicite a RMA do dispositivo.",
+            "title" : "Não é possível comunicar com o dispositivo"
+         },
+         "err_not_offline" : {
+            "msg" : "Este Dock está configurado para operação off-line. Ele não processará dispositivos que estiverem configurados para o modo on-line. Se você deseja configurar este dispositivo para o modo off-line, conecte-o ao Evidence Sync e siga as instruções.",
+            "title" : "Este dispositivo não está configurado para operação off-line."
+         },
+         "err_not_online" : {
+            "msg" : "Este Dock está configurado para operação on-line. Ele não processará dispositivos que estiverem configurados para o modo off-line. Se você deseja configurar este dispositivo para o modo on-line, conecte-o ao Evidence Sync e siga as instruções.",
+            "title" : "Este dispositivo não está configurado para operação on-line"
+         },
+         "err_system_maintenance" : {
+            "msg" : "Este Dock está realizando uma manutenção automática. O dispositivo retomará a operação normal automaticamente. Nenhuma ação é necessária.",
+            "title" : "O Dock está realizando uma manutenção interna."
+         },
+         "err_transfer_failed" : {
+            "msg" : "Isso provavelmente foi causado por uma conexão de internet ruim, uma conexão ruim com o Evidence.com ou porque o Evidence.com está sobrecarregado ou indisponível por conta de uma manutenção. Esse erro não é crítico. O Dock continuará tentando realizar o carregamento do arquivo.",
+            "title" : "O Dock não conseguiu transferir um vídeo deste dispositivo"
+         },
+         "err_transfer_failed_noretry" : {
+            "msg" : "Isso provavelmente foi causado por um problema com o dispositivo. Entre em contato com o suporte técnico da Axon.",
+            "title" : "O Dock apresentou um erro permanente ao transferir um vídeo deste dispositivo"
+         },
+         "err_unknown_port_type" : {
+            "msg" : "O tipo de porta na qual o dispositivo está conectado não é compatível ou é desconhecido. Consulte as instruções de solução de problemas.",
+            "title" : "O tipo de porta é desconhecido"
+         },
+         "err_wrong_agency" : {
+            "msg" : "Este dispositivo não está atualmente designado para a sua agência. Entre em contato com o administrador da sua agência para obter assistência com este dispositivo.",
+            "title" : "Este dispositivo não está atribuído à sua agência no momento."
+         },
+         "if_problem_continues" : "Se esse problema continuar, entre em contato com o suporte técnico da Axon:",
+         "more_help" : "Para obter mais ajuda relacionada a esse problema, entre em contato com o suporte técnico da Axon:",
+         "no_dns" : {
+            "msg" : "Não conseguimos localizar um servidor DNS. Isso normalmente é causado por um endereço IP inválido configurado para seu servidor DNS. Recomendamos verificar as configurações de DNS na página \"Rede\".",
+            "return_msg" : "Clique em \"OK\" abaixo para ir para a página Rede para inserir a informação de DNS ou pressione ESC para fechar esta caixa de diálogo.",
+            "title" : "Não foi possível encontrar um Servidor DNS"
+         },
+         "no_ecom" : {
+            "msg" : "Não conseguimos autenticar este Dock no Evidence.com. Isso geralmente é causado por chaves de registro inválidas ou não encontradas para sua agência e este Dock. Recomendamos registrar este Dock usando a página \"Operações\".",
+            "return_msg" : "Clique em \"OK\" abaixo para ir para a página \"Operações\" e registrar seu Dock ou pressione ESC para fechar esta caixa de diálogo.",
+            "title" : "Não há autenticação do Evidence.com"
+         },
+         "no_gateway" : {
+            "msg" : "Não conseguimos estabelecer contato com o gateway padrão da sua rede. Isso geralmente é causado por um endereço IP inválido; no entanto, alguns gateways não respondem a \"pings\" de rede.",
+            "return_msg" : "Clique em \"OK\" abaixo para ir para a página Rede para alterar seu gateway padrão ou pressione ESC para fechar esta caixa de diálogo.",
+            "title" : "Não foi encontrado nenhum Gateway"
+         },
+         "no_https" : {
+            "msg" : "Não conseguimos nos comunicar por meio de um canal seguro (HTTPS). Isso geralmente ocorre quando a porta HTTPS (443) é bloqueada pelo seu firewall. Recomendamos verificar se a porta HTTPS está aberta no seu firewall.",
+            "return_msg" : "Clique em \"OK\" abaixo para retornar para a página de status.",
+            "title" : "Não há HTTPS disponível."
+         },
+         "no_ip_dynamic" : {
+            "msg" : "Não conseguimos obter um endereço IP do seu servidor DHCP. Isso geralmente ocorre quando não há nenhum servidor DHCP ativo na sua rede. Talvez você precise inserir uma configuração de IP estático para este Dock.",
+            "return_msg" : "Clique em \"OK\" abaixo para ir para a página Rede para inserir a informação de IP estático ou pressione ESC para fechar esta caixa de diálogo.",
+            "title" : "Sem endereço IP."
+         },
+         "no_ip_static" : {
+            "msg" : "Não conseguimos obter o endereço IP que você especificou na configuração de IP estático deste Dock. Isso geralmente ocorre ao usar o mesmo IP estático para mais de um computador. Recomendamos verificar o endereço IP inserido na página \"Rede\".",
+            "return_msg" : "Clique em \"OK\" abaixo para ir para a página Rede para verificar suas configurações ou pressione ESC para fechar esta caixa de diálogo.",
+            "title" : "Sem endereço IP."
+         },
+         "no_ntp" : {
+            "msg" : "Não conseguimos nos comunicar com um servidor de horário da rede. Isso geralmente é causado quando as portas 80 e 123 são bloqueadas em um firewall. Recomendamos verificar se uma das duas portas (80 ou 123) está aberta no seu firewall.",
+            "return_msg" : "Clique em \"OK\" abaixo para ir para a página Rede para alterar seu servidor de hora ou pressione ESC para fechar esta caixa de diálogo.",
+            "title" : "Servidor NTP não responde"
+         },
+         "no_status" : {
+            "msg" : "Ainda não conseguimos determinar seu tipo de rede. Isso pode estar acontecendo porque nosso sistema ainda está sendo inicializado. Sugerimos aguardar 2 ou 3 minutos e atualizar esta página. A página de status também será atualizada se alguma informação nova chegar.",
+            "return_msg" : "Clique em \"OK\" abaixo para retornar para a página de status.",
+            "title" : "Nenhum status foi encontrado."
+         },
+         "title" : "Assistente de configuração",
+         "we_found" : "Depois de examinar a sua rede, encontramos o seguinte problema:",
+         "welcome" : "Este é o assistente de configuração."
+      },
+      "device_status_codes" : {
+         "capchk" : "Verificação de capacidade",
+         "cfg" : "Configurando",
+         "chg" : "Carregando",
+         "del" : "Removendo",
+         "device_maint" : "Manutenção de dispositivo",
+         "devid" : "Identificando",
+         "err" : "Erro (nova tentativa pendente)",
+         "fail" : "Erro",
+         "fwdone" : "Firmware atualizado",
+         "fwupdate" : "Atualizando firmware",
+         "inact" : "Inativo",
+         "init" : "Inicializando",
+         "inventory" : "Inventário",
+         "logerase" : "Apagando log",
+         "logsend" : "Carregando log",
+         "lost" : "Comunicação perdida",
+         "net_retry" : "Tentar conexão de rede novamente",
+         "new" : "Novo dispositivo",
+         "nonet" : "Rede indisponível",
+         "plugin" : "Conectando",
+         "proc" : "Transferindo arquivo",
+         "rdy" : "Pronto",
+         "register" : "Registrando",
+         "summary" : "Obter resumo",
+         "sys_maint" : "Manutenção do sistema",
+         "unk" : "Desconhecido",
+         "unsupported" : "Incompatível",
+         "wait" : "Aguardando"
+      },
+      "diag" : {
+         "headers" : {
+            "diag" : "Diagnóstico"
+         },
+         "page_title" : "Estado",
+         "sections" : {
+            "netdiag" : {
+               "command" : "Comando:",
+               "commands" : {
+                  "date" : "DATA informada pelo Dock",
+                  "ifconfig" : "IFCONFIG estatísticas de rede",
+                  "nslookup_goog" : "NSLOOKUP google.com",
+                  "nslookup_taser" : "NSLOOKUP taser.evidence.com",
+                  "ping_8888" : "PING 8.8.8.8",
+                  "ping_gateway" : "PING no gateway padrão",
+                  "ping_goog" : "PING google.com",
+                  "tail_etmlog" : "TAIL 100 linhas de log do Dock",
+                  "tail_syslog" : "TAIL 100 linhas do syslog",
+                  "tr_goog" : "TRACEROUTE google.com",
+                  "tr_taser" : "TRACEROUTE taser.evidence.com"
+               },
+               "execute" : "Executar",
+               "legend" : "Diagnósticos de rede",
+               "menu" : "Selecione o teste de diagnóstico no menu suspenso e pressione \"Executar\"...",
+               "msg1" : "Os comandos fornecidos aqui são usados para diagnosticar problemas de conectividade da rede.",
+               "msg2" : "Não execute os comandos abaixo a menos que seja instruído a fazê-lo por um representante de atendimento ao cliente da Axon.",
+               "result" : "Resultado:"
+            }
+         }
+      },
+      "firmware" : {
+         "current_version" : "Versão atual do firmware",
+         "dvr_update_starting" : "Entrando em contato com o servidor da Axon para procurar atualizações... A atualização de firmware será iniciada depois que o DVR terminar de carregar arquivos.",
+         "etm_update_starting" : "A atualização de firmware foi iniciada. Volte em alguns minutos para ver se a versão foi atualizada...",
+         "headers" : {
+            "firmware_mgmt" : "Gerenciamento de firmware"
+         },
+         "not_released" : "Não disponível",
+         "page_title" : "Atualização de Firmware",
+         "sections" : {
+            "device_firmware_update" : {
+               "legend" : "Atualização de firmware do dispositivo",
+               "msg" : "Para fazer o upgrade do firmware de todos os dispositivos que estão conectados ao Dock no momento, clique no botão abaixo. Se houver uma atualização disponível, ela será instalada automaticamente em todos os dispositivos.",
+               "device_name" : "Nome do dispositivo",
+               "released_firmware" : "Firmware lançado",
+               "early_access_firmware" : "Firmware de acesso antecipado",
+               "perform_fw_update" : "Atualizar dispositivos Axon"
+            },
+            "etm_firmware_update" : {
+               "check_update" : "Atualizar firmware",
+               "legend" : "Atualização de firmware do Dock",
+               "msg" : "Para atualizar o firmware do seu Dock, clique em \"ATUALIZAR FIRMWARE\". O Dock entrará em contato com os servidores da Axon e verificará qual é a versão mais recente do firmware. Se houver uma nova versão do firmware disponível, ela será instalada automaticamente.",
+               "show_version_details" : "Detalhes",
+               "version_details" : "Detalhes"
+            }
+         },
+         "update_failed" : "Não foi possível iniciar a atualização de firmware",
+         "update_title" : "Atualização de Firmware"
+      },
+      "general" : {
+         "closeparen" : ")",
+         "copyright" : "&copy; 2023 Axon Enterprise, Inc. Todos os direitos reservados.",
+         "error_code" : "código de erro",
+         "firmware" : "Firmware",
+         "footnote" : "*As baterias TASER contêm o firmware dos Handles do TASER 7 (T7) e do TASER 10 (T10), bem como de BLE do TASER.",
+         "openparen" : "(",
+         "refresh" : "Atualização",
+         "sections" : {
+            "button_bar" : {
+               "discard_changes" : "Descartar alterações",
+               "loading_wait" : "Carregando a configuração... aguarde...",
+               "reset_registration" : "Redefinir registro",
+               "save_changes" : "Salvar alterações",
+               "continue" : "Continuar"
+            },
+            "snmp" : {
+               "showhide_password" : "Mostrar/ocultar senha de SNMP"
+            }
+         }
+      },
+      "index" : {
+         "footer" : {
+            "help_center" : "Centro de Ajuda"
+         },
+         "headers" : {
+            "system_status" : "Status do Sistema"
+         },
+         "page_title" : "Estado",
+         "sections" : {
+            "devices" : {
+               "device" : "Dispositivo",
+               "firmware" : "Firmware*",
+               "hidden_info" : "Clique para ver dados",
+               "legend" : "Dispositivos",
+               "owner" : "Proprietário",
+               "serial" : "Número de série",
+               "status" : "Estado"
+            },
+            "networking" : {
+               "active" : "Ativa",
+               "dns_server" : "Servidor DNS",
+               "ecom_registration" : "Registro no Evidence.com",
+               "gateway" : "Gateway de Internet",
+               "https_port" : "HTTPS (Porta 443)",
+               "ipaddress" : "Endereço de IP",
+               "legend" : "Rede",
+               "mac_address" : "Endereço MAC",
+               "not_registered" : "Não registrado",
+               "serial_number" : "Número de série",
+               "time_server" : "Servidor de hora"
+            }
+         }
+      },
+      "links" : {
+         "administration" : "Administração",
+         "firmware" : "Firmware",
+         "networking" : "Rede",
+         "operations" : "Operações",
+         "status" : "Estado"
+      },
+      "lookups" : {
+         "netmode" : {
+            "dynamic" : "dinâmico",
+            "static" : "estático"
+         }
+      },
+      "networking" : {
+         "headers" : {
+            "net_setup" : "CONFIGURAÇÃO DE REDE"
+         },
+         "page_title" : "Configurações de rede",
+         "restart_title" : "Reinicialização da rede",
+         "saved_restarting" : "As configurações foram salvas, a rede está reinciando...",
+         "sections" : {
+            "conn_type" : {
+               "label_dynamic" : "IP dinâmico (DHCP)",
+               "label_static" : "IP estático",
+               "legend" : "Tipo de conexão",
+               "msg" : "O Dock pode funcionar com sua rede existente de duas maneiras para permitir o acesso à internet dos dispositivos AXON: por meio de um endereço IP dinâmico (chamado também de DHCP) ou estático. Selecione o método adequado abaixo:"
+            },
+            "static_ip" : {
+               "dns_servers" : "Servidores DNS",
+               "gateway" : "Gateway padrão",
+               "ip_address" : "Endereço de IP",
+               "legend" : "Configuração de IP estático",
+               "msg" : "Se sua rede não usar DHCP ou o acesso à internet só estiver disponível por meio da atribuição de um IP estático, você precisará fornecer as informações de configuração do Dock. Se você não tiver essas informações disponíveis, entre em contato com o administrador da rede.",
+               "subnet_mask" : "Máscara de sub-rede"
+            },
+            "throttle" : {
+               "label_mbps" : "Mbps",
+               "legend" : "Controle de velocidade de saída",
+               "max_speed" : "Velocidade máx. de carregamento",
+               "msg" : "Normalmente, o Dock usará toda a largura de banda disponível para carregar vídeos das unidades AXON o mais rápido possível. Se esse não for o comportamento desejado, você poderá limitar a velocidade de transferência abaixo (medida em megabits por segundo). Um valor de zero instruirá o Dock a usar toda a largura de banda disponível."
+            }
+         }
+      },
+      "ops" : {
+         "an_error_occurred" : "Ocorreu um erro",
+         "generating_tokens" : "Gerando tokens de segurança...",
+         "headers" : {
+            "operations" : "Operações"
+         },
+         "page_title" : "Operações gerais",
+         "regenerate_keys_query" : "Você já fez a autenticação no Evidence.com, deseja gerar as chaves de segurança novamente?",
+         "regenerate_keys_title" : "Gerar chaves novamente",
+         "register_with_ecom" : "Registrar em Evidence.com",
+         "registering_etm" : "Registrando o Dock...",
+         "processing" : "Processando...",
+         "poll_uri_code" : "Recuperando link e código de ativação...",
+         "reset_reg" : "Redefinir registro",
+         "reset_reg_failed" : "Não foi possível redefinir o registro",
+         "resetting_reg_dock" : "Redefinindo o registro do Dock para o padrão. A página será recarregada em 30 segundos.",
+         "restarting_etm" : "Reiniciando o Dock. Isso levará aproximadamente 30 segundos...",
+         "sections" : {
+            "e_com_reg" : {
+               "admin_password" : "Senha de admin.",
+               "admin_username" : "Nome de usuário de admin.",
+               "agency_name" : "Agência no Evidence.com",
+               "already_registered" : "Este Dock já foi registrado no Evidence.com",
+               "domain_name" : "Nome de domínio",
+               "legend" : "Registro no Evidence.com",
+               "msg" : "Para registrar este Dock na sua agência no Evidence.com, insira o nome, o nome de usuário e a senha da sua agência no Evidence.com. Depois que o Dock for registrado no Evidence.com, ele transferirá todos os arquivos de mídia para sua conta do Evidence.com. Seu nome de usuário e sua senha não são armazenados no Dock.",
+               "msg_shorten" : "Para registrar este Dock em sua Agência Evidence.com, digite o nome da sua agência Evidence.com. Assim que o Dock estiver registrado no Evidence.com, ele transferirá todos os arquivos de mídia para sua conta no Evidence.com.",
+               "msg_login_uri_code" : "Abra o link e forneça o código para concluir o registro:"
+            }
+         }
+      },
+      "proxy": {
+         "headers": {
+            "proxy_setup": "Ativação do proxy"
+         },
+         "page_title": "Configurações de proxy",
+         "proxy_test_title": "Teste de proxy",
+         "proxy_test_in_progress": "O teste de proxy está em andamento...",
+         "proxy_test_success_msg": "Teste de proxy bem-sucedido",
+         "proxy_test_fail_msg": "Teste de proxy com falha",
+         "configuration_saved_title": "Configuração de proxy salva",
+         "configuration_saved_msg": "A configuração de proxy foi salva e será aplicada em breve",
+         "sections": {
+            "http_proxy": {
+               "legend": "Proxy HTTP",
+               "msg": "A definição do proxy HTTP redirecionará todas as solicitações HTTP para o servidor de proxy designado.",
+               "enable": "Ativar",
+               "legend_config": "Configuração",
+               "legend_advanced_config": "Configuração avançada",
+               "disable_dns_check": "Desativar verificação de DNS",
+               "msg_config": "O nome de usuário e a senha são opcionais.",
+               "host": "Host de proxy",
+               "port": "Porta de proxy",
+               "username": "Nome de usuário",
+               "password": "Senha",
+               "test_connection": "Testar conexão"
+            }
+         }
+      },
+      "strings" : {
+         "an_error_occurred" : "Ocorreu um erro",
+         "axon_flex" : "Axon Flex",
+         "calculating_rate" : "Calculando...",
+         "cancel" : "Cancelar",
+         "cannot_get_data_too_many_failed_login_attempts" : "Não é possível obter dados devido ao número excessivo de tentativas de login malsucedidas",
+         "click_for_details" : "Clique para obter detalhes",
+         "device_error" : "Erro de Dispositivo",
+         "error" : "Erro",
+         "error_download" : "Erro ao baixar https",
+         "error_internal" : "Erro interno",
+         "failed_auth": "Muitas tentativas de autenticação com falha. Conta temporariamente suspensa.",
+         "finished" : "Concluído",
+         "invalid_hostname" : " não é um nome de host válido",
+         "kbps" : "kbps",
+         "login_failed" : "falha de login",
+         "no_server_response" : "Nenhuma resposta do servidor",
+         "ok" : "OK",
+         "operation_complete_success" : "A operação foi concluída com êxito.",
+         "please_complete_mandatory" : "Preencha este campo obrigatório.",
+         "please_enter_numeric" : "Insira um valor numérico.",
+         "please_enter_valid_email" : "Informe um endereço de e-mail válido.",
+         "please_enter_valid_URL" : "Insira um URL válido.",
+         "please_enter_value_larger" : "Insira um valor superior a ",
+         "please_enter_value_smaller" : "Insira um valor inferior a ",
+         "reloading_status" : "Recarregando status...",
+         "reloading_status_title" : "Atualizando",
+         "unassigned" : "Não atribuídos",
+         "unspecified_error" : "Ocorreu um erro não especificado: ",
+         "waiting_for_response" : "Esperando resposta...",
+         "authentication_failed" : "Autenticação com falha",
+         "invalid_request" : "A solicitação é nula ou inválida"
+      }
+   }
+}

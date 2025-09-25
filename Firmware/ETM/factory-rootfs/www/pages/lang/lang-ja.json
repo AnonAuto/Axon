@@ -1,0 +1,558 @@
+{
+   "ETM" : {
+      "admin" : {
+         "admin_title" : "ドックの管理",
+         "configuring_msg" : "設定しています。約40秒かかります...",
+         "headers" : {
+            "administration" : "ドックの管理"
+         },
+         "page_title" : "管理者設定",
+         "rebooting_msg" : "再起動しています。約60秒かかります...",
+         "saving_settings" : "設定を保存しています...",
+         "sections" : {
+            "admin_maint" : {
+               "legend" : "メンテナンス",
+               "reboot" : "ドックを再起動"
+            },
+            "admin_ssl" : {
+               "accept_only_https" : "SSLリクエストのみ受け付け",
+               "legend" : "SSLの設定",
+               "regen_ssl" : "SSL証明書を再生成",
+               "require_https_time" : "初回時刻チェックにSSLを要求"
+            },
+            "device_id" : {
+               "etm_name" : "ドック名",
+               "home" : "デバイス管理",
+               "legend" : "デバイスの識別",
+               "location" : "場所",
+               "msg" : "以下の情報は、通信しているドックデバイスを特定するのに役立ちます。この情報は、Evidence.com がデバイスのステータス情報を提供する際にも使用されます。",
+               "your_agency" : "所属機関"
+            },
+            "password_change" : {
+               "confirm_new_password" : "新しいパスワードを再入力",
+               "current_password" : "現在のパスワード",
+               "error_no_password" : "管理者の認証情報を変更するには、現在のパスワードが必要です。",
+               "legend" : "認証情報を変更",
+               "msg" : "このドックにアクセスするための管理用ユーザー名とパスワードを管理します。",
+               "new_password" : "新しいパスワード",
+               "username" : "ユーザー名"
+            },
+            "snmp" : {
+               "authentication" : "認証",
+               "disable" : "無効にする",
+               "enable_snmp" : "SNMPを有効にする",
+               "enc_password" : "暗号化パスワード",
+               "encrypt_msg" : "暗号化に同じ「SNMPパスワード」を使用する場合は、「暗号化パスワード」を空白にします。",
+               "encryption" : "暗号化",
+               "error_no_password" : "SNMPユーザー名を変更するには、対応するパスワードが必要です。",
+               "error_title" : "SNMPエラーを設定",
+               "legend" : "SNMPサーバー",
+               "legend_config" : "SNMP設定",
+               "msg" : "SNMPはデフォルトで無効になっています。有効にするには、チェックボックスを使用して設定を入力します。",
+               "password" : "SNMPパスワード",
+               "username" : "SNMPユーザー名"
+            }
+         },
+         "set_configuration_error_title" : "構成の設定",
+         "settings_changed" : {
+            "p1" : "機関の設定が変更されました。",
+            "p2" : " [更新] ボタンを押すと、機関からドックへ変更が適用されます。",
+            "p3" : "適用しない場合は、[キャンセル] を押してから手動で設定を更新すると、変更内容が機関に同期されます。",
+            "p4" : "変更内容の一覧:",
+            "title" : "設定が変更されました"
+         }
+      },
+      "axonsup" : {
+         "headers" : {
+            "data" : "サポートデータ"
+         },
+         "page_title" : "Axonサポート",
+         "sections" : {
+            "data" : {
+               "legend" : "Axonサポートデータ",
+               "msg" : "以下のデータBLOBは、Axonのカスタマーサービス担当者とやり取りする際に利用できる場合があります。",
+               "result1" : "結果 1:",
+               "result2" : "結果 2:"
+            }
+         }
+      },
+	  "cgi" : {
+          "csrf_fail" : "クッキーエラー",
+          "invalid_auth" : "ユーザー名またはパスワードが無効",
+          "invalid_cmd" : "無効なコマンド",
+          "invalid_domain" : "ドメイン指定なし",
+          "invalid_proxy_config" : "無効なプロキシ設定",
+          "invalid_proxy_user_pass" : "ユーザー名またはパスワードが見つかりません",
+          "invalid_snmp_user" : "SNMP の設定を適用できません。SNMP ユーザー名が無効です。",
+          "no_content" : "コンテンツなし",
+          "no_snmp_pw" : "SNMP の設定を適用できません。パスワードが設定されていません。",
+          "not_released" : "リリースされていません",
+          "ok" : "OK",
+          "unable_disable_snmp" : "SNMP の設定を無効にできません。",
+          "unable_set_snmp" : "SNMP の設定を適用できません。",
+          "unable_set_snmp_auth" : "SNMP 設定認証を適用できません。",
+          "unable_set_snmp_enable" : "SNMP の設定を有効にできません。",
+          "unable_set_snmp_enc" : "SNMP 設定の暗号化を適用できません。",
+          "unable_set_snmp_pass" : "SNMP 設定パスワードを適用できません。",
+          "unable_set_snmp_user" : "SNMP 設定ユーザー名を適用できません。",
+          "unable_set_sslonly" : "「SSL リクエストのみ受け付ける」設定を変更できません",
+          "unknown_err" : "不明なエラー",
+          "web_creds_err" : "管理者認証情報の更新に失敗しました。",
+          "web_creds_invalid_username" : "管理者認証情報の更新に失敗しました。ユーザー名が無効です。",
+          "web_creds_invalid_cur_pass" : "管理者認証情報の更新に失敗しました。現在のパスワードが無効です。",
+          "web_creds_invalid_new_pass" : "管理者認証情報の更新に失敗しました。新しいパスワードが無効です。"
+      },
+      "common" : {
+        "admin_name_allowed_characters" : "無効なユーザー名です。使用できる文字: 英数字、スペース、# ! @ ( ) [ ] - . _",
+        "at_least" : "次の文字数以上である必要があります:",
+        "cannot_contain_duplicate" : "同じ文字を2回連続で使用できません",
+        "cannot_contain_more_than" : "次の文字数以上使用できません:",
+        "cannot_contain_username" : "ユーザー名または一般的な言葉は使用できません",
+        "character" : "文字",
+        "characters" : "文字",
+        "characters_in_seq" : "文字の連続",
+        "input_valid_IP" : "有効なIPアドレスを入力してください",
+        "less_than" : "次の文字数以下である必要があります:",
+        "mandatory_field" : "このフィールドは入力必須です。",
+        "must_contain" : "次を含む必要があります",
+        "no" : "いいえ",
+        "not_secure" : "は安全性に問題があります",
+        "please_provide" : "少なくとも次が必要です:",
+        "select_valid_entry" : "有効なエントリをリストから選択してください",
+        "snmp_name_allowed_characters" : "無効なユーザー名です。使用できる文字: 英数字、# ! @ ( ) [ ] - . _",
+        "value_not_equal" : "値が「新しいパスワード」フィールドと一致しません",
+        "yes" : "はい"
+      },
+      "configassist" : {
+         "dlg_assign" : {
+            "msg1" : "このフォームでは、デバイスの所有者を以下に指定したユーザーに変更します。ユーザー名とパスワードはドックに保存されません。",
+            "msg2" : "以下に認証情報を入力して「OK」をクリックすると、このデバイスが自分に割り当てられます。自分に割り当てない場合は、「キャンセル」をクリックして戻ります。",
+            "password" : "パスワード",
+            "username" : "ユーザー名"
+         },
+         "dlg_format" : {
+            "msg" : "これにより、デバイスの設定とファームウェアが更新されます。データは一切失われません。"
+         },
+         "dlg_format_auth" : {
+            "admin_password" : "管理者パスワード",
+            "admin_username" : "管理者ユーザー名",
+            "msg" : "この操作を行うには Evidence.com の管理者権限が必要です。ユーザー名とパスワードはドックに保存されません。以下に認証情報を入力し「OK」をクリックすると、このデバイスがフォーマットされます。この操作を実行しない場合には「キャンセル」をクリックして戻ります。"
+         },
+         "err_cannot_get_log" : {
+            "msg" : "このデバイスから操作ログを読み取ろうとした際に、エラーが発生しました。",
+            "title" : "このデバイスからログファイルを読み取れません"
+         },
+         "err_cannot_read_file" : {
+            "msg" : "このデバイスからメディアおよび証拠情報を読み取る際にエラーが発生しました。このエラーが続く場合は、Axonのテクニカルサポートにお問い合わせください。",
+            "title" : "このデバイスから証拠ファイルを読み取れません。"
+         },
+         "err_cannot_rm_log" : {
+            "msg" : "このデバイスの操作ログをevidence.comにアップロード後にクリアしようとした際に、エラーが発生しました。",
+            "title" : "このデバイスのログファイルをクリアできません"
+         },
+         "err_device_lost_communication" : {
+            "msg" : "このデバイスの接続が機能しなくなりました。デバイスのドッキングを一旦解除し、再度ドッキングしてください。それでも問題が解決しない場合は、組織の管理者に連絡して、このデバイスに関するサポートを受けてください。",
+            "title" : "ドックとこのデバイスとの通信が失われました。"
+         },
+         "err_device_maintenance" : {
+            "msg" : "このドックは、このデバイスで自動メンテナンスを実行しています。デバイスは自動的に通常の動作を再開します。何もせずそのままお待ちください。",
+            "title" : "このドックは、このデバイスで自動メンテナンスを実行しています。"
+         },
+         "err_devtype_cfg_failure" : {
+             "msg" : "デバイスをBodycamモードに設定できません。トラブルシューティングをご参照ください。",
+             "title" : "このデバイスはBodycamとして設定されていません"
+         },
+         "err_format_failure" : {
+            "msg" : "デバイスドライブのフォーマットに失敗しました。トラブルシューティングを参照してください。",
+            "title" : "このデバイスのドライブフォーマットに失敗しました"
+         },
+         "err_fwup_cfg_failure" : {
+             "msg": "ファームウェアの更新可能フィールドを設定できませんでした。トラブルシューティングをご参照ください。",
+             "title" : "このデバイスはファームウェア更新可能として設定されていません"
+         },
+         "err_inactive_device" : {
+            "msg" : "この機関ではデバイスが有効になっていません。デバイスをEvidence Syncに接続し、適切なユーザーに割り当ててください。",
+            "title" : "お使いのデバイスは現在、担当の機関で有効になっていません。"
+         },
+         "err_invalid_device_type" : {
+            "msg" : "指定されたタイプにデバイスを設定できません。トラブルシューティングを参照してください。",
+            "title" : "デバイスが無効です"
+         },
+         "err_invalid_model" : {
+            "msg" : "ドックに接続されているデバイスが、有効なAxonデバイスとして認識されていません。ドックから外してください",
+            "title" : "ドックはこのタイプのデバイスを認識しません"
+         },
+         "err_invalid_serial" : {
+            "msg" : "ドックに接続されているデバイスに有効なシリアル番号がありません。これは断続的なエラーの可能性があります。ドックに接続されているデバイスを一旦外して再接続してください。エラーが続く場合は、デバイスをRMAしてください。",
+            "title" : "このデバイスのシリアル番号は無効です"
+         },
+         "err_inventory_failure" : {
+            "msg" : "このデバイスのメディアおよび証拠情報を読み取る際にエラーが発生しました。エラーが続く場合は、Axonのテクニカルサポートにお問い合わせください。",
+            "title" : "このデバイスから証拠リストを読み取れません。"
+         },
+         "err_mount_failed" : {
+            "msg" : "管理画面に進み、ドックを再起動してください。",
+            "title" : "デバイスへの接続時にエラーが発生しました。"
+         },
+         "err_network_failed" : {
+            "msg" : "これは通常、インターネットの接続不良、Evidence.comへの接続不良、Evidence.comに大きな負荷がかかっている、またはEvidence.comがメンテナンスのために停止していることが原因で発生するもので、致命的なエラーではありません。ドックは操作を再試行します。",
+            "title" : "このデバイスの処理中にドックでネットワークの問題が発生しました"
+         },
+         "err_no_usb" : {
+            "msg" : "ドックがこのデバイスと通信できません。これは断続的なエラーの可能性があります。デバイスをドックから一旦外して再接続してください。エラーが続く場合は、デバイスをRMAしてください。",
+            "title" : "デバイスと通信できません"
+         },
+         "err_not_offline" : {
+            "msg" : "このドックはオフライン操作用に設定されており、オンラインモードに設定されているデバイスは処理できません。このデバイスをオフラインモードに設定する場合は、デバイスをEvidence Syncに接続し、指示に従ってください。",
+            "title" : "このデバイスはオフライン操作用に設定されていません"
+         },
+         "err_not_online" : {
+            "msg" : "このドックはオンライン操作用に設定されており、オフラインモードに設定されているデバイスは処理できません。このデバイスをオンラインモードに設定する場合は、デバイスをEvidence Syncに接続し、指示に従ってください。",
+            "title" : "このデバイスはオンライン操作用に設定されていません"
+         },
+         "err_system_maintenance" : {
+            "msg" : "このドックは自動メンテナンスを行っています。デバイスは自動的に通常の動作を再開します。何もせずそのままお待ちください。",
+            "title" : "ドックは内部メンテナンスを実行しています。"
+         },
+         "err_transfer_failed" : {
+            "msg" : "これは通常、インターネットの接続不良、Evidence.comへの接続不良、Evidence.comに大きな負荷がかかっている、またはEvidence.comがメンテナンスのために停止していることが原因で発生するもので、致命的なエラーではありません。ドックはファイルのアップロードを再試行します。",
+            "title" : "ドックは、このデバイスから動画を転送できませんでした"
+         },
+         "err_transfer_failed_noretry" : {
+            "msg" : "これは通常、デバイスの問題が原因で発生します。Axonのテクニカルサポートにお問い合わせください。",
+            "title" : "このデバイスから動画を転送する際に、ドックで永久的なエラーが発生しました"
+         },
+         "err_unknown_port_type" : {
+            "msg" : "接続されたデバイスのポートタイプがサポートされていないか、不明です。トラブルシューティングを参照してください。",
+            "title" : "ポートタイプが不明です"
+         },
+         "err_wrong_agency" : {
+            "msg" : "このデバイスは現在あなたの機関に割り当てられていません。このデバイスの使用については、機関の管理者にお問い合わせください。",
+            "title" : "このデバイスは現在、あなたの機関に割り当てられていません。"
+         },
+         "if_problem_continues" : "この問題が解決しない場合は、Axonのテクニカルサポートにご連絡ください。",
+         "more_help" : "この問題についてさらにサポートが必要な場合は、Axonのテクニカルサポートにお問い合わせください。",
+         "no_dns" : {
+            "msg" : "DNSサーバーが見つかりませんでした。これは通常、DNSサーバーに設定されたIPアドレスが無効であることが原因です。「ネットワーク」ページでDNSの設定を確認することをお勧めします。",
+            "return_msg" : "下の「OK」をクリックして「ネットワーク」ページに進みDNS情報を確認するか、「ESC」を押してこのダイアログを閉じます。",
+            "title" : "DNSサーバーが見つかりませんでした"
+         },
+         "no_ecom" : {
+            "msg" : "Evidence.comでこのドックを認証できませんでした。これは通常、組織とこのドックの登録キーが無効または見つからないことが原因です。「操作」ページでこのドックを登録することをお勧めします。",
+            "return_msg" : "下の「OK」をクリックして「操作」ページに進みドックを登録するか、「ESC」を押してこのダイアログを閉じます。",
+            "title" : "Evidence.comの認証がありません"
+         },
+         "no_gateway" : {
+            "msg" : "ご利用中のネットワークのデフォルトゲートウェイに接続できませんでした。これは通常、無効なIPアドレスが原因ですが、ゲートウェイの中にはネットワークの「ping」に反応しないものがあります。",
+            "return_msg" : "下の「OK」をクリックしてネットワークのページに進みデフォルトのゲートウェイを変更するか、「ESC」を押してこのダイアログを閉じます。",
+            "title" : "ゲートウェイがありません"
+         },
+         "no_https" : {
+            "msg" : "セキュア（HTTPS）なチャネルで通信できませんでした。これは通常、HTTPSポート（443）がファイアウォールでブロックされていることが原因です。ファイアウォールでHTTPSポートが開いていることを確認することをお勧めします。",
+            "return_msg" : "下の「OK」をクリックすると、「ステータス」ページに戻ります。",
+            "title" : "利用できるHTTPSがありません。"
+         },
+         "no_ip_dynamic" : {
+            "msg" : "ご利用中のDHCPサーバーからIPアドレスを取得できませんでした。これは通常、有効になっているDHCPサーバーがネットワーク上にないことが原因です。このドックに固定IP設定を入力する必要があるかもしれません。",
+            "return_msg" : "下の「OK」をクリックして「ネットワーク設定」ページに進み固定IP情報を入力するか、「ESC」を押してこのダイアログを閉じます。",
+            "title" : "IPアドレスがありません。"
+         },
+         "no_ip_static" : {
+            "msg" : "このドックの固定IP設定で指定されたIPアドレスを取得できませんでした。これは通常、同じ固定IPを複数のコンピュータで使用している場合に起こります。ネットワーク設定画面で入力したIPアドレスを確認することをお勧めします。",
+            "return_msg" : "下の「OK」をクリックして「ネットワーク設定」ページに進み設定内容を確認するか、「ESC」を押してこのダイアログを閉じます。",
+            "title" : "IPアドレスがありません。"
+         },
+         "no_ntp" : {
+            "msg" : "ネットワークのタイムサーバーと通信できませんでした。これは通常、ポート80とポート123の両方がファイアウォールでブロックされていることが原因です。ファイアウォールでポート80とポート123のいずれかが開いていることを確認することをお勧めします。",
+            "return_msg" : "下の「OK」をクリックして「ネットワーク設定」ページに進みタイムサーバーを変更するか、「ESC」を押してこのダイアログを閉じます。",
+            "title" : "NTPサーバーが応答しません"
+         },
+         "no_status" : {
+            "msg" : "ご利用中のネットワークのタイプをまだ確認できていません。これは当社のシステムがまだ立ち上がっていないことが原因である可能性があります。2～3分待ってから、このページを更新することをお勧めします。新しい情報が入るとステータスページも更新されます。",
+            "return_msg" : "下の「OK」をクリックすると、ステータスページに戻ります。",
+            "title" : "ステータスが見つかりません。"
+         },
+         "title" : "設定アシスタント",
+         "we_found" : "ネットワークを調べたところ、以下の問題が見つかりました。",
+         "welcome" : "構成アシスタントへようこそ。"
+      },
+      "device_status_codes" : {
+         "capchk" : "容量チェック",
+         "cfg" : "構成中",
+         "chg" : "充電中",
+         "del" : "削除中",
+         "device_maint" : "デバイスのメンテナンス",
+         "devid" : "識別中",
+         "err" : "エラー（再試行は保留）",
+         "fail" : "エラー",
+         "fwdone" : "ファームウェアが更新されました",
+         "fwupdate" : "ファームウェアを更新中",
+         "inact" : "非アクティブ",
+         "init" : "初期化中",
+         "inventory" : "インベントリ",
+         "logerase" : "ログを消去中",
+         "logsend" : "ログをアップロード中",
+         "lost" : "接続が失われました",
+         "net_retry" : "ネットワーク接続を再試行",
+         "new" : "新しいデバイス",
+         "nonet" : "ネットワークがダウンしています",
+         "plugin" : "接続中",
+         "proc" : "ファイルを転送中",
+         "rdy" : "準備完了",
+         "register" : "登録中",
+         "summary" : "サマリを入手",
+         "sys_maint" : "システムメンテナンス",
+         "unk" : "不明",
+         "unsupported" : "未対応",
+         "wait" : "待機中"
+      },
+      "diag" : {
+         "headers" : {
+            "diag" : "診断"
+         },
+         "page_title" : "ステータス",
+         "sections" : {
+            "netdiag" : {
+               "command" : "コマンド:",
+               "commands" : {
+                  "date" : "ドックで報告された日付",
+                  "ifconfig" : "IFCONFIGネットワーク統計",
+                  "nslookup_goog" : "NSLOOKUP google.com",
+                  "nslookup_taser" : "NSLOOKUP taser.evidence.com",
+                  "ping_8888" : "PING 8.8.8.8",
+                  "ping_gateway" : "PINGデフォルトゲートウェイ",
+                  "ping_goog" : "PING google.com",
+                  "tail_etmlog" : "ドックログのTAIL 100行",
+                  "tail_syslog" : "シスログのTAIL 100行",
+                  "tr_goog" : "TRACEROUTE google.com",
+                  "tr_taser" : "TRACEROUTE taser.evidence.com"
+               },
+               "execute" : "実行",
+               "legend" : "ネットワーク診断",
+               "menu" : "ドロップダウンメニューから診断テストを選択し、実行します...",
+               "msg1" : "ここに提示されるコマンドで、ネットワーク接続の問題を診断します。",
+               "msg2" : "Axon社のカスタマーサービス担当から指示がない限り、以下のコマンドは実行しないでください。",
+               "result" : "結果:"
+            }
+         }
+      },
+      "firmware" : {
+         "current_version" : "現在のファームウェアバージョン",
+         "dvr_update_starting" : "Axonサーバーに連絡して更新を探しています。DVRがファイルのアップロードを完了した後にファームウェアの更新が開始されます。",
+         "etm_update_starting" : "ファームウェアの更新を開始しました。数分後に、バージョンが更新されたことをご確認ください。",
+         "headers" : {
+            "firmware_mgmt" : "ファームウェアの管理"
+         },
+         "not_released" : "リリースされていません",
+         "page_title" : "ファームウェアの更新",
+         "sections" : {
+            "device_firmware_update" : {
+               "legend" : "デバイスのファームウェア更新",
+               "msg" : "現在ドッキングしている機器すべてのファームウェアをアップグレードするには、以下のボタンをクリックしてください。更新を利用できる場合は、全ての機器に自動的にインストールされます。",
+               "device_name" : "デバイス名",
+               "released_firmware" : "リリース済みのファームウェア",
+               "early_access_firmware" : "早期アクセスファームウェア",
+               "perform_fw_update" : "Axonデバイスを更新"
+            },
+            "etm_firmware_update" : {
+               "check_update" : "ファームウェアを更新",
+               "legend" : "ドックのファームウェアを更新",
+               "msg" : "ドックのファームウェアを更新するには、「ファームウェアを更新」をクリックします。ドックがAxonのサーバーに連絡してファームウェアの最新バージョンを確認します。ファームウェアの新バージョンが利用できる場合は、自動的にインストールされます。",
+               "show_version_details" : "詳細",
+               "version_details" : "詳細"
+            }
+         },
+         "update_failed" : "ファームウェアの更新を開始できません",
+         "update_title" : "ファームウェアの更新"
+      },
+      "general" : {
+         "closeparen" : "）",
+         "copyright" : "&copy; 2023 Axon Enterprise, Inc. 無断転載禁止",
+         "error_code" : "エラーコード",
+         "firmware" : "ファームウェア",
+         "footnote" : "*TASERバッテリーは、TASER 7 (T7)、TASER 10 (T10) ハンドルおよびTASER BLE用のファームウェアを搭載しています。",
+         "openparen" : "（",
+         "refresh" : "更新",
+         "sections" : {
+            "button_bar" : {
+               "discard_changes" : "変更を破棄",
+               "loading_wait" : "構成を読み込んでいます。お待ちください...",
+               "reset_registration" : "登録をリセット",
+               "save_changes" : "変更を保存",
+               "continue" : "続行"
+            },
+            "snmp" : {
+               "showhide_password" : "SNMPパスワードを表示/非表示"
+            }
+         }
+      },
+      "index" : {
+         "footer" : {
+            "help_center" : "ヘルプセンター"
+         },
+         "headers" : {
+            "system_status" : "システムのステータス"
+         },
+         "page_title" : "ステータス",
+         "sections" : {
+            "devices" : {
+               "device" : "デバイス",
+               "firmware" : "ファームウェア*",
+               "hidden_info" : "クリックしてデータを見る",
+               "legend" : "デバイス",
+               "owner" : "オーナー",
+               "serial" : "シリアルナンバー",
+               "status" : "ステータス"
+            },
+            "networking" : {
+               "active" : "有効",
+               "dns_server" : "DNSサーバー",
+               "ecom_registration" : "Evidence.com登録",
+               "gateway" : "インターネットゲートウェイ",
+               "https_port" : "HTTPS（ポート443）",
+               "ipaddress" : "IPアドレス",
+               "legend" : "ネットワーク設定",
+               "mac_address" : "MACアドレス",
+               "not_registered" : "登録されていません",
+               "serial_number" : "シリアル番号",
+               "time_server" : "タイムサーバー"
+            }
+         }
+      },
+      "links" : {
+         "administration" : "管理",
+         "firmware" : "ファームウェア",
+         "networking" : "ネットワーク設定",
+         "operations" : "操作",
+         "status" : "ステータス"
+      },
+      "lookups" : {
+         "netmode" : {
+            "dynamic" : "動的",
+            "static" : "固定"
+         }
+      },
+      "networking" : {
+         "headers" : {
+            "net_setup" : "ネットワーク設定"
+         },
+         "page_title" : "ネットワーク設定内容",
+         "restart_title" : "ネットワーク再起動",
+         "saved_restarting" : "設定内容を保存し、ネットワークを再起動しています...",
+         "sections" : {
+            "conn_type" : {
+               "label_dynamic" : "動的IP（DHCP）",
+               "label_static" : "固定IP",
+               "legend" : "接続タイプ",
+               "msg" : "ドックを既存のネットワークと連携させてAXONデバイスがインターネットに接続できるようにする方法には2通りあり、動的IP（DHCPとも呼ばれます）または固定IPアドレスを使用します。以下から適切な方法を選択してください。"
+            },
+            "static_ip" : {
+               "dns_servers" : "DNSサーバー",
+               "gateway" : "デフォルトゲートウェイ",
+               "ip_address" : "IPアドレス",
+               "legend" : "固定IPの設定",
+               "msg" : "ご利用中のネットワークがDHCPを使用していない場合、またはインターネットへの接続が固定IPの割り当てでのみ実行できる場合は、ドックの設定情報を提供する必要があります。この情報をお持ちでない場合は、ネットワーク管理者にお問い合わせください。",
+               "subnet_mask" : "サブネットマスク"
+            },
+            "throttle" : {
+               "label_mbps" : "Mbps",
+               "legend" : "アップストリームスロットル",
+               "max_speed" : "アップロード最大速度",
+               "msg" : "通常、ドックは利用可能な帯域をすべて使用して、AXONユニットからの動画をできるだけ早くアップロードします。この動作を止めるには、以下で転送速度を制限できます（単位はメガビット/秒）。0を値に設定すると、ドックは利用可能な帯域幅をすべて使用します。"
+            }
+         }
+      },
+      "ops" : {
+         "an_error_occurred" : "エラーが発生しました",
+         "generating_tokens" : "セキュリティトークンを生成中...",
+         "headers" : {
+            "operations" : "操作"
+         },
+         "page_title" : "一般的な操作",
+         "regenerate_keys_query" : "Evidence.comで既に認証されていますが、セキュリティキーを再生成しますか？",
+         "regenerate_keys_title" : "キーを再生成",
+         "register_with_ecom" : "Evidence.comに登録",
+         "registering_etm" : "ドックを登録中...",
+         "processing" : "処理中...",
+         "poll_uri_code" : "アクティベーションリンクとコードの取得中...",
+         "reset_reg" : "登録をリセット",
+         "reset_reg_failed" : "登録をリセットできません",
+         "resetting_reg_dock" : "ドックの登録をデフォルトにリセットしています。30秒後にページを再読み込みします。",
+         "restarting_etm" : "ドックを再起動しています。約30秒かかります...",
+         "sections" : {
+            "e_com_reg" : {
+               "admin_password" : "管理者パスワード",
+               "admin_username" : "管理者ユーザー名",
+               "agency_name" : "Evidence.com機関",
+               "already_registered" : "このドックはEvidence.comに既に登録されています",
+               "domain_name" : "ドメイン名",
+               "legend" : "Evidence.com登録",
+               "msg" : "このドックをEvidence.com機関に登録するには、Evidence.com機関名とユーザー名、パスワードを入力します。ドックがEvidence.comに登録されると、すべてのメディアファイルがEvidence.comのアカウントに転送されます。ユーザー名とパスワードはドックに保存されません。",
+               "msg_shorten" : "このドックをEvidence.com機関に登録するには、Evidence.com機関名を入力します。ドックがEvidence.comに登録されると、すべてのメディアファイルがEvidence.comのアカウントに転送されます。",
+               "msg_login_uri_code" : "リンクを開き、コードを入力して登録を完了してください。"
+            }
+         }
+      },
+      "proxy": {
+         "headers": {
+            "proxy_setup": "プロキシのセットアップ"
+         },
+         "page_title": "プロキシ設定",
+         "proxy_test_title": "プロキシのテスト",
+         "proxy_test_in_progress": "プロキシテスト実行中...",
+         "proxy_test_success_msg": "プロキシテスト完了",
+         "proxy_test_fail_msg": "プロキシテスト失敗",
+         "configuration_saved_title": "プロキシの構成を保存しました",
+         "configuration_saved_msg": "プロキシの構成が保存され、まもなく有効になります",
+         "sections": {
+            "http_proxy": {
+               "legend": "HTTPプロキシ",
+               "msg": "HTTPプロキシを設定すると、すべてのプロキシリクエストは指定されたプロキシサーバーへリダイレクトされます。",
+               "enable": "有効にする",
+               "legend_config": "構成",
+               "legend_advanced_config": "高度な構成",
+               "disable_dns_check": "DNSチェックを無効化",
+               "msg_config": "ユーザー名とパスワードはオプションです。",
+               "host": "プロキシホスト",
+               "port": "プロキシポート",
+               "username": "ユーザー名",
+               "password": "パスワード",
+               "test_connection": "接続テスト"
+            }
+         }
+      },
+      "strings" : {
+         "an_error_occurred" : "エラーが発生しました",
+         "axon_flex" : "Axon Flex",
+         "calculating_rate" : "計算中...",
+         "cancel" : "キャンセル",
+         "cannot_get_data_too_many_failed_login_attempts" : "ログイン試行の失敗回数が多すぎるため、データを取得できません",
+         "click_for_details" : "クリックして詳細を見る",
+         "device_error" : "デバイスエラー",
+         "error" : "エラー",
+         "error_download" : "https のダウンロードエラー",
+         "error_internal" : "内部エラー",
+         "failed_auth": "失敗した認証の試行回数が多すぎます。アカウントが一時的に停止されました。",
+         "finished" : "完了",
+         "invalid_hostname" : "は有効なホスト名ではありません",
+         "kbps" : "kbps",
+         "login_failed" : "ログイン失敗",
+         "no_server_response" : "サーバーから応答がありません",
+         "ok" : "OK",
+         "operation_complete_success" : "操作は正常に完了しました。",
+         "please_complete_mandatory" : "この欄は入力必須です。",
+         "please_enter_numeric" : "数値を入力してください。",
+         "please_enter_valid_email" : "有効なメールアドレスを入力してください。",
+         "please_enter_valid_URL" : "有効なURLを入力してください。",
+         "please_enter_value_larger" : "次の数より大きい値を入力してください:",
+         "please_enter_value_smaller" : "次の数より小さい値を入力してください:",
+         "reloading_status" : "ステータスを再読み込み中...",
+         "reloading_status_title" : "更新中",
+         "unassigned" : "未割り当て",
+         "unspecified_error" : "特定できないエラーが発生しました:",
+         "waiting_for_response" : "応答を待っています...",
+         "authentication_failed" : "Authentication failed",
+         "invalid_request" : "Request is null or invalid"
+      }
+   }
+}

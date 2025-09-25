@@ -1,0 +1,558 @@
+{
+   "ETM" : {
+      "admin" : {
+         "admin_title" : "Dokkadminisztráció",
+         "configuring_msg" : "Konfigurálás folyamatban, Ez nagyjából 40 másodpercet fog igénybe venni...",
+         "headers" : {
+            "administration" : "Dokkadminisztráció"
+         },
+         "page_title" : "Adminisztrátori beállítások",
+         "rebooting_msg" : "Újraindítás folyamatban, Ez nagyjából 60 másodpercet fog igénybe venni...",
+         "saving_settings" : "Beállítások mentése...",
+         "sections" : {
+            "admin_maint" : {
+               "legend" : "Karbantartás",
+               "reboot" : "Dokk újraindítása"
+            },
+            "admin_ssl" : {
+               "accept_only_https" : "Csak SSL-kérelmek elfogadása",
+               "legend" : "SSL-konfiguráció",
+               "regen_ssl" : "SSL-tanúsítvány újragenerálása",
+               "require_https_time" : "SSL legyen kötelező a kezdeti idő ellenőrzéséhez"
+            },
+            "device_id" : {
+               "etm_name" : "Dokk neve",
+               "home" : "Eszközkezdőlap",
+               "legend" : "Eszközazonosító",
+               "location" : "Helyszín",
+               "msg" : "A következő információ segít beazonosítani, hogy épp melyik Dokkeszközzel kommunikál. Ezt az információt az Evidence.com is használja, hogy az eszköz állapotáról információt adjon.",
+               "your_agency" : "Az Ön rendvédelmi szerve"
+            },
+            "password_change" : {
+               "confirm_new_password" : "Gépelje be újra az új jelszót",
+               "current_password" : "Aktuális jelszó",
+               "error_no_password" : "Az adminisztrátori hitelesítő adatok megváltoztatásához szükség van a jelenlegi jelszóra.",
+               "legend" : "Hitelesítő adatok megváltoztatása",
+               "msg" : "A dokkhoz történő hozzáféréshez szükséges adminisztrációs felhasználónév és jelszó kezelése.",
+               "new_password" : "Új jelszó",
+               "username" : "Felhasználónév"
+            },
+            "snmp" : {
+               "authentication" : "Hitelesítés",
+               "disable" : "Letiltás",
+               "enable_snmp" : "SNMP engedélyezése",
+               "enc_password" : "Titkosítási jelszó",
+               "encrypt_msg" : "A \"Titkosítási Jelszó\" mezőt hagyja szabadon, ha ugyanazt az \"SNMP Jelszó\"-t szeretné használni a titkosításhoz.",
+               "encryption" : "Titkosítás",
+               "error_no_password" : "Az SNMP felhasználónév megváltoztatásához szükség van az adott jelszóra.",
+               "error_title" : "SNMP-beállítási hiba",
+               "legend" : "SNMP-szerver",
+               "legend_config" : "SNMP-konfiguráció",
+               "msg" : "Az SNMP alapértelmezetten le van tiltva. Az engedélyezéséhez használja a jelölőnégyzetet és a bemenet konfigurációját.",
+               "password" : "SNMP-jelszó",
+               "username" : "SNMP-felhasználónév"
+            }
+         },
+         "set_configuration_error_title" : "Konfiguráció beállítása",
+         "settings_changed" : {
+            "p1" : "A rendvédelmi szervének beállításai megváltoztak!",
+            "p2" : "A rendvédelmi szerv változásainak Dokkra történő alkalmazásához nyomja meg a [Frissítés] gombot.",
+            "p3" : "Ellenkező esetben nyomja meg a [Mégse] gombot, majd frissítse a beállításait manuálisan. A beállításai szinkronizálva lesznek a rendvédelmi szervével.",
+            "p4" : "Lista a változásokról:",
+            "title" : "A beállítások megváltoztak"
+         }
+      },
+      "axonsup" : {
+         "headers" : {
+            "data" : "Ügyfélszolgálati adatok"
+         },
+         "page_title" : "Axon ügyfélszolgálat",
+         "sections" : {
+            "data" : {
+               "legend" : "Axon ügyfélszolgálati adatok",
+               "msg" : "A lenti adathalmazok hasznosnak bizonyulhatnak az Axon ügyfélszolgálati képviselőivel folytatott munka során.",
+               "result1" : "1. Eredmény:",
+               "result2" : "2. Eredmény:"
+            }
+         }
+      },
+	  "cgi" : {
+          "csrf_fail" : "Cookie-hiba",
+          "invalid_auth" : "Érvénytelen felhasználónév vagy jelszó",
+          "invalid_cmd" : "Érvénytelen parancs",
+          "invalid_domain" : "Nincs megadott tartomány",
+          "invalid_proxy_config" : "Érvénytelen proxykonfiguráció",
+          "invalid_proxy_user_pass" : "A felhasználónév vagy jelszó hiányzik",
+          "invalid_snmp_user" : "Nem sikerült alkalmazni az SNMP-konfigurációt. Érvénytelen SNMP-felhasználónév.",
+          "no_content" : "Nincs tartalom",
+          "no_snmp_pw" : "Nem sikerült alkalmazni az SNMP-konfigurációt. Nem lett megadva jelszó.",
+          "not_released" : "Nincs megjelentetve",
+          "ok" : "OK",
+          "unable_disable_snmp" : "Nem sikerült letiltani az SNMP-konfigurációt.",
+          "unable_set_snmp" : "Nem sikerült alkalmazni az SNMP-konfigurációt.",
+          "unable_set_snmp_auth" : "Nem sikerült alkalmazni az SNMP-konfiguráció hitelesítését.",
+          "unable_set_snmp_enable" : "Nem sikerült engedélyezni az SNMP-konfigurációt.",
+          "unable_set_snmp_enc" : "Nem sikerült alkalmazni az SNMP-konfiguráció titkosítását.",
+          "unable_set_snmp_pass" : "Nem sikerült alkalmazni az SNMP-konfiguráció jelszavát.",
+          "unable_set_snmp_user" : "Nem sikerült alkalmazni az SNMP-konfiguráció felhasználónevét.",
+          "unable_set_sslonly" : "Nem sikerült módosítani a „Csak SSL-kérelmek elfogadása\" beállítást",
+          "unknown_err" : "Ismeretlen hiba",
+          "web_creds_err" : "Nem sikerült frissíteni a rendszergazda hitelesítő adatait.",
+          "web_creds_invalid_username" : "Nem sikerült frissíteni a rendszergazda hitelesítő adatait: a felhasználónév érvénytelen.",
+          "web_creds_invalid_cur_pass" : "Nem sikerült frissíteni a rendszergazda hitelesítő adatait: a jelenlegi jelszó érvénytelen.",
+          "web_creds_invalid_new_pass" : "Nem sikerült frissíteni a rendszergazda hitelesítő adatait: az új jelszó érvénytelen."
+      },
+      "common" : {
+        "admin_name_allowed_characters" : "Érvénytelen felhasználónév. Megengedett karakterek: alfanumerikus karakterek szóköz # ! @ ( ) [ ] - . _",
+        "at_least" : "legalább ennyinek kell lennie:",
+        "cannot_contain_duplicate" : "nem tartalmazhat ismétlődő karaktereket",
+        "cannot_contain_more_than" : "nem tartalmazhat többet, mint",
+        "cannot_contain_username" : "nem tartalmazhatja az Ön felhasználónevét vagy más gyakori szót",
+        "character" : "karaktert",
+        "characters" : "karaktert",
+        "characters_in_seq" : "karaktert egymás utáni sorrendben",
+        "input_valid_IP" : "Adjon meg egy érvényes IP-címet",
+        "less_than" : "kevesebb legyen, mint",
+        "mandatory_field" : "Ezt a mezőt kötelező kitölteni.",
+        "must_contain" : "tartalmazzon legalább ennyit:",
+        "no" : "Nem",
+        "not_secure" : "nem eléggé biztonságos",
+        "please_provide" : "Adjon meg legalább ennyit:",
+        "select_valid_entry" : "Válasszon ki egy érvényes értéket a listáról",
+        "snmp_name_allowed_characters" : "Érvénytelen felhasználónév. Megengedett karakterek: alfanumerikus karakterek # ! @ ( ) [ ] - . _",
+        "value_not_equal" : "Az érték nem egyezik az Új jelszó mező értékével",
+        "yes" : "Igen"
+      },
+      "configassist" : {
+         "dlg_assign" : {
+            "msg1" : "Ez az űrlap átállítja egy eszköz tulajdonosát a lent megadott felhasználóra. A felhasználónevet és a jelszót nem tárolja a Dokk.",
+            "msg2" : "Adja meg az hitelesítési adatokat lent, és kattintson az \"OK\" gombra, hogy SAJÁT MAGÁHOZ rendelje az eszközt, ellenkező esetben kattintson a \"Mégse\" gombra a visszalépéshez.",
+            "password" : "Jelszó",
+            "username" : "Felhasználónév"
+         },
+         "dlg_format" : {
+            "msg" : "Ezzel frissítésre kerül az eszköz konfigurációja és belső vezérlőprogramja. Egyetlen adat sem fog elveszni."
+         },
+         "dlg_format_auth" : {
+            "admin_password" : "Adminisztrációs jelszó",
+            "admin_username" : "Adminisztrációs felhasználónév",
+            "msg" : "A művelet végrehajtásához rendelkeznie kell Evidence.com adminisztrátori jogokkal. A felhasználónevét és a jelszavát nem tárolja a Dokk. Adja meg az hitelesítési adatait lent, és kattintson az \"OK\" gombra az eszköz formattálásához, ellenkező esetben kattintson a \"Mégse\" gombra a visszalépéshez."
+         },
+         "err_cannot_get_log" : {
+            "msg" : "Hiba lépett fel a tevékenységnapló erről az eszközről történő beolvasása közben.",
+            "title" : "A naplófájl beolvasása sikertelen erről az eszközről"
+         },
+         "err_cannot_read_file" : {
+            "msg" : "Hiba történt a média és bizonyítékinformációk erről az eszközről történő beolvasása közben. Ha a hiba továbbra is fennáll, forduljon az Axon műszaki ügyfélszolgálatához.",
+            "title" : "A bizonyítékfájl beolvasása sikertelen erről az eszközről."
+         },
+         "err_cannot_rm_log" : {
+            "msg" : "Hiba történt a tevékenységnapló erről az eszközről való törlése közben, miután feltöltésre került az evidence.com-ra.",
+            "title" : "A naplófájl törlése sikertelen erről az eszközről"
+         },
+         "err_device_lost_communication" : {
+            "msg" : "Az ezzel az eszközzel fennálló kapcsolat megszűnt. Kérjük, távolítsa el az eszközt a dokkról, majd dokkolja újra. Ha a probléma továbbra is fennáll, az eszközzel való segítségért forduljon a rendvédelmi szerv adminisztrátorához.",
+            "title" : "A dokk és az eszköz közötti kommunikáció megszakadt."
+         },
+         "err_device_maintenance" : {
+            "msg" : "Ez a dokk automatikus karbantartást végez ezen az eszközön. Az eszköz automatikusan visszaáll normál működésbe. Semmilyen művelet nem szükséges.",
+            "title" : "Ez a dokk automatikus karbantartást végez ezen az eszközön."
+         },
+         "err_devtype_cfg_failure" : {
+             "msg" : "Az eszközt nem sikerült Testkamera módra állítani. Ellenőrizze a hibaelhárítási utasításokat.",
+             "title" : "Az eszköz nincs Testkameraként beállítva"
+         },
+         "err_format_failure" : {
+            "msg" : "Az eszköz meghajtójának formázása sikertelen volt. Ellenőrizze a hibaelhárítási utasításokat.",
+            "title" : "Az eszköz meghajtójának formázása sikertelen volt"
+         },
+         "err_fwup_cfg_failure" : {
+             "msg": "A belső vezérlőprogram frissíthető mezőjét nem sikerült beállítani. Ellenőrizze a hibaelhárítási utasításokat.",
+             "title" : "Az eszköz belső vezérlőprogramja nincs frissíthetőként beállítva"
+         },
+         "err_inactive_device" : {
+            "msg" : "Az eszköz jelenleg nem aktív ennél a rendvédelmi szervnél. Csatlakoztassa az eszközt az Evidence Sync-hez és rendelje hozzá az eszközt a megfelelő felhasználóhoz.",
+            "title" : "Az eszköze jelenleg nem aktív a rendvédelmi szervénél"
+         },
+         "err_invalid_device_type" : {
+            "msg" : "Az eszközt nem sikerült a megadott típusra beállítani. Ellenőrizze a hibaelhárítási utasításokat.",
+            "title" : "Az eszköz érvénytelen"
+         },
+         "err_invalid_model" : {
+            "msg" : "A dokkhoz kapcsolt eszközt nem ismeri fel a rendszer érvényes Axon eszközként. Kérjük, távolítsa el a dokkról.",
+            "title" : "A dokk nem ismeri fel ezt a típusú eszközt."
+         },
+         "err_invalid_serial" : {
+            "msg" : "A dokkhoz kapcsolt eszköz nem rendelkezik érvényes sorozatszámmal. Előfordulhat, hogy ez egy ideiglenes hiba. Kérjük, távolítsa el az eszközt a dokkról, majd kapcsolódjon újra. Ha a hiba továbbra is fennáll, kérjük, küldje vissza az eszközt.",
+            "title" : "Az eszköz sorozatszáma érvénytelen."
+         },
+         "err_inventory_failure" : {
+            "msg" : "Hiba történt a média és bizonyítékinformációk erre az eszközre történő beolvasása közben. Ha a hiba továbbra is fennáll, forduljon az Axon műszaki ügyfélszolgálatához.",
+            "title" : "A bizonyítéklista beolvasása sikertelen erről az eszközről."
+         },
+         "err_mount_failed" : {
+            "msg" : "Menjen tovább az adminisztrációs oldalra és indítsa újra a dokkot.",
+            "title" : "Hiba történt az eszközhöz való kapcsolódás közben."
+         },
+         "err_network_failed" : {
+            "msg" : "Ezt feltehetőleg rossz internetkapcsolat okozta, esetleg rossz a kapcsolat az Evidence.com-mal, vagy az Evidence.com épp nagyon leterhelt, vagy karbantartás alatt áll. Ez nem kritikus hiba, a dokk újrapróbálkozik a művelettel.",
+            "title" : "A dokk hálózati hibával szembesült az eszköz feldolgozása közben"
+         },
+         "err_no_usb" : {
+            "msg" : "A dokk nem tud kommunikálni ezzel az eszközzel. Előfordulhat, hogy ez egy ideiglenes hiba. Kérjük, távolítsa el az eszközt a dokkról, majd kapcsolódjon újra. Ha a hiba továbbra is fennáll, kérjük, küldje vissza az eszközt.",
+            "title" : "Az eszközzel való kommunikáció sikertelen"
+         },
+         "err_not_offline" : {
+            "msg" : "Ez a dokk offline működésre van konfigurálva, nem képes online módra állított eszközöket feldolgozni. Ha szeretné offline módra állítani ezt az eszközt, kapcsolja az eszközt az Evidence Sync-hez és kövesse az utasításokat.",
+            "title" : "Ez az eszköz nem offline működésre van állítva"
+         },
+         "err_not_online" : {
+            "msg" : "Ez a dokk online működésre van konfigurálva, nem képes offline módra állított eszközöket feldolgozni. Ha szeretné online módra állítani ezt az eszközt, kapcsolja az eszközt az Evidence Sync-hez és kövesse az utasításokat.",
+            "title" : "Ez az eszköz nem online működésre van állítva"
+         },
+         "err_system_maintenance" : {
+            "msg" : "Ez a dokk automatikus karbantartást végez. Az eszköz automatikusan visszaáll normál működésbe. Semmilyen művelet nem szükséges.",
+            "title" : "Ez a dokk belső karbantartást végez."
+         },
+         "err_transfer_failed" : {
+            "msg" : "Ezt feltehetőleg rossz internetkapcsolat okozta, esetleg rossz a kapcsolat az Evidence.com-mal, vagy az Evidence.com épp nagyon leterhelt, vagy karbantartás alatt áll. Ez nem kritikus hiba, a dokk újrapróbálkozik a fájlfeltöltéssel.",
+            "title" : "A dokk nem tudta sikeresen továbbítani a videót erről az eszközről"
+         },
+         "err_transfer_failed_noretry" : {
+            "msg" : "Ezt feltehetőleg valamilyen az eszközzel kapcsolatos probléma okozta. Forduljon az Axon műszaki ügyfélszolgálatához.",
+            "title" : "A dokk egy tartós hibába ütközött, miközben továbbítani próbálta a videót erről az eszközről"
+         },
+         "err_unknown_port_type" : {
+            "msg" : "Nem támogatott vagy ismeretlen a port típusa, amelyen az eszközt csatlakoztatták. Ellenőrizze a hibaelhárítási utasításokat.",
+            "title" : "A port típusa ismeretlen"
+         },
+         "err_wrong_agency" : {
+            "msg" : "Ez az eszköz jelenleg nincs hozzárendelve a rendvédelmi szervhez. Forduljon a rendvédelmi szerv rendszergazdájához az eszközzel kapcsolatos segítségért.",
+            "title" : "Ez az eszköz jelenleg nincs hozzárendelve a rendvédelmi szervhez."
+         },
+         "if_problem_continues" : "Ha ez a probléma továbbra is fennáll, lépjen kapcsolatba az Axon műszaki ügyfélszolgálatával itt:",
+         "more_help" : "Ha további segítségre van szüksége ezzel a problémával kapcsolatban, lépjen kapcsolatba az Axon műszaki ügyfélszolgálatával itt:",
+         "no_dns" : {
+            "msg" : "Nem sikerült a DNS-szerver helyzetét meghatározni. Ezt általában az okozza, hogy érvénytelen a DNS-szerverhez konfigurált IP-cím. Javasoljuk, hogy erősítse meg a DNS-beállításokat a Hálózati oldalon.",
+            "return_msg" : "Kattintson a lenti \"OK\" gombra, hogy a Hálózati oldalra navigáljon, és megerősítse a DNS-el kapcsolatos információkat, vagy nyomja meg az ESC billentyűt, hogy bezárja ezt az ablakot.",
+            "title" : "DNS-szerver nem található"
+         },
+         "no_ecom" : {
+            "msg" : "Nem sikerült hitelesíteni ezt a Dokkot az Evidence.com-on. Ezt általában az okozza, hogy érvénytelen, vagy hiányzik a rendvédelmi szerv és a Dokk regisztrációs kulcsa. Javasoljuk, hogy regisztrálja ezt a dokkot az Műveletek oldalon.",
+            "return_msg" : "Kattintson a lenti \"OK\" gombra, hogy a Műveletek oldalra navigáljon és regisztrálja a Dokkot, vagy nyomja meg az ESC billentyűt, hogy bezárja ezt az ablakot.",
+            "title" : "Nincs Evidence.com hitelesítés"
+         },
+         "no_gateway" : {
+            "msg" : "Nem sikerült kapcsolatba lépni a hálózatának alapértelmezett átjárójával. Ezt általában az okozza, hogy érvénytelen az IP-cím, bár néhány átjáró nem reagál a hálózat \"ping\"-jeire.",
+            "return_msg" : "Kattintson a lenti \"OK\" gombra, hogy a Hálózati oldalra navigáljon, vagy nyomja meg az ESC billentyűt, hogy bezárja ezt az ablakot.",
+            "title" : "Átjáró nem található"
+         },
+         "no_https" : {
+            "msg" : "Nem sikerült a biztonságos (HTTPS) csatornán keresztül kommunikálni. Ezt általában az okozza, hogy a HTTPS portot (443) blokkolja a tűzfala. Javasoljuk, hogy erősítse meg, hogy a HTTPS port nyitva van a tűzfalán.",
+            "return_msg" : "Kattintson a lenti \"OK\" gombra az Állapot oldalra történő visszatéréshez.",
+            "title" : "Nincs elérhető HTTPS."
+         },
+         "no_ip_dynamic" : {
+            "msg" : "Nem sikerült IP-címet szereznünk a DHCP szerveréről. Ezt általában az okozza, hogy nincs aktív DHCP szerver a hálózatán. Szükség lehet rá, hogy statikus IP-konfigurációt adjon meg ehhez a Dokkhoz.",
+            "return_msg" : "Kattintson a lenti \"OK\" gombra, hogy a Hálózati oldalra navigáljon, és megadja a statikus IP-információkat, vagy nyomja meg az ESC billentyűt, hogy bezárja ezt az ablakot.",
+            "title" : "Nincs IP-cím."
+         },
+         "no_ip_static" : {
+            "msg" : "Nem sikerült megszereznünk az IP-címet,  amelyet Ön a Dokk statikus IP beállítása során megadott. Ezt általában az okozza, hogy több számítógép használja ugyanazt a statikus IP-címet. Javasoljuk, hogy erősítse meg az IP-címet, melyet a Hálózati oldalon adott meg.",
+            "return_msg" : "Kattintson a lenti \"OK\" gombra a Hálózati oldalra történő navigáláshoz és a beállításai megerősítéséhez, vagy nyomja meg az ESC billentyűt az ablak bezárásához.",
+            "title" : "Nincs IP-cím."
+         },
+         "no_ntp" : {
+            "msg" : "Nem sikerült kommunikálni a hálózati időszerverrel. Ezt általában az okozza, hogy a 80-as és a 123-as portot is blokkolja a tűzfal. Javasoljuk, hogy erősítse meg, hogy a 80-as VAGY a 123-as port nyitva van a tűzfalán.",
+            "return_msg" : "Kattintson a lenti \"OK\" gombra a Hálózati oldalra történő navigáláshoz és az időszerver módosításához, vagy nyomja meg az ESC billentyűt az ablak bezárásához.",
+            "title" : "Az NTP szerver nem válaszol"
+         },
+         "no_status" : {
+            "msg" : "Egyelőre nem sikerült meghatározni a hálózati típusát. Ez azért lehet, mert a rendszerünk még töltődik. Javasoljuk, hogy várjon 2-3 percet, majd frissítse az oldalt. Az állapot oldala akkor is frissül, ha valamilyen új információ érkezik be.",
+            "return_msg" : "Kattintson a lenti \"OK\" gombra, hogy visszatérjen az állapot oldalára.",
+            "title" : "Nem található állapot."
+         },
+         "title" : "Konfigurációs segéd",
+         "we_found" : "A hálózat vizsgálata után a következő problémát találtuk:",
+         "welcome" : "Üdvözli az konfigurációs segéd."
+      },
+      "device_status_codes" : {
+         "capchk" : "Töltöttségi szint ellenőrzése",
+         "cfg" : "Konfigurálás",
+         "chg" : "Töltés",
+         "del" : "Eltávolítás",
+         "device_maint" : "Eszközkarbantartás",
+         "devid" : "Azonosítás",
+         "err" : "Hiba (Újrapróbálkozás függőben)",
+         "fail" : "Hiba",
+         "fwdone" : "Belső vezérlőprogram frissítve",
+         "fwupdate" : "Belső vezérlőprogram frissítése",
+         "inact" : "Inaktív",
+         "init" : "Inicializálás",
+         "inventory" : "Készlet",
+         "logerase" : "Napló törlése",
+         "logsend" : "Napló feltöltése",
+         "lost" : "Elveszett kommunikáció",
+         "net_retry" : "Hálózati kapcsolat megismétlése",
+         "new" : "Új eszköz",
+         "nonet" : "A hálózat nem működik",
+         "plugin" : "Csatlakozás",
+         "proc" : "Fájlátvitel",
+         "rdy" : "Kész",
+         "register" : "Regisztrálás folyamatban",
+         "summary" : "Összefoglaló lekérése",
+         "sys_maint" : "Rendszerkarbantartás",
+         "unk" : "Ismeretlen",
+         "unsupported" : "Nem támogatott",
+         "wait" : "Várakozás"
+      },
+      "diag" : {
+         "headers" : {
+            "diag" : "Diagnosztika"
+         },
+         "page_title" : "Állapot",
+         "sections" : {
+            "netdiag" : {
+               "command" : "Parancs:",
+               "commands" : {
+                  "date" : "A Dokk által jelentett DÁTUM",
+                  "ifconfig" : "IFCONFIG hálózati statisztika",
+                  "nslookup_goog" : "NSLOOKUP google.com",
+                  "nslookup_taser" : "NSLOOKUP taser.evidence.com",
+                  "ping_8888" : "PING 8.8.8.8",
+                  "ping_gateway" : "PING alapértelmezett átjáró",
+                  "ping_goog" : "PING google.com",
+                  "tail_etmlog" : "TAIL 100 sor a Dokk naplójából",
+                  "tail_syslog" : "TAIL 100 sor a rendszer naplójából",
+                  "tr_goog" : "TRACEROUTE google.com",
+                  "tr_taser" : "TRACEROUTE taser.evidence.com"
+               },
+               "execute" : "Végrehajtás",
+               "legend" : "Hálózati diagnosztika",
+               "menu" : "Válassza ki a diagnosztikai tesztet a legördülő menüből, majd válassza a végrehajtást...",
+               "msg1" : "Az itt megadott parancsokat a hálózat kapcsolati problémáinak a diagnosztizálására használjuk.",
+               "msg2" : "Ne hajtsa végre a lenti parancsokat, kivéve ha egy Axon ügyfélszolgálati képviselő utasítja arra.",
+               "result" : "Eredmény:"
+            }
+         }
+      },
+      "firmware" : {
+         "current_version" : "A belső vezérlőprogram jelenlegi verziója",
+         "dvr_update_starting" : "Kapcsolódás az Axon szerverhez frissítések keresése érdekében... A belső vezérlőprogram frissítése megkezdődik, miután a DVR végzett a fájlok feltöltésével",
+         "etm_update_starting" : "A belső vezérlőprogram frissítése megkezdődött. Nézzen vissza pár percen belül, hogy ellenőrizze, frissült-e a verzió...",
+         "headers" : {
+            "firmware_mgmt" : "A belső vezérlőprogram kezelése"
+         },
+         "not_released" : "Nincs megjelentetve",
+         "page_title" : "Belső vezérlőprogram frissítése",
+         "sections" : {
+            "device_firmware_update" : {
+               "legend" : "Eszköz belső vezérlőprogramjának frissítése",
+               "msg" : "A jelenleg dokkolt eszközök belső vezérlőprogramjának  frissítéséhez kattintson a lenti gombra. Amennyiben van elérhető frissítés, automatikusan telepítésre kerül minden eszközön.",
+               "device_name" : "Eszköz neve",
+               "released_firmware" : "Megjelentetett belső vezérlőprogram",
+               "early_access_firmware" : "Korai hozzáférésű belső vezérlőprogram",
+               "perform_fw_update" : "Axon eszközök frissítése"
+            },
+            "etm_firmware_update" : {
+               "check_update" : "Belső vezérlőprogram frissítése",
+               "legend" : "Dokk belső vezérlőprogramjának frissítése",
+               "msg" : "A Dokk belső vezérlőprogramjának frissítéséhez kattintson a BELSŐ VEZÉRLŐPROGRAM FRISSÍTÉSE gombra. A Dokk kapcsolatba lép az Axon szervereivel és megkeresi a legújabb belső vezérlőprogram-verziót. Amennyiben van új belső vezérlőprogram-verzió, automatikusan telepítésre kerül.",
+               "show_version_details" : "Részletek",
+               "version_details" : "Részletek"
+            }
+         },
+         "update_failed" : "Nem tudjuk megkezdeni a belső vezérlőprogram frissítését",
+         "update_title" : "Belső vezérlőprogram frissítése"
+      },
+      "general" : {
+         "closeparen" : ")",
+         "copyright" : "&copy; 2023 Axon Enterprise, Inc. Minden jog fenntartva",
+         "error_code" : "hibakód",
+         "firmware" : "Belső vezérlőprogram",
+         "footnote" : "*A TASER akkumulátorok tartalmazzák a TASER 7 (T7) és a TASER 10 (T10) markolatok, valamint a TASER BLE belső vezérlőprogramját.",
+         "openparen" : "(",
+         "refresh" : "Frissítés",
+         "sections" : {
+            "button_bar" : {
+               "discard_changes" : "Módosítások elvetése",
+               "loading_wait" : "Konfiguráció betöltése... kérjük, várjon...",
+               "reset_registration" : "Regisztráció alapértelmezett helyzetbe állítása",
+               "save_changes" : "Módosítások mentése",
+               "continue" : "Tovább"
+            },
+            "snmp" : {
+               "showhide_password" : "SNMP-jelszó mutatása/elrejtése"
+            }
+         }
+      },
+      "index" : {
+         "footer" : {
+            "help_center" : "Súgóközpont"
+         },
+         "headers" : {
+            "system_status" : "Rendszer állapota"
+         },
+         "page_title" : "Állapot",
+         "sections" : {
+            "devices" : {
+               "device" : "Eszköz",
+               "firmware" : "Belső vezérlőprogram*",
+               "hidden_info" : "Kattintson az adatok megtekintéséhez",
+               "legend" : "Eszközök",
+               "owner" : "Tulajdonos",
+               "serial" : "Sorozatszám #",
+               "status" : "Állapot"
+            },
+            "networking" : {
+               "active" : "Aktív",
+               "dns_server" : "DNS-szerver",
+               "ecom_registration" : "Evidence.com regisztráció",
+               "gateway" : "Internetes átjáró",
+               "https_port" : "HTTPS (Port 443)",
+               "ipaddress" : "IP-cím",
+               "legend" : "Hálózati",
+               "mac_address" : "MAC-cím",
+               "not_registered" : "Nincs regisztrálva",
+               "serial_number" : "Sorozatszám #",
+               "time_server" : "Időszerver"
+            }
+         }
+      },
+      "links" : {
+         "administration" : "Adminisztráció",
+         "firmware" : "Belső vezérlőprogram",
+         "networking" : "Hálózati",
+         "operations" : "Műveletek",
+         "status" : "Állapot"
+      },
+      "lookups" : {
+         "netmode" : {
+            "dynamic" : "dinamikus",
+            "static" : "statikus"
+         }
+      },
+      "networking" : {
+         "headers" : {
+            "net_setup" : "Hálózati beállítás"
+         },
+         "page_title" : "Hálózati beállítások",
+         "restart_title" : "Hálózat újraindítása",
+         "saved_restarting" : "A beállítások mentése, a hálózat újraindul...",
+         "sections" : {
+            "conn_type" : {
+               "label_dynamic" : "Dinamikus IP (DHCP)",
+               "label_static" : "Statikus IP",
+               "legend" : "Kapcsolat típusa",
+               "msg" : "A Dokk kétféle módon tud együttműködni a már meglévő hálózatával, hogy internetes hozzáférést biztosíthasson az AXON eszközöknek. Vagy Dinamikus IP-n (DHCP) keresztül, vagy egy statikus IP-címmel. Válassza ki a megfelelő módot:"
+            },
+            "static_ip" : {
+               "dns_servers" : "DNS szerverek",
+               "gateway" : "Alapértelmezett átjáró",
+               "ip_address" : "IP-cím",
+               "legend" : "Statikus IP-konfiguráció",
+               "msg" : "Ha a hálózata nem használ DHCP-t, vagy az internetes hozzáférés csak statikus IP hozzárendelésen keresztül lehetséges, akkor szükséges, hogy konfigurációs információt biztosítson a Dokk számára. Ha nem rendelkezik ezzel az információval, akkor forduljon a hálózati adminisztrátorához",
+               "subnet_mask" : "Alhálózati maszk"
+            },
+            "throttle" : {
+               "label_mbps" : "Mbps",
+               "legend" : "Kimenő adatforgalom korlátozása",
+               "max_speed" : "Max. feltöltési sebesség",
+               "msg" : "Alapesetben a Dokk az egész rendelkezésére álló sávszélességet fel fogja használni, hogy minél gyorsabban tölthessen fel videókat az AXON egységekről. Ha ez nem kívánatos, a feltöltési sebesség (Megabit/másodpercben mérve) korlátozható. A nullás érték azt jeleni, hogy a Dokk felhasználhatja az egész rendelkezésére álló sávszélességet."
+            }
+         }
+      },
+      "ops" : {
+         "an_error_occurred" : "Hiba történt",
+         "generating_tokens" : "Biztonsági tokenek generálása...",
+         "headers" : {
+            "operations" : "Műveletek"
+         },
+         "page_title" : "Általános műveletek",
+         "regenerate_keys_query" : "Már hitelesítette az Evidence.com, szeretné újragenerálni a biztonsági kulcsokat?",
+         "regenerate_keys_title" : "Kulcsok újragenerálása",
+         "register_with_ecom" : "Regisztráljon az Evidence.com-on",
+         "registering_etm" : "Dokk regisztrálása...",
+         "processing" : "Feldolgozás...",
+         "poll_uri_code" : "Aktiváló hivatkozás és kód lekérése...",
+         "reset_reg" : "Regisztráció alapértelmezett helyzetbe állítása",
+         "reset_reg_failed" : "Regisztráció visszaállítása nem lehetséges",
+         "resetting_reg_dock" : "A Dokk regisztrációja alapértelmezetté áll vissza. Oldal újratöltése 30 másodpercen belül.",
+         "restarting_etm" : "Dokk újraindítása folyamatban, ez nagyjából 30 másodpercet fog igénybe venni...",
+         "sections" : {
+            "e_com_reg" : {
+               "admin_password" : "Adminisztrációs jelszó",
+               "admin_username" : "Adminisztrációs felhasználónév",
+               "agency_name" : "Evidence.com rendvédelmi szerv",
+               "already_registered" : "Ez a Dokk már regisztrálva lett az Evidence.com-on",
+               "domain_name" : "Domain név",
+               "legend" : "Evidence.com regisztráció",
+               "msg" : "Ahhoz, hogy regisztrálhassa ezt a Dokkot az Evidence.com Rendvédelmi szervéhez, adja meg az Evidence.com rendvédelmi szerv nevét, a felhasználónevet és a jelszót. Amint a Dokk regisztrálva van az Evidence.com-ra, minden médiafájlt áthelyez az Evidence.com fiókjára. A felhasználónevét és a jelszavát nem tárolja a Dokk.",
+               "msg_shorten" : "Ahhoz, hogy regisztrálhassa ezt a Dokkot az Evidence.com Rendvédelmi szervéhez, adja meg az Evidence.com rendvédelmi szerv nevét. Amint a Dokk regisztrálva van az Evidence.com-ra, minden médiafájlt áthelyez az Evidence.com fiókjára.",
+               "msg_login_uri_code" : "A regisztráció befejezéséhez nyissa meg a linket, és adja meg a kódot:"
+            }
+         }
+      },
+      "proxy": {
+         "headers": {
+            "proxy_setup": "Proxy beállítása"
+         },
+         "page_title": "Proxy beállítások",
+         "proxy_test_title": "Proxy tesztelése",
+         "proxy_test_in_progress": "A proxy tesztelése folyamatban...",
+         "proxy_test_success_msg": "A proxy teszt sikeres volt",
+         "proxy_test_fail_msg": "A proxy teszt sikertelen volt",
+         "configuration_saved_title": "A proxy konfigurációja sikeresen elmentve",
+         "configuration_saved_msg": "A proxy konfigurációja sikeresen elmentve, és hamarosan érvénybe lép",
+         "sections": {
+            "http_proxy": {
+               "legend": "HTTP proxy",
+               "msg": "A HTTP proxy beállításával az összes HTTP-kérés a kijelölt proxyszerverre lesz átirányítva.",
+               "enable": "Engedélyezés",
+               "legend_config": "Konfiguráció",
+               "legend_advanced_config": "Fejlett konfiguráció",
+               "disable_dns_check": "DNS-ellenőrzés kikapcsolása",
+               "msg_config": "A felhasználónév és a jelszó nem kötelező.",
+               "host": "Proxykiszolgáló",
+               "port": "Proxy port",
+               "username": "Felhasználónév",
+               "password": "Jelszó",
+               "test_connection": "Kapcsolat tesztelése"
+            }
+         }
+      },
+      "strings" : {
+         "an_error_occurred" : "Hiba történt",
+         "axon_flex" : "Axon Flex",
+         "calculating_rate" : "Kalkulálás...",
+         "cancel" : "Mégse",
+         "cannot_get_data_too_many_failed_login_attempts" : "Túl sok sikertelen bejelentkezési kísérlet miatt az adatok lekérése sikertelen",
+         "click_for_details" : "A részletekért kattintson",
+         "device_error" : "Eszközhiba",
+         "error" : "Hiba",
+         "error_download" : "Hiba a https-letöltéskor",
+         "error_internal" : "Belső hiba",
+         "failed_auth": "Túl sok sikertelen hitelesítési kísérlet. Fiók átmenetileg felfüggesztve.",
+         "finished" : "Befejezve",
+         "invalid_hostname" : "nem érvényes hostnév",
+         "kbps" : "kbps",
+         "login_failed" : "Bejelentkezés sikertelen",
+         "no_server_response" : "Nincs válasz a szerverről",
+         "ok" : "OK",
+         "operation_complete_success" : "A művelet sikeresen befejeződött.",
+         "please_complete_mandatory" : "Kérjük, töltse ki ezt a kötelező mezőt!",
+         "please_enter_numeric" : "Numerikus értéket adjon meg.",
+         "please_enter_valid_email" : "Adjon meg egy érvényes e-mail címet.",
+         "please_enter_valid_URL" : "Érvényes URL-t adjon meg.",
+         "please_enter_value_larger" : "A következőnél nagyobb értéket adjon meg:",
+         "please_enter_value_smaller" : "A következőnél kisebb értéket adjon meg:",
+         "reloading_status" : "Állapot újratöltése...",
+         "reloading_status_title" : "Frissítés",
+         "unassigned" : "Nincs hozzárendelve",
+         "unspecified_error" : "Nem meghatározott hiba történt:",
+         "waiting_for_response" : "Várakozás a válaszra...",
+         "authentication_failed" : "Hitelesítés sikertelen",
+         "invalid_request" : "Nulla értékű vagy érvénytelen kérelem"
+      }
+   }
+}

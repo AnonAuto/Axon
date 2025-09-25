@@ -1,0 +1,35 @@
+
+config 'etm' 'etm'
+        option 'threshold' '3.0'
+        option 'agency' 'TASER International'
+        option 'location' 'Scottsdale, AZ'
+        option 'name' 'HQ'
+        option 'allow_status' '1'
+        option 'send_status' '5'
+        option 'web_admin_user' 'admin'
+        option 'auto_reg_new_devices' '1'
+        option 'auto_claim_all_devices' '0'
+        option 'parallel_upload_capacity' '2'
+        option 'wizard' '1'
+        option 'version' '0.0.0'
+        # force set-rtc to use HTTPS protocol?
+        option 'require_https_time' '0'
+        # enable using NTP Protocol, only to the indicated domain
+        # option 'ntp_domain' 'pool.ntp.org'
+        # force UI server to accept only HTTPS
+        option 'accept_only_https' '0'
+
+        # SNMP server configs
+        option 'enable_snmp' '0'
+        option 'snmp_user' ''
+        option 'snmp_sec' 'auth'
+        option 'snmp_auth' 'MD5'
+        option 'snmp_encrypt' 'NoPriv'
+
+config 'e-com' 'operation'
+        option 'mode' 'none'
+
+config 'device-firmware' 'firmware'
+        option 'taser_axon__taser_axon_lxcie' 'UNKNOWN'
+        option 'taser_axon__taser_body_cam' 'UNKNOWN'
+
