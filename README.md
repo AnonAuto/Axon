@@ -6,7 +6,7 @@
 
 Documenting the reverse engineering of Axon Enterprise Devices, Protocols, Software, Firmware and Mobile Applications looking for secrets and vulnerabilitites. This work is unauthorised and done by members of the Anonymous Automotive Alliance.  
 
-This information is currently stored here privately, and is not publicly accessible. The repository will more than likely be made public anonymously due to fears of reprisals or retaliation from both Axon and/or Law Enforcement. 
+~~~This information is currently stored here privately, and is not publicly accessible.~~~ The repository will more than likely be made public anonymously due to fears of reprisals or retaliation from both Axon and/or Law Enforcement. 
 <br />
 
 
